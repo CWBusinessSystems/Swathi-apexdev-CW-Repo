@@ -1,0 +1,36 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="CWS_DisplayRelatedTaskDetails">
+    <aura:attribute name="originalActivityId" type="String"/>
+    <aura:attribute name="excludeTaskId" type="String"/> 
+    <aura:attribute type="Task[]" name="taskList"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>                                                      
+    <aura:iteration items="{!v.taskList}" var="item">
+        <table >
+            <tr><td colspan="4" class="slds-border_bottom slds-border_top"></td></tr>
+            <tr>
+                <td>Date:</td>
+                <td class="slds-text-align_left"><lightning:formattedDateTime value="{!item.ActivityDate}"/></td>
+                <td>Assigned:</td>
+                <td class="slds-text-align_left">{!item.Owner.Name}</td>
+            </tr>
+            <tr>
+                <td>Subject:</td>
+                <td colspan="3"><lightning:formattedUrl value="{!'/' + item.Id}" label="{!item.Subject}" target="_blank"/></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="slds-border_bottom">
+                    <div class="slds-truncate" title="" onmouseover="{!c.displayPopup}" onmouseout="{!c.hidePopup}" id="{!item.Id}">Show More</div>
+                    <div style="position:relative;display:none" id="{!item.Id+'task'}">
+                        <div class="slds-popover slds-popover_tooltip slds-rise-from-ground" role="tooltip" id="help" style="position: absolute !important; top: 0px; left: 15px;z-index:1;width:200%">
+                            <div class="slds-popover__body" style="word-wrap: break-word !important;white-space:normal !important">
+                                {!item.Description}
+                            </div>
+                        </div>
+                    </div>
+                </td> 
+            </tr>
+        </table>
+        
+    </aura:iteration>
+    
+</aura:component>

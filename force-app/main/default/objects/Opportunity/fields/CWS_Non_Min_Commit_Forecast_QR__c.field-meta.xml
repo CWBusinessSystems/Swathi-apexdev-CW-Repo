@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Non_Min_Commit_Forecast_QR__c</fullName>
+    <externalId>false</externalId>
+    <label>Non Min Commit Forecast/QR</label>
+    <summarizedField>OpportunityLineItem.CWS_Non_Min_Commit_Forecast_QR__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

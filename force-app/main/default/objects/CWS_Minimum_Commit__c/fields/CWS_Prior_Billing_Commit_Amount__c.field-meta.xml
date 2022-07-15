@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prior_Billing_Commit_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>CWS_Billing_Period__r.CWS_CMSCommitAmount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Used for audit reporting - Pulls the commit amount from the Opportunity Prior Billing Period</inlineHelpText>
+    <label>Prior Billing Commit Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

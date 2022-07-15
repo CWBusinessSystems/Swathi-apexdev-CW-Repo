@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Credit_Type__c</fullName>
+    <description>Refers to the Type of Credit request raised by the Team</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refers to the Type of Credit request raised by the Team</inlineHelpText>
+    <label>Credit Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner Satisfaction/Courtesy</fullName>
+                <default>false</default>
+                <label>Partner Satisfaction/Courtesy</label>
+            </value>
+            <value>
+                <fullName>Internal Error</fullName>
+                <default>false</default>
+                <label>Internal Error</label>
+            </value>
+            <value>
+                <fullName>Sales Discretionary Credit</fullName>
+                <default>false</default>
+                <label>Sales Discretionary Credit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

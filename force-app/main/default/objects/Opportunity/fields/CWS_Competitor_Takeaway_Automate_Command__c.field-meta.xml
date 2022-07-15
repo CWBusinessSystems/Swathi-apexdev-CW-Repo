@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Competitor_Takeaway_Automate_Command__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures Automate competitor from which CW is taking business for this Opportunity.</inlineHelpText>
+    <label>Competitor Takeaway: Automate / Command</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Run Rate Sale</fullName>
+                <default>false</default>
+                <label>Run Rate Sale</label>
+            </value>
+            <value>
+                <fullName>Atera</fullName>
+                <default>false</default>
+                <label>Atera</label>
+            </value>
+            <value>
+                <fullName>Break/Fix</fullName>
+                <default>false</default>
+                <label>Break/Fix</label>
+            </value>
+            <value>
+                <fullName>Cloud Management Suite</fullName>
+                <default>false</default>
+                <label>Cloud Management Suite</label>
+            </value>
+            <value>
+                <fullName>Comodo One</fullName>
+                <default>false</default>
+                <label>Comodo One</label>
+            </value>
+            <value>
+                <fullName>Datto RMM</fullName>
+                <default>false</default>
+                <label>Datto RMM</label>
+            </value>
+            <value>
+                <fullName>Domotz</fullName>
+                <default>false</default>
+                <label>Domotz</label>
+            </value>
+            <value>
+                <fullName>Intune</fullName>
+                <default>false</default>
+                <label>Intune</label>
+            </value>
+            <value>
+                <fullName>Kace</fullName>
+                <default>false</default>
+                <label>Kace</label>
+            </value>
+            <value>
+                <fullName>Kaseya</fullName>
+                <default>false</default>
+                <label>Kaseya</label>
+            </value>
+            <value>
+                <fullName>Managed Workplace RMM</fullName>
+                <default>false</default>
+                <label>Managed Workplace RMM</label>
+            </value>
+            <value>
+                <fullName>ManageEngine</fullName>
+                <default>false</default>
+                <label>ManageEngine</label>
+            </value>
+            <value>
+                <fullName>Nagios</fullName>
+                <default>false</default>
+                <label>Nagios</label>
+            </value>
+            <value>
+                <fullName>Naverisk</fullName>
+                <default>false</default>
+                <label>Naverisk</label>
+            </value>
+            <value>
+                <fullName>Ninja</fullName>
+                <default>false</default>
+                <label>Ninja</label>
+            </value>
+            <value>
+                <fullName>Panorama9</fullName>
+                <default>false</default>
+                <label>Panorama9</label>
+            </value>
+            <value>
+                <fullName>Pulseway</fullName>
+                <default>false</default>
+                <label>Pulseway</label>
+            </value>
+            <value>
+                <fullName>SCCM</fullName>
+                <default>false</default>
+                <label>SCCM</label>
+            </value>
+            <value>
+                <fullName>SolarWinds N-Central (N-Able)</fullName>
+                <default>false</default>
+                <label>SolarWinds N-Central (N-Able)</label>
+            </value>
+            <value>
+                <fullName>SolarWinds RMM (GFI)</fullName>
+                <default>false</default>
+                <label>SolarWinds RMM (GFI)</label>
+            </value>
+            <value>
+                <fullName>Syncro</fullName>
+                <default>false</default>
+                <label>Syncro</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

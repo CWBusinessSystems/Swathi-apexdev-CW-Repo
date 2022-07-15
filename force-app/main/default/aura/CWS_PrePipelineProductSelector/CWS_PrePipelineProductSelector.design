@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="pricebookEntries" label="Pricebook Entries for Pre-Pipeline Products"/>
+    <design:attribute name="opportunityRecord" label="Opportunity Record"/>
+    <design:attribute name="opportunityLineItems" label="Opportunity Line Items"/>
+    <design:attribute name="products" label="All pre-pipeline products"/>
+</design:component>

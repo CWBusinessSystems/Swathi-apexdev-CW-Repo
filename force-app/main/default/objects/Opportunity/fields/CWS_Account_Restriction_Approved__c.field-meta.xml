@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Account_Restriction_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marked true if the account restriction approval is approved</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether the Account associated to this Opportunity is restricted or delinquent, in which case the Opportunity may not be able to proceed.</inlineHelpText>
+    <label>Account Restriction Approved</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<!--
+Ad Victoriam Solutions - CW11-P1-SFDX-ven
+Purpose: override standard New button for Opportunity
+Dependencies: New Opportunity Screen Flow (it's a Flow in Salesforce)
+Changelog:
+    18 Jan 2022 by chase.brammer
+        - Created initial file.
+-->
+<!-- -->
+<aura:component description="CWS_OverrideNewOpportunity"
+                implements="lightning:actionOverride,lightning:isUrlAddressable,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+
+    <!-- INIT SETS UP FLOW -->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <!-- DO NOT MODIFY THIS ATTRIBUTE -->
+    <aura:attribute name="parsedRecordId" type="String" />
+
+    <!-- COMPONENT MARKUP -->
+    <lightning:card>
+        <div slot="body">
+            <lightning:flow aura:id="flowData"/>
+        </div>
+    </lightning:card>
+</aura:component>

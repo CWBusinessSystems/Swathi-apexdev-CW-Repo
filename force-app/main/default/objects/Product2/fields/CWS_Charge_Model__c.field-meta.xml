@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Charge_Model__c</fullName>
+    <description>Depicts Zuora charge Model</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Charge Model of the product</inlineHelpText>
+    <label>Charge Model</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discount-Fixed Amount</fullName>
+                <default>false</default>
+                <label>Discount-Fixed Amount</label>
+            </value>
+            <value>
+                <fullName>Discount-Percentage</fullName>
+                <default>false</default>
+                <label>Discount-Percentage</label>
+            </value>
+            <value>
+                <fullName>Flat Fee Pricing</fullName>
+                <default>false</default>
+                <label>Flat Fee Pricing</label>
+            </value>
+            <value>
+                <fullName>Per Unit Pricing</fullName>
+                <default>false</default>
+                <label>Per Unit Pricing</label>
+            </value>
+            <value>
+                <fullName>Overage Pricing</fullName>
+                <default>false</default>
+                <label>Overage Pricing</label>
+            </value>
+            <value>
+                <fullName>Tiered Pricing</fullName>
+                <default>false</default>
+                <label>Tiered Pricing</label>
+            </value>
+            <value>
+                <fullName>Tiered with Overage Pricing</fullName>
+                <default>false</default>
+                <label>Tiered with Overage Pricing</label>
+            </value>
+            <value>
+                <fullName>Volume Pricing</fullName>
+                <default>false</default>
+                <label>Volume Pricing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

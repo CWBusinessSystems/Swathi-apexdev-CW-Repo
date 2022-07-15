@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Item_Revenue_Category__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures Item Revenue Category for the product. NetSuite uses this value to auto-populate revenue attributes at item level.</inlineHelpText>
+    <label>Item Revenue Category</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>On-Prem Term Assurance</fullName>
+                <default>false</default>
+                <label>On-Prem Term Assurance</label>
+            </value>
+            <value>
+                <fullName>On-Prem Term Manage</fullName>
+                <default>false</default>
+                <label>On-Prem Term Manage</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Usage</fullName>
+                <default>false</default>
+                <label>Usage</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Evolve-Billing</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Evolve-Billing</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services</fullName>
+                <default>false</default>
+                <label>Consulting-Services</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Core Services</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Core Services</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Billing</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Billing</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Evolve-Core Services</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Evolve-Core Services</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Implementation-Core Services</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Implementation-Core Services</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Implementation-Billing</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Implementation-Billing</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Recurring-Core Services</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Recurring-Core Services</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Recurring-Billing</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Recurring-Billing</label>
+            </value>
+            <value>
+                <fullName>Consulting-SaaS-Billing</fullName>
+                <default>false</default>
+                <label>Consulting-SaaS-Billing</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>Hybrid SaaS-Core Services</fullName>
+                <default>false</default>
+                <label>Hybrid SaaS-Core Services</label>
+            </value>
+            <value>
+                <fullName>Maintenance-Core Services</fullName>
+                <default>false</default>
+                <label>Maintenance-Core Services</label>
+            </value>
+            <value>
+                <fullName>Maintenance-Billing</fullName>
+                <default>false</default>
+                <label>Maintenance-Billing</label>
+            </value>
+            <value>
+                <fullName>Other-Billing</fullName>
+                <default>false</default>
+                <label>Other-Billing</label>
+            </value>
+            <value>
+                <fullName>Other-Invent-Core Services</fullName>
+                <default>false</default>
+                <label>Other-Invent-Core Services</label>
+            </value>
+            <value>
+                <fullName>Other-Invent-Billing</fullName>
+                <default>false</default>
+                <label>Other-Invent-Billing</label>
+            </value>
+            <value>
+                <fullName>Perpetual</fullName>
+                <default>false</default>
+                <label>Perpetual</label>
+            </value>
+            <value>
+                <fullName>Perpetual-Core Services</fullName>
+                <default>false</default>
+                <label>Perpetual-Core Services</label>
+            </value>
+            <value>
+                <fullName>SaaS</fullName>
+                <default>false</default>
+                <label>SaaS</label>
+            </value>
+            <value>
+                <fullName>SaaS-Third Party</fullName>
+                <default>false</default>
+                <label>SaaS-Third Party</label>
+            </value>
+            <value>
+                <fullName>SaaS-Core Services</fullName>
+                <default>false</default>
+                <label>SaaS-Core Services</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-Perpetual</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-Perpetual</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-License-Sell</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-License-Sell</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-Core Services</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-Core Services</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-Third Party-Core Services</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-Third Party-Core Services</label>
+            </value>
+            <value>
+                <fullName>Tradeshows-Events</fullName>
+                <default>false</default>
+                <label>Tradeshows-Events</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Assist-Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Assist-Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>Consulting-Services-Assist-Tech Advantage</fullName>
+                <default>false</default>
+                <label>Consulting-Services-Assist-Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-License-R1Soft</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-License-R1Soft</label>
+            </value>
+            <value>
+                <fullName>SaaS-Billing</fullName>
+                <default>false</default>
+                <label>SaaS-Billing</label>
+            </value>
+            <value>
+                <fullName>Perpetual-Billing</fullName>
+                <default>false</default>
+                <label>Perpetual-Billing</label>
+            </value>
+            <value>
+                <fullName>Maintenance-Assurance</fullName>
+                <default>false</default>
+                <label>Maintenance-Assurance</label>
+            </value>
+            <value>
+                <fullName>Hybrid SaaS</fullName>
+                <default>false</default>
+                <label>Hybrid SaaS</label>
+            </value>
+            <value>
+                <fullName>Hybrid SaaS-Perpetual Automate</fullName>
+                <default>false</default>
+                <label>Hybrid SaaS-Perpetual Automate</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-OnPrem</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-OnPrem</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-Assurance</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-Assurance</label>
+            </value>
+            <value>
+                <fullName>Term Based On Premises (Subscription)-Billing</fullName>
+                <default>false</default>
+                <label>Term Based On Premises (Subscription)-Billing</label>
+            </value>
+            <value>
+                <fullName>Tradeshows-Attendance Fees</fullName>
+                <default>false</default>
+                <label>Tradeshows-Attendance Fees</label>
+            </value>
+            <value>
+                <fullName>Other-Upfront</fullName>
+                <default>false</default>
+                <label>Other-Upfront</label>
+            </value>
+            <value>
+                <fullName>Other-Shipping</fullName>
+                <default>false</default>
+                <label>Other-Shipping</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

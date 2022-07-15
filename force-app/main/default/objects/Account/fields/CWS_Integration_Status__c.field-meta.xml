@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Integration_Status__c</fullName>
+    <description>Field will be used to capture integration status, Will be marked for ready in case of changes in certain fields.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures integration status and the field value will be &quot;Ready For Sync&quot; if there are changes to certain fields on the Account.</inlineHelpText>
+    <label>Integration Sync Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ready For Sync</fullName>
+                <default>false</default>
+                <label>Ready For Sync</label>
+            </value>
+            <value>
+                <fullName>Synced</fullName>
+                <default>false</default>
+                <label>Synced</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

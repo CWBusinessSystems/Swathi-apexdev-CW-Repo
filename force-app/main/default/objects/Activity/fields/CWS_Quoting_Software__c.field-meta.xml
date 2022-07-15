@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Quoting_Software__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which competitor Quoting Software the prospect currently uses.</inlineHelpText>
+    <label>Quoting Software</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dtools</fullName>
+                <default>false</default>
+                <label>Dtools</label>
+            </value>
+            <value>
+                <fullName>Gluh</fullName>
+                <default>false</default>
+                <label>Gluh</label>
+            </value>
+            <value>
+                <fullName>QuoteWerks</fullName>
+                <default>false</default>
+                <label>QuoteWerks</label>
+            </value>
+            <value>
+                <fullName>Salesforce CPQ</fullName>
+                <default>false</default>
+                <label>Salesforce CPQ</label>
+            </value>
+            <value>
+                <fullName>ChannelOnline</fullName>
+                <default>false</default>
+                <label>ChannelOnline</label>
+            </value>
+            <value>
+                <fullName>Quoter</fullName>
+                <default>false</default>
+                <label>Quoter</label>
+            </value>
+            <value>
+                <fullName>QuoteRoller(PandDoc)</fullName>
+                <default>false</default>
+                <label>QuoteRoller(PandDoc)</label>
+            </value>
+            <value>
+                <fullName>Excel/Word</fullName>
+                <default>false</default>
+                <label>Excel/Word</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

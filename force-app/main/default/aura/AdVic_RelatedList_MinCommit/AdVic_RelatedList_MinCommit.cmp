@@ -1,0 +1,300 @@
+<aura:component implements="flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:hasRecordId,lightning:availableForFlowScreens" access="global" 
+                controller="AdVic_RelatedList">
+                <!--comment-->
+    <aura:attribute name="debug" type="Boolean" default="false"/>
+    
+    <aura:attribute name="overrideParams" type="Boolean" default="true"/>
+    
+    <aura:attribute name="queryId" type="String"  access="global"/>
+    <aura:attribute name="manualRecordId" type="String" access="global"/>
+    
+    <aura:attribute name="sortField" type="String" default="Id"/>
+    <aura:attribute name="sortDirection" type="String" default="ASC"/>
+    
+    <aura:attribute name="relObjType" type="String" default="" access="global"/> <!--what obj does the list show-->
+    <aura:attribute name="parentLookupField" type="String" default="" access="global"/>
+    <aura:attribute name="fields" type="String[]" default="" access="global"/>
+    <aura:attribute name="orderByClause" type="String" default="CreatedDate DESC" access="global"/> <!--TODO TODO TODO-->
+    <aura:attribute name="val_Create_New_Facility_Account__c" type="Boolean" access="global"/>
+    <aura:attribute name="listTitle" type="String" access="global"/>
+    <aura:attribute name="fieldsCSV" type="String" access="global"/>
+    <aura:attribute name="moreFieldsCSV" type="String" default="" access="global"/>
+    <aura:attribute name="iconName" type="String" default="" access="global"/>
+    <aura:attribute name="debounce" type="Integer" access="global"/>
+
+    
+    <aura:attribute name="moreFields" type="String[]" access="global"/>
+    <aura:attribute name="showLabel" type="String" access="global"/>
+    <aura:attribute name="hideLabel" type="String" access="global"/>
+    <aura:attribute name="newRecordSectionLabel" type="String" access="global"/>
+    <aura:attribute name="showNewSection" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="initRows" type="Integer" access="global"/>
+    <aura:attribute name="maxRows" type="Integer" access="global"/>
+    
+    <aura:attribute name="showLiveEdit" type="Boolean" access="global"/>
+    <aura:attribute name="allowNewRecs" type="Boolean" access="global"/>
+    <aura:attribute name="allowEdits" type="Boolean" access="global"/>
+    <aura:attribute name="allowDelete" type="Boolean" access="global"/>
+    <aura:attribute name="liveEditActive" type="Boolean" access="global"/>
+    
+    <aura:attribute name="builderMode" type="Boolean" access="global"/>
+    <aura:attribute name="showingAllRecs" type="Boolean" default="false" access="global"/>
+    
+    <aura:attribute name="usingShow" type="String" default="Both" access="global"/>
+
+    
+    <aura:attribute name="cmpData" type="Object"/>
+    
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+        
+    
+    
+    
+    <aura:if isTrue="{!v.debug}">
+        <table class="slds-table" width="50%">
+            <tr><td><b>showLogo</b></td><td>{!v.showLogo}</td><td><b>queryId</b></td><td>{!v.queryId}</td></tr>
+			<tr><td><b>manualRecordId</b></td><td>{!v.manualRecordId}</td><td><b>relObjType</b></td><td>{!v.relObjType}</td></tr>
+            <tr><td><b>parentLookupField</b></td><td>{!v.parentLookupField}</td><td><b>fields</b></td><td>{!v.fields}</td></tr>
+            <tr><td><b>fieldsCSV</b></td><td>{!v.fieldsCSV}</td><td><b>iconName</b></td><td>{!v.iconName}</td></tr>
+            <tr><td><b>debounce</b></td><td>{!v.debounce}</td><td><b>hideLabel</b></td><td>{!v.hideLabel}</td></tr>
+            <tr><td><b>initRows</b></td><td>{!v.initRows}</td><td><b>showNewSection</b></td><td>{!v.showNewSection}</td></tr>
+            <tr><td><b>maxRows</b></td><td>{!v.maxRows}</td><td><b>showLiveEdit</b></td><td>{!v.showLiveEdit}</td></tr>
+            <tr><td><b>allowNewRecs</b></td><td>{!v.allowNewRecs}</td><td><b>allowEdits</b></td><td>{!v.allowEdits}</td></tr>
+            <tr><td><b>allowEdits</b></td><td>{!v.allowEdits}</td><td><b>allowDelete</b></td><td>{!v.allowDelete}</td></tr>
+            <tr><td><b>liveEditActive</b></td><td>{!v.liveEditActive}</td><td><b>builderMode</b></td><td>{!v.builderMode}</td></tr>
+            <tr><td><b>showingAllRecs</b></td><td>{!v.showingAllRecs}</td><td><b>usingShow</b></td><td>{!v.usingShow}</td></tr>
+            <tr><td><b>showSpinner</b></td><td>{!v.showSpinner}</td><td><b></b></td><td></td></tr>
+            <!--<tr><td><b>1111</b></td><td>{!v.}</td><td><b>3333</b></td><td>{!v.}</td></tr>-->
+        </table>
+    </aura:if>
+
+    
+    
+    
+    
+    <aura:if isTrue="{!v.builderMode == false}">
+        <aura:set attribute="else">
+			 <lightning:card class="card slds-p-around_medium">
+                 <br/>
+                 This component is in Builder Mode. <br/>
+                 
+                 Because some partial configurations may cause undesired errors during configuration,
+                 Builder Mode allows you to configure the component without letting it try to render before you're ready.<br/>
+                 
+                 <b>To view this component, please uncheck the 'Builder Mode' option in Lightning App Builder, within the configuration
+                     panel for this component. Do this once you've completed your configuration.</b><br/>
+                 <br/><br/>
+                 
+                 Expected result debug:<br/>
+                 
+                 <em>
+                 The component will display a list of {!v.relObjType} records, where {!v.relObjType}.{!v.parentLookupField} is the lookup field 
+                     that references the parent object. This component needs to be on the parent record page to function as expected.<br/>
+                     
+                     
+                 
+                 
+                 
+                 
+                 
+                 </em>
+                 
+                 
+                 
+                 <br/><br/>
+                 
+            </lightning:card>
+        </aura:set>
+
+    <lightning:card class="card">
+        <div class="mockCardHead">
+            <aura:if isTrue="{!v.iconName}">
+                <span class="ico">
+                    <lightning:icon iconName="{!v.iconName}" size="small"/>&nbsp;&nbsp;
+                    
+                    
+                    <!--<img src="{!v.cmpData.iconUrl}"/>-->
+                </span>
+            </aura:if>
+            {!v.listTitle} 
+            
+            <aura:if isTrue="{!v.cmpData.records.length > v.maxRows}">
+            	({!v.maxRows} of {!v.cmpData.records.length})
+                <aura:set attribute="else">
+                	 ({!v.cmpData.records.length})
+                </aura:set>
+            </aura:if>
+           
+            
+            
+            
+            <span class="slds-float_right inlineHead">
+                <aura:if isTrue="{!v.showLiveEdit &amp;&amp; v.allowEdits}">
+                    <lightning:input type="toggle" label="Live Edit" name="input3" checked="{!v.liveEditActive}" messageToggleActive="" messageToggleInactive=""/>&nbsp;
+                    <lightning:helptext content="When checked, Live Edit will save/validate changes in the table below as you make them."/>
+                </aura:if>
+                <aura:if isTrue="{!v.allowNewRecs}">
+                    <lightning:button label="New" class="headerNewBtn" onclick="{!c.showNewSection}"/>
+                </aura:if>
+            </span>
+        </div>
+        
+        <div class="cardBody table">
+            
+            
+            
+            <!--NEW SORTABLE COL HEADERS-->
+            <div class="{!'noMore'+v.showLabel +' slds-grid'}">
+                <aura:iteration items="{!v.fields}" var="f" indexVar="i">
+                    <div aura:id="{!f}" id="{!f}" class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1)}">
+                        <aura:if isTrue="{!v.sortField == f}">
+                            <aura:if isTrue="{!v.sortDirection == 'ASC'}">
+                                <lightning:icon iconName="utility:up" alternativeText="Asc." size="xx-small" />
+                                <aura:set attribute="else">
+                                    <lightning:icon iconName="utility:down" alternativeText="Desc." size="xx-small" />
+                                </aura:set>
+                            </aura:if>
+                        </aura:if>
+                        <aura:iteration items="{!v.cmpData.fieldDataList}" var="fieldData">
+                            <aura:if isTrue="{!fieldData.name == f}">
+                                <lightning:button class="colHead" variant="bare" value="{!fieldData.name}" onclick="{!c.setSortBy}" label="{!fieldData.label}"/>
+                            </aura:if>
+                        </aura:iteration>
+                    </div>
+                </aura:iteration>
+            </div>
+            <!--END COL HEADERS-->
+            
+            
+            <aura:iteration items="{!v.cmpData.records}" var="record" indexVar="i">
+                
+                <aura:if isTrue="{!v.maxRows > i}">
+                    <aura:if isTrue="{!v.allowEdits}">
+                        <c:AdVic_RecordRow_MinCommit rowRec="{!record}" rowNum="{!i}" relObjType="{!v.relObjType}" 
+                                           fields="{!v.fields}" moreFields="{!v.moreFields}" 
+                                           showLabel="{!v.showLabel}" hideLabel="{!v.hideLabel}"
+                                           liveEditActive="{!v.liveEditActive}" showDelete="{!v.allowDelete}"
+                                           allowEdits="{!v.allowEdits}" debounce="{!v.debounce}"/>
+                        <aura:set attribute="else">
+                            <c:AdVic_RecordRow_ViewOnly rowRec="{!record}" rowNum="{!i}" relObjType="{!v.relObjType}" 
+                                                        fields="{!v.fields}" moreFields="{!v.moreFields}" 
+                                                        showLabel="{!v.showLabel}" hideLabel="{!v.hideLabel}"/>
+                        </aura:set>
+                    </aura:if>
+                    <hr/>
+                </aura:if>
+            </aura:iteration>
+        </div> 
+        
+        <!--new record creation section-->
+        <aura:if isTrue="{!v.allowNewRecs &amp;&amp; v.showNewSection}">
+            <div class="cardBody new">  
+                <br/>
+                <!--<aura:if isTrue="{!v.showNewSection == false}">
+                    
+                    <!-.-lightning:button variant="brand" class=" btmBtn slds-m-top_small slds-float_right" type="submit" label="New" onclick="{!c.showNewSection}"/>-.->
+                </aura:if>-->
+                
+                <aura:if isTrue="{!v.showNewSection}">
+                    <div class="newSection">
+                        {!v.newRecordSectionLabel}
+                    </div> 
+                    <lightning:recordEditForm aura:id="recordEditForm"
+                                              objectApiName="{!v.relObjType}"
+                                              onsuccess="{!c.handleSuccess}"
+                                              onerror="{!c.clearSpinner}">
+                        <lightning:messages />
+                        
+                        
+                        <aura:if isTrue="{!v.showSpinner}">
+                            <lightning:spinner/>
+                        </aura:if>
+                        
+                        
+                        <div class="slds-grid">
+                            
+                            <div class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1)}">
+                                <lightning:inputField variant="label-stacked" fieldName="{!v.parentLookupField}" value="{!v.queryId}" disabled="true"/>
+                            </div>
+                            
+                            
+                            
+                            <aura:iteration items="{!v.fields}" var="f" indexVar="i">
+                                <div class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1)}">
+                                    <lightning:inputField aura:id="field" fieldName="{!f}" variant="label-stacked"/>
+                                </div>
+                            </aura:iteration>
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                        <aura:if isTrue="{!v.moreFieldsCSV != ''}">
+                            <aura:iteration items="{!v.moreFields}" var="mf">
+                                <lightning:inputField aura:id="field" fieldName="{!mf}" variant="label-inline"/>
+                            </aura:iteration>
+             
+                        </aura:if>
+                        
+
+                        <lightning:button variant="brand" class="btmBtn slds-m-top_small slds-float_right" type="submit" label="+ Add" onclick="{!c.showSpinner}"/>
+                        <lightning:button variant="" onclick="{!c.hideNewSection}" class="btmBtn slds-m-top_small slds-float_right" type="cancel" label="Cancel"/>
+
+                    </lightning:recordEditForm>
+                </aura:if>
+                <br/><br/><br/>
+            </div>
+        </aura:if>
+        
+            
+        
+        
+        <aura:if isTrue="{!v.cmpData.records.length > v.maxRows}">
+            <!--<a href="/lightning/r/0015w000028RM3nAAG/related/Contacts/view">-->
+            <aura:if isTrue="{!v.usingShow == 'All'}">
+                <center class="viewAll" onclick="{!c.showAll}">View All</center>
+            </aura:if>
+            <aura:if isTrue="{!v.usingShow == 'More'}">
+                <center class="viewAll" onclick="{!c.showMore}" >Show More</center>
+            </aura:if>
+            <aura:if isTrue="{!v.usingShow == 'Both'}">
+                <center class="viewAllSpan">
+                    <span class="viewAll" onclick="{!c.showMore}">
+                        Show More 
+                    </span>
+                    <span class="divider">
+                        &nbsp;|&nbsp;
+                    </span> 
+                    <span class="viewAll" onclick="{!c.showAll}">
+                        View All
+                    </span>  
+                </center>
+            </aura:if>
+
+        </aura:if>
+
+        
+        
+        <aura:set attribute="footer">
+            
+            
+            
+            
+            
+            <aura:if isTrue="{!v.overrideParams == true}">
+                
+               <span class="slds-float_right logoSpot">
+                   <c:AdVic_Logo/> 
+                </span><br/><br/> 
+            </aura:if>
+        </aura:set>
+        
+    </lightning:card>
+    </aura:if>
+    
+    
+    
+    
+</aura:component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Agents_Users_Deployed_at_Client_Site__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the number of Agent deployed for this trial.</inlineHelpText>
+    <label>Agents/Users Deployed at Client Site</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

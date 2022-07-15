@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_RestrictStageChange</fullName>
+    <active>true</active>
+    <description>Restrict the stage change if the approval is not given</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(CWS_Account_Restriction_Approved__c),
+NOT(CWS_Fast_Track__c),
+NOT(AND(
+CWS_Bill_To_Account__r.CWS_Is_Distributor__c,
+OR(ISPICKVAL( CWS_Route_to_Market__c , &apos;IIT&apos;),ISPICKVAL( CWS_Route_to_Market__c , &apos;Channel&apos;))
+)),
+OR(
+AND(ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Delinquent&apos;), NOT(ISPICKVAL(Type, &apos;Renewal&apos;))),
+ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;PaymentWorkout&apos;)
+),
+AND(ISPICKVAL(PRIORVALUE(StageName),&quot;Qualification&quot;), ISPICKVAL(StageName, &quot;Evaluation&quot;)
+),
+NOT(
+OR(
+ISPICKVAL( StageName,&apos;Closed Lost&apos; ),
+ISPICKVAL( StageName, &apos;Closed Won - Legacy&apos; )
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be moved to further stages without approval</errorMessage>
+</ValidationRule>

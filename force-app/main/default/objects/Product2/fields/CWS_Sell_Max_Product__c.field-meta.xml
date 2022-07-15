@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sell_Max_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Max Product which can be sold for the Sell Products</description>
+    <externalId>false</externalId>
+    <label>Sell Max Product</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

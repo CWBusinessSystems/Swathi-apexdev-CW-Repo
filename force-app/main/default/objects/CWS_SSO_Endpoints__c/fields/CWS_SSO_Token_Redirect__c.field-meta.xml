@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_SSO_Token_Redirect__c</fullName>
+    <defaultValue>&quot;https://connectwise20.my.salesforce.com/apex/oauthv2&quot;</defaultValue>
+    <description>SSO redirect URL to pass to Token Server</description>
+    <externalId>false</externalId>
+    <label>SSO Token Redirect</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>alycecom__Total_Gifts_Invitations_Sent_to_Account__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Alyce Total Gifts Invitations Sent to Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Alyce Total Gifts Invitations Sent to Account</inlineHelpText>
+    <label>Total Gifts Invitations Sent to Account</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

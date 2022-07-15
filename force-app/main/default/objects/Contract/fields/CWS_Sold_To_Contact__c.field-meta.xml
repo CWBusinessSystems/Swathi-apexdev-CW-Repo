@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sold_To_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sold To Contact associated with this contract.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sold To Contact associated with this contract.</inlineHelpText>
+    <label>Sold To Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Select contact which are associated to this Sold To Account.</errorMessage>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <infoMessage>Select contact which are associated to this Sold To Account.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contracts (Sold To Contact)</relationshipLabel>
+    <relationshipName>Contracts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

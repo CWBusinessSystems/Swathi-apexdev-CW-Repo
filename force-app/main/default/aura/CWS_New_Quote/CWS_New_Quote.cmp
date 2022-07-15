@@ -1,0 +1,72 @@
+<aura:component  implements="force:lightningQuickAction,force:hasRecordId" controller="CWS_CommonUtility">
+    
+    <aura:attribute name="oppRecord" type="Object" access="global"/>
+    <aura:attribute name="opp" type="Object" access="global"/>
+    <aura:attribute name="recordError" type="String" access="global"/>
+    <aura:attribute name="today" type="Date" default=""/>
+    <aura:attribute name="isSpinnerActive" type="Boolean" default="true"/>
+    <aura:attribute name="showError" type="Boolean" default="false"/>
+    <aura:attribute name="errorMessage" type="String" />
+
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      mode="VIEW"
+      targetRecord="{!v.oppRecord}"
+      targetFields="{!v.opp}"
+      targetError="{!v.recordError}"
+      fields="Id,Name,Type, OwnerId,
+			  AccountId,CWS_Route_to_Market__c,CWS_Ship_To_Account__c,CWS_Bill_To_Account__c,
+              CWS_Route_to_Market__c,CWS_Distributor__c,CWS_Reseller__c,
+              CWS_Sold_To_Contact__c,CWS_Bill_To_Contact__c,CWS_Legal_Entity__c"
+      recordUpdated="{!c.oppHandler}"/>
+
+	<aura:if isTrue="{!!v.showError}">
+        <lightning:recordEditForm aura:id="quoteForm"
+                               objectApiName="SBQQ__Quote__c"
+                               onsubmit="{!c.handleSubmit}"
+                               onsuccess="{!c.handleSuccess}"
+                               onload="{!c.handleLoad}"
+                               onerror="{!c.handleError}">
+        <aura:if isTrue="{!v.isSpinnerActive}">
+            <lightning:spinner class="c-spinner" aura:id="spinnerTag" alternativeText="Please Wait...." variant="brand" />
+        </aura:if>
+        <lightning:messages />
+        {!v.recordError}
+        <div class="c-container">
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" >
+                    <div class="custom-box">
+                    <lightning:inputField fieldName="SBQQ__SubscriptionTerm__c" value="12" required="true"/></div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" >
+                    <div class="custom-box">
+                        <lightning:inputField fieldName="CWS_Route_to_Market__c" value="{!v.opp.CWS_Route_to_Market__c}"/></div>
+                </lightning:layoutItem>
+            </lightning:layout>
+             <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" >
+                    <div class="custom-box">
+                        <lightning:inputField fieldName="CWS_Bill_To_Account__c" aura:id="QuoteBillToAccount" value="{!v.opp.CWS_Bill_To_Account__c}"/></div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" >
+                    <div class="custom-box">
+                        <lightning:inputField fieldName="SBQQ__Account__c" aura:id="QuoteSoldToAccount" value="{!v.opp.AccountId}"/></div>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+        <center><lightning:button variant="brand" class="slds-m-top_small" type="submit" label="Save" /></center>
+    </lightning:recordEditForm>
+    </aura:if>
+    <aura:if isTrue="{!v.showError}">
+        <div class="slds-notify slds-notify_toast slds-theme_error">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+                <h5 class="slds-text-heading_small slds-align_absolute-center">Error Message </h5>
+                <br/>
+                <p class="slds-align_absolute-center">{!v.errorMessage}</p>                
+            </div>
+        </div>      
+    </aura:if>
+</aura:component>

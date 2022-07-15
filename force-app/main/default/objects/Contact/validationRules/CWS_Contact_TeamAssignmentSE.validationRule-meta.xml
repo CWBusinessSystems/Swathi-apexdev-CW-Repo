@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_TeamAssignmentSE</fullName>
+    <active>false</active>
+    <description>Throw error if product interest is selected as Third Party and Team assignment is selected as Sales Executive
+
+PCN - Deactivated on 02/05/2020 per Service Ticket #14410366 - Merge and discussion with Allison</description>
+    <errorConditionFormula>AND( 
+NOT( Account.CWS_Is_Partner__c), 
+NOT(INCLUDES(Account.CWS_Products_Owned__c,&apos;Control&apos;)),
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISPICKVAL( CWS_Team_Assignment__c , &apos;Sales Executive&apos;),
+OR(
+INCLUDES( CWS_Product_Interest__c , &apos;Fortify&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Command&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Assist&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Recover&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Automate&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Manage&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Sell&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Identify&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;Control&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;ITBoost&apos;),
+INCLUDES( CWS_Product_Interest__c , &apos;BrightGauge&apos;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Team_Assignment__c</errorDisplayField>
+    <errorMessage>You may not select Sales Executive team for the current Product Interest(s).</errorMessage>
+</ValidationRule>

@@ -1,0 +1,53 @@
+<!--Page Name: CWS_QuoteHeaderAlerts
+*Description: Container page for showing alert message on quote header page layout
+*Created By: Naressh
+*Created On: 05/05/2020
+
+*Modification Log
+*---------------------------------------------------------------------------------------------
+*Developer              Date            User Story              Description
+*---------------------------------------------------------------------------------------------
+*Naresh                 05/05/2020     BED-5267                   Initial version created                                                                         
+*-->
+<apex:page standardController="SBQQ__Quote__c" applyHtmlTag="false" showHeader="false">
+    <html>
+        <head>
+            <apex:slds />
+            <style>
+                .warning {
+                width:20px;
+                }
+                .setheight{
+                height : 50%;
+                }
+                
+            </style>
+        </head>
+        <body>
+    <div class="slds-scope">
+
+        <apex:outputPanel rendered="{!IF(AND(SBQQ__Quote__c.SBQQ__ExpirationDate__c != null , TODAY() >= SBQQ__Quote__c.SBQQ__ExpirationDate__c, SBQQ__Quote__c.CWS_Quote_Type__c != 'Renewal' ),true,false)}">
+            <div class="warning-alert slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                <span class="slds-assistive-text">info</span>
+                <span class="slds-icon_container slds-icon-utility-user slds-m-right_x-small" title="warning">
+                <img class="warning" src="{!URLFOR($Resource.sbaa__SLDS214, '/assets/icons/utility/warning_60.png')}" alt="warning" />
+                </span>
+               <h2>{!$Label.CWS_Quote_Expire} </h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" onclick="closeAlert()">
+                <img class="warning" src="{!URLFOR($Resource.sbaa__SLDS214, '/assets/icons/utility/close_60.png')}" alt="close" />
+                <span class="slds-assistive-text">Close</span>
+              </button>
+            </div>    
+        </apex:outputPanel>
+    </div>
+    
+    <script>
+        function closeAlert(){
+            var ele = document.querySelector('.warning-alert');
+            ele.className += ' slds-hide';
+        }
+    </script>
+
+</body>
+    </html>
+</apex:page>

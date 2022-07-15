@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Provisioning_Date_Not_Applicable</fullName>
+    <active>false</active>
+    <description>Provisioning Date is not applicable if the Order item&apos;s Provisioning Eligibility is NA</description>
+    <errorConditionFormula>IF(AND(NOT(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;OrderItem&apos;)),NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,AND(
+NOT(ISBLANK( CWS_ProvisioningDate__c)),
+ISPICKVAL( CWS_Provisioning_Eligibility__c ,&apos;NA&apos;)
+))</errorConditionFormula>
+    <errorDisplayField>CWS_ProvisioningDate__c</errorDisplayField>
+    <errorMessage>Provisioning Date is not applicable if the Provisioning Eligibility is NA</errorMessage>
+</ValidationRule>

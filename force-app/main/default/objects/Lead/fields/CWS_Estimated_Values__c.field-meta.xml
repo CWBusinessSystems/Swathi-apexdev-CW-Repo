@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Estimated_Values__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures initial estimate of prospective opportunity amount.</inlineHelpText>
+    <label>Estimated Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Estimated_Values</valueSetName>
+    </valueSet>
+</CustomField>

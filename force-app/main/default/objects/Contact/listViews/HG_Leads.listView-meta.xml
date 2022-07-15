@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HG_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Lead_Source_Details_Most_recent__c</field>
+        <operation>equals</operation>
+        <value>WEB2003-22-All-WebRef-Catchall-Global-MiscWebRefs</value>
+    </filters>
+    <filters>
+        <field>CWS_Most_Recent_Score_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/25/2022</value>
+    </filters>
+    <label>HG Leads</label>
+</ListView>

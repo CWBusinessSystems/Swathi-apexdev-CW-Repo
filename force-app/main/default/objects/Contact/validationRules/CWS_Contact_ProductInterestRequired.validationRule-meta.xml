@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_ProductInterestRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISCHANGED(CWS_Contact_Status__c),
+ISPICKVAL(CWS_Contact_Status__c ,&apos;SQL&apos;),
+ISBLANK(CWS_Product_Interest__c)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Product_Interest__c</errorDisplayField>
+    <errorMessage>You do not have access to move the Lead to this status. Please move the Status to SQL to hand-off to the SE/PSE to move the Lead forward.</errorMessage>
+</ValidationRule>

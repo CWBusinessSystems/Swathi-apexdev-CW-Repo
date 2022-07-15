@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickAction,lightning:availableForFlowScreens" access="global">
+    <aura:attribute name="accountName" type="String" />
+    <lightning:input class="slds-p-bottom_large maxWidth" disabled="true" value="{!v.accountName}" label="Account" />
+</aura:component>

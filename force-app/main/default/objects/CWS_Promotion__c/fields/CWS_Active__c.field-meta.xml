@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Active__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(Today()&lt; CWS_Start_Date__c,&apos;Inactive&apos;,If(CWS_End_Date__c &lt; TODAY(), &apos;Expired&apos;,&apos;Active&apos;))</formula>
+    <label>Active</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

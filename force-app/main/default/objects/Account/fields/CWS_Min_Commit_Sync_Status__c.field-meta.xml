@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Min_Commit_Sync_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Min Commit Sync Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sync</fullName>
+                <default>false</default>
+                <label>Sync</label>
+            </value>
+            <value>
+                <fullName>Ready to sync</fullName>
+                <default>false</default>
+                <label>Ready to sync</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

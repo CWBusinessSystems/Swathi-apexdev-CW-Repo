@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Create_Order_When_Quote_Is_Accepted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>TRUE = Order will be created automatically when Quote Is Accepted.
+FALSE = User need to manually update the ordered checkbox manually on Quote on accepted Quote.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True = Create order automatically for accepted quotes.
+False= manually check ordered checkbox.</inlineHelpText>
+    <label>Create Order When Quote Is Accepted</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

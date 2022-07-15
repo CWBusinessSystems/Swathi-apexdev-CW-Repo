@@ -1,0 +1,4 @@
+<apex:component controller="CWS_ProductCategoryDetailsCntrl" access="global">
+    <apex:attribute name="OpptyId" type="Id" description="Id of the contract" assignTo="{!Oppid}"/>
+        <apex:outputText style="font-family:Calibri; padding-left: 5px; padding-righg:5px; width: 50%;" value=" {!opptylines}" id="theValue"/>
+</apex:component>

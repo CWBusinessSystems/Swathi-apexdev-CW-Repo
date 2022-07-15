@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Persona__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the Contact&apos;s role in their organization.</inlineHelpText>
+    <label>Persona</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Persona</valueSetName>
+    </valueSet>
+</CustomField>

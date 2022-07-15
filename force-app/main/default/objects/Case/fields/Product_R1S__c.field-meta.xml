@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_R1S__c</fullName>
+    <description>Used by R1Soft</description>
+    <externalId>false</externalId>
+    <label>Product (R1S)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CDP Enterprise Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Enterprise Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Data Center Console</fullName>
+                <default>false</default>
+                <label>CDP Data Center Console</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>ARCA</fullName>
+                <default>false</default>
+                <label>ARCA</label>
+            </value>
+            <value>
+                <fullName>BDR</fullName>
+                <default>false</default>
+                <label>BDR</label>
+            </value>
+            <value>
+                <fullName>MSI</fullName>
+                <default>false</default>
+                <label>MSI</label>
+            </value>
+            <value>
+                <fullName>SmartStyle</fullName>
+                <default>false</default>
+                <label>SmartStyle</label>
+            </value>
+            <value>
+                <fullName>Remote Monitoring and Management</fullName>
+                <default>false</default>
+                <label>Remote Monitoring and Management</label>
+            </value>
+            <value>
+                <fullName>Mobile Device Management</fullName>
+                <default>false</default>
+                <label>Mobile Device Management</label>
+            </value>
+            <value>
+                <fullName>Vault</fullName>
+                <default>false</default>
+                <label>Vault</label>
+            </value>
+            <value>
+                <fullName>BDR Revive</fullName>
+                <default>false</default>
+                <label>BDR Revive</label>
+            </value>
+            <value>
+                <fullName>Service Desk</fullName>
+                <default>false</default>
+                <label>Service Desk</label>
+            </value>
+            <value>
+                <fullName>Tech Advantage</fullName>
+                <default>false</default>
+                <label>Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Network Detective</fullName>
+                <default>false</default>
+                <label>Network Detective</label>
+            </value>
+            <value>
+                <fullName>Anti-Virus</fullName>
+                <default>false</default>
+                <label>Anti-Virus</label>
+            </value>
+            <value>
+                <fullName>C3</fullName>
+                <default>false</default>
+                <label>C3</label>
+            </value>
+            <value>
+                <fullName>Sync247</fullName>
+                <default>false</default>
+                <label>Sync247</label>
+            </value>
+            <value>
+                <fullName>CDP Standard Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Standard Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Standard Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Standard Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Advanced Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Advanced Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Advanced Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Advanced Edition Linux</label>
+            </value>
+            <value>
+                <fullName>SQL Diagnostic Manager</fullName>
+                <default>false</default>
+                <label>SQL Diagnostic Manager</label>
+            </value>
+            <value>
+                <fullName>SQLsafe</fullName>
+                <default>false</default>
+                <label>SQLsafe</label>
+            </value>
+            <value>
+                <fullName>SQL compliance manager</fullName>
+                <default>false</default>
+                <label>SQL compliance manager</label>
+            </value>
+            <value>
+                <fullName>SQLdefrag</fullName>
+                <default>false</default>
+                <label>SQLdefrag</label>
+            </value>
+            <value>
+                <fullName>SQL mobile manager</fullName>
+                <default>false</default>
+                <label>SQL mobile manager</label>
+            </value>
+            <value>
+                <fullName>SQLsecure</fullName>
+                <default>false</default>
+                <label>SQLsecure</label>
+            </value>
+            <value>
+                <fullName>SQL admin toolset</fullName>
+                <default>false</default>
+                <label>SQL admin toolset</label>
+            </value>
+            <value>
+                <fullName>PowerShell Plus</fullName>
+                <default>false</default>
+                <label>PowerShell Plus</label>
+            </value>
+            <value>
+                <fullName>SQLpermissions</fullName>
+                <default>false</default>
+                <label>SQLpermissions</label>
+            </value>
+            <value>
+                <fullName>SQL permissions extractor</fullName>
+                <default>false</default>
+                <label>SQL permissions extractor</label>
+            </value>
+            <value>
+                <fullName>CDP Server 2.0 Linux</fullName>
+                <default>false</default>
+                <label>CDP Server 2.0 Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 for Data Centers</fullName>
+                <default>false</default>
+                <label>CDP 2.0 for Data Centers</label>
+            </value>
+            <value>
+                <fullName>CDP Server 2.0 Windows</fullName>
+                <default>false</default>
+                <label>CDP Server 2.0 Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 Windows</fullName>
+                <default>false</default>
+                <label>CDP 2.0 Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Standard Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Standard Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 Linux</fullName>
+                <default>false</default>
+                <label>CDP 2.0 Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Standard Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Standard Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Enterprise Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Enterprise Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Advanced Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Advanced Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Advanced Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Advanced Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Windows</fullName>
+                <default>false</default>
+                <label>CloudCopy Windows</label>
+            </value>
+            <value>
+                <fullName>System Detective</fullName>
+                <default>false</default>
+                <label>System Detective</label>
+            </value>
+            <value>
+                <fullName>PointAudit</fullName>
+                <default>false</default>
+                <label>PointAudit</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Linux</fullName>
+                <default>false</default>
+                <label>CloudCopy Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3.0 Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3.0 Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Repo Server</fullName>
+                <default>false</default>
+                <label>CloudCopy Repo Server</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Mac</fullName>
+                <default>false</default>
+                <label>CloudCopy Mac</label>
+            </value>
+            <value>
+                <fullName>SharePoint backup</fullName>
+                <default>false</default>
+                <label>SharePoint backup</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

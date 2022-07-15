@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Russ_View</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CWS_Products_Owned__c</columns>
+    <columns>CWS_MRR__c</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>CWS_Program_Membership_Level__c</field>
+        <operation>equals</operation>
+        <value>Registered,Accelerate,Strategic</value>
+    </filters>
+    <filters>
+        <field>CWS_Program_Membership__c</field>
+        <operation>equals</operation>
+        <value>Cybersecurity</value>
+    </filters>
+    <label>Russ View</label>
+</ListView>

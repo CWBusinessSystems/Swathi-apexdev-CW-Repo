@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_ProdLin_edit_once_snt_to_Dwnstrm</fullName>
+    <active>true</active>
+    <description>Product line can&apos;t be changed once sent to downstream</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL( CWS_Zuora_Product_Sync_Status__c , &quot;Synced&quot;),  ISPICKVAL( CWS_NetSuite_Product_Sync_Status__c ,&quot;Synced&quot;)), ISCHANGED(  CWS_Product_Line__c  ))</errorConditionFormula>
+    <errorDisplayField>CWS_Product_Line__c</errorDisplayField>
+    <errorMessage>Product Line cannot be modified as it has already been sent downstream to Zuora and NetSuite</errorMessage>
+</ValidationRule>

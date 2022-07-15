@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_Disti_Factor__c</fullName>
+    <description>The value that is migrated from legacy which may be referred by the user to understand how much discount should be manually applied on quote lines so that it matches with legacy prices.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value that is migrated from legacy which may be referred by the user to understand how much discount should be manually applied on quote lines so that it matches with legacy prices.</inlineHelpText>
+    <label>Legacy Disti Factor</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

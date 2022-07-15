@@ -1,0 +1,2210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mergers_Acquisitions</fullName>
+    <active>true</active>
+    <businessProcess>Mergers %26 Acquisitions</businessProcess>
+    <description>Select for Mergers &amp; Acquisitions</description>
+    <label>Mergers &amp; Acquisitions</label>
+    <picklistValues>
+        <picklist>Case_Learning_for_Stakeholder__c</picklist>
+        <values>
+            <fullName>Partner Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Limitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Limitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Internal Collaboration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Facing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing - invoice errors or confusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Rewrite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intent To Not Renew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Service%2FRelationship - Lack of response or poor response to non product%2C service%2C or billing issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Service%2FRelationship - Who to contact at ConnectWise %28Sales%2C Support%2C other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Enhancements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Navigation - How do I access information in the portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Errors - Software bugs%2C product performance%2C product down time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feature%2FFunctionality Enhancements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery Complaint - Partner does not like existing scope%2Fpolices%2Fprocedures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery Complaint - SLO%2FASA not met%2C ticket delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery Complaint - Technician mistakes%2C quality%2C process incorrect or not followed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery Feature%2FFunctionality Enhancements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User %2F site %2F Account Setup %2F Configuration - How do I enter%2C delete or update information in the portal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_to_Partner_Satisfaction__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Sure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Component__c</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event__c</picklist>
+        <values>
+            <fullName>AM Assistance Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounting Related Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acronis Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW Misdirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Re-Write</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covid19 - Billing %2F Contracts Adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covid19 - General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LogMeIn Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSM Assistance Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch Billing Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Assistance Related</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Exclude_From_Lock_Notices__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inquiry_Problem_Request__c</picklist>
+        <values>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Not_Approved_Reason__c</picklist>
+        <values>
+            <fullName>Agents Not Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Profiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuum U</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIF%3A Email Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIF%3A Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notification Rule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passwords%3A Desktops Offline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passwords%3A Missing%2FIncomplete Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passwords%3A Passwords Incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Requests</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Mergers %26 Acquisitions Email to Case</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_CWS__c</picklist>
+        <values>
+            <fullName>Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin - Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin - No Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auvik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azure SQL database backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR - Backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 for Data Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Advanced Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Advanced Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Enterprise Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Standard Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Standard Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3%2E0 Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Advanced Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Advanced Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Data Center Console</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Enterprise Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Server 2%2E0 Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Server 2%2E0 Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Standard Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Standard Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Mac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Repo Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuity247</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuum U</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DTx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD - Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD - EHD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD - Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Glue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMI Rescue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NULL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Detective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Product Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PatchAnalyzer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PointAudit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal - Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal_UI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PowerShell Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Anti-Virus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Communicator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - LMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - MWB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Patching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Scripting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM - Servers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Business Intelligence Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Diagnostic Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Elements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Integrity Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Toolbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Traffic Accelerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Virtual Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL XEvent Profiler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL admin toolset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL backup status reporter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL change manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL comparison toolset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL compliance manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL fragmentation analyzer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL job manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL mobile manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL permissions extractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLcheck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLconfig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLdefrag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLdoctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLpermissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsafe lite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsafefree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLscaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLschedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsecure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLtool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - D%26R - Endpoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - D%26R - Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Webroot DNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Webroot SAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Advanced Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Advanced Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Data Center Console</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Enterprise Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Standard Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Backup Standard Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SharePoint backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SnapShot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync247</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Detective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webroot AV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_R1S_Version__c</picklist>
+        <values>
+            <fullName>1%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E0%2E205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E0%2E210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E1%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E0%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E15_beta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E18%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E18%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E1%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E1%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E1%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E2%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E2%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E7 SP1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E0%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E1%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E1%2E2a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E10%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E10%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E12%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E14%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E14%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E2%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E2%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E2%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E2%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E2%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E4%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E4%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E4%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E4%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E4%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E6%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E6%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E6%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E8%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E8%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E0%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E0%2E1 MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E10 build 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E10%2E1 build 29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E12 build 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E14%2E1 build 39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E14%2E2 build 65</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E2%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E2%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E4%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E4%2E1 build 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E4%2E2 build 135</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E6%2E1 build 36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E6%2E2 build 57</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E8%2E2 Build 55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E2%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E2a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E2b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3d</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3d-a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3e</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3ea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3n</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E3p</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E0%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E2-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E2-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E2-b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E2a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E4-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E4-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E4-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5-7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earlier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_R1S__c</picklist>
+        <values>
+            <fullName>ARCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anti-Virus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR Revive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 2%2E0 for Data Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Advanced Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Advanced Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Enterprise Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Standard Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3 Standard Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP 3%2E0 Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Advanced Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Advanced Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Data Center Console</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Enterprise Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Enterprise Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Server 2%2E0 Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Server 2%2E0 Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Standard Edition Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Standard Edition Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Linux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Mac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Repo Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudCopy Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Device Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Detective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PointAudit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PowerShell Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Monitoring and Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Diagnostic Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL admin toolset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL compliance manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL mobile manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL permissions extractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLdefrag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLpermissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQLsecure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SharePoint backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartStyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync247</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Detective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vault</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>R1_Survey_Communication__c</picklist>
+        <values>
+            <fullName>1%2E Extremely Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neither Satisfied nor Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Extremely Satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>R1_Survey_Ease_of_Handling__c</picklist>
+        <values>
+            <fullName>1%2E Strongly Disagree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Disagree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neither Agree nor Disagree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Strongly Agree</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>R1_Survey_Overall_Service__c</picklist>
+        <values>
+            <fullName>--Select--</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Extremely Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Very Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Somewhat Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neither Satisfied nor Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Extremely Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Strongly Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Very Satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>R1_Survey_Problem_Solving__c</picklist>
+        <values>
+            <fullName>--Select--</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Extremely Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Very Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Somewhat Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neither Satisfied nor Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Extremely Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Strongly Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Very Satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuity247</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing%2FProvisioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC Issue %2F Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Detective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Configuration Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope of Service Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Desk Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Escalations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upset Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vault</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relates_To__c</picklist>
+        <values>
+            <fullName>API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agent %28Linux%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agent %28Windows%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bare-Metal Restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DataCenter Console %28DCC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Database Add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Database Restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disk Safe %2F Volumes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>File Restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install %2F Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linux Kernel Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSSQL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merge%2FVacuum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Replication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replication %28Failing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Review_Type__c</picklist>
+        <values>
+            <fullName>On-Demand Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Level__c</picklist>
+        <values>
+            <fullName>24x7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24x7 - Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24x7 - US ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24x7 - US Voice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Hours - Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Hours - US ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Hours - US Voice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Hours - Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Hours - US ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Hours - US Voice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Severity__c</picklist>
+        <values>
+            <fullName>1 - Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>4 - Low</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stakeholder__c</picklist>
+        <values>
+            <fullName>HDQA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC - Network Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC - PST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC - RTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC - SRT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing and Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing%2FProvisioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New License Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement License Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restore Emergency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial and Deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Waiting_for__c</picklist>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

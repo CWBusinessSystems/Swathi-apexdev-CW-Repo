@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Potential_Duplicate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by flow on the duplicate record set.  Used in sync to Outreach</description>
+    <externalId>false</externalId>
+    <label>Potential Duplicate</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

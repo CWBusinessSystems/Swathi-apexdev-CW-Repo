@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_Smileback__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Legacy Smileback Account ID from Zendesk</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Legacy Smileback Account ID from Zendesk</inlineHelpText>
+    <label>Legacy Smileback Account Id</label>
+    <length>75</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Single_Distributor_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked true then this Opportunity cannot move to Closed Won because the company has accepted a Quote from another distributor.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked true then this Opportunity cannot move to Closed Won because the company has accepted a Quote from another distributor.</inlineHelpText>
+    <label>Single Distributor Validation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

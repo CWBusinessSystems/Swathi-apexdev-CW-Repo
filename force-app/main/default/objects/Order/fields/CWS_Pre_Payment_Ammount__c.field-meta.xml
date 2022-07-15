@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Pre_Payment_Ammount__c</fullName>
+    <description>Pre Payment amount from Quote in case of Non Evergreen Order</description>
+    <externalId>false</externalId>
+    <formula>if(AND(!CWS_Evergreen_Order__c,SBQQ__Quote__r.CWS_Pre_payment_Amount__c&gt;0) ,  SBQQ__Quote__r.CWS_Pre_payment_Amount__c , null)</formula>
+    <inlineHelpText>PrePayment Amount applicable when the Order is non-evergreen</inlineHelpText>
+    <label>Pre Payment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Bill_To_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Bill To Contact associated with this contract.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Bill To Contact associated with this contract.</inlineHelpText>
+    <label>Bill To Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Add Bill To Contact associated with Bill To Accounts.</errorMessage>
+        <filterItems>
+            <field>$Source.CWS_Bill_To_Account__c</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <infoMessage>Add Bill To Contact associated with Bill To Accounts.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contracts</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

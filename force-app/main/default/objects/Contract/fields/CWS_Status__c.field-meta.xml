@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Status__c</fullName>
+    <description>Contract Status
+If Cancelled flag = TRUE, then Status = Terminated
+If Start date &lt;= Today and End date &gt;= Today, Status = Active
+If Start date &gt; Today, then Status = Inactive
+If End date &lt; Today and Cancelled Flag is False, then Status = Expired</description>
+    <externalId>false</externalId>
+    <formula>IF(CWS_Cancelled__c=TRUE, &apos;Terminated&apos;,
+IF(SBQQ__Evergreen__c=TRUE,
+IF(CWS_Master__c=true,IF(CWS_Legacy_Formula_Key__c!=null,&apos;Expired&apos;,IF(StartDate&lt;=TODAY(),&apos;Active&apos;,&apos;Inactive&apos;)),IF(StartDate&lt;=TODAY(),&apos;Active&apos;,&apos;Inactive&apos;)),
+IF(AND(StartDate&lt;=TODAY(), EndDate&gt;=TODAY()), &apos;Active&apos;,
+IF(StartDate&gt;TODAY(), &apos;Inactive&apos;,
+IF(EndDate&lt;TODAY(), &apos;Expired&apos;,&apos;&apos;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If Cancelled flag = TRUE, then Status = Terminated
+If Start date &lt;= Today and End date &gt;= Today, Status = Active
+If Start date &gt; Today, then Status = Inactive
+If End date &lt; Today and Cancelled Flag is False, then Status = Expired</inlineHelpText>
+    <label>Contract Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

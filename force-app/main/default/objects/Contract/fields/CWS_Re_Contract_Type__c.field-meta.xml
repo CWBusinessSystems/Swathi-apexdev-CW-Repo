@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Re_Contract_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to determine whether to create a new opportunity in the re-contract process</inlineHelpText>
+    <label>Re-Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Business Re-Contract</fullName>
+                <default>false</default>
+                <label>New Business Re-Contract</label>
+            </value>
+            <value>
+                <fullName>Existing Re-Contract Opportunity</fullName>
+                <default>false</default>
+                <label>Existing Re-Contract Opportunity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

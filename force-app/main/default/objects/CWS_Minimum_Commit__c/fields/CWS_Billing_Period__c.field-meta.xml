@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Billing_Period__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Master-detail which links Min Commits to the billing period for the same month/year</inlineHelpText>
+    <label>Billing Period</label>
+    <referenceTo>CWS_BillingPeriod__c</referenceTo>
+    <relationshipLabel>Minimum Commits</relationshipLabel>
+    <relationshipName>Minimum_Commits</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

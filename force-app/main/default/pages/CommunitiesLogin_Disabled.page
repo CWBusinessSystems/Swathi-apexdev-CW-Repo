@@ -1,0 +1,19 @@
+<apex:page cache="false">
+
+<style>
+body {font-size: 12pt;}
+</style>
+
+<p>
+We are experiencing technical difficulties.
+</p><p>
+Please <a href="https://na127.salesforce.com/secur/login_portal.jsp?orgId=00D30000001H3XD&portalId=060a0000001BR4T">click here</a> to go to the old portal, 
+and log in using your old username and password. 
+</p><p>
+
+We apologize for any inconvenience. 
+</p><p>
+
+R1Soft Support Team
+</p>
+</apex:page>

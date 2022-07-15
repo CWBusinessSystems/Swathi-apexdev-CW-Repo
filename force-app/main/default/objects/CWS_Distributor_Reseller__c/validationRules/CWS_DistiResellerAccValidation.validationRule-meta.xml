@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_DistiResellerAccValidation</fullName>
+    <active>true</active>
+    <description>This validation rule is to avoid creating Distributor/Reseller record for accounts which is neither a distributor nor a partner reseller or a partner</description>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;CWS_Distributor_Reseller__c&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND(
+NOT(CWS_Distributor_ResellerAcc__r.CWS_Is_Distributor__c),
+NOT(CWS_Distributor_ResellerAcc__r.CWS_Is_Partner__c),
+NOT(ISPICKVAL(CWS_Distributor_ResellerAcc__r.CWS_Authorized_Reseller__c,&quot;1-Tier/2-Tier Authorized&quot;)),
+OR(NOT(CWS_Distributor_ResellerAcc__r.CWS_Is_IIT_Reseller__c) ,
+NOT(CWS_Distributor_ResellerAcc__r.CWS_Is_Partner__c))
+)
+)</errorConditionFormula>
+    <errorMessage>Distributor or Partner or Reseller who is also a partner can only be added.</errorMessage>
+</ValidationRule>

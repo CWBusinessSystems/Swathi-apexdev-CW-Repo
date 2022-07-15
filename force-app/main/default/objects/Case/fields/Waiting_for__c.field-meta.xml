@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waiting_for__c</fullName>
+    <description>For Partner Care Case Follow Up Section.</description>
+    <externalId>false</externalId>
+    <label>Waiting For</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+                <label>Account Management</label>
+            </value>
+            <value>
+                <fullName>Accounts Receivable</fullName>
+                <default>false</default>
+                <label>Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Contracts Admin</fullName>
+                <default>false</default>
+                <label>Contracts Admin</label>
+            </value>
+            <value>
+                <fullName>CW Support</fullName>
+                <default>false</default>
+                <label>CW Support</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>HD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HD</label>
+            </value>
+            <value>
+                <fullName>HDQA</fullName>
+                <default>false</default>
+                <label>HDQA</label>
+            </value>
+            <value>
+                <fullName>HD Tools</fullName>
+                <default>false</default>
+                <label>HD Tools</label>
+            </value>
+            <value>
+                <fullName>HelpDesk</fullName>
+                <default>false</default>
+                <label>HelpDesk</label>
+            </value>
+            <value>
+                <fullName>InfoSec</fullName>
+                <default>false</default>
+                <label>InfoSec</label>
+            </value>
+            <value>
+                <fullName>Master Data Management</fullName>
+                <default>false</default>
+                <label>Master Data Management</label>
+            </value>
+            <value>
+                <fullName>Mergers &amp; Acquisitions</fullName>
+                <default>false</default>
+                <label>Mergers &amp; Acquisitions</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>NOC - Dedicated Tech</fullName>
+                <default>false</default>
+                <label>NOC - Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>NOC - Network Management</fullName>
+                <default>false</default>
+                <label>NOC - Network Management</label>
+            </value>
+            <value>
+                <fullName>NOC - PST</fullName>
+                <default>false</default>
+                <label>NOC - PST</label>
+            </value>
+            <value>
+                <fullName>NOC - R1 Soft</fullName>
+                <default>false</default>
+                <label>NOC - R1 Soft</label>
+            </value>
+            <value>
+                <fullName>NOC - Recover</fullName>
+                <default>false</default>
+                <label>NOC - Recover</label>
+            </value>
+            <value>
+                <fullName>NOC - RTM</fullName>
+                <default>false</default>
+                <label>NOC - RTM</label>
+            </value>
+            <value>
+                <fullName>NOC - SRT</fullName>
+                <default>false</default>
+                <label>NOC - SRT</label>
+            </value>
+            <value>
+                <fullName>NOC - Tech Advantage</fullName>
+                <default>false</default>
+                <label>NOC - Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Onboarding / Implementation</fullName>
+                <default>false</default>
+                <label>Onboarding / Implementation</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Partner Care</fullName>
+                <default>false</default>
+                <label>Partner Care</label>
+            </value>
+            <value>
+                <fullName>Partner Success</fullName>
+                <default>false</default>
+                <label>Partner Success</label>
+            </value>
+            <value>
+                <fullName>PM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PM</label>
+            </value>
+            <value>
+                <fullName>Product Management</fullName>
+                <default>false</default>
+                <label>Product Management</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>SOC</fullName>
+                <default>false</default>
+                <label>SOC</label>
+            </value>
+            <value>
+                <fullName>Tax &amp; Treasury</fullName>
+                <default>false</default>
+                <label>Tax &amp; Treasury</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

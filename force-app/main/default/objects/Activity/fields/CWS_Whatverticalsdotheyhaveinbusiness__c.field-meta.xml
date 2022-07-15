@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Whatverticalsdotheyhaveinbusiness__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the various verticals in the prospect&apos;s business.</inlineHelpText>
+    <label>What verticals do they have in business</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

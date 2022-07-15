@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Feedback_Sub_Type__c</fullName>
+    <description>Sub-type of the Feedback</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sub-type of the Feedback</inlineHelpText>
+    <label>Feedback Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enhancement</fullName>
+                <default>false</default>
+                <label>Enhancement</label>
+            </value>
+            <value>
+                <fullName>Issue/ Complaint</fullName>
+                <default>false</default>
+                <label>Issue/ Complaint</label>
+            </value>
+            <value>
+                <fullName>Praise</fullName>
+                <default>false</default>
+                <label>Praise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

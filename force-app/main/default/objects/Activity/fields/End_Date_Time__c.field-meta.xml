@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Time__c</fullName>
+    <description>Refers to the due End Date and Time of the Task</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refers to the due End Date and Time of the Task</inlineHelpText>
+    <label>End Date/Time</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

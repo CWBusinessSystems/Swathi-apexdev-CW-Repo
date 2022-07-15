@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Documentation_Sponsorship</fullName>
+    <active>true</active>
+    <description>&quot;Required Documentation&quot; checkbox must be checked in order to save sponsorship request</description>
+    <errorConditionFormula>RecordTypeId = &quot;0120v000000oaQxAAI&quot;
+
+&amp;&amp;
+
+Required_Documentation__c = FALSE</errorConditionFormula>
+    <errorMessage>Please check the &quot;Required Documentation&quot; checkbox to confirm that sponsorship documentation is being provided.</errorMessage>
+</ValidationRule>

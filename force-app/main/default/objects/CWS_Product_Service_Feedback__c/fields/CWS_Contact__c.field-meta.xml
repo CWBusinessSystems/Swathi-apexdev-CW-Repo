@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Contact Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact Name</inlineHelpText>
+    <label>Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Product &amp; Service Feedback</relationshipLabel>
+    <relationshipName>Product_Service_Feedback</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

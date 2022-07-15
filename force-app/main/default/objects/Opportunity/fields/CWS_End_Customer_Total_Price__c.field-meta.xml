@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_End_Customer_Total_Price__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculates the total End Customer price for all Opportunity Product lines.</inlineHelpText>
+    <label>End Customer Total Price</label>
+    <summarizedField>OpportunityLineItem.CWS_SFA_End_Customer_Total_Price__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_VIEW</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CWS_Department__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>CWS_NonMin_Min_Total_ACV__c</columns>
+    <columns>CWS_Min_Commit_QR__c</columns>
+    <columns>CWS_Competitve__c</columns>
+    <columns>CWS_Competitor_Takeaway_Automate_Command__c</columns>
+    <columns>CWS_Competitor_Takeaway_RMM__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>New Business</value>
+    </filters>
+    <filters>
+        <field>CWS_Competitve__c</field>
+        <operation>equals</operation>
+        <value>RMM  - Solarwinds N-Central (N-Able),RMM  - Solarwinds RMM (GFI)</value>
+    </filters>
+    <filters>
+        <field>CWS_Competitor_Takeaway_Automate_Command__c</field>
+        <operation>equals</operation>
+        <value>SolarWinds N-Central (N-Able),SolarWinds RMM (GFI)</value>
+    </filters>
+    <filters>
+        <field>CWS_Competitor_Takeaway_RMM__c</field>
+        <operation>equals</operation>
+        <value>Solarwinds N-Central (N-Able),Solarwinds RMM (GFI),Solarwinds MSP</value>
+    </filters>
+    <label>BC VIEW</label>
+</ListView>

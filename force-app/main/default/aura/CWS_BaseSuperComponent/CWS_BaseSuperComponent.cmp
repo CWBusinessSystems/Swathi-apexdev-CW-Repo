@@ -1,0 +1,24 @@
+<!--
+ **
+ * NAME			: CWS_BaseSuperComponent
+ * DESCRIPTION	: Contains all the common utility methods
+ *    
+ * @AUTHOR		: Sudhir Moturu
+ * @DATE		: 13-May-2020
+ *
+ * MODIFICATION LOG:  
+ * ______________________________________________________________________________________________________________________________________
+ * DEVELOPER		DATE			MODIFICATION ID		DESCRIPTION 
+ * ______________________________________________________________________________________________________________________________________
+ * Sudhir Moturu    13-May-2020		1000				Initial version    
+ **
+-->
+<aura:component extensible="true" implements="forceCommunity:availableForAllPageTypes" >
+    <aura:attribute name="isSpinnerActive" type="Boolean" default="false" access="Public" />
+    <aura:attribute name="spinnerMsg" type="String" default=""/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <aura:if isTrue="{!v.isSpinnerActive}">
+        <lightning:spinner class="c-spinner" aura:id="spinnerTag" alternativeText="{!v.spinnerMsg}" variant="brand" />
+    </aura:if>
+    {!v.body}
+</aura:component>

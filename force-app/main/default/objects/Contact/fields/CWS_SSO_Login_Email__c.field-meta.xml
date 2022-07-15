@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_SSO_Login_Email__c</fullName>
+    <description>Field to store the unique SSO Login Email for the contact.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field to store the unique SSO Login Email for the contact.</inlineHelpText>
+    <label>CW SSO Login Email</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

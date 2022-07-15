@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_BDR_Field_Restrictions</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISNEW(),FALSE,
+
+AND(
+ OR(
+  ISCHANGED(StageName),
+  ISCHANGED(Amount),
+  ISCHANGED(CWS_Product_Interest__c),
+  ISCHANGED(CloseDate),
+  ISCHANGED(OwnerId)
+ ),
+ CONTAINS($UserRole.Name, &quot;Business Development&quot;),
+ AND(
+  NOT(ISPICKVAL(StageName,&quot;Nurture&quot;)),
+  NOT(ISPICKVAL(StageName,&quot;Recycled&quot;)),
+  NOT(ISPICKVAL(StageName,&quot;Meeting&quot;)),
+  NOT(ISPICKVAL(StageName,&quot;Rejected&quot;))
+ )
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot change this field as a Business Development Representative. Please refer to your manager if you need additional assistance.</errorMessage>
+</ValidationRule>

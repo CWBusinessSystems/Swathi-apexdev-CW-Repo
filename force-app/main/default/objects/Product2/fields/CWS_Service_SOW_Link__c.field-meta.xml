@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Service_SOW_Link__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if product is a task-based or not and if it requires Standard SOW or Custom SOW</inlineHelpText>
+    <label>Service SOW Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

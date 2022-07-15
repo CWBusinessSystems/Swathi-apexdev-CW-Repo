@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Group_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Groups available for selection to determine the Group Billing.</inlineHelpText>
+    <label>Group Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A+ Chnl Dev Other</fullName>
+                <default>false</default>
+                <label>A+ Chnl Dev Other</label>
+            </value>
+            <value>
+                <fullName>A+ Chnl Dev Other_HTG</fullName>
+                <default>false</default>
+                <label>A+ Chnl Dev Other_HTG</label>
+            </value>
+            <value>
+                <fullName>A+ HTG</fullName>
+                <default>false</default>
+                <label>A+ HTG</label>
+            </value>
+            <value>
+                <fullName>A+ MSP501</fullName>
+                <default>false</default>
+                <label>A+ MSP501</label>
+            </value>
+            <value>
+                <fullName>A+ RobinRobins</fullName>
+                <default>false</default>
+                <label>A+ RobinRobins</label>
+            </value>
+            <value>
+                <fullName>Advanced Productivity Computing</fullName>
+                <default>false</default>
+                <label>Advanced Productivity Computing</label>
+            </value>
+            <value>
+                <fullName>All Covered</fullName>
+                <default>false</default>
+                <label>All Covered</label>
+            </value>
+            <value>
+                <fullName>ARCA (Zenith)</fullName>
+                <default>false</default>
+                <label>ARCA (Zenith)</label>
+            </value>
+            <value>
+                <fullName>AServer (Zenith)</fullName>
+                <default>false</default>
+                <label>AServer (Zenith)</label>
+            </value>
+            <value>
+                <fullName>AWD</fullName>
+                <default>false</default>
+                <label>AWD</label>
+            </value>
+            <value>
+                <fullName>BDR Eval (Zenith)</fullName>
+                <default>false</default>
+                <label>BDR Eval (Zenith)</label>
+            </value>
+            <value>
+                <fullName>BPCA</fullName>
+                <default>false</default>
+                <label>BPCA</label>
+            </value>
+            <value>
+                <fullName>BTA</fullName>
+                <default>false</default>
+                <label>BTA</label>
+            </value>
+            <value>
+                <fullName>CDA</fullName>
+                <default>false</default>
+                <label>CDA</label>
+            </value>
+            <value>
+                <fullName>CloudComputing (Zenith)</fullName>
+                <default>false</default>
+                <label>CloudComputing (Zenith)</label>
+            </value>
+            <value>
+                <fullName>CMIT Terminated</fullName>
+                <default>false</default>
+                <label>CMIT Terminated</label>
+            </value>
+            <value>
+                <fullName>Continuum Vault</fullName>
+                <default>false</default>
+                <label>Continuum Vault</label>
+            </value>
+            <value>
+                <fullName>CT Group</fullName>
+                <default>false</default>
+                <label>CT Group</label>
+            </value>
+            <value>
+                <fullName>CT Group - Terminated</fullName>
+                <default>false</default>
+                <label>CT Group - Terminated</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>Empower</label>
+            </value>
+            <value>
+                <fullName>Expetec Group</fullName>
+                <default>false</default>
+                <label>Expetec Group</label>
+            </value>
+            <value>
+                <fullName>Expetec-Terminated</fullName>
+                <default>false</default>
+                <label>Expetec-Terminated</label>
+            </value>
+            <value>
+                <fullName>GAP</fullName>
+                <default>false</default>
+                <label>GAP</label>
+            </value>
+            <value>
+                <fullName>GAP_BPCA</fullName>
+                <default>false</default>
+                <label>GAP_BPCA</label>
+            </value>
+            <value>
+                <fullName>GAP_CDA</fullName>
+                <default>false</default>
+                <label>GAP_CDA</label>
+            </value>
+            <value>
+                <fullName>GAP_PRO Dealer Group</fullName>
+                <default>false</default>
+                <label>GAP_PRO Dealer Group</label>
+            </value>
+            <value>
+                <fullName>GAP_ProSource Technology Solutions</fullName>
+                <default>false</default>
+                <label>GAP_ProSource Technology Solutions</label>
+            </value>
+            <value>
+                <fullName>Geeks On Call</fullName>
+                <default>false</default>
+                <label>Geeks On Call</label>
+            </value>
+            <value>
+                <fullName>High Touch Technologies</fullName>
+                <default>false</default>
+                <label>High Touch Technologies</label>
+            </value>
+            <value>
+                <fullName>HTG Group</fullName>
+                <default>false</default>
+                <label>HTG Group</label>
+            </value>
+            <value>
+                <fullName>HTG Peer Group 4</fullName>
+                <default>false</default>
+                <label>HTG Peer Group 4</label>
+            </value>
+            <value>
+                <fullName>Ignition Bermuda Ltd</fullName>
+                <default>false</default>
+                <label>Ignition Bermuda Ltd</label>
+            </value>
+            <value>
+                <fullName>IndiaSalesTeam (Zenith)</fullName>
+                <default>false</default>
+                <label>IndiaSalesTeam (Zenith)</label>
+            </value>
+            <value>
+                <fullName>IndyIT-ByteCafe Group</fullName>
+                <default>false</default>
+                <label>IndyIT-ByteCafe Group</label>
+            </value>
+            <value>
+                <fullName>integraONE</fullName>
+                <default>false</default>
+                <label>integraONE</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>iTech Las Vegas</fullName>
+                <default>false</default>
+                <label>iTech Las Vegas</label>
+            </value>
+            <value>
+                <fullName>Manawa</fullName>
+                <default>false</default>
+                <label>Manawa</label>
+            </value>
+            <value>
+                <fullName>Mann Technology</fullName>
+                <default>false</default>
+                <label>Mann Technology</label>
+            </value>
+            <value>
+                <fullName>Mechanicus &amp; Opal Business Solutions</fullName>
+                <default>false</default>
+                <label>Mechanicus &amp; Opal Business Solutions</label>
+            </value>
+            <value>
+                <fullName>MSPOD (Zenith)</fullName>
+                <default>false</default>
+                <label>MSPOD (Zenith)</label>
+            </value>
+            <value>
+                <fullName>NBG</fullName>
+                <default>false</default>
+                <label>NBG</label>
+            </value>
+            <value>
+                <fullName>NBG_AHTG</fullName>
+                <default>false</default>
+                <label>NBG_AHTG</label>
+            </value>
+            <value>
+                <fullName>Netrix LLC</fullName>
+                <default>false</default>
+                <label>Netrix LLC</label>
+            </value>
+            <value>
+                <fullName>Other Office Equipment</fullName>
+                <default>false</default>
+                <label>Other Office Equipment</label>
+            </value>
+            <value>
+                <fullName>Panurgy Group</fullName>
+                <default>false</default>
+                <label>Panurgy Group</label>
+            </value>
+            <value>
+                <fullName>Paul Rouse (RCG)</fullName>
+                <default>false</default>
+                <label>Paul Rouse (RCG)</label>
+            </value>
+            <value>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+                <label>Platinum</label>
+            </value>
+            <value>
+                <fullName>PRO Dealer Group</fullName>
+                <default>false</default>
+                <label>PRO Dealer Group</label>
+            </value>
+            <value>
+                <fullName>QuestingHound_HTG</fullName>
+                <default>false</default>
+                <label>QuestingHound_HTG</label>
+            </value>
+            <value>
+                <fullName>Real Time Consultants</fullName>
+                <default>false</default>
+                <label>Real Time Consultants</label>
+            </value>
+            <value>
+                <fullName>Reseller (Zenith)</fullName>
+                <default>false</default>
+                <label>Reseller (Zenith)</label>
+            </value>
+            <value>
+                <fullName>SacTechGroup</fullName>
+                <default>false</default>
+                <label>SacTechGroup</label>
+            </value>
+            <value>
+                <fullName>SDG</fullName>
+                <default>false</default>
+                <label>SDG</label>
+            </value>
+            <value>
+                <fullName>Security Only</fullName>
+                <default>false</default>
+                <label>Security Only</label>
+            </value>
+            <value>
+                <fullName>Sharp SBS</fullName>
+                <default>false</default>
+                <label>Sharp SBS</label>
+            </value>
+            <value>
+                <fullName>SIC Consulting Inc</fullName>
+                <default>false</default>
+                <label>SIC Consulting Inc</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>SpliceNet Group</fullName>
+                <default>false</default>
+                <label>SpliceNet Group</label>
+            </value>
+            <value>
+                <fullName>Synaxon</fullName>
+                <default>false</default>
+                <label>Synaxon</label>
+            </value>
+            <value>
+                <fullName>Synaxon_HTG</fullName>
+                <default>false</default>
+                <label>Synaxon_HTG</label>
+            </value>
+            <value>
+                <fullName>TAG Group</fullName>
+                <default>false</default>
+                <label>TAG Group</label>
+            </value>
+            <value>
+                <fullName>TAG Group_HTG Group</fullName>
+                <default>false</default>
+                <label>TAG Group_HTG Group</label>
+            </value>
+            <value>
+                <fullName>TAG Group_Telecom</fullName>
+                <default>false</default>
+                <label>TAG Group_Telecom</label>
+            </value>
+            <value>
+                <fullName>TAG-Group A</fullName>
+                <default>false</default>
+                <label>TAG-Group A</label>
+            </value>
+            <value>
+                <fullName>TAG-Group A_High Tech Innovations</fullName>
+                <default>false</default>
+                <label>TAG-Group A_High Tech Innovations</label>
+            </value>
+            <value>
+                <fullName>TAG-Group B</fullName>
+                <default>false</default>
+                <label>TAG-Group B</label>
+            </value>
+            <value>
+                <fullName>TAG-Group MAT</fullName>
+                <default>false</default>
+                <label>TAG-Group MAT</label>
+            </value>
+            <value>
+                <fullName>TAG-Group_A Chnl Dev Other</fullName>
+                <default>false</default>
+                <label>TAG-Group_A Chnl Dev Other</label>
+            </value>
+            <value>
+                <fullName>Tech-Data (Zenith)</fullName>
+                <default>false</default>
+                <label>Tech-Data (Zenith)</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Testing Accounts</fullName>
+                <default>false</default>
+                <label>Testing Accounts</label>
+            </value>
+            <value>
+                <fullName>Waypoint Solutions Group</fullName>
+                <default>false</default>
+                <label>Waypoint Solutions Group</label>
+            </value>
+            <value>
+                <fullName>Wood Networks</fullName>
+                <default>false</default>
+                <label>Wood Networks</label>
+            </value>
+            <value>
+                <fullName>YourITHelpDesk - Group</fullName>
+                <default>false</default>
+                <label>YourITHelpDesk - Group</label>
+            </value>
+            <value>
+                <fullName>Bluechip Group</fullName>
+                <default>false</default>
+                <label>Bluechip Group</label>
+            </value>
+            <value>
+                <fullName>CMIT Group</fullName>
+                <default>false</default>
+                <label>CMIT Group</label>
+            </value>
+            <value>
+                <fullName>Sovaton</fullName>
+                <default>false</default>
+                <label>Sovaton</label>
+            </value>
+            <value>
+                <fullName>MTS-ISAC</fullName>
+                <default>false</default>
+                <label>MTS-ISAC</label>
+            </value>
+            <value>
+                <fullName>NCU-ISAO</fullName>
+                <default>false</default>
+                <label>NCU-ISAO</label>
+            </value>
+            <value>
+                <fullName>WaterISAC</fullName>
+                <default>false</default>
+                <label>WaterISAC</label>
+            </value>
+            <value>
+                <fullName>Aviation ISAC</fullName>
+                <default>false</default>
+                <label>Aviation ISAC</label>
+            </value>
+            <value>
+                <fullName>CISO, LLC</fullName>
+                <default>false</default>
+                <label>CISO, LLC</label>
+            </value>
+            <value>
+                <fullName>E-ISAC Electricity Information Sharing and Analysis Center</fullName>
+                <default>false</default>
+                <label>E-ISAC Electricity Information Sharing and Analysis Center</label>
+            </value>
+            <value>
+                <fullName>FS-ISAC</fullName>
+                <default>false</default>
+                <label>FS-ISAC</label>
+            </value>
+            <value>
+                <fullName>H-ISAC</fullName>
+                <default>false</default>
+                <label>H-ISAC</label>
+            </value>
+            <value>
+                <fullName>International Association of Certified ISAOs (IACI)</fullName>
+                <default>false</default>
+                <label>International Association of Certified ISAOs (IACI)</label>
+            </value>
+            <value>
+                <fullName>Mining and Metals-ISAC (MM-ISAC)</fullName>
+                <default>false</default>
+                <label>Mining and Metals-ISAC (MM-ISAC)</label>
+            </value>
+            <value>
+                <fullName>MPS-ISAO</fullName>
+                <default>false</default>
+                <label>MPS-ISAO</label>
+            </value>
+            <value>
+                <fullName>REN-ISAC Research and Education Network ISAC</fullName>
+                <default>false</default>
+                <label>REN-ISAC Research and Education Network ISAC</label>
+            </value>
+            <value>
+                <fullName>Retail &amp; Hospitality ISAC (RH-ISAC)</fullName>
+                <default>false</default>
+                <label>Retail &amp; Hospitality ISAC (RH-ISAC)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

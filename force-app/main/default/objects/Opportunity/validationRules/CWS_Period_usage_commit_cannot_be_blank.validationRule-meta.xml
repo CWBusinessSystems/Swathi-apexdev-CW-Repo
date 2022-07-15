@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Period_usage_commit_cannot_be_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ CWS_Master__c = true,
+ NOT(ISPICKVAL(CWS_Ramp_Options__c,&apos;&apos;)),
+ ISBLANK( CWS_Period_of_Fixed_Usage_Commit_Ramp__c )
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Period_of_Fixed_Usage_Commit_Ramp__c</errorDisplayField>
+    <errorMessage>Please provide Period of Fixed/ Usage Commit Ramp if Ramp Options is selected</errorMessage>
+</ValidationRule>

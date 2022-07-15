@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Control_Trial_Compact_Layout</compactLayoutAssignment>
+    <label>Partner</label>
+    <picklistValues>
+        <picklist>CWS_Purchase_Type__c</picklist>
+        <values>
+            <fullName>Churned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churned to Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Record_Type_Text__c</picklist>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Trial_Type__c</picklist>
+        <values>
+            <fullName>Access Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

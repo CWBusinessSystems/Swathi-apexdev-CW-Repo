@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Disti_Factor__c</fullName>
+    <description>Disti factor for this product</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Disti factor for this product</inlineHelpText>
+    <label>Disti Factor</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

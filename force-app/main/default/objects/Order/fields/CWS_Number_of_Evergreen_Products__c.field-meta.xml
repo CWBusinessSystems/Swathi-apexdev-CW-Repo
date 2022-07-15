@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Number_of_Evergreen_Products__c</fullName>
+    <description>Returns the number of Order Lines which are Evergreen</description>
+    <externalId>false</externalId>
+    <label>Number of Evergreen Products</label>
+    <summaryFilterItems>
+        <field>OrderItem.CWS_Split_Order__c</field>
+        <operation>equals</operation>
+        <value>Evergreen</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OrderItem.SBQQ__SubscriptionType__c</field>
+        <operation>equals</operation>
+        <value>Evergreen</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

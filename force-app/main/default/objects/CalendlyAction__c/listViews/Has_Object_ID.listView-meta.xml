@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Object_ID</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>EventStartTime__c</columns>
+    <columns>EventTypeName__c</columns>
+    <columns>InviteeEmail__c</columns>
+    <columns>ObjectId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ObjectId__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Has Object ID</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <description>VF Component for the Email Template of the Approval.</description>
+    <label>ApprovalEmailComponent</label>
+    <packageVersions>
+        <majorNumber>224</majorNumber>
+        <minorNumber>6</minorNumber>
+        <namespace>sbaa</namespace>
+    </packageVersions>
+</ApexComponent>

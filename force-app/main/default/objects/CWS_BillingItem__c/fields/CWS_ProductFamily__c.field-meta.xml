@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ProductFamily__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The product family of the product associated to the billing item</inlineHelpText>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+            <value>
+                <fullName>Command</fullName>
+                <default>false</default>
+                <label>Command</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>Solution Partners (3rd Party Products)</fullName>
+                <default>false</default>
+                <label>Solution Partners (3rd Party Products)</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Help Desk</fullName>
+                <default>false</default>
+                <label>Help Desk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

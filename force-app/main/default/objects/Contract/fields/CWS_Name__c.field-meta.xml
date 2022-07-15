@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Name__c</fullName>
+    <description>Contract Name = &lt;sold-to account&gt; + &lt;RTM&gt; + &lt;Opt-in (or) Opt-out&gt; + &lt;Bill-to Account Name&gt; + &lt;Master Contract (or) Specific Product Category&gt;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contract Name</inlineHelpText>
+    <label>Name</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

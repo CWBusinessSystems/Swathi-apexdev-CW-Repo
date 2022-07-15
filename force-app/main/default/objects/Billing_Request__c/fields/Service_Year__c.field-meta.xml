@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Year__c</fullName>
+    <description>A field for credit requests that let&apos;s accounting know what year to recognize the credit in.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A field for credit requests that let&apos;s accounting know what year to recognize the credit in.</inlineHelpText>
+    <label>Service Year</label>
+    <length>4</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

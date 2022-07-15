@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Meddic_avg_num__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CWS_DCnum__c + CWS_DPnum__c + CWS_EBnum__c + CWS_IDPainNum__c + CWS_MetNum__c + CWS_CHnum__c)/6</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meddic avg num</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

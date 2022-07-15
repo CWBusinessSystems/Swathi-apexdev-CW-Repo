@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Manage_Company_Login_ID__c</fullName>
+    <description>Requested Manage Company Login ID (for install)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures requested Manage Company Login ID (for install).</inlineHelpText>
+    <label>Manage Company Login ID</label>
+    <length>12</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

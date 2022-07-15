@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Team_Assignment_Must_Be_Checked</fullName>
+    <active>false</active>
+    <description>If associated Account is Partner, then Team Assignment must be selected before Contact Status may be SQL
+
+PCN - Deactivated on 02/05/2020 per Service Ticket #14410366 - Merge and discussion with Allison</description>
+    <errorConditionFormula>AND( NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c) , 
+Account.CWS_Is_Partner__c = true , 
+ISBLANK(TEXT( CWS_Team_Assignment__c )),
+ISPICKVAL(CWS_Contact_Status__c, &apos;SQL&apos;) 
+)</errorConditionFormula>
+    <errorMessage>Please fill in  team assignment before moving contact status to SQL.</errorMessage>
+</ValidationRule>

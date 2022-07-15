@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Zuora_Error__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates issues with Account integrations between Salesforce and Zuora. If there is any issue with an Account related integration the corresponding error message is populated in this field.</inlineHelpText>
+    <label>Zuora Integration Error</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

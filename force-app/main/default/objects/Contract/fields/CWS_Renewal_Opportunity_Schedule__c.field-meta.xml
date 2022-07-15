@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Renewal_Opportunity_Schedule__c</fullName>
+    <description>Renewal Opportunity Creation Date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Renewal Opportunity Creation Date. -120 days from Contract End Date.</inlineHelpText>
+    <label>Renewal Opportunity Schedule</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

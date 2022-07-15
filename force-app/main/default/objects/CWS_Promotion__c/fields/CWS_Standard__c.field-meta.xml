@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Standard__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the standard is unchecked the approval will be sent to contract admin and if the approver field is populated as well then it will be sent to the corresponding approver too. If the standard is checked it will not go to any approval.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the standard is unchecked the approval will be sent to contract admin and if the approver field is populated as well then it will be sent to the corresponding approver too. If the standard is checked it will not go to any approval.</inlineHelpText>
+    <label>Standard</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

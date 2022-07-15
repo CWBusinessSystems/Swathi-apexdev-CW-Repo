@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R1_Survey_Communication__c</fullName>
+    <description>Contact&apos;s answer to the question: How satisfied are you with the technician&apos;s communication (polite/professional/audible)?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How satisfied are you with the technician&apos;s communication (polite/professional/audible)?</inlineHelpText>
+    <label>R1 Survey Communication</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5. Extremely Satisfied</fullName>
+                <default>false</default>
+                <label>5. Extremely Satisfied</label>
+            </value>
+            <value>
+                <fullName>4. Satisfied</fullName>
+                <default>false</default>
+                <label>4. Satisfied</label>
+            </value>
+            <value>
+                <fullName>3. Neither Satisfied nor Dissatisfied</fullName>
+                <default>false</default>
+                <label>3. Neither Satisfied nor Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>2. Dissatisfied</fullName>
+                <default>false</default>
+                <label>2. Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>1. Extremely Dissatisfied</fullName>
+                <default>false</default>
+                <label>1. Extremely Dissatisfied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Original_Activity_ID__c</fullName>
+    <description>Set by Follow-up flow to allow grouping of tasks related to a follow-up change.  Should not be shown to users.  Indicates the original task or event this follow-up was created from.  Parent_Activity_ID relates to the task the follow-up was created from.  If Original Activity ID is populated it will be carried over</description>
+    <externalId>true</externalId>
+    <label>Original Activity ID</label>
+    <length>18</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

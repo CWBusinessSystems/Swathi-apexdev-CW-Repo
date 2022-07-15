@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CreatedByAM__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Field to capture whether the Opportunity was created by a AM or Not(Only for Amendment)</description>
+    <externalId>false</externalId>
+    <label>CreatedByAM</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

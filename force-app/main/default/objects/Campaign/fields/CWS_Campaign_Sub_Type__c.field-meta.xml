@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Campaign_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Campaign Sub-Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Adroll</fullName>
+                <default>false</default>
+                <label>Adroll</label>
+            </value>
+            <value>
+                <fullName>Bing</fullName>
+                <default>false</default>
+                <label>Bing</label>
+            </value>
+            <value>
+                <fullName>BlueChip Infotech</fullName>
+                <default>false</default>
+                <label>BlueChip Infotech</label>
+            </value>
+            <value>
+                <fullName>Blue Solutions</fullName>
+                <default>false</default>
+                <label>Blue Solutions</label>
+            </value>
+            <value>
+                <fullName>Brightgauge Site</fullName>
+                <default>false</default>
+                <label>Brightgauge Site</label>
+            </value>
+            <value>
+                <fullName>BusinessCom</fullName>
+                <default>false</default>
+                <label>BusinessCom</label>
+            </value>
+            <value>
+                <fullName>Call Blitz</fullName>
+                <default>false</default>
+                <label>Call Blitz</label>
+            </value>
+            <value>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+                <label>Capterra</label>
+            </value>
+            <value>
+                <fullName>Channel E2E</fullName>
+                <default>false</default>
+                <label>Channel E2E</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Site</fullName>
+                <default>false</default>
+                <label>ConnectWise Site</label>
+            </value>
+            <value>
+                <fullName>Content Syndication</fullName>
+                <default>false</default>
+                <label>Content Syndication</label>
+            </value>
+            <value>
+                <fullName>Conversica</fullName>
+                <default>false</default>
+                <label>Conversica</label>
+            </value>
+            <value>
+                <fullName>CWHome</fullName>
+                <default>false</default>
+                <label>CWHome</label>
+            </value>
+            <value>
+                <fullName>CWUniv</fullName>
+                <default>false</default>
+                <label>CWUniv</label>
+            </value>
+            <value>
+                <fullName>D&amp;H</fullName>
+                <default>false</default>
+                <label>D&amp;H</label>
+            </value>
+            <value>
+                <fullName>Dekkers</fullName>
+                <default>false</default>
+                <label>Dekkers</label>
+            </value>
+            <value>
+                <fullName>Demandbase</fullName>
+                <default>false</default>
+                <label>Demandbase</label>
+            </value>
+            <value>
+                <fullName>Demand Gen</fullName>
+                <default>false</default>
+                <label>Demand Gen</label>
+            </value>
+            <value>
+                <fullName>Doubleclick</fullName>
+                <default>false</default>
+                <label>Doubleclick</label>
+            </value>
+            <value>
+                <fullName>Drift</fullName>
+                <default>false</default>
+                <label>Drift</label>
+            </value>
+            <value>
+                <fullName>e92Plus</fullName>
+                <default>false</default>
+                <label>e92Plus</label>
+            </value>
+            <value>
+                <fullName>Ebertlang</fullName>
+                <default>false</default>
+                <label>Ebertlang</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Exeed</fullName>
+                <default>false</default>
+                <label>Exeed</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>FinancesOnline</fullName>
+                <default>false</default>
+                <label>FinancesOnline</label>
+            </value>
+            <value>
+                <fullName>G2Crowd</fullName>
+                <default>false</default>
+                <label>G2Crowd</label>
+            </value>
+            <value>
+                <fullName>Generic</fullName>
+                <default>false</default>
+                <label>Generic</label>
+            </value>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>Hosted Guest</fullName>
+                <default>false</default>
+                <label>Hosted Guest</label>
+            </value>
+            <value>
+                <fullName>Influitive</fullName>
+                <default>false</default>
+                <label>Influitive</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Innosoft</fullName>
+                <default>false</default>
+                <label>Innosoft</label>
+            </value>
+            <value>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+                <label>Instagram</label>
+            </value>
+            <value>
+                <fullName>ITBoost Site</fullName>
+                <default>false</default>
+                <label>ITBoost Site</label>
+            </value>
+            <value>
+                <fullName>IT Central Station</fullName>
+                <default>false</default>
+                <label>IT Central Station</label>
+            </value>
+            <value>
+                <fullName>ITN Connect</fullName>
+                <default>false</default>
+                <label>ITN Connect</label>
+            </value>
+            <value>
+                <fullName>ITN Explore</fullName>
+                <default>false</default>
+                <label>ITN Explore</label>
+            </value>
+            <value>
+                <fullName>ITN Secure</fullName>
+                <default>false</default>
+                <label>ITN Secure</label>
+            </value>
+            <value>
+                <fullName>ITN Share</fullName>
+                <default>false</default>
+                <label>ITN Share</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Madison Logic</fullName>
+                <default>false</default>
+                <label>Madison Logic</label>
+            </value>
+            <value>
+                <fullName>Marketopia</fullName>
+                <default>false</default>
+                <label>Marketopia</label>
+            </value>
+            <value>
+                <fullName>Minitel</fullName>
+                <default>false</default>
+                <label>Minitel</label>
+            </value>
+            <value>
+                <fullName>Nurture</fullName>
+                <default>false</default>
+                <label>Nurture</label>
+            </value>
+            <value>
+                <fullName>Operational</fullName>
+                <default>false</default>
+                <label>Operational</label>
+            </value>
+            <value>
+                <fullName>Partner Comms</fullName>
+                <default>false</default>
+                <label>Partner Comms</label>
+            </value>
+            <value>
+                <fullName>Perch</fullName>
+                <default>false</default>
+                <label>Perch</label>
+            </value>
+            <value>
+                <fullName>Portland</fullName>
+                <default>false</default>
+                <label>Portland</label>
+            </value>
+            <value>
+                <fullName>PostBeyond</fullName>
+                <default>false</default>
+                <label>PostBeyond</label>
+            </value>
+            <value>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+                <label>Press Release</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>R1Soft Site</fullName>
+                <default>false</default>
+                <label>R1Soft Site</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Roadshows</fullName>
+                <default>false</default>
+                <label>Roadshows</label>
+            </value>
+            <value>
+                <fullName>SentinelOne</fullName>
+                <default>false</default>
+                <label>SentinelOne</label>
+            </value>
+            <value>
+                <fullName>Serchen</fullName>
+                <default>false</default>
+                <label>Serchen</label>
+            </value>
+            <value>
+                <fullName>SourceForge</fullName>
+                <default>false</default>
+                <label>SourceForge</label>
+            </value>
+            <value>
+                <fullName>Stratozen</fullName>
+                <default>false</default>
+                <label>Stratozen</label>
+            </value>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Target Accounts</fullName>
+                <default>false</default>
+                <label>Target Accounts</label>
+            </value>
+            <value>
+                <fullName>TechData</fullName>
+                <default>false</default>
+                <label>TechData</label>
+            </value>
+            <value>
+                <fullName>TechNewsHub</fullName>
+                <default>false</default>
+                <label>TechNewsHub</label>
+            </value>
+            <value>
+                <fullName>TechTarget</fullName>
+                <default>false</default>
+                <label>TechTarget</label>
+            </value>
+            <value>
+                <fullName>TechWire Asia</fullName>
+                <default>false</default>
+                <label>TechWire Asia</label>
+            </value>
+            <value>
+                <fullName>Terminus</fullName>
+                <default>false</default>
+                <label>Terminus</label>
+            </value>
+            <value>
+                <fullName>Tradeshow</fullName>
+                <default>false</default>
+                <label>Tradeshow</label>
+            </value>
+            <value>
+                <fullName>TrustPilot</fullName>
+                <default>false</default>
+                <label>TrustPilot</label>
+            </value>
+            <value>
+                <fullName>TrustRadius</fullName>
+                <default>false</default>
+                <label>TrustRadius</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Web Direct</fullName>
+                <default>false</default>
+                <label>Web Direct</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Web Referral</fullName>
+                <default>false</default>
+                <label>Web Referral</label>
+            </value>
+            <value>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+                <label>Yahoo</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>BusinessCom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>Capterra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>FinancesOnline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>G2Crowd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>Serchen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>SourceForge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>TrustPilot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <valueName>TrustRadius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>BlueChip Infotech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Blue Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>D&amp;H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Dekkers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>e92Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Ebertlang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Exeed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Ingram Micro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Innosoft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Minitel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Portland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Synnex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>TechData</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outsourced</controllingFieldValue>
+            <valueName>Marketopia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Webinar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Success</controllingFieldValue>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PPC</controllingFieldValue>
+            <controllingFieldValue>Organic Search</controllingFieldValue>
+            <valueName>Bing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PPC</controllingFieldValue>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <controllingFieldValue>Organic Search</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>Google</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PPC</controllingFieldValue>
+            <controllingFieldValue>Organic Search</controllingFieldValue>
+            <valueName>Yahoo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>Influitive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Campaigns</controllingFieldValue>
+            <valueName>Call Blitz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Campaigns</controllingFieldValue>
+            <valueName>Target Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational</controllingFieldValue>
+            <valueName>Operational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational</controllingFieldValue>
+            <valueName>Partner Comms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>CWHome</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>CWUniv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>Perch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>SentinelOne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>Stratozen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <valueName>Web Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Generated</controllingFieldValue>
+            <controllingFieldValue>AM</controllingFieldValue>
+            <controllingFieldValue>BDR</controllingFieldValue>
+            <valueName>Prospecting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>Brightgauge Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>ConnectWise Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>Drift</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>ITBoost Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>R1Soft Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <valueName>Web Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS-Tech News Pro</controllingFieldValue>
+            <controllingFieldValue>CS-TechWire Asia</controllingFieldValue>
+            <controllingFieldValue>CS-IT Central Station</controllingFieldValue>
+            <controllingFieldValue>CS-Spiceworks</controllingFieldValue>
+            <controllingFieldValue>CS-Activate</controllingFieldValue>
+            <controllingFieldValue>CS-Channel E2E</controllingFieldValue>
+            <controllingFieldValue>CS-MSSP Alert</controllingFieldValue>
+            <controllingFieldValue>CS-IDG Connect</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Pro</controllingFieldValue>
+            <controllingFieldValue>CS-BrightTalk</controllingFieldValue>
+            <controllingFieldValue>CS-ARN</controllingFieldValue>
+            <controllingFieldValue>CS-Madison Logic</controllingFieldValue>
+            <controllingFieldValue>CS-Cannata</controllingFieldValue>
+            <controllingFieldValue>CS-New Statesman</controllingFieldValue>
+            <controllingFieldValue>CS-CBSInteractive</controllingFieldValue>
+            <controllingFieldValue>CS-PureB2B</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Futures</controllingFieldValue>
+            <controllingFieldValue>CS-Technology Advice</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Pro UK</controllingFieldValue>
+            <controllingFieldValue>CS-TechTarget</controllingFieldValue>
+            <controllingFieldValue>CS-CRN Channel Co</controllingFieldValue>
+            <controllingFieldValue>CS-CRN Next Media</controllingFieldValue>
+            <controllingFieldValue>CS-CRN UK Incisive Media</controllingFieldValue>
+            <controllingFieldValue>CS-IT Europa</controllingFieldValue>
+            <controllingFieldValue>CS-Smartbrief</controllingFieldValue>
+            <valueName>Content Syndication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <controllingFieldValue>Paid Social</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <controllingFieldValue>Paid Social</controllingFieldValue>
+            <valueName>Instagram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <controllingFieldValue>Paid Social</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>LinkedIn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>PostBeyond</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <valueName>Twitter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>Hosted Guest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>ITN Connect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>ITN Explore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>ITN Secure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>ITN Share</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <valueName>Roadshows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Sponsored</controllingFieldValue>
+            <valueName>Tradeshow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Conversica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Demand Gen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Nurture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>Channel E2E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>Madison Logic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>TechNewsHub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>TechTarget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <valueName>TechWire Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>Adroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>Doubleclick</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <valueName>Terminus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Press Release</controllingFieldValue>
+            <valueName>Press Release</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <valueName>Demandbase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>IT Central Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing Generated</controllingFieldValue>
+            <valueName>Generic</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

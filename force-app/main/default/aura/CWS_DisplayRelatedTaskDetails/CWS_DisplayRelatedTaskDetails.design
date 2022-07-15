@@ -1,0 +1,5 @@
+<design:component>
+    
+    <design:attribute name="originalActivityId" label="Original Activity ID to Query"/>
+    <design:attribute name="excludeTaskId" label="Task Id to be exculded from results"/>
+</design:component>

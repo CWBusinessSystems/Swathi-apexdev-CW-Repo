@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_SSO_SF_Gateway__c</fullName>
+    <defaultValue>&quot;https://sf-gateway.myconnectwise.net/v1/connectwise/partners/provision&quot;</defaultValue>
+    <description>SSO Salesforce gateway endpoint for retrieving the user SSO Id.</description>
+    <externalId>false</externalId>
+    <label>SSO SF Gateway</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

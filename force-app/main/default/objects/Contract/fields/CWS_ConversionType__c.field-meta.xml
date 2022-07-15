@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ConversionType__c</fullName>
+    <externalId>false</externalId>
+    <label>Amend Conversion Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CWS_TransactionReason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Conversion_Type</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Credit/Re-bill</controllingFieldValue>
+            <valueName>Legal Entity Conversion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit/Re-bill</controllingFieldValue>
+            <valueName>Currency Conversion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit/Re-bill</controllingFieldValue>
+            <valueName>Transfer of Sold-to</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>Perpetual to SaaS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>Agreement Only Conversion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>Subscription to SaaS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>SaaS to Subscription</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>SaaS Package to Subscription Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreement Conversion</controllingFieldValue>
+            <valueName>Subscription Package to SaaS Package</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

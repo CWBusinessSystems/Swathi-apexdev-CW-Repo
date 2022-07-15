@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_CONTRACT_VIEW</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CWS_Product_Categories__c</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>CWS_Master__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BC CONTRACT VIEW</label>
+</ListView>

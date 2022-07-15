@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Updating_PTR</fullName>
+    <columns>CWS_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>CWS_Opportunity__c</columns>
+    <columns>CWS_First_Outbound_By__c</columns>
+    <columns>CWS_Lead_Source_Most_Recent__c</columns>
+    <columns>CWS_LeadSubSourceMostRecent__c</columns>
+    <columns>CWS_LeadSourceDetailsMostRecent__c</columns>
+    <columns>CWS_Primary_Campaign__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CWS_SQO_Accepted_Date_Time__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CWS_SQO_Accepted_Date_Time__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/1/2022 12:00 AM</value>
+    </filters>
+    <label>Updating PTR</label>
+</ListView>

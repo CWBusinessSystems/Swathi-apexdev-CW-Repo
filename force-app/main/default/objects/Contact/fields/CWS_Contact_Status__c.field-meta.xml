@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Tracks Contact life cycle and hand-offs between BDR and SE/PSE. Inquiry/MAL indicate Contact being worked in Marketo, MQL indicates Contact is ready for BDRs, SAL indicates BDR is working the Contact, SQL indicates the Contact is qualified for SE/PSE.</inlineHelpText>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
+            <value>
+                <fullName>MAL</fullName>
+                <default>false</default>
+                <label>MAL</label>
+            </value>
+            <value>
+                <fullName>MQL</fullName>
+                <default>false</default>
+                <label>MQL</label>
+            </value>
+            <value>
+                <fullName>SAL</fullName>
+                <default>false</default>
+                <label>SAL</label>
+            </value>
+            <value>
+                <fullName>SQL</fullName>
+                <default>false</default>
+                <label>SQL</label>
+            </value>
+            <value>
+                <fullName>SQL Working</fullName>
+                <default>false</default>
+                <label>SQL Working</label>
+            </value>
+            <value>
+                <fullName>SQO Accepted</fullName>
+                <default>false</default>
+                <label>SQO Accepted</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Recycled</fullName>
+                <default>false</default>
+                <label>Recycled</label>
+            </value>
+            <value>
+                <fullName>converted</fullName>
+                <default>false</default>
+                <label>converted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

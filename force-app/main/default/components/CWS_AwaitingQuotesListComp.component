@@ -1,0 +1,19 @@
+<apex:component controller="CWS_ProductCategoryDetailsCntrl" access="global">
+    <apex:attribute name="AccountId" type="Id" description="Id of the contract" assignTo="{!AccId}"/>
+     <table id="QuotesTable" border="1" cellSpacing="0" cellpadding="0" width="100%" >
+        <tr>
+            <th>Quote Number</th>
+            <th>Account Name</th>
+            <th>Opportunity Name</th>
+            <th>Stage</th>
+        </tr>
+        <apex:repeat value="{!lstQuotes}" var="p">
+            <tr>
+                <td Style="text-align: center"><apex:outputText value="{!p.Name}"/></td>
+                <td Style="text-align: center"><apex:outputText value="{!p.SBQQ__Account__r.Name}"/></td>
+                <td Style="text-align: center"><apex:outputText value="{!p.SBQQ__Opportunity2__r.name}"/></td>
+                <td Style="text-align: center"><apex:outputText value="{!p.SBQQ__Status__c}"/></td>
+            </tr>
+        </apex:repeat>
+        </table>
+</apex:component>

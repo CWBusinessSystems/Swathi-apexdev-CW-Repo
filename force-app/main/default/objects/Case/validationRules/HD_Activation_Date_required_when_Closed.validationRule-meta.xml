@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HD_Activation_Date_required_when_Closed</fullName>
+    <active>true</active>
+    <description>The ‘Activation Date’ is required when the case status  = ‘Closed’</description>
+    <errorConditionFormula>ISPICKVAL(Status,&apos;Closed&apos;) &amp;&amp; ISBLANK( Activation_Date__c ) &amp;&amp;   RecordType.DeveloperName = &quot;Help_Desk_Activation&quot;</errorConditionFormula>
+    <errorMessage>You must enter the Activation Date when the Case Status = &apos;Closed&apos;</errorMessage>
+</ValidationRule>

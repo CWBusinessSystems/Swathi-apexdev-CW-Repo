@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_OnHoldCannotBeUpdatedOnRenewal</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;Opportunity&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND(
+OR(ISPICKVAL(Type, &apos;Renewal&apos;),ISPICKVAL(Type, &apos;Renewal with Change&apos;)),
+CWS_Master__c=TRUE,
+OR(ISCHANGED(CWS_On_Hold__c), ISCHANGED(CWS_On_Hold_Reason__c)),
+OR(CWS_On_Hold__c=false,
+ISBLANK(CWS_On_Hold_Reason__c)),
+PRIORVALUE(CWS_On_Hold__c)=TRUE,
+NOT(ISPICKVAL(StageName,&apos;Closed Won&apos;))
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot clear On Hold and On Hold Reason on Renewal quotes.</errorMessage>
+</ValidationRule>

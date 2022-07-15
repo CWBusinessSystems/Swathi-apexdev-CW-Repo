@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ZI_Certification_Date__c</fullName>
+    <description>Last time we either saw email activity or manually confirmed company is in business</description>
+    <externalId>false</externalId>
+    <label>ZI Certification Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

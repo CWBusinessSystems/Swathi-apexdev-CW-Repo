@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CommissionOnly_Opps</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(!CWS_Commission_Only__c ,  OR(Opportunity.RecordType.DeveloperName =&apos;CWS_Commision_Only&apos;,Opportunity.RecordType.DeveloperName =&apos;CWS_Commission_Only_ReadOnly&apos;)),
+AND(CWS_Commission_Only__c, Opportunity.RecordType.DeveloperName !=&apos;CWS_Commision_Only&apos;,Opportunity.RecordType.DeveloperName !=&apos;CWS_Commission_Only_ReadOnly&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please Select commission only Check box for Commission Only Opportunity</errorMessage>
+</ValidationRule>

@@ -1,0 +1,89 @@
+<aura:component  controller="CWS_MinCommitUploadCtrl" implements="force:hasRecordId,force:lightningQuickAction" extends="c:CWS_BaseSuperComponent">
+<aura:attribute name="isUploaded" type="Boolean" access="global"/>
+<aura:attribute name="isError" type="Boolean" access="global"/>
+<aura:attribute name="oppRecList" type="Object" access="global"/>
+<aura:attribute name="oppObj" type="Object" access="global"/>
+<aura:attribute name="recordError" type="String" access="global"/>    
+<aura:attribute name="minCommList" type="Object" access="global"/>
+<aura:attribute name="oppID" type="String" access="global"/>
+<aura:attribute name="accID" type="String" access="global"/>
+<aura:attribute name="currCode" type="String" access="global"/>
+<aura:attribute name="isMaster" type="Boolean" access="global"/>
+
+    
+<force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      mode="VIEW"
+      targetRecord="{!v.oppRecList}"
+      targetFields="{!v.oppObj}"
+      targetError="{!v.recordError}"
+      fields="Id,AccountId,CWS_Master__c,CurrencyIsoCode"
+      recordUpdated="{!c.recordUploaded}"/>
+    
+<div class="scroll" style="width:100%">
+<aura:if isTrue="{!v.isUploaded}">
+    <p style="color:red"><b>Please review the data and submit</b></p><br></br>
+</aura:if>
+<aura:if isTrue="{!v.isMaster}">
+<table id="minCommitTable">
+<tr>
+    <td>
+    	<lightning:input type="file" label="" name="file" multiple="false" accept=".csv" onchange="{!c.uploadHandler}"/>
+    </td>
+    <td>
+		Download Template: <a href="{!$Label.c.CWS_Public_Download_CSV_Link}" target="_blank">CSV</a>        
+    </td>
+</tr>
+</table>   
+</aura:if>
+    
+</div>
+<aura:if isTrue="{!v.isUploaded}">
+   <div class="slds-m-top--xx-large">
+        <div class="container-fluid">        
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer"> 
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate"></div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Phone">Monthly Minimum Commit</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Action">Month Year</div>
+                        </th>
+                    </tr>
+                </thead>   
+                <tbody>      
+                    <aura:iteration items="{!v.minCommList}" var="min" indexVar="index">
+                        <tr>
+                            <td> 
+                                <aura:if isTrue="{!min.isError}">
+                                    <lightning:helptext content="{!min.helpText}"/>
+  								</aura:if>
+                            </td>
+                            <td>
+                                <lightning:input name="commit" type="text"  maxlength="10" label="Monthly Minimum Commit" value="{!min.minCommObj.CWS_Monthly_Minimum_Commit__c}" />
+                            </td>
+                            <td>
+                                <lightning:input name="monYear" type="text" maxlength="10" label="Month year" value="{!min.minCommObj.CWS_Month_Year__c}" />
+                            </td>
+                            <td>
+                                <a onclick="{!c.removeRow}" data-record="{!index}">
+                                    <lightning:icon iconName="utility:delete" size="xx-small" alternativeText="Delete"/>
+                                    <span class="slds-assistive-text">Delete</span>
+                                </a>
+                            </td> 
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            <div class="slds-align_absolute-center slds-p-top_small">
+                <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{!c.save}" />
+            </div>
+        </div>
+    </div>  
+</aura:if>    
+</aura:component>

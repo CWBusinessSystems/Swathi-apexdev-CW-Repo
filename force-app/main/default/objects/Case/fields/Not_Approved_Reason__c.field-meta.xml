@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Approved_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Not Approved Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NIF: Email Information</fullName>
+                <default>false</default>
+                <label>NIF: Email Information</label>
+            </value>
+            <value>
+                <fullName>Passwords: Missing/Incomplete Info</fullName>
+                <default>false</default>
+                <label>Passwords: Missing/Incomplete Info</label>
+            </value>
+            <value>
+                <fullName>Passwords: Desktops Offline</fullName>
+                <default>false</default>
+                <label>Passwords: Desktops Offline</label>
+            </value>
+            <value>
+                <fullName>Passwords: Passwords Incorrect</fullName>
+                <default>false</default>
+                <label>Passwords: Passwords Incorrect</label>
+            </value>
+            <value>
+                <fullName>Notification Rule</fullName>
+                <default>false</default>
+                <label>Notification Rule</label>
+            </value>
+            <value>
+                <fullName>NIF: Other</fullName>
+                <default>false</default>
+                <label>NIF: Other</label>
+            </value>
+            <value>
+                <fullName>Client Profiles</fullName>
+                <default>false</default>
+                <label>Client Profiles</label>
+            </value>
+            <value>
+                <fullName>Security Requests</fullName>
+                <default>false</default>
+                <label>Security Requests</label>
+            </value>
+            <value>
+                <fullName>Basic Information</fullName>
+                <default>false</default>
+                <label>Basic Information</label>
+            </value>
+            <value>
+                <fullName>Agents Not Installed</fullName>
+                <default>false</default>
+                <label>Agents Not Installed</label>
+            </value>
+            <value>
+                <fullName>Continuum U</fullName>
+                <default>false</default>
+                <label>Continuum U</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

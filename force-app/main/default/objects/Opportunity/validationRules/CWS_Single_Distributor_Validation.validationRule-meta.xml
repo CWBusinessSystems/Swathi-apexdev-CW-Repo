@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Single_Distributor_Validation</fullName>
+    <active>true</active>
+    <description>Validate that if Single Distributor Validation is TRUE and Opportunity or Quote tries to move to a stage other than Closed Lost or Inactive</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT($Setup.CWS_Single_Distributor_Exclusion__c.CWS_Single_Distributor_Exclusion__c),
+ISPICKVAL(Type, &apos;New Business&apos;),
+NOT(ISPICKVAL( StageName , &apos;Closed Lost&apos; )),
+OR(ISNEW(),ISCHANGED(StageName)),
+OR(CWS_Single_Distributor_Validation__c, 
+CWS_Bill_To_Account__c != Account.CWS_Established_Disti_Reseller__c ),
+Account.CWS_Established_Disti_Reseller__c !=Null,
+ NOT(ISPICKVAL(CWS_Route_to_Market__c,&apos;Direct&apos; )),
+ OR(CWS_Bill_To_Account__r.CWS_Is_Distributor__c,CWS_Bill_To_Account__r.CWS_Is_IIT_Reseller__c)
+)</errorConditionFormula>
+    <errorMessage>This Opportunity/Quote cannot proceed to the next stage because another distributor/reseller has already created contracts with the partner. Please move opportunity to closed lost or reach out to the Global Sales Ops team for support.</errorMessage>
+</ValidationRule>

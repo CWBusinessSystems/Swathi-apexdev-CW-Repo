@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_UniqueId__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>This field stores the concatenated value of CurrencyIsoCode, Category, Fulfillment Type, Distributor Account Id. This is used to block duplicate disti factor records being created. This field is updated using WF rule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field stores the concatenated value of CurrencyIsoCode, Category, Fulfillment Type, Distributor Account Id. This is used to block duplicate disti factor records being created. This field is updated using WF rule.</inlineHelpText>
+    <label>UniqueId</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

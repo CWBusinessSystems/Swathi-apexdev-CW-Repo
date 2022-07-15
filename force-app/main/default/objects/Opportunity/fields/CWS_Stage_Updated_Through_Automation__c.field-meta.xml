@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Stage_Updated_Through_Automation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is stamped by the opportunity Accept, Reject, Recycle flow and is used in a validation rule to prompt users to use the Accept/Reject/Recycle button. Not intended to be used within UI</description>
+    <externalId>false</externalId>
+    <label>Stage Updated Through Automation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

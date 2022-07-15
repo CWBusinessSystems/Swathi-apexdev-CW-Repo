@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prevent_Edit_On_Company_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(ISNEW()),
+ISCHANGED(Name), 
+ISPICKVAL(CWS_Account_Review_Status__c,&apos;In Review&apos;),
+NOT( 
+OR(
+$Profile.Name =&apos;CWS_Master_Data_Admin&apos;,
+$Profile.Name =&apos;System Administrator&apos;,
+$Profile.Name =&apos;CWS_Global_Sales_Ops&apos;
+)
+)
+)</errorConditionFormula>
+    <errorMessage>This is Account in In Review for Data Quality checks. Please contact the Master Data Admin Team to make updates to this Account.</errorMessage>
+</ValidationRule>

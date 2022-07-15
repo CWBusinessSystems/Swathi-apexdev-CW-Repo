@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PC_Partner_Closed_Cases</fullName>
+    <active>true</active>
+    <description>If Closed to Partner Satisfaction == &quot;No&quot; then Reason Partner is Unsatisfied != &quot;&quot; &amp; Explain != &quot;&quot;.</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName = &apos;Partner_Care&apos;, ISPICKVAL(Closed_to_Partner_Satisfaction__c, &apos;No&apos;), OR(ISBLANK(Case_Learning_for_Stakeholder__c), ISBLANK(Explain__c)))</errorConditionFormula>
+    <errorMessage>Please fill out the &quot;Reason Partner is Unsatisfied&quot; &amp; &quot;Explain&quot; fields.</errorMessage>
+</ValidationRule>

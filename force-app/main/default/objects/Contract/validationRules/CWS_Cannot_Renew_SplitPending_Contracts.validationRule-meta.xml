@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Cannot_Renew_SplitPending_Contracts</fullName>
+    <active>true</active>
+    <description>Cannot create a renewal opportunity/quote from contract when Renewal Category is Split-Contract.</description>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;Contract&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND(
+OR(ISCHANGED(SBQQ__RenewalForecast__c),
+ISCHANGED(SBQQ__RenewalQuoted__c)),
+ISPICKVAL(CWS_Renewal_Category__c, &apos;Split-Pending&apos;)
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot renew a Split Pending contract.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Competitor_Takeaway_Security__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures Security competitor from which CW is taking business for this deal.</inlineHelpText>
+    <label>Competitor Takeaway: Security</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Competitor_Takeaway_Security</valueSetName>
+    </valueSet>
+</CustomField>

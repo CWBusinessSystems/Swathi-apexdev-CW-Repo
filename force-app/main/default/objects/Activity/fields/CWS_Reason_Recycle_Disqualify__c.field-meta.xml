@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Reason_Recycle_Disqualify__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the reason why the Task is being recycled or disqualified.</inlineHelpText>
+    <label>Reason Recycle/Disqualify</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unable to Reach</fullName>
+                <default>false</default>
+                <label>Unable to Reach</label>
+            </value>
+            <value>
+                <fullName>Not Ready to Buy</fullName>
+                <default>false</default>
+                <label>Not Ready to Buy</label>
+            </value>
+            <value>
+                <fullName>No Budget</fullName>
+                <default>false</default>
+                <label>No Budget</label>
+            </value>
+            <value>
+                <fullName>Using a Competitor</fullName>
+                <default>false</default>
+                <label>Using a Competitor</label>
+            </value>
+            <value>
+                <fullName>Insufficient Data</fullName>
+                <default>false</default>
+                <label>Insufficient Data</label>
+            </value>
+            <value>
+                <fullName>Job Seeker</fullName>
+                <default>false</default>
+                <label>Job Seeker</label>
+            </value>
+            <value>
+                <fullName>End User</fullName>
+                <default>false</default>
+                <label>End User</label>
+            </value>
+            <value>
+                <fullName>Not a Prospect</fullName>
+                <default>false</default>
+                <label>Not a Prospect</label>
+            </value>
+            <value>
+                <fullName>No Authority</fullName>
+                <default>false</default>
+                <label>No Authority</label>
+            </value>
+            <value>
+                <fullName>Invalid Data</fullName>
+                <default>false</default>
+                <label>Invalid Data</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

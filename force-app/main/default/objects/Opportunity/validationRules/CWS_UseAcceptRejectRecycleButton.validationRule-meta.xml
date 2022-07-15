@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_UseAcceptRejectRecycleButton</fullName>
+    <active>true</active>
+    <description>This validation rule prompts users to use the Accept/Reject/Recycle button to move a pre-pipeline opportunity into the pipeline rather than do it manually.</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &apos;System Administrator&apos;),
+NOT($Profile.Name = &apos;CWS_Contract_Admin&apos;),
+NOT($Profile.Name = &apos;CWS_Global_Sales_Ops&apos;),
+NOT($Profile.Name = &apos;CWS_Master_Data_Admin&apos;),
+NOT($Profile.Name = &apos;CWS_Order_Management&apos;),
+ISCHANGED(StageName), 
+IF(ISPICKVAL(PRIORVALUE(StageName),&apos;Pre-Pipeline&apos;),TRUE,FALSE), 
+IF(CWS_Stage_Updated_Through_Automation__c = FALSE, TRUE, FALSE))</errorConditionFormula>
+    <errorMessage>Please use the Accept/Reject/Recycle button at the top to move this opportunity into the pipeline or to reject/recycle it. Once the opportunity is in the pipeline, the stages can be updated.</errorMessage>
+</ValidationRule>

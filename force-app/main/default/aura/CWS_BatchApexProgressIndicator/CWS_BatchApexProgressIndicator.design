@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="inputJobId" label="Apex Job ID"/>
+    <design:attribute name="isComplete" label="Set to true when job is complete"/>
+</design:component>

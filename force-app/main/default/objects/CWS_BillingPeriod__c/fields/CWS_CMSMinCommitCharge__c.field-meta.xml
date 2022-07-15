@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CMSMinCommitCharge__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Roll up summary of billing item where white space group = min commit charge</inlineHelpText>
+    <label>CMS Min Commit Charge</label>
+    <summarizedField>CWS_BillingItem__c.CWS_MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>CWS_BillingItem__c.CWS_WhiteSpaceGroup__c</field>
+        <operation>equals</operation>
+        <value>Min Commit Charge</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CWS_BillingItem__c.CWS_BillingPeriod__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

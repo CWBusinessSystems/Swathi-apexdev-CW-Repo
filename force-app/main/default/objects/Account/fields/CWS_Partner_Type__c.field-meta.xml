@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Partner_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the categorization of active or former Partner.</inlineHelpText>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VIP Partner</fullName>
+                <default>false</default>
+                <label>VIP Partner</label>
+            </value>
+            <value>
+                <fullName>Mid Tier</fullName>
+                <default>false</default>
+                <label>Mid Tier</label>
+            </value>
+            <value>
+                <fullName>Low Touch</fullName>
+                <default>false</default>
+                <label>Low Touch</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Engaged in M&amp;A</fullName>
+                <default>false</default>
+                <label>Engaged in M&amp;A</label>
+            </value>
+            <value>
+                <fullName>Former Partner</fullName>
+                <default>false</default>
+                <label>Former Partner</label>
+            </value>
+            <value>
+                <fullName>AUTO-No Assurance</fullName>
+                <default>false</default>
+                <label>AUTO-No Assurance</label>
+            </value>
+            <value>
+                <fullName>MNG-No Assurance</fullName>
+                <default>false</default>
+                <label>MNG-No Assurance</label>
+            </value>
+            <value>
+                <fullName>MNG/AUTO-No Assurance</fullName>
+                <default>false</default>
+                <label>MNG/AUTO-No Assurance</label>
+            </value>
+            <value>
+                <fullName>1-Tier Reseller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1-Tier Reseller</label>
+            </value>
+            <value>
+                <fullName>2-Tier Reseller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2-Tier Reseller</label>
+            </value>
+            <value>
+                <fullName>IIT Partner (needed?)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IIT Partner (needed?)</label>
+            </value>
+            <value>
+                <fullName>Invent Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invent Partner</label>
+            </value>
+            <value>
+                <fullName>Invent Partner  (needed?)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invent Partner  (needed?)</label>
+            </value>
+            <value>
+                <fullName>Partner (obboarded?)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner (obboarded?)</label>
+            </value>
+            <value>
+                <fullName>Vendor &amp; Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vendor &amp; Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

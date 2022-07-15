@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used as a switching mechanism that enables and disables validations around multiple active Distributor/Reseller records. Disabling of the validations should only occur when all business systems are built to support quoting and ordering from different distributors to the same Partner.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Single Distributor Validation Exclusion</label>
+    <visibility>Public</visibility>
+</CustomObject>

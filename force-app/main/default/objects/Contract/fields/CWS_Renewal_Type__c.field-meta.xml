@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Renewal_Type__c</fullName>
+    <description>Renewal Type of Contract. Picklist values - Opt-Out, Opt-In and Non-Renewable</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Renewal Type of Contract. Picklist values - Opt-Out, Opt-In and Non-Renewable</inlineHelpText>
+    <label>Renewal Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Renewal_Type</valueSetName>
+    </valueSet>
+</CustomField>

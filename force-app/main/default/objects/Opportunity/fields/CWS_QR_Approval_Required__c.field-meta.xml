@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_QR_Approval_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will get populated if the Approval needs to be triggered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will get populated if the Approval needs to be triggered.</inlineHelpText>
+    <label>QR Approval Required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Period</fullName>
+    <fields>Name</fields>
+    <fields>CWS_Account__c</fields>
+    <fields>CWS_CWTotalBilling__c</fields>
+    <fields>CWS_CMSTotalBilling__c</fields>
+    <fields>CWS_TotalBillings__c</fields>
+    <label>Billing Period</label>
+</CompactLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_MinLineStartDate__c</fullName>
+    <description>Min Line Start Date copied from Quote</description>
+    <externalId>false</externalId>
+    <label>Min Line Start Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

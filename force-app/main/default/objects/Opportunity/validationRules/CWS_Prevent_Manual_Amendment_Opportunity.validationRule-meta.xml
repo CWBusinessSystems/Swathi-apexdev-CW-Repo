@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prevent_Manual_Amendment_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISPICKVAL(Type , &apos;Amendment&apos;),
+ISNEW(), 
+ISBLANK(SBQQ__AmendedContract__c),  
+NOT(
+OR(
+$Profile.Name = &apos;System Administrator&apos;,
+$Profile.Name = &apos;CWS_Global_Sales_Ops&apos;,
+$Profile.Name = &apos;CWS_Master_Data_Admin&apos;
+))
+  
+)</errorConditionFormula>
+    <errorMessage>You cannot create Amendment opportunity.</errorMessage>
+</ValidationRule>

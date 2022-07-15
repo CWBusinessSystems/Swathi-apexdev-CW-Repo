@@ -1,0 +1,74 @@
+<aura:component access="global" implements="lightning:availableForFlowScreens">
+    <aura:attribute name="opportunityRecord" type="Opportunity"/>
+    <aura:attribute name="pricebookEntries" type="PricebookEntry[]"/>	
+    <aura:attribute name="products" type="Product2[]" default="[]"/>
+    <aura:attribute name="exludedProducts" type="String" default=""/>
+    <aura:attribute name="opportunityLineItems" type="OpportunityLineItem[]" />
+    <aura:attribute name="availableLineItems" type="OpportunityLineItem[]" default="[]"/>
+    <aura:attribute name="subTotal" type="Decimal" default="0"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    
+    
+    <div class="c-container">
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="6" padding="around-small">
+                <lightning:card title="Available Products" iconName="standard:products">
+                    <lightning:layout multipleRows="true" class="slds-grid_vertical-align-center"  >
+                        <lightning:layoutItem size="2" padding="horizontal-medium">
+                            Quantity
+                        </lightning:layoutItem>                
+                        <lightning:layoutItem size="6" padding="horizontal-medium" class="slds-border_bottom">
+                            Product
+                        </lightning:layoutItem>  
+                        <lightning:layoutItem size="4" padding="horizontal-medium" class="slds-border_bottom">
+                            Avg List Price
+                        </lightning:layoutItem>
+                        <aura:iteration items="{!v.availableLineItems}" var="ali" indexVar="index">
+                            <lightning:layoutItem size="3" padding="horizontal-medium" class="slds-border_bottom">
+                                <lightning:input class="slds-p-around_xx-small" name="{!index}" type="number" value="{!ali.Quantity}" disabled="false" oncommit="{!c.handleQuantityInput}" variant="label-hidden"/>
+                            </lightning:layoutItem>  
+                            <lightning:layoutItem  size="5" padding="horizontal-medium" class="slds-border_bottom">
+                                {!ali.ProductCode}
+                            </lightning:layoutItem>  
+                            <lightning:layoutItem  size="4" padding="horizontal-medium" class="slds-border_bottom">
+                                <lightning:formattedNumber value="{!ali.UnitPrice}" style="currency" currencyCode="{!ali.CurrencyIsoCode}"/>
+                            </lightning:layoutItem>
+                            <aura:if isTrue="{!ali.disableInput}">
+                                <lightning:layoutItem size="1"></lightning:layoutItem>
+                            	<lightning:layoutItem size="10" class="slds-text-color_destructive">{!ali.ProductCode} is not suggested with products already selected</lightning:layoutItem>
+                            	<lightning:layoutItem size="1"></lightning:layoutItem>
+                            </aura:if>
+                        </aura:iteration>
+                    </lightning:layout>
+                </lightning:card>
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem size="6" padding="arround-small">
+                <lightning:card title="Pre-Pipeline Products Added" iconName="standard:opportunity">
+                    <lightning:layout multipleRows="true">
+                        <lightning:layoutItem size="1"></lightning:layoutItem>
+                        <lightning:layoutItem size="1">QTY</lightning:layoutItem>
+                        
+                        <lightning:layoutItem size="5">Product</lightning:layoutItem>
+                        <lightning:layoutItem size="2">Unit Price * 12</lightning:layoutItem>
+                        <lightning:layoutItem size="3">Total ACV</lightning:layoutItem>
+                        
+                        <aura:iteration items="{!v.opportunityLineItems}" var="oli" indexVar="index">
+                            <lightning:layoutItem size="1">
+                                <lightning:buttonIcon name="{!index}" size="small" iconName="utility:close" title="Remove" onclick="{!c.handleRemoveLine}"/></lightning:layoutItem>
+                            <lightning:layoutItem size="1">{!oli.Quantity}</lightning:layoutItem>
+                           
+                            <lightning:layoutItem size="5">{!oli.ProductCode}</lightning:layoutItem>
+                            <lightning:layoutItem size="2"><lightning:formattedNumber value="{!oli.UnitPrice}" style="currency" currencyCode="{!oli.CurrencyIsoCode}" currencyDisplayAs="symbol"/></lightning:layoutItem>
+                            <lightning:layoutItem size="3"><lightning:formattedNumber value="{!oli.Quantity * oli.UnitPrice}" style="currency" currencyCode="{!oli.CurrencyIsoCode}" currencyDisplayAs="symbol"/></lightning:layoutItem>
+                            
+                        </aura:iteration>
+                        
+                    </lightning:layout>
+                </lightning:card>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

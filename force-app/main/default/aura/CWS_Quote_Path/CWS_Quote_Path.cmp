@@ -1,0 +1,43 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" controller="CWS_SubmitQuoteForApproval">
+   <aura:attribute name="stages" type="List" />
+   <aura:attribute name="stageMap" type="Map" />
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+   <aura:attribute name="quoteRecord" type="Object" access="global"/>
+    <aura:attribute name="quote" type="Object" access="global"/>
+    <aura:attribute name="recordError" type="String" access="global"/>
+
+   <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      mode="VIEW"
+      targetRecord="{!v.quoteRecord}"
+      targetFields="{!v.quote}"
+      targetError="{!v.recordError}"
+      fields="SBQQ__Status__c"
+      recordUpdated="{!c.quoteHandler}"/>
+      
+      <center>{!v.recordError}</center>
+    <div class="slds-path">
+        <div class="slds-grid slds-path__track">
+           <div class="slds-grid slds-path__scroller-container">
+              <div class="slds-path__scroller" role="application">
+                 <div class="slds-path__scroller_inner">
+                    <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+                     <aura:iteration var="stage" items="{!v.stageMap}">
+                        <li class="{!'slds-path__item '+stage.css}" role="presentation">
+                           <a aria-selected="false" class="slds-path__link" href="javascript:void(0);" role="option" tabindex="-1">
+                              <span class="slds-path__stage">
+                                 <lightning:icon iconName="utility:check" alternativeText="check" title="check" variant="inverse" />
+                              </span>
+                              <span class="slds-path__title">{!stage.name}</span>
+                           </a>
+                        </li>
+                     </aura:iteration>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+</aura:component>

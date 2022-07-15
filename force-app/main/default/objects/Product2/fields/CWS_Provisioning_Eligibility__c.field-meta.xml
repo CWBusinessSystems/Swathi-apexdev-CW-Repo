@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Provisioning_Eligibility__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if a product needs provisioning or not and if it is manually or automatically provisioned</inlineHelpText>
+    <label>Provisioning Eligibility</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Provisioning_Eligibility</valueSetName>
+    </valueSet>
+</CustomField>

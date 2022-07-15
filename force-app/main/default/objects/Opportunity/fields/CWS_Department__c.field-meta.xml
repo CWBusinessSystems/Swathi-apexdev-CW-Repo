@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Department__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the department to which this Opportunity belongs</inlineHelpText>
+    <label>Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Sales - Land</fullName>
+                <default>false</default>
+                <label>New Sales - Land</label>
+            </value>
+            <value>
+                <fullName>New Sales - Expand</fullName>
+                <default>false</default>
+                <label>New Sales - Expand</label>
+            </value>
+            <value>
+                <fullName>Partner Sales</fullName>
+                <default>false</default>
+                <label>Partner Sales</label>
+            </value>
+            <value>
+                <fullName>Invent</fullName>
+                <default>false</default>
+                <label>Invent</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+                <label>Strategy</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

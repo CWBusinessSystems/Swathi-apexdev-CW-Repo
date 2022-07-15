@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Renewal_Batch_Failed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Error when updating Renewal Forecast/Renewal Quoted Flag on Contract.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Error when updating Renewal Forecast/Renewal Quoted Flag on Contract.</inlineHelpText>
+    <label>Renewal Batch Failed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_SkuType_edit_once_snt_to_Dwnstrm</fullName>
+    <active>true</active>
+    <description>SkuType can&apos;t be changed once sent to downstream</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL( CWS_Zuora_Product_Sync_Status__c , &quot;Synced&quot;),  ISPICKVAL( CWS_NetSuite_Product_Sync_Status__c ,&quot;Synced&quot;)), ISCHANGED(  CWS_SKU_Type__c  ))</errorConditionFormula>
+    <errorDisplayField>CWS_SKU_Type__c</errorDisplayField>
+    <errorMessage>SkuType cannot be modified as it has already been sent downstream to Zuora and NetSuite</errorMessage>
+</ValidationRule>

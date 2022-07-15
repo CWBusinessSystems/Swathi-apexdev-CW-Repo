@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_UserDefinedScheduleId__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(SBQQ__QuoteLine__r.CWS_Renewed_Line__c=true,
+IF(SBQQ__QuoteLine__r.CWS_Prior_Discount_Schedule__r.SBQQ__UserDefined__c=true,
+SBQQ__QuoteLine__r.CWS_Prior_Discount_Schedule__c,
+null),
+if(SBQQ__QuoteLine__r.SBQQ__DiscountSchedule__r.SBQQ__UserDefined__c=true, 
+SBQQ__QuoteLine__r.SBQQ__DiscountSchedule__c,
+null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UserDefinedScheduleId</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

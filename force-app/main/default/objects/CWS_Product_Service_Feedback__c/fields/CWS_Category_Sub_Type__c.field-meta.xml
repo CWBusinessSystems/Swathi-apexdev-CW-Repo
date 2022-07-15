@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Category_Sub_Type__c</fullName>
+    <description>Sub-type of the Category</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sub-type of the Category</inlineHelpText>
+    <label>Category Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CWS_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Features (or lack of)</fullName>
+                <default>false</default>
+                <label>Features (or lack of)</label>
+            </value>
+            <value>
+                <fullName>Function Concerns</fullName>
+                <default>false</default>
+                <label>Function Concerns</label>
+            </value>
+            <value>
+                <fullName>Knowledge</fullName>
+                <default>false</default>
+                <label>Knowledge</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+                <label>Ownership</label>
+            </value>
+            <value>
+                <fullName>Partner Unawareness</fullName>
+                <default>false</default>
+                <label>Partner Unawareness</label>
+            </value>
+            <value>
+                <fullName>Process Gap</fullName>
+                <default>false</default>
+                <label>Process Gap</label>
+            </value>
+            <value>
+                <fullName>Process limitation</fullName>
+                <default>false</default>
+                <label>Process limitation</label>
+            </value>
+            <value>
+                <fullName>Timeliness</fullName>
+                <default>false</default>
+                <label>Timeliness</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Partner Education</controllingFieldValue>
+            <valueName>Partner Unawareness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People</controllingFieldValue>
+            <valueName>Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People</controllingFieldValue>
+            <valueName>Knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People</controllingFieldValue>
+            <valueName>Ownership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People</controllingFieldValue>
+            <valueName>Timeliness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Process</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Process</controllingFieldValue>
+            <valueName>Process Gap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Process</controllingFieldValue>
+            <valueName>Process limitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Features (or lack of)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Function Concerns</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

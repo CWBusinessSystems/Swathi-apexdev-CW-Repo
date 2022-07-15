@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <description>This Component is used to show the List of Quotes which are in Awaiting signature stage but the Agreement signature we have got back.</description>
+    <label>AwaitingQuotesListComp</label>
+    <packageVersions>
+        <majorNumber>224</majorNumber>
+        <minorNumber>9</minorNumber>
+        <namespace>SBQQ</namespace>
+    </packageVersions>
+</ApexComponent>

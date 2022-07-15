@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Restrict_Update_Master_on_IryQuote</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(ISBLANK(SBQQ__PrimaryQuote__c)), 
+NOT(ISPICKVAL(Type,&apos;Renewal&apos;)),
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Transaction_Reason__c, &apos;Recommit&apos;)),
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Transaction_Reason__c, &apos;Merger &amp; Acquisition&apos;)),
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Transaction_Reason__c, &apos;Agreement Conversion&apos;)),
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Transaction_Reason__c, &apos;Currency Conversion&apos;)),
+ISCHANGED(CWS_Master__c)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Master__c</errorDisplayField>
+    <errorMessage>You cannot change Master value once primary quote is created for the opportunity</errorMessage>
+</ValidationRule>

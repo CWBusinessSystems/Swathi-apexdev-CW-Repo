@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Meddic_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( CWS_Meddic_Position__c  = &quot;Positive&quot;, IMAGE(&apos;/resource/1623182920000/flag_green?&apos;,&quot;Meddic Value Greater than 3&quot;,30,30),
+IF( CWS_Meddic_Position__c = &quot;Unknown&quot;, IMAGE(&apos;/resource/1623182974000/Flag_yellow?&apos;,&quot;Meddic Value 3.0&quot;,30,30),
+IF( CWS_Meddic_Position__c = &quot;Negative&quot;, IMAGE(&apos;/resource/1623182960000/Flag_Red?&apos;,&quot;Meddic Value Less than 3.0&quot;,30,30),
+IMAGE(&apos;/resource/1620847749000/Flag_Purple?&apos;,&quot;Meddic Not Completed&quot;,30,30))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meddic Flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

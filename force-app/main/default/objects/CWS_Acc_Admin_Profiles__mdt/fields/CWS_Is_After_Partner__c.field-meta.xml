@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Is_After_Partner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to identify profile which need edit access after account become partner.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>is After Partner</label>
+    <type>Checkbox</type>
+</CustomField>

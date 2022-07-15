@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trial_Type</fullName>
+    <columns>NAME</columns>
+    <columns>CWS_Company_Name__c</columns>
+    <columns>CWS_Lead__c</columns>
+    <columns>CWS_Lead_Status__c</columns>
+    <columns>CWS_Contact__c</columns>
+    <columns>CWS_Contact_Status__c</columns>
+    <columns>CWS_Trial_Start_Date__c</columns>
+    <columns>CWS_Trial_End_Date__c</columns>
+    <columns>CWS_Purchase_Date__c</columns>
+    <columns>CWS_License_Type__c</columns>
+    <columns>CWS_Purchase_Type__c</columns>
+    <columns>Outreach_Actively_Being_Sequenced__c</columns>
+    <columns>Outreach_Current_Sequence_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CWS_Control_Trial__c.Trial</value>
+    </filters>
+    <label>Trial Type</label>
+</ListView>

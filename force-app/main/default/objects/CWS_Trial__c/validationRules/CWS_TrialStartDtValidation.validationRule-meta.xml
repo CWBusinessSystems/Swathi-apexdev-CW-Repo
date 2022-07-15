@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_TrialStartDtValidation</fullName>
+    <active>true</active>
+    <description>Trial Start Date should be auto set and not editable once moved to &quot;In Progress&quot; or any of the Completed stages</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+OR(
+ISPICKVAL(CWS_Stage__c, &quot;In Progress&quot;) ,
+ISPICKVAL(CWS_Stage__c, &quot;Completed - Contract Pending&quot;) ,
+ISPICKVAL(CWS_Stage__c, &quot;Completed - Contract Successful&quot;) ,
+ISPICKVAL(CWS_Stage__c, &quot;Completed - Unsuccessful&quot;) 
+),
+ISCHANGED(  CWS_Trial_Start_Date__c )
+)</errorConditionFormula>
+    <errorMessage>This Trial is in progress/completed. The Trial Start Date cannot be editable.</errorMessage>
+</ValidationRule>

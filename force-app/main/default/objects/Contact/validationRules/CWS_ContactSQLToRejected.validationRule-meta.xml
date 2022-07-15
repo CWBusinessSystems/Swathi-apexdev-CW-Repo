@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ContactSQLToRejected</fullName>
+    <active>true</active>
+    <description>From SQL Status cannot be moved to recycled</description>
+    <errorConditionFormula>AND(
+ NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ NOT($Profile.Name=&apos;System Administrator&apos;),
+ NOT($Profile.Name=&apos;CWS_Global_Sales_Ops&apos;),
+ NOT($Profile.Name=&apos;CWS_Master_Data_Admin&apos;),
+ NOT($Profile.Name=&apos;CWS_Marketo_Admin&apos;),
+ ISCHANGED(CWS_Contact_Status__c),
+ OR(
+  ISPICKVAL( PRIORVALUE(CWS_Contact_Status__c) ,&apos;SQL Working&apos;),
+  ISPICKVAL( PRIORVALUE(CWS_Contact_Status__c) ,&apos;SQL&apos;)
+ ),
+ ISPICKVAL(CWS_Contact_Status__c ,&apos;Rejected&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Contact_Status__c</errorDisplayField>
+    <errorMessage>You cannot reject this Contact. Please recycle or convert the Contact to proceed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>24x7 - US ONLY</fullName>
+                <default>false</default>
+                <label>24x7 - US ONLY</label>
+            </value>
+            <value>
+                <fullName>Business Hours - US ONLY</fullName>
+                <default>false</default>
+                <label>Business Hours - US ONLY</label>
+            </value>
+            <value>
+                <fullName>After Hours - US ONLY</fullName>
+                <default>false</default>
+                <label>After Hours - US ONLY</label>
+            </value>
+            <value>
+                <fullName>24x7 - Global</fullName>
+                <default>false</default>
+                <label>24x7 - Global</label>
+            </value>
+            <value>
+                <fullName>Business Hours - Global</fullName>
+                <default>false</default>
+                <label>Business Hours - Global</label>
+            </value>
+            <value>
+                <fullName>After Hours - Global</fullName>
+                <default>false</default>
+                <label>After Hours - Global</label>
+            </value>
+            <value>
+                <fullName>24x7 - US Voice</fullName>
+                <default>false</default>
+                <label>24x7 - US Voice</label>
+            </value>
+            <value>
+                <fullName>Business Hours - US Voice</fullName>
+                <default>false</default>
+                <label>Business Hours - US Voice</label>
+            </value>
+            <value>
+                <fullName>After Hours - US Voice</fullName>
+                <default>false</default>
+                <label>After Hours - US Voice</label>
+            </value>
+            <value>
+                <fullName>24x7</fullName>
+                <default>false</default>
+                <label>24x7</label>
+            </value>
+            <value>
+                <fullName>Business Hours</fullName>
+                <default>false</default>
+                <label>Business Hours</label>
+            </value>
+            <value>
+                <fullName>After Hours</fullName>
+                <default>false</default>
+                <label>After Hours</label>
+            </value>
+            <value>
+                <fullName>24x7 - US Premier</fullName>
+                <default>false</default>
+                <label>24x7 - US Premier</label>
+            </value>
+            <value>
+                <fullName>Business Hours - US Premier</fullName>
+                <default>false</default>
+                <label>Business Hours - US Premier</label>
+            </value>
+            <value>
+                <fullName>After Hours - US Premier</fullName>
+                <default>false</default>
+                <label>After Hours - US Premier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

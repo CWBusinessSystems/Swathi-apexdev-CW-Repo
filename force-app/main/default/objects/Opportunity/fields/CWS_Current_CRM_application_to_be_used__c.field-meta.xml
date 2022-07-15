@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Current_CRM_application_to_be_used__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the prospect&apos;s current CRM application expected to be used when implementing CW Sell.</inlineHelpText>
+    <label>Current CRM application to be used?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No CRM</fullName>
+                <default>false</default>
+                <label>No CRM</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Manage</fullName>
+                <default>false</default>
+                <label>ConnectWise Manage</label>
+            </value>
+            <value>
+                <fullName>NetSuite</fullName>
+                <default>false</default>
+                <label>NetSuite</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Autotask</fullName>
+                <default>false</default>
+                <label>Autotask</label>
+            </value>
+            <value>
+                <fullName>Microsoft CRM</fullName>
+                <default>false</default>
+                <label>Microsoft CRM</label>
+            </value>
+            <value>
+                <fullName>ACT</fullName>
+                <default>false</default>
+                <label>ACT</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

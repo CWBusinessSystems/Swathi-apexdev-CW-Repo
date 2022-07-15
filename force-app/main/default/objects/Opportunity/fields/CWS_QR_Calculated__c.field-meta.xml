@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_QR_Calculated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if quota retirement for the Opportunity was calculated successfully</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if quota retirement for the Opportunity was calculated successfully</inlineHelpText>
+    <label>QR Calculated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

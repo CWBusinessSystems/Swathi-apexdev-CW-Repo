@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brian_Product_View</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>CWS_Status_Type__c</columns>
+    <columns>CWS_Billing_Term__c</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>SBQQ__SubscriptionType__c</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>CWS_Charge_Model__c</columns>
+    <columns>CWS_License_Type__c</columns>
+    <columns>CWS_Bundle_Type__c</columns>
+    <columns>CWS_Status__c</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Status_Type__c</field>
+        <operation>equals</operation>
+        <value>Active,ACTIVE\BILLING ONLY</value>
+    </filters>
+    <filters>
+        <field>CWS_Product_Line__c</field>
+        <operation>equals</operation>
+        <value>Business Automation : Business Automation - Other</value>
+    </filters>
+    <label>Brian Product View</label>
+</ListView>

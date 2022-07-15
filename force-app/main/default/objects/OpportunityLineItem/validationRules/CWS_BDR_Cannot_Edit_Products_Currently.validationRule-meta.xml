@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_BDR_Cannot_Edit_Products_Currently</fullName>
+    <active>true</active>
+    <errorConditionFormula>CONTAINS($UserRole.Name,&apos;Business Development&apos;)&amp;&amp;
+NOT(ISPICKVAL(Opportunity.StageName,&quot;Nurture&quot;))&amp;&amp;
+NOT(ISPICKVAL(Opportunity.StageName,&quot;Meeting&quot;))&amp;&amp;
+NOT(ISPICKVAL(Opportunity.StageName,&quot;Recycle&quot;))&amp;&amp;(ISCHANGED(ListPrice)||
+ISCHANGED(TotalPrice)||
+ISCHANGED(Quantity)||
+ISCHANGED(Product2Id))</errorConditionFormula>
+    <errorMessage>This item is currently in the Pipeline, therefore you cannot update these items. Please refer to the Sales Rep of the Opportunity about these products.</errorMessage>
+</ValidationRule>

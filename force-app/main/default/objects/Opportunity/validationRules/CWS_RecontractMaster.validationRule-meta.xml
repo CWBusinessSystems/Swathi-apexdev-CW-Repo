@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_RecontractMaster</fullName>
+    <active>true</active>
+    <description>The New Business Opportunity of a Re-Contract process must be marked as Master</description>
+    <errorConditionFormula>OR(
+NOT(ISBLANK( SBQQ__PrimaryQuote__r.CWS_Recontract_New_Opportunity__c )) &amp;&amp;  SBQQ__PrimaryQuote__r.CWS_Master__c = FALSE &amp;&amp; CWS_Master__c = TRUE,
+NOT(ISBLANK(  SBQQ__PrimaryQuote__r.CWS_Recontract_Cancel_Opportunity__c )) &amp;&amp; SBQQ__PrimaryQuote__r.CWS_Master__c = TRUE &amp;&amp; CWS_Master__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>The New Business Opportunity of a Re-Contract process must be marked as Master</errorMessage>
+</ValidationRule>

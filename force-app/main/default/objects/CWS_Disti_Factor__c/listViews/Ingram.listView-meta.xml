@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ingram</fullName>
+    <columns>NAME</columns>
+    <columns>CWS_Legacy_Category__c</columns>
+    <columns>CWS_Disti_Factor__c</columns>
+    <columns>CWS_Fulfillment_Type__c</columns>
+    <columns>CWS_Distributor__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Distributor__c</field>
+        <operation>equals</operation>
+        <value>Ingram</value>
+    </filters>
+    <label>Ingram</label>
+</ListView>

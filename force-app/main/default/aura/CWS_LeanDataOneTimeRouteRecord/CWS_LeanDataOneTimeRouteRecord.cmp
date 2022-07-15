@@ -1,0 +1,17 @@
+<aura:component implements="lightning:availableForFlowScreens">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="batchStatus" type="String" default=""/>
+    <aura:attribute name="isComplete" type="Boolean" default="false"/>
+    <aura:attribute name="jobId" type="String"/>
+    <aura:if isTrue="{!!empty(v.jobId)}">
+        <aura:if isTrue="{!v.batchStatus != 'Completed'}">
+            <div>The record is being routed by LeanData do not click next until 100% complete</div>
+            <div>
+                <c:CWS_BatchApexProgressIndicator inputJobId="{!v.jobId}" batchStatus="{!v.batchStatus}" isComplete="{!v.isComplete}"/>
+            </div>
+        </aura:if>
+    </aura:if>
+    <aura:if isTrue="{!v.batchStatus == 'Completed'}">
+        The Record has been routed by LeanData click next to review results
+    </aura:if>
+</aura:component>

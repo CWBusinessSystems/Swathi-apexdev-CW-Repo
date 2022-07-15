@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_BillingEndDate__c</fullName>
+    <description>Billing End date for the subscription</description>
+    <externalId>false</externalId>
+    <formula>IF(
+	ISPICKVAL(CWS_Payment_Schedule_Driver__c,&apos;Spread&apos;),
+IF(
+	AND(
+		NOT(
+			ISBLANK(CWS_Period_for_Ramp_Spread_Deferment__c) 
+			),
+		CWS_Period_for_Ramp_Spread_Deferment__c&gt;0
+	),
+	ADDMONTHS(ServiceDate,  CWS_Period_for_Ramp_Spread_Deferment__c),
+	ADDMONTHS(ServiceDate,1)),
+  IF(            AND(  Product2.CWS_Implementation_Spread_Eligibility__c, 
+                       OR(
+                           NOT(ISPICKVAL(CWS_Payment_Schedule_Driver__c,&apos;Spread&apos;)), 
+                                ISPICKVAL(CWS_Payment_Schedule_Driver__c,&apos;&apos;)
+                          )
+                     ),
+                     ADDMONTHS(ServiceDate,1),
+                     EndDate 
+    )
+)</formula>
+    <label>Billing End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

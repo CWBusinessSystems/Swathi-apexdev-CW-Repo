@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Period_for_ramp_spread_deferment__c</fullName>
+    <description>Number of months that special payment schedule is applicable</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of months that special payment schedule is applicable</inlineHelpText>
+    <label>Period for ramp/ spread/ deferment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

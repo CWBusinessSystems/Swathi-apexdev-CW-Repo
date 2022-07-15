@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R1_Survey_Problem_Solving__c</fullName>
+    <description>Contact&apos;s answer to the question: How satisfied were you with the technician&apos;s problem solving ability?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How were our technician’s problem solving skills?</inlineHelpText>
+    <label>R1 Survey Problem Solving</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5. Extremely Satisfied</fullName>
+                <default>false</default>
+                <label>5. Extremely Satisfied</label>
+            </value>
+            <value>
+                <fullName>4. Satisfied</fullName>
+                <default>false</default>
+                <label>4. Satisfied</label>
+            </value>
+            <value>
+                <fullName>3. Neither Satisfied nor Dissatisfied</fullName>
+                <default>false</default>
+                <label>3. Neither Satisfied nor Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>2. Dissatisfied</fullName>
+                <default>false</default>
+                <label>2. Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>1. Extremely Dissatisfied</fullName>
+                <default>false</default>
+                <label>1. Extremely Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>--Select--</fullName>
+                <default>false</default>
+                <label>--Select--</label>
+            </value>
+            <value>
+                <fullName>1. Very Dissatisfied</fullName>
+                <default>false</default>
+                <label>1. Very Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>2. Somewhat Dissatisfied</fullName>
+                <default>false</default>
+                <label>2. Somewhat Dissatisfied</label>
+            </value>
+            <value>
+                <fullName>4. Somewhat Satisfied</fullName>
+                <default>false</default>
+                <label>4. Somewhat Satisfied</label>
+            </value>
+            <value>
+                <fullName>5. Very Satisfied</fullName>
+                <default>false</default>
+                <label>5. Very Satisfied</label>
+            </value>
+            <value>
+                <fullName>5. Strongly Agree</fullName>
+                <default>false</default>
+                <label>5. Strongly Agree</label>
+            </value>
+            <value>
+                <fullName>4. Somewhat Agree</fullName>
+                <default>false</default>
+                <label>4. Somewhat Agree</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Mandatory_Date_for_Submission_Rule</fullName>
+    <active>true</active>
+    <description>All Order Lines should have Provisioning/Order Line Start Date before submission to Billing and Finance Systems. Please ensure mandatory fields are filled in</description>
+    <errorConditionFormula>IF(AND((CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;Order&apos;)),($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,AND(
+OR(ISPICKVAL(PRIORVALUE(Status),&apos;Under Review&apos;),
+ISPICKVAL(PRIORVALUE(Status),&apos;Pending Fulfillment&apos;)),
+ISPICKVAL(Status, &apos;Ready for Submission&apos;) ,
+OR(CWS_LineToBeProvisioned__c &gt;0, CWS_LinesWODatesPopulated__c&gt;0))
+)</errorConditionFormula>
+    <errorMessage>All Order Lines should have Provisioning/Order Line Start Date before submission to Billing and Finance Systems. Please ensure mandatory fields are filled in</errorMessage>
+</ValidationRule>

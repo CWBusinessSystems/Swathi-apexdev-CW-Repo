@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Mandatory_Fields</fullName>
+    <active>true</active>
+    <description>Populate the Mandatory Fields</description>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;Product2&apos;),$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),FALSE ,OR(
+ISBLANK( TEXT(SBQQ__BillingType__c)),
+ISBLANK( TEXT(SBQQ__SubscriptionPricing__c)),
+ISBLANK( TEXT(SBQQ__SubscriptionTerm__c)),
+ISBLANK(CWS_Description__c),
+ISBLANK( TEXT(SBQQ__PricingMethod__c))
+))</errorConditionFormula>
+    <errorMessage>Please populate the following  required fields:
+Billing Type, Subscription Pricing, Subscription Term, Pricing Method, Description</errorMessage>
+</ValidationRule>

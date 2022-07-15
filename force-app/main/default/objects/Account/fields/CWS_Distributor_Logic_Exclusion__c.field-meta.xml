@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Distributor_Logic_Exclusion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is checked on an account will exclude the quotes related to this account with normal distributor calculation logic. Instead of the disti factor getting applied before an additional discount, the disti factor will be applied after an additional discount.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ConnectWise send the Order Form to the end user first.</inlineHelpText>
+    <label>Partner-to-Disty OF</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

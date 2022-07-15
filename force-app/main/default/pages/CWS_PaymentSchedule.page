@@ -1,0 +1,84 @@
+<apex:page showHeader="false" sidebar="false" controller="CWS_PaymentScheduleController" cache="false" contentType="text/xml">
+<apex:variable var="donotuse" value="" rendered="{!showSchedule}">
+    <block text-align="left" font-size="14px" text-decoration="none" space-after="1em">
+        Payment Schedule
+    </block>
+    <block>
+        <table border-width="0.5px" border-style="solid">
+            <!--BED-9272  --> 
+            <table-column column-width="{!IF(minCommitProductsCount>0, "19%", "25%")}" />
+            <table-column column-width="{!IF(minCommitProductsCount>0, "19%", "25%")}"/>                        
+            <table-column column-width="{!IF(minCommitProductsCount>0, "19%", "25%")}"/>
+            <apex:variable var="varC" value="" rendered="{!IF(minCommitProductsCount>0, true, false)}">            
+                <table-column column-width="20%"/>
+            </apex:variable>
+            <table-column column-width="{!IF(minCommitProductsCount>0, "23%", "25%")}"/>
+            <table-header >
+                <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                    <table-cell border="1px solid black" padding="5">
+                        <block text-align="left" >Month</block>
+                    </table-cell>
+                    <table-cell border="1px solid black" padding="5">
+                        <block text-align="right" >Service Fees</block>
+                    </table-cell>
+                    <table-cell border="1px solid black" padding="5">
+                        <block text-align="right" >Recurring</block>
+                    </table-cell> 
+                     <!--BED-9272  -->   
+                    <apex:variable var="varC" value="" rendered="{!IF(minCommitProductsCount>0, true, false)}">
+                        <table-cell border="1px solid black" padding="5" >
+                            <block text-align="right" >Recurring Minimum Spend</block>
+                        </table-cell>        
+                    </apex:variable>
+                    <table-cell border="1px solid black" padding="5">
+                        <block text-align="right" >Total {!IF(minCommitProductsCount>0, "(with Minimum monthly Spend)", "")}</block>
+                    </table-cell>
+                </table-row>
+           </table-header>        
+           <table-body vertical-align="bottom" >
+                <apex:repeat value="{!paymentScheduleList}" var="sch">
+                    <table-row height="18pt">
+                        <table-cell padding="5" display-align="auto" text-align="left" background-color="{!sch.bgcolor}" border="1px solid black">
+                            <block  vertical-align="bottom" font-style="normal" font-weight="normal" >
+                                <apex:outputText >{!sch.Name}</apex:outputText>
+                            </block>
+                        </table-cell>
+                        <table-cell padding="5" display-align="auto" text-align="left" background-color="{!sch.bgcolor}" border="1px solid black">
+                            <block text-align="right" vertical-align="bottom" font-style="normal" font-weight="normal">
+                                <apex:outputText value="{0, number, {!currencySymbol}###,##0.00}">
+                                    <apex:param value="{!sch.servicePrice}"/>
+                                </apex:outputText>
+                            </block>
+                        </table-cell>   
+                        <table-cell padding="5" display-align="auto" padding-bottom="0" text-align="left" background-color="{!sch.bgcolor}" border="1px solid black">
+                            <block text-align="right" vertical-align="bottom"  font-style="normal" font-weight="normal">
+                                <apex:outputText value="{0, number, {!currencySymbol}###,##0.00}">
+                                    <apex:param value="{!sch.recurringPrice}"/>
+                                </apex:outputText>
+                            </block>
+                        </table-cell> 
+                        <!--BED-9272  --> 
+                        <apex:variable var="varC" value="" rendered="{!IF(minCommitProductsCount>0, true, false)}">
+                            <table-cell padding="5" display-align="auto" padding-bottom="0" text-align="left" background-color="{!sch.bgcolor}" border="1px solid black" >
+                                <block text-align="right" vertical-align="bottom"  font-style="normal" font-weight="normal">
+                                    <apex:outputText value="{0, number, {!currencySymbol}###,##0.00}">
+                                        <apex:param value="{!sch.recurringMinSpend}"/>
+                                    </apex:outputText>
+                                </block>
+                            </table-cell>
+                        </apex:variable>
+                        <table-cell padding="5" display-align="auto" padding-bottom="0" background-color="{!sch.bgcolor}" border="1px solid black">
+                            <block text-align="right" font-style="normal" font-weight="600" >
+                                <apex:outputText value="{0, number, {!currencySymbol}###,##0.00}">
+                                    <apex:param value="{!sch.totalPrice}"/>
+                                </apex:outputText>
+                                {!IF(minCommitProductsCount>0, "(+)","")}
+                            </block>
+                        </table-cell>                                                                        
+                    </table-row>
+                </apex:repeat>
+            </table-body>
+        </table>
+    </block>
+</apex:variable>
+</apex:page>

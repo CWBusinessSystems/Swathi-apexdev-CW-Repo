@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Bypass_Min_Max_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is used to bypass the min-max validation rules in Quotelines and ProductRules specific for In-App purchases API user</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is used to bypass the min-max validation rules in Quotelines and ProductRules specific for In-App purchases API user</inlineHelpText>
+    <label>Bypass Min/Max Validation for InApp</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

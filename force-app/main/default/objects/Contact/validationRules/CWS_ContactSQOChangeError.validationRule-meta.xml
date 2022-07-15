@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ContactSQOChangeError</fullName>
+    <active>false</active>
+    <description>Restricting telesales and lead manager to move Contact to SQO. Update 7/8/21- deactivated as a part of Lead Flow. No longer needed</description>
+    <errorConditionFormula>AND(
+ NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ OR(
+  $Profile.Name=&apos;CWS_Tele_Sales&apos;,
+  $Profile.Name=&apos;CWS_Lead_Manager&apos;
+ ),
+ ISCHANGED(CWS_Contact_Status__c),
+ ISPICKVAL(CWS_Contact_Status__c ,&apos;SQO Accepted&apos;)
+)</errorConditionFormula>
+    <errorMessage>You do not have access to move the Contact Status to SQO Accepted. Please move the Status to SQL to hand-off to the SE/PSE to move the Contact forward.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Credits_250</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Account__c</columns>
+    <columns>Status__c</columns>
+    <columns>CWS_Manage_Ticket_Number__c</columns>
+    <columns>Case_Number__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CWS_Product__c</columns>
+    <columns>Validated_Amount__c</columns>
+    <columns>Primary_Reason__c</columns>
+    <columns>CWS_Service_Month__c</columns>
+    <columns>CWS_Service_Year__c</columns>
+    <columns>Partner_Care_Manager_Approved__c</columns>
+    <columns>VP_Partner_Care_Approved__c</columns>
+    <columns>COO_Approved__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New,In Progress,Waiting for Partner Response,Submitted for Approval</value>
+    </filters>
+    <filters>
+        <field>Validated_Amount__c</field>
+        <operation>lessOrEqual</operation>
+        <value>USD 250</value>
+    </filters>
+    <filters>
+        <field>Validated_Amount__c</field>
+        <operation>greaterThan</operation>
+        <value>USD 0</value>
+    </filters>
+    <label>All Open Credits: &lt;$250</label>
+    <sharedTo>
+        <group>CWS_Partner_Care_Managers</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_PC_Case_Creation_On_Email</fullName>
+    <active>true</active>
+    <description>If the incoming email is a certain address, throw an error, causing the case to not be created.</description>
+    <errorConditionFormula>AND(
+OR(
+SuppliedEmail = &quot;noreply.continuum@getsatisfaction.com&quot;,
+SuppliedEmail = &quot;maas360@fiberlink.com&quot;,
+SuppliedEmail = &quot;ops@fiberlink.com&quot;,
+SuppliedEmail = &quot;service@esudo.com&quot;,
+SuppliedEmail = &quot;concierge@intermedia.net&quot;,
+SuppliedEmail = &quot;support@cyberianit.com&quot;,
+SuppliedEmail = &quot;support@convergence.co.nz&quot;,
+SuppliedEmail = &quot;clientupdates@itek.co.uk&quot;,
+SuppliedEmail = &quot;help@glhelp.com&quot;,
+SuppliedEmail = &quot;helpdesk@remedian.co.uk&quot;,
+CONTAINS(SuppliedEmail,&quot;@connectwise.com&quot;), 
+CONTAINS(SuppliedEmail,&quot;postmaster@&quot;),
+CONTAINS(SuppliedEmail,&quot;itsupport247.net&quot;), 
+CONTAINS(SuppliedEmail,&quot;helpdesk@itsupport247.net&quot;), 
+CONTAINS(SuppliedEmail,&quot;@continuum.net&quot;),    
+CONTAINS(SuppliedEmail,&quot;@connectwise.onmicrosoft.com&quot;),    
+CONTAINS(SuppliedEmail,&quot;@continuum.atlassian.net&quot;), 
+CONTAINS(SuppliedEmail,&quot;@linkedin.com&quot;), 
+CONTAINS(SuppliedEmail,&quot;@noc.continuum.net&quot;), 
+CONTAINS(SuppliedEmail,&quot;salesforce&quot;),
+CONTAINS(SuppliedEmail,&quot;mailer-daemon@salesforce.com&quot;),
+CONTAINS(SuppliedEmail,&quot;@postwire.com&quot;),
+CONTAINS(SuppliedEmail,&quot;@r1soft.com&quot;),
+CONTAINS(SuppliedEmail,&quot;autotask.com&quot;),
+CONTAINS(SuppliedEmail,&quot;twitter.com&quot;),
+CONTAINS(SuppliedEmail,&quot;auvik.com&quot;),
+CONTAINS(SuppliedEmail,&quot;PST@itsupport247.net&quot;),
+CONTAINS(SuppliedEmail,&quot;@zoom.us&quot;),
+CONTAINS(SuppliedEmail,&quot;answers@siliconplains.net&quot;),
+CONTAINS(SuppliedEmail,&quot;helpdesk@userone.co.uk&quot;),
+CONTAINS(SuppliedEmail,&quot;help@netcomtech.co.uk&quot;),
+CONTAINS(SuppliedEmail,&quot;support@boomtechit.com&quot;),
+CONTAINS(SuppliedEmail,&quot;donotreply@rosects.com&quot;),
+CONTAINS(SuppliedEmail,&quot;webroot.com&quot;)), 
+
+( RecordType.DeveloperName = &quot;Partner_Care&quot;)
+)</errorConditionFormula>
+    <errorMessage>Case Not Allowed to be created from the restricted Email addresses</errorMessage>
+</ValidationRule>

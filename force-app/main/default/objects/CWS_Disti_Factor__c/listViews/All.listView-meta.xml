@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CWS_Fulfillment_Type__c</columns>
+    <columns>CWS_Legacy_Category__c</columns>
+    <columns>CWS_Product_Type__c</columns>
+    <columns>CWS_Disti_Factor__c</columns>
+    <columns>CWS_Distributor__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>CWS_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Service</value>
+    </filters>
+    <filters>
+        <field>CWS_Legacy_Category__c</field>
+        <operation>equals</operation>
+        <value>CORE</value>
+    </filters>
+    <filters>
+        <field>CWS_Fulfillment_Type__c</field>
+        <operation>equals</operation>
+        <value>Deal Reg</value>
+    </filters>
+    <label>All</label>
+</ListView>

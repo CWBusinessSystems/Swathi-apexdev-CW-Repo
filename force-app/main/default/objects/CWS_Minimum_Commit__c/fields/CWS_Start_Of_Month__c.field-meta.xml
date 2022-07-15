@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Start_Of_Month__c</fullName>
+    <description>Added 4-29-2021 to support sorting by date.  Legacy data updated, Use the first day of the month</description>
+    <externalId>false</externalId>
+    <label>Start Of Month</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prior_Billing_Period__c</fullName>
+    <externalId>false</externalId>
+    <formula>CWS_Opportunity__r.CWS_Prior_Billing_Period__r.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Used for audit reporting - Pulls the name of the Opportunity Prior Billing Period</inlineHelpText>
+    <label>Prior Billing Period</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

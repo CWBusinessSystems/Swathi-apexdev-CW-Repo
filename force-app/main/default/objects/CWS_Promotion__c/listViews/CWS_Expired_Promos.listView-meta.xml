@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Expired_Promos</fullName>
+    <columns>NAME</columns>
+    <columns>CWS_Active__c</columns>
+    <columns>CWS_Promo_Code__c</columns>
+    <columns>CWS_Start_Date__c</columns>
+    <columns>CWS_End_Date__c</columns>
+    <columns>CWS_Standard__c</columns>
+    <columns>CWS_Description__c</columns>
+    <columns>CWS_Discount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Active__c</field>
+        <operation>equals</operation>
+        <value>Expired</value>
+    </filters>
+    <label>Expired Promos</label>
+    <language>en_US</language>
+</ListView>

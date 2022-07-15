@@ -1,0 +1,12 @@
+<aura:component controller="CWS_ShareRecordsWithDistyResellerCtrl" implements="force:hasRecordId,force:lightningQuickAction" extends="c:CWS_BaseSuperComponent">
+    <aura:attribute name="userRec" type="Object" access="global"/>
+    <aura:attribute name="recordError" type="String" access="global"/>
+    
+   <force:recordData aura:id="forceUserRec"
+      recordId="{!$SObjectType.CurrentUser.Id}"
+      layoutType="FULL"
+      fields="Profile.Name"
+      targetFields="{!v.userRec}"
+      targetError="{!v.recordError}"
+      recordUpdated="{!c.accHandler}"/>
+</aura:component>

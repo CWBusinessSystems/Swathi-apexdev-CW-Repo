@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Cannot_CloseLost_Renewal_Opps</fullName>
+    <active>true</active>
+    <description>Sales user will not be allowed to Close Lost an Opportunity if Type is Renewal or Renewal with Change.</description>
+    <errorConditionFormula>/*Modified by                        Requested by                      Line Number*/
+/*Lalit Vashist                      Vanessa Hernandez                 6-7      */
+AND(
+      NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+	(OR(
+	    $User.ProfileId = &quot;00e6g000000yu76&quot;,/*CWS_Sales_Rep*/
+	    $User.ProfileId = &quot;00e6g000000yu75&quot;)),/*CWS_Sales_Manager*/
+	ISCHANGED(StageName),
+	ISPICKVAL(StageName, &quot;Closed Lost&quot;), 
+	(OR(
+		ISPICKVAL(Type, &quot;Renewal&quot;),
+		ISPICKVAL(Type, &quot;Renewal with Change&quot;)))
+)</errorConditionFormula>
+    <errorMessage>&quot;Renewal or Renewal with Change Opportunities may not be Closed/Lost at this level. Please contact Partner Care for processing&quot;.</errorMessage>
+</ValidationRule>

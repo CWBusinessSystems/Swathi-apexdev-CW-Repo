@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Stepped_Payment_Eligibility__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Stepped Payment Eligibility</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

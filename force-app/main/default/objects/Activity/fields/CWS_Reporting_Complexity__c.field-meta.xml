@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Reporting_Complexity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the level of reporting complexity is required.</inlineHelpText>
+    <label>Reporting Complexity</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Simple</fullName>
+                <default>false</default>
+                <label>Simple</label>
+            </value>
+            <value>
+                <fullName>Average</fullName>
+                <default>false</default>
+                <label>Average</label>
+            </value>
+            <value>
+                <fullName>Heavy</fullName>
+                <default>false</default>
+                <label>Heavy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

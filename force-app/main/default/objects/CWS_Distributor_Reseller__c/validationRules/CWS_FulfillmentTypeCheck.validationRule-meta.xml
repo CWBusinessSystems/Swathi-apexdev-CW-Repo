@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_FulfillmentTypeCheck</fullName>
+    <active>true</active>
+    <description>Fulfillment Type Cannot be Blank in case Type is Selected as Distributor</description>
+    <errorConditionFormula>IF(AND(NOT(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;CWS_Distributor_Reseller__c&apos;)),NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,AND(NOT(ISPICKVAL(CWS_Type__c,&apos;&apos;)),(ISPICKVAL(CWS_Type__c,&apos;Distributor&apos;)), ISPICKVAL(CWS_Fulfillment_Type__c,&apos;&apos;)))</errorConditionFormula>
+    <errorDisplayField>CWS_Fulfillment_Type__c</errorDisplayField>
+    <errorMessage>Fulfillment type is needed in case the Type is Distributor</errorMessage>
+</ValidationRule>

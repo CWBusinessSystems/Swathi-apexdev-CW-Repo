@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_PC_Case_Creation_On_Subject</fullName>
+    <active>true</active>
+    <description>Block cases for automatic replies to email blasts</description>
+    <errorConditionFormula>AND(OR(CONTAINS(Subject, &quot;Automatic Reply&quot;),CONTAINS(Subject, &quot;Auto Reply&quot;),CONTAINS(Subject, &quot;Auto-Reply&quot;), CONTAINS(Subject, &quot;Automatic reply&quot;),CONTAINS(Subject, &quot;Out of Office&quot;),CONTAINS(Subject, &quot;Accepted:&quot;)), 
+
+(RecordType.DeveloperName = &quot;Partner_Care&quot;)
+)</errorConditionFormula>
+    <errorMessage>Case Not Allowed to be created from Email auto-response &amp; Out of office</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Product_Source__c</fullName>
+    <description>To identify CW vs CMS vs R1Soft Products</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Product2.CWS_Source__c)</formula>
+    <inlineHelpText>To identify CW vs CMS vs R1Soft Products</inlineHelpText>
+    <label>Product Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

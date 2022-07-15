@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This Field derives the share access of Acoount,Contact,Opportunity, Quote objects to associated Distributor</description>
+    <externalId>false</externalId>
+    <label>Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

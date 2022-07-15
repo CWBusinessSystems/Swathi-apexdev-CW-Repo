@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Days_Remaining_in_Trial__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(NOT(ISBLANK( CWS_Trial_Start_Date__c )), ISPICKVAL(CWS_Stage__c, &quot;In Progress&quot;),CWS_Trial_Start_Date__c  &lt;= TODAY() ,(30 -(Today() - CWS_Trial_Start_Date__c )&gt;=0) ) , 30 -(Today() - CWS_Trial_Start_Date__c ) ,NULL)</formula>
+    <inlineHelpText>Number of days until Trial Expected Completion Date.</inlineHelpText>
+    <label>Days Remaining in Trial</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

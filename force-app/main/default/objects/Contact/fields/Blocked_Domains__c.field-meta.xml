@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blocked_Domains__c</fullName>
+    <description>This is used with Apex and Flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The domain in this field has been blocked and therefore is not allowed to create a case.</inlineHelpText>
+    <label>Blocked Domains</label>
+    <length>55</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LostReasons</fullName>
+    <active>true</active>
+    <description>When Opportunity is Close Lost, Lost Reason, Lost Reason details and Competitor details cannot be empty</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+AND(
+ISPICKVAL(StageName,&quot;Closed Lost&quot;),
+OR(
+ISPICKVAL(CWS_Lost_Reason__c,&quot;&quot;),
+AND(
+OR(
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Pricing / No Budget Competition&quot;) ,
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Unresponsive / No Decision&quot;) ,
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Technology didn&apos;t meet needs&quot;)
+),
+ISBLANK( CWS_Lost_Reason_Detail__c )
+),
+AND(
+OR(
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Competition&quot;) ,
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Competition Price&quot;)
+),
+OR(
+ISBLANK(CWS_Lost_Reason_Detail__c),
+ISBLANK(CWS_Competitve__c)
+)
+),
+AND(
+OR(
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Pricing / No Budget Competition&quot;) ,
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Technology didn&apos;t meet needs&quot;) ,
+ISPICKVAL(CWS_Lost_Reason__c,&quot;Competition&quot;)
+),
+ISBLANK(CWS_Competitve__c)
+)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>You need to populate Lost Reason(s), Lost Reason(s) details and Competitive Detail</errorMessage>
+</ValidationRule>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Ramp_Options__c</fullName>
+    <externalId>false</externalId>
+    <label>Ramp Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CWS_Master__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed Commit Ramp</fullName>
+                <default>false</default>
+                <label>Fixed Commit Ramp</label>
+            </value>
+            <value>
+                <fullName>Minimum Commit Ramp</fullName>
+                <default>false</default>
+                <label>Minimum Commit Ramp</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Fixed Commit Ramp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Minimum Commit Ramp</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

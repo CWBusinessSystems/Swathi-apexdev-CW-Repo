@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Projected_Price_Increase__c</fullName>
+    <description>It is the Projected increase of total price than prior year ACV</description>
+    <externalId>false</externalId>
+    <label>Projected Price Increase (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>

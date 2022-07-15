@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event__c</fullName>
+    <description>Field created to identify the Event related to a Case</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field created to identify the Event related to a Case</inlineHelpText>
+    <label>Event</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Covid19 - General Inquiry</fullName>
+                <default>false</default>
+                <label>Covid19 - General Inquiry</label>
+            </value>
+            <value>
+                <fullName>Covid19 - Billing / Contracts Adjustments</fullName>
+                <default>false</default>
+                <label>Covid19 - Billing / Contracts Adjustments</label>
+            </value>
+            <value>
+                <fullName>Accounting Related Delay</fullName>
+                <default>false</default>
+                <label>Accounting Related Delay</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>CW Misdirect</fullName>
+                <default>false</default>
+                <label>CW Misdirect</label>
+            </value>
+            <value>
+                <fullName>LogMeIn Pro</fullName>
+                <default>false</default>
+                <label>LogMeIn Pro</label>
+            </value>
+            <value>
+                <fullName>Contract Re-Write</fullName>
+                <default>false</default>
+                <label>Contract Re-Write</label>
+            </value>
+            <value>
+                <fullName>Partner Communication</fullName>
+                <default>false</default>
+                <label>Partner Communication</label>
+            </value>
+            <value>
+                <fullName>Perch Billing Related</fullName>
+                <default>false</default>
+                <label>Perch Billing Related</label>
+            </value>
+            <value>
+                <fullName>AM Assistance Related</fullName>
+                <default>false</default>
+                <label>AM Assistance Related</label>
+            </value>
+            <value>
+                <fullName>PSM Assistance Related</fullName>
+                <default>false</default>
+                <label>PSM Assistance Related</label>
+            </value>
+            <value>
+                <fullName>Sales Assistance Related</fullName>
+                <default>false</default>
+                <label>Sales Assistance Related</label>
+            </value>
+            <value>
+                <fullName>Acronis Related</fullName>
+                <default>false</default>
+                <label>Acronis Related</label>
+            </value>
+            <value>
+                <fullName>Price Increase Related</fullName>
+                <default>false</default>
+                <label>Price Increase Related</label>
+            </value>
+            <value>
+                <fullName>HD Price Increase</fullName>
+                <default>false</default>
+                <label>HD Price Increase</label>
+            </value>
+            <value>
+                <fullName>Account Lockout Escalation</fullName>
+                <default>false</default>
+                <label>Account Lockout Escalation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

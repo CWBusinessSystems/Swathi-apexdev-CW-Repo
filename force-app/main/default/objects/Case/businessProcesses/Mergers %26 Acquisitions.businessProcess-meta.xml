@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mergers %26 Acquisitions</fullName>
+    <description>Support process for the Mergers &amp; Acquisitions Team&apos;s Email to Case setup</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed Churn Risk</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Invalid</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed No Action</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Success</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Complete</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Delinquent - ON HOLD</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Migration period</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Waiting on Account Manager</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Business Ops%2FLicensing</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Information Sheet</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Legal Documents</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Questionnaire</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Usage_Ramp_Qty__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISBLANK( SBQQ__QuoteLine__r.CWS_Usage_Ramp_Qty__c)),  SBQQ__QuoteLine__r.CWS_Usage_Ramp_Qty__c + &quot;;&quot;+ TEXT(Quantity ) , &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Usage Ramp Qty</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

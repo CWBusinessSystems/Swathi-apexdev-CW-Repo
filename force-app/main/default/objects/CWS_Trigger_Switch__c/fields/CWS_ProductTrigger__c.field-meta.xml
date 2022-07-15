@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ProductTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checked = Active
+Unchecked = Inactive</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checked = Active
+Unchecked = Inactive</inlineHelpText>
+    <label>Product Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<apex:page controller="DisplayReportsList"> 
+    <apex:pageBlock title="Terminus Dashboard">
+        <apex:image url="{!$Resource.terminus_logo_2}" width="274" height="50"/>
+        <br />
+        <br />
+        Hello {!$User.FirstName}!
+        You are viewing the Terminus Dashboard. You can select any of the reports below to see your best accounts. If you need any information on the sales insights provided, please visit the&nbsp;<apex:outputLink value="https://terminus.zendesk.com/hc/en-us/articles/360001583647">Salesforce Sales Insights help document.</apex:outputLink>
+    </apex:pageBlock>
+    <apex:pageBlock title="Terminus Reports"> 
+        <apex:pageBlockTable value="{!myReports}" var="d"> 
+            <apex:column headerValue="Report" value="{!d['Name']}"></apex:column>
+            <apex:column headerValue="Link">
+                 <apex:outputLink value="/{!d['URL']}">Link to Report</apex:outputLink>
+             </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock> 
+</apex:page>

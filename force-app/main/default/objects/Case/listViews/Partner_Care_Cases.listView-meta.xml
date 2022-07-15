@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Care_Cases</fullName>
+    <columns>Region__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Thread_ID__c</columns>
+    <columns>Waiting_for__c</columns>
+    <columns>Reason_to_Keep_Open__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.EMAIL</columns>
+    <columns>Age__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Follow_Up_Date_Age__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Awaiting Product Fix,In Progress,Waiting on Response,Escalated to Stakeholder,Escalated to Partner Care</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Partner_Care</value>
+    </filters>
+    <label>Partner Care Cases</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

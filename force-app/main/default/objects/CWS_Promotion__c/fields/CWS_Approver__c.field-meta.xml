@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Specified approver to approve the use of this promo entry</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specified approver to approve the use of this promo entry</inlineHelpText>
+    <label>Approver</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Promotions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

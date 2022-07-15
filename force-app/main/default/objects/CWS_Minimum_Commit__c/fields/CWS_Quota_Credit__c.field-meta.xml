@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Quota_Credit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( CWS_Monthly_Minimum_Commit__c &lt; CWS_Product_Incremental_Increase__c , CWS_Monthly_Minimum_Commit__c, 
+
+IF( (CWS_Monthly_Minimum_Commit__c &gt;= CWS_Product_Incremental_Increase__c) , CWS_Product_Incremental_Increase__c, 
+
+NULL )
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Quota Credit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

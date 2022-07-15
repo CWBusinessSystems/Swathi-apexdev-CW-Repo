@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Price_Per_Billing_Period__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>From the total price of the line, the amount that needs to be charged per billing frequency</inlineHelpText>
+    <label>Unit Price Per Billing Period</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

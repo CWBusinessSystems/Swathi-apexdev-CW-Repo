@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_MM_Uplift__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the uplift % for IIT scenario</inlineHelpText>
+    <label>MM Uplift</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <type>Percent</type>
+</CustomField>

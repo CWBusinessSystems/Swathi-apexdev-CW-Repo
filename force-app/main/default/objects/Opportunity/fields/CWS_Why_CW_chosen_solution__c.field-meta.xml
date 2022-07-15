@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Why_CW_chosen_solution__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures reasons why ConnectWise is the chosen solution for the prospect.</inlineHelpText>
+    <label>Why is CW chosen solution?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

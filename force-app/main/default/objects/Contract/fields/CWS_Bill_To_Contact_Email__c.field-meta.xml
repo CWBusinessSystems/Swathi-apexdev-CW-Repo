@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Bill_To_Contact_Email__c</fullName>
+    <description>Primary Email of the Bill To Contact</description>
+    <externalId>false</externalId>
+    <formula>CWS_Bill_To_Contact__r.Email</formula>
+    <inlineHelpText>Primary Email of the Bill To Contact</inlineHelpText>
+    <label>Bill To Contact Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

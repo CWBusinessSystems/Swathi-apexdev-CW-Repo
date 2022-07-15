@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>Reason why a request, inquiry, or problem was issued.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Reason why a request, inquiry, or problem was issued.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Inquiry_Problem_Request__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Billing - invoice errors or confusion</fullName>
+                <default>false</default>
+                <label>Billing - invoice errors or confusion</label>
+            </value>
+            <value>
+                <fullName>Partner Service/Relationship - Lack of response or poor response to non product, service, or billing issues</fullName>
+                <default>false</default>
+                <label>Partner Service/Relationship - Lack of response or poor response to non product, service, or billing issues</label>
+            </value>
+            <value>
+                <fullName>Partner Service/Relationship - Who to contact at ConnectWise (Sales, Support, other)</fullName>
+                <default>false</default>
+                <label>Partner Service/Relationship - Who to contact at ConnectWise (Sales, Support, other)</label>
+            </value>
+            <value>
+                <fullName>Portal Enhancements</fullName>
+                <default>false</default>
+                <label>Portal Enhancements</label>
+            </value>
+            <value>
+                <fullName>Portal Navigation - How do I access information in the portal</fullName>
+                <default>false</default>
+                <label>Portal Navigation - How do I access information in the portal</label>
+            </value>
+            <value>
+                <fullName>Product Errors - Software bugs, product performance, product down time</fullName>
+                <default>false</default>
+                <label>Product Errors - Software bugs, product performance, product down time</label>
+            </value>
+            <value>
+                <fullName>Product Feature/Functionality Enhancements</fullName>
+                <default>false</default>
+                <label>Product Feature/Functionality Enhancements</label>
+            </value>
+            <value>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+                <label>Product Functionality</label>
+            </value>
+            <value>
+                <fullName>Service Delivery</fullName>
+                <default>false</default>
+                <label>Service Delivery</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Complaint - Partner does not like existing scope/polices/procedures</fullName>
+                <default>false</default>
+                <label>Service Delivery Complaint - Partner does not like existing scope/polices/procedures</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Complaint - SLO/ASA not met, ticket delays</fullName>
+                <default>false</default>
+                <label>Service Delivery Complaint - SLO/ASA not met, ticket delays</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Complaint - Technician mistakes, quality, process incorrect or not followed</fullName>
+                <default>false</default>
+                <label>Service Delivery Complaint - Technician mistakes, quality, process incorrect or not followed</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Feature/Functionality Enhancements</fullName>
+                <default>false</default>
+                <label>Service Delivery Feature/Functionality Enhancements</label>
+            </value>
+            <value>
+                <fullName>User / site / Account Setup / Configuration - How do I enter, delete or update information in the portal</fullName>
+                <default>false</default>
+                <label>User / site / Account Setup / Configuration - How do I enter, delete or update information in the portal</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Intent To Not Renew</fullName>
+                <default>false</default>
+                <label>Intent To Not Renew</label>
+            </value>
+            <value>
+                <fullName>Contract Termination</fullName>
+                <default>false</default>
+                <label>Contract Termination</label>
+            </value>
+            <value>
+                <fullName>Contract Rewrite</fullName>
+                <default>false</default>
+                <label>Contract Rewrite</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <valueName>Partner Service/Relationship - Who to contact at ConnectWise (Sales, Support, other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <valueName>Portal Navigation - How do I access information in the portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <valueName>Product Functionality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <valueName>Service Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <valueName>User / site / Account Setup / Configuration - How do I enter, delete or update information in the portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquiry</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Billing - invoice errors or confusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Partner Service/Relationship - Lack of response or poor response to non product, service, or billing issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Product Errors - Software bugs, product performance, product down time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Service Delivery Complaint - Partner does not like existing scope/polices/procedures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Service Delivery Complaint - SLO/ASA not met, ticket delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Service Delivery Complaint - Technician mistakes, quality, process incorrect or not followed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Portal Enhancements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Product Feature/Functionality Enhancements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Service Delivery Feature/Functionality Enhancements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Intent To Not Renew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Contract Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Contract Rewrite</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

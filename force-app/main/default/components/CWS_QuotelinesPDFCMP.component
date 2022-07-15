@@ -1,0 +1,41 @@
+<!--VF Component for the PDF generation Quote lines of the Quote.-->
+<apex:component controller="CWS_ApprovalEmailComponentController" access="global">
+    <apex:attribute access="global" assignTo="{!quoteId}" name="quote" type="String" required="true" description="Quote Id"/>
+    <apex:attribute access="global" assignTo="{!currencyValue}" name="currency" type="String" required="true" description="Quote Currency"/>
+    <b><u>Product Details:</u></b>
+    <br/>
+    <br/>
+    <table border="1" cellSpacing="0" cellpadding="0" width="100%" >
+        <tr>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:12%;  font-size:12px; text-align:center;">Product Name</th>   
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:6%;  font-size:12px; text-align:center;">Quantity</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:6%;  font-size:12px; text-align:center;">List Price(Monthly) (in {!currencyValue})</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:6%;  font-size:12px; text-align:center;">Sell to Price (monthly) (in {!currencyValue})</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:6%;  font-size:12px; text-align:center;">Discount %</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:6%;  font-size:12px; text-align:center;">Total ACV (in {!currencyValue})</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:8%;  font-size:12px; text-align:center;">Payment Schedule Driver</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:5%;  font-size:12px; text-align:center;">Period</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:8%;  font-size:12px; text-align:center;">Future Pricing</th>
+            <th style=" font-family:arial Black,sans-serif; border-color: Black; width:10%;  font-size:12px; text-align:center;">Future pricing Blocks</th>
+        </tr>
+        <apex:repeat value="{!qliList}" var="QLI">
+            <tr>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:12%;  font-size:12px; text-align:center;">{!QLI.SBQQ__ProductName__c}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:6%;  font-size:12px; text-align:center;">{!QLI.SBQQ__Quantity__c}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:6%;  font-size:12px; text-align:center;">{!ROUND(QLI.CWS_RegularPrice__c / QLI.SBQQ__SubscriptionTerm__c,4)}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:9%;  font-size:12px; text-align:center;">{!ROUND(QLI.CWS_Price_Per_Billing_Period__c,4)}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:6%;  font-size:12px; text-align:center;">{!QLI.CWS_Custom_Discount_Field__c}</td>  
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:5%;  font-size:12px; text-align:center;">{!QLI.CWS_ACVLine__c}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:8%;  font-size:12px; text-align:center;">{!QLI.CWS_Payment_Schedule_Driver__c}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:5%;  font-size:12px; text-align:center;">{!QLI.CWS_Period_for_Ramp_Spread_Deferment__c}</td> 
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:8%;  font-size:8px; text-align:center;">{!QLI.CWS_Future_Contracted_Price__c}</td>
+                <td style=" font-family:Arial Unicode MS; border-color: Black; width:10%;  font-size:8px; text-align:center;">{!QLI.CWS_Future_pricing_Blocks__c}</td>
+                <!--td style=" font-family:Arial Unicode MS; border-color: Black; width:8%;  font-size:12px; text-align:center;">
+                    <apex:outputText value="{0, number,00.00}">
+                        <apex:param value="{!QLI.CWS_NetTotal__c}" />
+                    </apex:outputText>
+                </td-->                
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:component>

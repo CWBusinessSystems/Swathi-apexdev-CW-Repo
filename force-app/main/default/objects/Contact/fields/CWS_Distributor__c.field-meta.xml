@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Distributor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup for the Distributor/Reseller Account. Field is populated based on the Distributor/Reseller Account field from the Lead record that was converted to create the Contact record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Distributor or Reseller that submitted the Lead that was converted into this Contact.</inlineHelpText>
+    <label>Distributor/Reseller Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Contacts</relationshipLabel>
+    <relationshipName>Contacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

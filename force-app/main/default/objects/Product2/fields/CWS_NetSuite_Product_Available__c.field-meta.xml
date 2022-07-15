@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_NetSuite_Product_Available__c</fullName>
+    <description>Field to be used as indicator to mark product is ready for integration Will be set to TRUE if all the mandatory fields to be send to netsuite/zuora are populated.</description>
+    <externalId>false</externalId>
+    <formula>AND(IsActive,NOT(ISBLANK(TEXT(CWS_Sub_Category__c))), NOT(ISBLANK(CWS_ProductCode__c)), NOT(ISBLANK(TEXT(CWS_License_Type__c))),
+NOT(ISBLANK(TEXT(CWS_ChargeType__c))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates if the product is ready to be integrated with Zuora after all required fields are populated</inlineHelpText>
+    <label>NetSuite Product Available</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

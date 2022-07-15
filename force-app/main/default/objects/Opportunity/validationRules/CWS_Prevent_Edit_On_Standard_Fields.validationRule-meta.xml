@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prevent_Edit_On_Standard_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), 
+ $Profile.Name =&apos;CWS_Sales_Engineer&apos;,
+OR( 
+ ISCHANGED(StageName),
+ ISCHANGED(OwnerId),
+ ISCHANGED(RecordTypeId),
+ ISCHANGED(Name),
+ ISCHANGED(ForecastCategoryName),
+ ISCHANGED(CloseDate)  
+) 
+)</errorConditionFormula>
+    <errorMessage>You do not have the level of access to perform this operation.
+Please contact System Admin.</errorMessage>
+</ValidationRule>

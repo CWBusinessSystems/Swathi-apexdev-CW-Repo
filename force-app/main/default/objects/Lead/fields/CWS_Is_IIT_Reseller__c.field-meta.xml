@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Is_IIT_Reseller__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Use to capture whether the Account is Reseller or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether the Lead is a Reseller.</inlineHelpText>
+    <label>Is IIT Reseller?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

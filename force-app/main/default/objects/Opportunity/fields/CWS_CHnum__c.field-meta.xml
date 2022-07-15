@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CHnum__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (ISPICKVAL ( CWS_Champion_Position__c ,&quot;Positive&quot;),5,
+IF (ISPICKVAL ( CWS_Champion_Position__c ,&quot;Unknown&quot;),3,
+IF (ISPICKVAL ( CWS_Champion_Position__c ,&quot;Negative&quot;),1,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CHnum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ProductCompact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>CWS_ProductCode__c</fields>
+    <fields>CWS_Category__c</fields>
+    <fields>CWS_License_Type__c</fields>
+    <fields>CWS_ChargeType__c</fields>
+    <label>ProductCompact Layout</label>
+</CompactLayout>

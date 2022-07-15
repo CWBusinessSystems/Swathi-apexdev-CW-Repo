@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ProvisioningDate__c</fullName>
+    <description>Provisioning date to be populated by the order management team</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provisioning date to be populated by the order management team</inlineHelpText>
+    <label>Provisioning Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

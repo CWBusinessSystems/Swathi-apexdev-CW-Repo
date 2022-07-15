@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_Rejected_Reason_Val</fullName>
+    <active>true</active>
+    <description>Updated to exempt Control Trial Integration</description>
+    <errorConditionFormula>AND( NOT( $Profile.Name = &apos;CWS Control Integration Platform&apos;),NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c) , ISBLANK( TEXT(CWS_Rejected_Reason__c )) , ISPICKVAL( CWS_Contact_Status__c , &quot;Rejected&quot;))</errorConditionFormula>
+    <errorDisplayField>CWS_Rejected_Reason__c</errorDisplayField>
+    <errorMessage>Please select a Rejected Reason to continue.</errorMessage>
+</ValidationRule>

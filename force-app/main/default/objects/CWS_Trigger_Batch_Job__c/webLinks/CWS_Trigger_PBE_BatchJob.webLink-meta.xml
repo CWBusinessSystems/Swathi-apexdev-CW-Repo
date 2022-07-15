@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Trigger_PBE_BatchJob</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <height>500</height>
+    <linkType>page</linkType>
+    <masterLabel>Trigger PBE BatchJob</masterLabel>
+    <openType>sidebar</openType>
+    <page>CWS_PriceBookEntryBatchJob</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

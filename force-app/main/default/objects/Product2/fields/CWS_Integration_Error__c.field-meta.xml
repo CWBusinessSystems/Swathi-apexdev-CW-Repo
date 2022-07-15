@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Integration_Error__c</fullName>
+    <description>Integration error field: To stamp the error code/description if sync fails in Netsuite/Zuora.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Error code/description if sync fails in Netsuite/Zuora.</inlineHelpText>
+    <label>Integration Error</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

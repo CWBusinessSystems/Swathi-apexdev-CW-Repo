@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Company_Name__c</fullName>
+    <description>This field displays the company name if the control trial is associated to a lead or contact.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the company for the lead or contact associated with the control trial record.</inlineHelpText>
+    <label>Company Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

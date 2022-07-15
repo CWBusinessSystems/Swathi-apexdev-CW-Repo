@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Cannot_Reassign_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c) , 
+ISCHANGED(AccountId )
+)</errorConditionFormula>
+    <errorMessage>This contact is already associated to an Account. Please create a new Contact as necessary</errorMessage>
+</ValidationRule>

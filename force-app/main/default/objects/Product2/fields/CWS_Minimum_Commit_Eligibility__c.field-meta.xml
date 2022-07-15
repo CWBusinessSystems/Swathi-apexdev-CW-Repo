@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Minimum_Commit_Eligibility__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the product is compatible for Minimum Commit Quantity</inlineHelpText>
+    <label>Minimum Commit Eligibility</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

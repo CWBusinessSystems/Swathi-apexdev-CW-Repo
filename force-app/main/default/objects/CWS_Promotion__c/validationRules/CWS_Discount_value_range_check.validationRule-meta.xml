@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Discount_value_range_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>If(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&quot;CWS_Promotion__c&quot;)&amp;&amp; ($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c==true),false,OR(CWS_Discount__c&gt;1,CWS_Discount__c&lt;0, CWS_Discount_Cost__c&gt;1, CWS_Discount_Cost__c&lt;0))</errorConditionFormula>
+    <errorMessage>Discount cannot be less than 0 or greater than 100.</errorMessage>
+</ValidationRule>

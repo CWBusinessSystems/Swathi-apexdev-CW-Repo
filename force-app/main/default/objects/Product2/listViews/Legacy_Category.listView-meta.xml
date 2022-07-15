@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Category</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>CWS_Category__c</columns>
+    <columns>CWS_Legacy_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>CWS_Category__c</field>
+        <operation>equals</operation>
+        <value>BrightGauge</value>
+    </filters>
+    <label>Legacy Category</label>
+</ListView>

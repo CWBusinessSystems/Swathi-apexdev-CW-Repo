@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_Lead_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Use to capture the external unique ID of Legacy Lead</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Indicates the Lead&apos;s legacy ID, either from ConnectWise Manage or Continuum Salesforce.</inlineHelpText>
+    <label>Legacy Lead ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

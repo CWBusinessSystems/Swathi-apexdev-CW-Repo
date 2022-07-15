@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Your_Champion__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the champion who has agreed to connect us with the economic buyer.</inlineHelpText>
+    <label>Who is your champion?</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Who is your champion?)</relationshipLabel>
+    <relationshipName>Opportunities3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

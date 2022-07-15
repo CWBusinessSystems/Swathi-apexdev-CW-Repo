@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Campaign_Program__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Top level hierarchy of the campaign</inlineHelpText>
+    <label>Campaign Program</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BusDev</fullName>
+                <default>false</default>
+                <label>BusDev</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+                <label>Field Marketing</label>
+            </value>
+            <value>
+                <fullName>Operational</fullName>
+                <default>false</default>
+                <label>Operational</label>
+            </value>
+            <value>
+                <fullName>Organic Web</fullName>
+                <default>false</default>
+                <label>Organic Web</label>
+            </value>
+            <value>
+                <fullName>Paid Web</fullName>
+                <default>false</default>
+                <label>Paid Web</label>
+            </value>
+            <value>
+                <fullName>Sales Generated</fullName>
+                <default>false</default>
+                <label>Sales Generated</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Review Site</controllingFieldValue>
+            <controllingFieldValue>PPC</controllingFieldValue>
+            <controllingFieldValue>CS-Tech News Pro</controllingFieldValue>
+            <controllingFieldValue>CS-TechWire Asia</controllingFieldValue>
+            <controllingFieldValue>CS-IT Central Station</controllingFieldValue>
+            <controllingFieldValue>CS-Spiceworks</controllingFieldValue>
+            <controllingFieldValue>Media</controllingFieldValue>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <controllingFieldValue>CS-Activate</controllingFieldValue>
+            <controllingFieldValue>CS-Channel E2E</controllingFieldValue>
+            <controllingFieldValue>CS-MSSP Alert</controllingFieldValue>
+            <controllingFieldValue>CS-IDG Connect</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Pro</controllingFieldValue>
+            <controllingFieldValue>CS-BrightTalk</controllingFieldValue>
+            <controllingFieldValue>CS-ARN</controllingFieldValue>
+            <controllingFieldValue>CS-Madison Logic</controllingFieldValue>
+            <controllingFieldValue>CS-Cannata</controllingFieldValue>
+            <controllingFieldValue>CS-New Statesman</controllingFieldValue>
+            <controllingFieldValue>CS-CBSInteractive</controllingFieldValue>
+            <controllingFieldValue>CS-PureB2B</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Futures</controllingFieldValue>
+            <controllingFieldValue>CS-Technology Advice</controllingFieldValue>
+            <controllingFieldValue>CS-Channel Pro UK</controllingFieldValue>
+            <controllingFieldValue>CS-TechTarget</controllingFieldValue>
+            <controllingFieldValue>CS-CRN Channel Co</controllingFieldValue>
+            <controllingFieldValue>CS-CRN Next Media</controllingFieldValue>
+            <controllingFieldValue>CS-CRN UK Incisive Media</controllingFieldValue>
+            <controllingFieldValue>CS-IT Europa</controllingFieldValue>
+            <controllingFieldValue>CS-Smartbrief</controllingFieldValue>
+            <controllingFieldValue>Paid Social</controllingFieldValue>
+            <controllingFieldValue>List-Based Ads</controllingFieldValue>
+            <controllingFieldValue>Remarketing</controllingFieldValue>
+            <valueName>Paid Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <controllingFieldValue>Deal Reg</controllingFieldValue>
+            <controllingFieldValue>Distributor Recruitment</controllingFieldValue>
+            <valueName>Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outsourced</controllingFieldValue>
+            <controllingFieldValue>AM</controllingFieldValue>
+            <controllingFieldValue>BDR</controllingFieldValue>
+            <valueName>BusDev</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <controllingFieldValue>Partner Success</controllingFieldValue>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <controllingFieldValue>Operational</controllingFieldValue>
+            <valueName>Operational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Campaigns</controllingFieldValue>
+            <valueName>Field Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Referral</controllingFieldValue>
+            <controllingFieldValue>Web Direct</controllingFieldValue>
+            <controllingFieldValue>Social Media</controllingFieldValue>
+            <controllingFieldValue>Organic Search</controllingFieldValue>
+            <controllingFieldValue>Press Release</controllingFieldValue>
+            <controllingFieldValue>Marketing Generated</controllingFieldValue>
+            <valueName>Organic Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Generated</controllingFieldValue>
+            <valueName>Sales Generated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events Hosted</controllingFieldValue>
+            <controllingFieldValue>Events Sponsored</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

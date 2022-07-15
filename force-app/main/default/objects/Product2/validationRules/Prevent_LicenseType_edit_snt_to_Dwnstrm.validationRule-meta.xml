@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_LicenseType_edit_snt_to_Dwnstrm</fullName>
+    <active>true</active>
+    <description>Product Admin, can edit LicenseType at the time of new product creation (through UI or through data loader) but after the product has been sent downstream by Boomi process, he will not be allowed to change the LicenseType.</description>
+    <errorConditionFormula>AND(OR(CONTAINS(TEXT(CWS_Zuora_Product_Sync_Status__c), &quot;Synced&quot;) ,CONTAINS(TEXT(CWS_NetSuite_Product_Sync_Status__c), &quot;Synced&quot;)), ISCHANGED(CWS_License_Type__c))</errorConditionFormula>
+    <errorDisplayField>CWS_License_Type__c</errorDisplayField>
+    <errorMessage>License type cannot be modified as it has already been sent downstream to Zuora and NetSuite</errorMessage>
+</ValidationRule>

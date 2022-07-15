@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Distributor_Community_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor Community Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>CWS_Distributor_for_Community_Group__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trust X Alliance</fullName>
+                <default>false</default>
+                <label>Trust X Alliance</label>
+            </value>
+            <value>
+                <fullName>SMB Alliance</fullName>
+                <default>false</default>
+                <label>SMB Alliance</label>
+            </value>
+            <value>
+                <fullName>Tech Select</fullName>
+                <default>false</default>
+                <label>Tech Select</label>
+            </value>
+            <value>
+                <fullName>Varnex</fullName>
+                <default>false</default>
+                <label>Varnex</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ingram Micro</controllingFieldValue>
+            <valueName>Trust X Alliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingram Micro</controllingFieldValue>
+            <valueName>SMB Alliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TechData</controllingFieldValue>
+            <valueName>Tech Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Synnex</controllingFieldValue>
+            <valueName>Varnex</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

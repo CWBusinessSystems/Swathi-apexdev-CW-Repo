@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Annual_Distributor_Net_Total__c</fullName>
+    <description>Annualized Distributor Net Total</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Annualized Distributor Net Total from Quote</inlineHelpText>
+    <label>Annualized Distributor Net Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

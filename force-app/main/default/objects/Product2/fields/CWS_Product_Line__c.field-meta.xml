@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Product_Line__c</fullName>
+    <description>Used for Netsuite integration</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used for Netsuite integration</inlineHelpText>
+    <label>Product Line</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BDR</fullName>
+                <default>false</default>
+                <label>BDR</label>
+            </value>
+            <value>
+                <fullName>BDR : BDR - Other</fullName>
+                <default>false</default>
+                <label>BDR : BDR - Other</label>
+            </value>
+            <value>
+                <fullName>BDR : Recover</fullName>
+                <default>false</default>
+                <label>BDR : Recover</label>
+            </value>
+            <value>
+                <fullName>BDR : Solution Partners</fullName>
+                <default>false</default>
+                <label>BDR : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Business Automation</fullName>
+                <default>false</default>
+                <label>Business Automation</label>
+            </value>
+            <value>
+                <fullName>Business Automation : BrightGauge</fullName>
+                <default>false</default>
+                <label>Business Automation : BrightGauge</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Business Automation - Other</fullName>
+                <default>false</default>
+                <label>Business Automation : Business Automation - Other</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Business Management Packages</fullName>
+                <default>false</default>
+                <label>Business Automation : Business Management Packages</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Engage</fullName>
+                <default>false</default>
+                <label>Business Automation : Engage</label>
+            </value>
+            <value>
+                <fullName>Business Automation : ITBoost</fullName>
+                <default>false</default>
+                <label>Business Automation : ITBoost</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Manage</fullName>
+                <default>false</default>
+                <label>Business Automation : Manage</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Sell</fullName>
+                <default>false</default>
+                <label>Business Automation : Sell</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Service Leadership</fullName>
+                <default>false</default>
+                <label>Business Automation : Service Leadership</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Service Leadership - Peer Groups</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Automation : Service Leadership - Peer Groups</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Smileback</fullName>
+                <default>false</default>
+                <label>Business Automation : Smileback</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Solution Partners</fullName>
+                <default>false</default>
+                <label>Business Automation : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Business Automation : Unite (fka CloudConsole)</fullName>
+                <default>false</default>
+                <label>Business Automation : Unite (fka CloudConsole)</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Cybersecurity - Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cybersecurity : Cybersecurity - Other</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : EDR – ConnectWise</fullName>
+                <default>false</default>
+                <label>Cybersecurity : EDR – ConnectWise</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Endpoint Policy Mgmt</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Endpoint Policy Mgmt</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Fortify</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Fortify</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Identify</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Identify</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Incident Response Service</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Incident Response Service</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Legacy Security Mgmt</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Legacy Security Mgmt</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Managed SIEM</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Managed SIEM</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : MDR – Bitdefender</fullName>
+                <default>false</default>
+                <label>Cybersecurity : MDR – Bitdefender</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : MDR – SentinelOne</fullName>
+                <default>false</default>
+                <label>Cybersecurity : MDR – SentinelOne</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Network Sensor</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Network Sensor</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Other</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Other</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Perch</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Perch</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Risk Assessment</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : SaaS Security</fullName>
+                <default>false</default>
+                <label>Cybersecurity : SaaS Security</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Security Bundles</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Security Bundles</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : SIEM</fullName>
+                <default>false</default>
+                <label>Cybersecurity : SIEM</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Solution Partners</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity : Stratozen</fullName>
+                <default>false</default>
+                <label>Cybersecurity : Stratozen</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Events : Events - Historical</fullName>
+                <default>false</default>
+                <label>Events : Events - Historical</label>
+            </value>
+            <value>
+                <fullName>Events : Events - Other</fullName>
+                <default>false</default>
+                <label>Events : Events - Other</label>
+            </value>
+            <value>
+                <fullName>Events : IT Nation - Connect</fullName>
+                <default>false</default>
+                <label>Events : IT Nation - Connect</label>
+            </value>
+            <value>
+                <fullName>Events : IT Nation - Evolve (HTG)</fullName>
+                <default>false</default>
+                <label>Events : IT Nation - Evolve (HTG)</label>
+            </value>
+            <value>
+                <fullName>Events : IT Nation - Explore</fullName>
+                <default>false</default>
+                <label>Events : IT Nation - Explore</label>
+            </value>
+            <value>
+                <fullName>Events : IT Nation - Secure</fullName>
+                <default>false</default>
+                <label>Events : IT Nation - Secure</label>
+            </value>
+            <value>
+                <fullName>Events : IT Nation - Share</fullName>
+                <default>false</default>
+                <label>Events : IT Nation - Share</label>
+            </value>
+            <value>
+                <fullName>Events : Service Leadership - Peer Groups</fullName>
+                <default>false</default>
+                <label>Events : Service Leadership - Peer Groups</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other : Other</fullName>
+                <default>false</default>
+                <label>Other : Other</label>
+            </value>
+            <value>
+                <fullName>Other : Other - Allocated</fullName>
+                <default>false</default>
+                <label>Other : Other - Allocated</label>
+            </value>
+            <value>
+                <fullName>Other : Solution Partners</fullName>
+                <default>false</default>
+                <label>Other : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Other : Solution Partners - Historical</fullName>
+                <default>false</default>
+                <label>Other : Solution Partners - Historical</label>
+            </value>
+            <value>
+                <fullName>Other - Allocated</fullName>
+                <default>false</default>
+                <label>Other - Allocated</label>
+            </value>
+            <value>
+                <fullName>Other - Allocated : Other - Allocated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other - Allocated : Other - Allocated</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Services : Assist - Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Services : Assist - Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>Services : Assist - HD</fullName>
+                <default>false</default>
+                <label>Services : Assist - HD</label>
+            </value>
+            <value>
+                <fullName>Services : Assist - NOC</fullName>
+                <default>false</default>
+                <label>Services : Assist - NOC</label>
+            </value>
+            <value>
+                <fullName>Services : Assist - Tech Advantage</fullName>
+                <default>false</default>
+                <label>Services : Assist - Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Services : Service Leadership</fullName>
+                <default>false</default>
+                <label>Services : Service Leadership</label>
+            </value>
+            <value>
+                <fullName>Services : Services - Other</fullName>
+                <default>false</default>
+                <label>Services : Services - Other</label>
+            </value>
+            <value>
+                <fullName>Services : Solution Partners</fullName>
+                <default>false</default>
+                <label>Services : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>UMM</fullName>
+                <default>false</default>
+                <label>UMM</label>
+            </value>
+            <value>
+                <fullName>UMM : Automate</fullName>
+                <default>false</default>
+                <label>UMM : Automate</label>
+            </value>
+            <value>
+                <fullName>UMM : Command</fullName>
+                <default>false</default>
+                <label>UMM : Command</label>
+            </value>
+            <value>
+                <fullName>UMM : Control</fullName>
+                <default>false</default>
+                <label>UMM : Control</label>
+            </value>
+            <value>
+                <fullName>UMM : RMM</fullName>
+                <default>false</default>
+                <label>UMM : RMM</label>
+            </value>
+            <value>
+                <fullName>UMM : Solution Partners</fullName>
+                <default>false</default>
+                <label>UMM : Solution Partners</label>
+            </value>
+            <value>
+                <fullName>UMM : UMM - Other</fullName>
+                <default>false</default>
+                <label>UMM : UMM - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

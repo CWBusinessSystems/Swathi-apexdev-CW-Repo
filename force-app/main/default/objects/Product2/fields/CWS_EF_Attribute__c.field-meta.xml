@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_EF_Attribute__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Product Type that is used to derive Disti Factor and Economic Factor value at quote lines</inlineHelpText>
+    <label>EF Attribute</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_EF_Attribute</valueSetName>
+    </valueSet>
+</CustomField>

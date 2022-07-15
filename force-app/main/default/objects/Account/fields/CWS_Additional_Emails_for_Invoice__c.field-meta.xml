@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Additional_Emails_for_Invoice__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures email addresses that can be added to invoices involving this Account record.</inlineHelpText>
+    <label>Additional Emails for Invoice</label>
+    <length>500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

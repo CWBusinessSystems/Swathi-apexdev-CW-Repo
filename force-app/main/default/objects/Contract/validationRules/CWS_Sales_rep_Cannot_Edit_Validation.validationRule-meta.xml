@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sales_rep_Cannot_Edit_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;Contract&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND( $Profile.Name = &quot;CWS_Sales_Rep&quot; ,OR(ISCHANGED(AccountId ), ISCHANGED(CurrencyIsoCode) ,ISCHANGED(Status))))</errorConditionFormula>
+    <errorMessage>Company Name ,  Status ,  Currency Cannot be  Changed</errorMessage>
+</ValidationRule>

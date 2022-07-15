@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Type_of_Engagement__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the type of engagement this Demo is in the Sales process.</inlineHelpText>
+    <label>Type of Engagement</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Sales</fullName>
+                <default>false</default>
+                <label>Pre-Sales</label>
+            </value>
+            <value>
+                <fullName>Post-Sales</fullName>
+                <default>false</default>
+                <label>Post-Sales</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Trial/Eval Assistance</fullName>
+                <default>false</default>
+                <label>Trial/Eval Assistance</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

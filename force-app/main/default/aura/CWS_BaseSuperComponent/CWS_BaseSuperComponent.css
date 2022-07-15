@@ -1,0 +1,7 @@
+.THIS.c-spinner .slds-assistive-text {
+    clip: unset !important;
+    transform: rotate(270deg);
+    height: unset !important;
+    width: unset !important;
+    font-size: large;
+}

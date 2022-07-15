@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Other_Key_Integrations__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures any other key integrations that need to be considered for Demo purposes.</inlineHelpText>
+    <label>Other Key Integrations</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

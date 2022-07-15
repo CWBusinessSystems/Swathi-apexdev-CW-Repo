@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prospect_Account</fullName>
+    <active>true</active>
+    <label>Prospect Account</label>
+    <picklistValues>
+        <picklist>AM_Assignment_Status__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Account Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Account Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Channel Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events Hosted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events Sponsored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Generated</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Direct</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AssociatedTerminusAccounts__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Account_Restriction_Status__c</picklist>
+        <values>
+            <fullName>Blacklisted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delinquent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Acquired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Gone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Restriction</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Workout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shut Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Account_Review_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Authorized_Reseller__c</picklist>
+        <values>
+            <fullName>1-Tier%2F2-Tier Authorized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-Tier Authorized</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Billing_Batch__c</picklist>
+        <values>
+            <fullName>Batch1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Batch10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batch9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Denied_Party_Screening__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Disti_Logic__c</picklist>
+        <values>
+            <fullName>Ingram Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synnex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TechData</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Distributor_Identifier__c</picklist>
+        <values>
+            <fullName>Blue Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bluechip Infotech Pty Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H Canada ULC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H Distributing%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dekkers Intermediair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBERTLANG Distribution GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exeed Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innosoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minitel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portland Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYNNEX Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYNNEX Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data Canada Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data Product Management%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e92plus LTD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Group_Name__c</picklist>
+        <values>
+            <fullName>A%2B Chnl Dev Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2B Chnl Dev Other_HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2B HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2B MSP501</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2B RobinRobins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARCA %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AServer %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AWD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Productivity Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Covered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR Eval %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bluechip Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMIT Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMIT Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Group - Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudComputing %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuum Vault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expetec Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expetec-Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP_BPCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP_CDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP_PRO Dealer Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP_ProSource Technology Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geeks On Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTG Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTG Peer Group 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Touch Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ignition Bermuda Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IndiaSalesTeam %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IndyIT-ByteCafe Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSPOD %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manawa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mann Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanicus %26 Opal Business Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBG_AHTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netrix LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Office Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRO Dealer Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panurgy Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paul Rouse %28RCG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QuestingHound_HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Time Consultants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Consulting Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SacTechGroup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharp SBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sovaton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SpliceNet Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synaxon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synaxon_HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG Group_HTG Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG Group_Telecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG-Group A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG-Group A_High Tech Innovations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG-Group B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG-Group MAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG-Group_A Chnl Dev Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech-Data %28Zenith%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Testing Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waypoint Solutions Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wood Networks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YourITHelpDesk - Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iTech Las Vegas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>integraONE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Integration_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready For Sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Invoice_Delivery_Preference__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Email and Print</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Manage_Integration_Sync_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Min_Commit_Sync_Status__c</picklist>
+        <values>
+            <fullName>Ready to sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Partner_Payment_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blacklisted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delinquent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Aqcuired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Gone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Workout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shut Off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Partner_Type__c</picklist>
+        <values>
+            <fullName>Engaged in M%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Touch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Tier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIP Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Payment_Terms__c</picklist>
+        <values>
+            <fullName>Due Upon Receipt</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Peer_Group_info__c</picklist>
+        <values>
+            <fullName>Former Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Preferred_Distributor__c</picklist>
+        <values>
+            <fullName>Blue Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bluechip Infotech Pty Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H Canada ULC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H Distributing%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dekkers Intermediair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBERTLANG Distribution GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exeed Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innosoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minitel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portland Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYNNEX Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYNNEX Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data Canada Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data Product Management%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e92plus LTD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Products_Owned__c</picklist>
+        <values>
+            <fullName>Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Mgmt Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stratozen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Program_Membership_Level__c</picklist>
+        <values>
+            <fullName>Accelerate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Branch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Program_Membership__c</picklist>
+        <values>
+            <fullName>7FigureMSP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASCII</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Covered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Coop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BPCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Troubleshooters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental integrators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expertech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDeACOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Aviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Electricity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Maritime %26 Port Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Maritime Transportation Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Mining %26 Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - National Credit Union</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - National Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Retail %26 Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAC - Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAO - Faith Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISAOs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram SMB Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram TrustX Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MicroAge Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Millenium Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Dealer Group %28PDG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robin Robins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Select Dealer Group %28SDG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synnex VARNEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAG National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taylor Business Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data TechSelect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TruMethods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Profit Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YourIThelpdesk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Purchase_Order_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA%2FROW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Segmentation_Tier__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Special_Pricing__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Sub_Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio Visual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staffing %26 Recruiting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wireless</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Target_Acct_Type__c</picklist>
+        <values>
+            <fullName>APAC Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR APAC Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR APAC Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR APAC Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR EMEA Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR EMEA Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR EMEA Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR NA Acquisition Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR NA Acquisition IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR NA Acquisition Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR NA Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR NA Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA Acquisition Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA Acquisition IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA Acquisition Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Acquisition Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Acquisition IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Acquisition ISAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Acquisition OT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Acquisition Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Expansion IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Expansion Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Expansion UMM %26 BMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Termination_Reason__c</picklist>
+        <values>
+            <fullName>Business Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Termination_Sub_reason__c</picklist>
+        <values>
+            <fullName>AM Not Engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agreements%2FInvoicing%2FAcct Integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company %26 Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company Downsizing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configurations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delinquent Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drastic Change in Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feels Misled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imp Misrepresented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imp Not Helpful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imp Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Response%2FResolution Times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merger and Acquisition External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merger and Acquisition Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Continued Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Enough Imp Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Helpful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procedures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliability Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal Increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales %26 Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Risk%2FCompliance Concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service %28Tickets%2FTime%2FService Board%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup Tables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speed Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Offering Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time and Expense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time to Implement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too Expensive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too Robust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy With Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with Imp Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usability Issues</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Territory__c</picklist>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alabama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alberta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arkansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benelux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>British Columbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecticut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delaware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>District of Columbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idaho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kansas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kentucky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitoba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maryland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massachusetts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minnesota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississippi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missouri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nebraska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Brunswick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Hampshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newfoundland and Labrador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordic Countries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northwest Territories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nova Scotia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nunavut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ohio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oklahoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oregon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pennsylvania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prince Edward Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puerto Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quebec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROW - Rest of World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rhode Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saskatchewan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Carolina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Dakota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennessee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - Midlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - North East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - North West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - South East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK - South West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Virgin Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vermont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Virginia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisconsin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyoming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yukon</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Time_Zone__c</picklist>
+        <values>
+            <fullName>GMT%2B00%3A00%09Greenwich Mean Time %28GMT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B00%3A00%09Irish Summer Time %28Europe%2FDublin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B00%3A00%09Western European Time %28Africa%2FCasablanca%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B01%3A00%09British Summer Time %28Europe%2FLondon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B01%3A00%09Central European Time %28Africa%2FAlgiers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B01%3A00%09Western European Summer Time %28Europe%2FLisbon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FAmsterdam%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FBerlin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FBrussels%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FParis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FPrague%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09Central European Summer Time %28Europe%2FRome%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B02%3A00%09South Africa Standard Time %28Africa%2FJohannesburg%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Arabia Standard Time %28Asia%2FBaghdad%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Arabia Standard Time %28Asia%2FKuwait%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Arabia Standard Time %28Asia%2FRiyadh%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09East African Time %28Africa%2FNairobi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Africa%2FCairo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Asia%2FBeirut%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Europe%2FAthens%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Europe%2FBucharest%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Europe%2FHelsinki%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Eastern European Summer Time %28Europe%2FIstanbul%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Israel Daylight Time %28Asia%2FJerusalem%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Moscow Standard Time %28Europe%2FMinsk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A00%09Moscow Standard Time %28Europe%2FMoscow%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B03%3A30%09Iran Daylight Time %28Asia%2FTehran%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B04%3A00%09Armenia Time %28Asia%2FYerevan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B04%3A00%09Azerbaijan Summer Time %28Asia%2FBaku%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B04%3A00%09Georgia Time %28Asia%2FTbilisi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B04%3A00%09Gulf Standard Time %28Asia%2FDubai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B04%3A30%09Afghanistan Time %28Asia%2FKabul%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A00%09Pakistan Time %28Asia%2FKarachi%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A00%09Uzbekistan Time %28Asia%2FTashkent%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A00%09Yekaterinburg Time %28Asia%2FYekaterinburg%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A30%09India Standard Time %28Asia%2FColombo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A30%09India Standard Time %28Asia%2FKolkata%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B05%3A45%09Nepal Time %28Asia%2FKathmandu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B06%3A00%09Bangladesh Time %28Asia%2FDhaka%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B06%3A30%09Myanmar Time %28Asia%2FRangoon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B07%3A00%09Indochina Time %28Asia%2FBangkok%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B07%3A00%09Indochina Time %28Asia%2FHo_Chi_Minh%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B07%3A00%09West Indonesia Time %28Asia%2FJakarta%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09Australian Western Standard Time %28Australia%2FPerth%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09China Standard Time %28Asia%2FShanghai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09China Standard Time %28Asia%2FTaipei%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09Hong Kong Time %28Asia%2FHong_Kong%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09Malaysia Time %28Asia%2FKuala_Lumpur%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09Philippines Time %28Asia%2FManila%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B08%3A00%09Singapore Time %28Asia%2FSingapore%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B09%3A00%09Japan Standard Time %28Asia%2FTokyo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B09%3A00%09Korea Standard Time %28Asia%2FSeoul%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B09%3A30%09Australian Central Standard Time %28Northern Territory%29 %28Australia%2FDarwin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B10%3A00%09Australian Eastern Standard Time %28Queensland%29 %28Australia%2FBrisbane%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B10%3A00%09Australian Eastern StandardTime %28New South Wales%29 %28Australia%2FSydney%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B10%3A30%09Australian Central Standard Time %28%28South Australia%29 Australia%2FAdelaide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B11%3A00%09Lord Howe Standard Time %28Australia%2FLord_Howe%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B11%3A00%09Solomon Is%2E Time %28Pacific%2FGuadalcanal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B11%3A30%09Norfolk Time %28Pacific%2FNorfolk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B12%3A00%09Fiji Time %28Pacific%2FFiji%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B12%3A00%09New Zealand Standard Time %28Pacific%2FAuckland%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B12%3A00%09Petropavlovsk-Kamchatski Time %28Asia%2FKamchatka%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B12%3A45%09Chatham Standard Time %28Pacific%2FChatham%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B13%3A00%09Phoenix Is%2ETime %28Pacific%2FEnderbury%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B13%3A00%09Tonga Time %28Pacific%2FTongatapu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%2B14%3A00%09Line Is%2E Time %28Pacific%2FKiritimati%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9300%3A00%09Azores Summer Time %28Atlantic%2FAzores%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9300%3A00%09Eastern Greenland Summer Time %28America%2FScoresbysund%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9301%3A00%09Cape Verde Time %28Atlantic%2FCape_Verde%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9302%3A00%09South Georgia Standard Time %28Atlantic%2FSouth_Georgia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9302%3A30%09Newfoundland Daylight Time %28America%2FSt_Johns%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9303%3A00%09Argentina Time %28America%2FArgentina%2FBuenos_Aires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9303%3A00%09Atlantic Daylight Time %28America%2FHalifax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9303%3A00%09Brasilia Summer Time %28America%2FSao_Paulo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9303%3A00%09Chile Summer Time %28America%2FSantiago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9304%3A00%09Atlantic Daylight Time %28Atlantic%2FBermuda%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9304%3A00%09Atlantic Standard Time %28America%2FPuerto_Rico%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9304%3A00%09Eastern Daylight Time %28America%2FIndiana%2FIndianapolis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9304%3A00%09Eastern Daylight Time %28America%2FNew_York%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9304%3A30%09Venezuela Time %28America%2FCaracas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9305%3A00%09Central Daylight Time %28America%2FChicago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9305%3A00%09Central Daylight Time %28America%2FMexico_City%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9305%3A00%09Colombia Time %28America%2FBogota%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9305%3A00%09Eastern Standard Time %28America%2FPanama%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9305%3A00%09Peru Time %28America%2FLima%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9306%3A00%09Central Standard Time %28America%2FEl_Salvador%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9306%3A00%09Mountain Daylight Time %28America%2FDenver%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9306%3A00%09Mountain Standard Time %28America%2FMazatlan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9307%3A00%09Mountain Standard Time %28America%2FPhoenix%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9307%3A00%09Pacific Daylight Time %28America%2FLos_Angeles%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9307%3A00%09Pacific Daylight Time %28America%2FTijuana%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9308%3A00%09Alaska Daylight Time %28America%2FAnchorage%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9308%3A00%09Pitcairn Standard Time %28Pacific%2FPitcairn%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9309%3A00%09Gambier Time %28Pacific%2FGambier%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9309%3A30%09Marquesas Time %28Pacific%2FMarquesas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9310%3A00%09Hawaii-Aleutian Standard Time %28Pacific%2FHonolulu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9311%3A00%09Niue Time %28Pacific%2FNiue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%9311%3A00%09Samoa Standard Time %28Pacific%2FPago_Pago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT%E2%80%939%3A00%09Hawaii-Aleutian Standard Time %28America%2FAdak%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Vendor_Type__c</picklist>
+        <values>
+            <fullName>Vendor - Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor - Invent Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor - Invent Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor - Open Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor - Resold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>CSP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSP%2FVAR Hybrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom%2FCollaboration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CoTerminationEvent__c</picklist>
+        <values>
+            <fullName>Add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractCoTermination__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Prompt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalModel__c</picklist>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Based</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Same</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uplift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TaxExempt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SurgingModels__c</picklist>
+        <values>
+            <fullName>Default</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Target_Acct_Product__c</picklist>
+        <values>
+            <fullName>Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TerminusAccountLists__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Touch_Tier__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor%2FReseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zuora__Active__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zuora__CustomerPriority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zuora__SLA__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zuora__UpsellOpportunity__c</picklist>
+        <values>
+            <fullName>Maybe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

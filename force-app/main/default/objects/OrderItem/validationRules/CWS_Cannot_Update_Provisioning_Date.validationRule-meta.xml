@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Cannot_Update_Provisioning_Date</fullName>
+    <active>false</active>
+    <description>Provisioning Date can only be modified if the order is in Pending Fulfillment status</description>
+    <errorConditionFormula>IF(AND(NOT(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;OrderItem&apos;)),NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,AND(
+ISCHANGED( CWS_ProvisioningDate__c),
+NOT(
+ISPICKVAL(Order.Status,&apos;Pending Fulfillment&apos;)
+)
+))</errorConditionFormula>
+    <errorDisplayField>CWS_ProvisioningDate__c</errorDisplayField>
+    <errorMessage>Provisioning Date cannot be modified since the Order is not in Pending Fulfillment status</errorMessage>
+</ValidationRule>

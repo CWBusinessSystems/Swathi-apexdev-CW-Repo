@@ -1,0 +1,24 @@
+<aura:component controller="CWS_ShareRecordsWithDistyResellerCtrl" implements="force:hasRecordId,force:lightningQuickAction" extends="c:CWS_BaseSuperComponent">
+    <aura:attribute name="distyRecord" type="Object" access="global"/>
+    <aura:attribute name="disty" type="Object" access="global"/>
+    <aura:attribute name="userRec" type="Object" access="global"/>
+    <aura:attribute name="recordError" type="String" access="global"/>
+    
+   <force:recordData aura:id="forceUserRec"
+      recordId="{!$SObjectType.CurrentUser.Id}"
+      layoutType="FULL"
+      fields="Profile.Name"
+      targetFields="{!v.userRec}"
+      targetError="{!v.recordError}"
+      recordUpdated="{!c.distyHandler}"/>
+    
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      mode="VIEW"
+      targetRecord="{!v.distyRecord}"
+      targetFields="{!v.disty}"
+      targetError="{!v.recordError}"
+      fields="Id,Name,CWS_Active__c,CWS_Account__c,CWS_Distributor_ResellerAcc__c,CWS_isReactive__c,CWS_Account__r.CWS_Established_Disti_Reseller__c"
+      recordUpdated="{!c.distyHandler}"/>
+</aura:component>

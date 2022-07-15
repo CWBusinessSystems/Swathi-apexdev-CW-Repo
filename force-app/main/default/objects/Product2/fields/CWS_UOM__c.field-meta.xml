@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_UOM__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates Unit of Measure for the product</inlineHelpText>
+    <label>Unit of Measure</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_UOM_valueset</valueSetName>
+    </valueSet>
+</CustomField>

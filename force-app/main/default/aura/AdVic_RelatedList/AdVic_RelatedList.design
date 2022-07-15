@@ -1,0 +1,34 @@
+<design:component label="AdVic Related List">
+    <design:attribute default="false" Label="Builder Mode?" name="builderMode"/>
+
+    <design:attribute default="Contact" placeholder="Contact" required="true" label="Related Object's API Name" name="relObjType" description="What sObject does the table/grid show?"/> <!--what obj does the list show-->
+    <design:attribute default="AccountId" placeholder="AccountId" required="true" label="Parent Lookup Field" name="parentLookupField" description="On the table object, what field API name looks-up to the record page?"/>
+    <design:attribute default="FirstName,LastName,Phone,Email" placeholder="FirstName,LastName,Phone,Email" required="true" label="Table Fields CSV" name="fieldsCSV" description="What fields do you want on the first row of each table record?"/>
+    <design:attribute default="MailingAddress" placeholder="MailingAddress" label="More Fields CSV" name="moreFieldsCSV" description="If the user clicks the 'Show' Label, the row expands to show these fields in a stacked layout. This is useful to display many fields in a few columns"/>
+
+    <design:attribute default="Account Contacts" placeholder="Contacts" label="Table Title" name="listTitle" description="Title shown above the table"/>
+    <design:attribute default="standard:contact" placeholder="standard:account" label="Table Icon" name="iconName" description="The slds icon shown above the table. https://www.lightningdesignsystem.com/icons/"/>
+	
+    <design:attribute default="Both" placeholder="More" label="Load More Record Options" name="usingShow" datasource="All,More,Both,None" description="Controls the links shown below the table. Used to display additional records (Show More, Show All, Both, None). Note that these links are hidden once all table records are being displayed"/>
+    <design:attribute default="5" placeholder="10" required="true" Label="Row Load Count" name="initRows" description="Sets the initial number of records loaded. If using 'Show More', this also controls the number of additional rows shown each time 'Show More' is clicked"/>
+    
+    <design:attribute default="ORDER BY Name DESC" label="SOQL Add-On Params" name="orderByClause" description="Optionally add clauses to the SOQL that retrieves the table records. This will text will be added immediately after the 'WHERE {ParentId} = {parentRecordId}' portion of the data query. You can add clauses like 'AND CreatedDate = TODAY' or 'ORDER BY Name', etc. here to further filter your result set."/>
+    
+    <design:attribute default="Edit Address" placeholder="Show More" label="'Show' Label (for each record)" name="showLabel" description="label for Show More section on each row. Leave blank to hide this section" />
+    <design:attribute default="Hide Address" placeholder="Collapse Section" label="'Hide' Label (for each record)" name="hideLabel" />
+    <design:attribute default="Add a Contact" placeholder="Create a new record" Label="New Record Section Label" name="newRecordSectionLabel"/>
+    <design:attribute default="true" Label="Show 'New' Button?" name="allowNewRecs"/>
+
+    <design:attribute default="true" Label="Show Live Edit?" name="showLiveEdit"/>
+    <design:attribute default="5000" placeholder="7000" Label="Live Edit - Debounce Rate" name="debounce" description="When 'Live Edit' is enabled, this delay (in milliseconds) that each row will wait before requesting a Save on the record once typing has completed. Values under 3000 (3 seconds) may cause an undesirable save frequency on text entry fields."  />
+
+    <design:attribute default="true" Label="Allow Edits?" name="allowEdits"/>
+    <design:attribute default="false" Label="Allow Delete?" name="allowDelete"/>
+
+
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Large"/>
+        <design:supportedFormFactor type="Small"/>
+    </design:supportedFormFactors>
+	
+</design:component>

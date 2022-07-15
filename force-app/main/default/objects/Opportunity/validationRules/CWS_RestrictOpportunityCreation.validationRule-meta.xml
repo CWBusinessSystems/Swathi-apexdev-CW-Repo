@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_RestrictOpportunityCreation</fullName>
+    <active>true</active>
+    <description>Restrict opportunity creation if bill to account restriction status is not transnational</description>
+    <errorConditionFormula>AND(
+ NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ ISNEW(),
+ NOT(AND(
+  CWS_Bill_To_Account__r.CWS_Is_Distributor__c, 
+  OR(ISPICKVAL( CWS_Route_to_Market__c , &apos;IIT&apos;),ISPICKVAL( CWS_Route_to_Market__c , &apos;Channel&apos;))
+ )),
+OR(
+ AND(ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Credit Hold&apos;),
+ NOT(ISPICKVAL(Type , &apos;Renewal&apos;)) 
+ ),
+ AND(ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Shut Off&apos;),
+ NOT(ISPICKVAL(Type , &apos;Renewal&apos;)) 
+ ),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Collection&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Blacklisted&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Competitor&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Suspect&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Out of Business&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Inactive Acquired&apos;),
+ ISPICKVAL(CWS_Bill_To_Account__r.CWS_Account_Restriction_Status__c , &apos;Inactive Gone&apos;)
+)
+)</errorConditionFormula>
+    <errorMessage>You may not create an Opportunity or Quote for this Account because they are Restricted. The customer must resolve the restriction before continuing. Please refer to the Account Restriction Status for this Account.</errorMessage>
+</ValidationRule>

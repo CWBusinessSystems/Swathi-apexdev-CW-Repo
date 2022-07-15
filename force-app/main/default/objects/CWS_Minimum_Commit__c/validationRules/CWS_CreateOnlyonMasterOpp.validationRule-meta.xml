@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CreateOnlyonMasterOpp</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISNEW(), 
+CWS_Opportunity__r.CWS_Master__c = false
+)</errorConditionFormula>
+    <errorMessage>Minimum Commit can only be created on master opportunity</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contract_CompactLayout</fullName>
+    <fields>ContractNumber</fields>
+    <fields>AccountId</fields>
+    <fields>CWS_Status__c</fields>
+    <fields>StartDate</fields>
+    <fields>EndDate</fields>
+    <fields>ContractTerm</fields>
+    <fields>CWS_Exchange_Rate__c</fields>
+    <label>Contract CompactLayout</label>
+</CompactLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Mandatory_Fields_on_Auto_Opp</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(
+$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c
+),
+CWS_Auto_Opportunity__c = true,
+CWS_Distributor__r.CWS_Auto_Convert_Lead__c = true,
+OR(
+ISPICKVAL(Status,&apos;&apos;),
+ISPICKVAL(CWS_using_any_ConnectWise_Solution__c,&apos;&apos;),
+ISBLANK(CWS_Main_revenue_sources__c),
+ISPICKVAL(Industry,&apos;&apos;),
+ISBLANK(CWS_Operation_service_delivery_model__c),
+ISBLANK(NumberOfEmployees),
+ISBLANK(CWS_Current_tools_used__c),
+ISBLANK(CWS_Business_needs_pain_points__c),
+ISBLANK(CWS_Implementation_Timeframe__c),
+ISBLANK(CWS_Experienced_a_Demo_Trial_Solution__c),
+ISBLANK(Street),
+ISBLANK(City),
+ISBLANK(PostalCode)
+)
+)</errorConditionFormula>
+    <errorMessage>Auto-Opp. fields: Currently using any ConnectWise Sol., Main Revenue Sources, Industry, Operation service delivery model, No. of Employees, Current tools used, Business needs/pain points, Implementation Timeframe, Experienced a Demo/Trial/Sol., Address</errorMessage>
+</ValidationRule>

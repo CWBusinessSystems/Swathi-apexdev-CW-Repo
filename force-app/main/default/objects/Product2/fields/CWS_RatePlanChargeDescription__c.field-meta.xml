@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_RatePlanChargeDescription__c</fullName>
+    <description>This field is created for integration purpose</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the legacy rate plan charge description for the product</inlineHelpText>
+    <label>RatePlanChargeDescription</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_MarketPlace_Only_SKU_BILLING_ONLY__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the product is Billing Only in MarketPlace</inlineHelpText>
+    <label>MarketPlace Only SKU BILLING ONLY</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

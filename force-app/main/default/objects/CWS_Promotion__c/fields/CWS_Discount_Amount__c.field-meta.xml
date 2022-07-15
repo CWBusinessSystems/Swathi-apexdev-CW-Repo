@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Discount_Amount__c</fullName>
+    <description>To be manually discounted in &apos;Promo discount&apos; field on cart</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To be manually discounted in &apos;Promo discount&apos; field on cart</inlineHelpText>
+    <label>Discount Amount(USD)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

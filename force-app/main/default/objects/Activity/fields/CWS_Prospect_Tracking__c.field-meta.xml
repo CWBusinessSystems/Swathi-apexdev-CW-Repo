@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prospect_Tracking__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Prospect Tracking</label>
+    <referenceTo>Prospect_Tracking__c</referenceTo>
+    <relationshipLabel>Related Activities</relationshipLabel>
+    <relationshipName>RelatedActivities</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_OnlyPopulateRecycleReasonsinRecycle</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(StageName,&apos;Recycled&apos;))&amp;&amp;
+NOT(ISBLANK(CWS_ReasonforRecycling__c))&amp;&amp; NOT(ISPICKVAL(CWS_Recycled_Reason_New__c ,&apos;&apos;))</errorConditionFormula>
+    <errorMessage>Stage must be in Recycle in order to fill in Recycled Reason and Reason for Recycling fields.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<aura:component >
+    
+    <aura:attribute name="recId" type="String" default=""/>
+    <aura:attribute name="apiName" type="String" default=""/>
+    <aura:attribute name="viewMode" type="String" default="View"/>
+    <aura:attribute name="showModal" type="Boolean" default="false"/>
+
+
+  <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+  <div class="slds-modal__container">
+    <header class="slds-modal__header">
+
+      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">View Record</h2>
+    </header>
+          <div class="slds-modal__content slds-p-around_small" id="modal-content-id-1">
+
+    <lightning:recordForm
+        recordId="{!v.recId}"
+        objectApiName="{!v.apiName}"
+        layoutType="Full"
+        mode="{!v.viewMode}" />
+      </div>
+      
+      
+    <footer class="slds-modal__footer">
+      <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}" >Close</button>
+    </footer>
+  </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div>
+    
+	
+</aura:component>

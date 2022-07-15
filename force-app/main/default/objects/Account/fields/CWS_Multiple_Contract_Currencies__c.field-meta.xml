@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Multiple_Contract_Currencies__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mark true if there is an associated Contract in a different currency from the Account currency</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that one or more Contracts associated to this Account has a different currency from the Account currency. To calculate Contracted ARR, all Contracts have been converted to match the Account currency.</inlineHelpText>
+    <label>Multiple Contract Currencies</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

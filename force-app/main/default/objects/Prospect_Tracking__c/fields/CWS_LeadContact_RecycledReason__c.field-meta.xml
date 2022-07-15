@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LeadContact_RecycledReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead/Contact Recycled Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No show intro call</fullName>
+                <default>false</default>
+                <label>No show intro call</label>
+            </value>
+            <value>
+                <fullName>Improperly routed</fullName>
+                <default>false</default>
+                <label>Improperly routed</label>
+            </value>
+            <value>
+                <fullName>Timeline</fullName>
+                <default>false</default>
+                <label>Timeline</label>
+            </value>
+            <value>
+                <fullName>Did not meet requirements</fullName>
+                <default>false</default>
+                <label>Did not meet requirements</label>
+            </value>
+            <value>
+                <fullName>Price/Budget issues</fullName>
+                <default>false</default>
+                <label>Price/Budget issues</label>
+            </value>
+            <value>
+                <fullName>Already existing opportunity or owns product</fullName>
+                <default>false</default>
+                <label>Already existing opportunity or owns product</label>
+            </value>
+            <value>
+                <fullName>No buying influence on opportunity</fullName>
+                <default>false</default>
+                <label>No buying influence on opportunity</label>
+            </value>
+            <value>
+                <fullName>Incomplete or missing information</fullName>
+                <default>false</default>
+                <label>Incomplete or missing information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

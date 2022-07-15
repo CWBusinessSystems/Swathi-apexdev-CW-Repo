@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Bypass_Objects__c</fullName>
+    <description>The names of the meta data are captured here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Full API names followed by &apos;;&apos; including the managed package prefix if applicable of objects you need to bypass WF rules, Validation Rules, Process Builders. If you need to bypass multiple objects, concatenate one after another. Eg: Account;Contact;</inlineHelpText>
+    <label>Bypass Objects</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

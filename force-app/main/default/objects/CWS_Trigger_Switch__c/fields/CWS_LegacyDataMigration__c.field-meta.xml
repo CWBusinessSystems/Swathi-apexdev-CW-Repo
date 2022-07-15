@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LegacyDataMigration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this checkbox during legacy data migration to run only specific migration logic</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this checkbox during legacy data migration to run only specific migration logic</inlineHelpText>
+    <label>Legacy Data Migration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

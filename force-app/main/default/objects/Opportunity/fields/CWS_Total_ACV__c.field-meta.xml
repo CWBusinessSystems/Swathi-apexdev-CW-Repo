@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Total_ACV__c</fullName>
+    <description>Roll-up of the ACV of the Quote lines.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Annual Contract Value from Quote</inlineHelpText>
+    <label>Non MinCommit Total  ACV</label>
+    <summarizedField>OpportunityLineItem.CWS_ACVLine__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.CWS_Min_Commit__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

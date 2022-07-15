@@ -1,0 +1,12 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+
+<script>
+
+window.location.replace("http://wiki.r1soft.com/dashboard.action");
+
+</script>
+
+<p>You should now be redirected to the R1Soft Documentation Wiki. If you have not been redirected please <a href="http://wiki.r1soft.com/dashboard.action">click here</a>.</p>
+
+</apex:page>

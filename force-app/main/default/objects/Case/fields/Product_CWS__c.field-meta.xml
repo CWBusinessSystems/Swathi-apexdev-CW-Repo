@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_CWS__c</fullName>
+    <description>For Continuum Cases</description>
+    <externalId>false</externalId>
+    <label>Product (CWS)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Admin - Contracts</fullName>
+                <default>false</default>
+                <label>Admin - Contracts</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Admin - Events</label>
+            </value>
+            <value>
+                <fullName>Admin - No Product</fullName>
+                <default>false</default>
+                <label>Admin - No Product</label>
+            </value>
+            <value>
+                <fullName>Assist Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Assist Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>Assist Help Desk</fullName>
+                <default>false</default>
+                <label>Assist Help Desk</label>
+            </value>
+            <value>
+                <fullName>Assist Tech Advantage</fullName>
+                <default>false</default>
+                <label>Assist Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>Azure SQL database backup</fullName>
+                <default>false</default>
+                <label>Azure SQL database backup</label>
+            </value>
+            <value>
+                <fullName>BDR - Backup</fullName>
+                <default>false</default>
+                <label>BDR  Backup</label>
+            </value>
+            <value>
+                <fullName>Continuity247</fullName>
+                <default>false</default>
+                <label>BDR  Continuity</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>C3</fullName>
+                <default>false</default>
+                <label>C3</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 for Data Centers</fullName>
+                <default>false</default>
+                <label>CDP 2.0 for Data Centers</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 Linux</fullName>
+                <default>false</default>
+                <label>CDP 2.0 Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 2.0 Windows</fullName>
+                <default>false</default>
+                <label>CDP 2.0 Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3.0 Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3.0 Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Advanced Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Advanced Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Advanced Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Advanced Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Enterprise Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Enterprise Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Standard Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP 3 Standard Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP 3 Standard Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP 3 Standard Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Advanced Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Advanced Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Advanced Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Advanced Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Data Center Console</fullName>
+                <default>false</default>
+                <label>CDP Data Center Console</label>
+            </value>
+            <value>
+                <fullName>CDP Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Enterprise Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Enterprise Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Server 2.0 Linux</fullName>
+                <default>false</default>
+                <label>CDP Server 2.0 Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Server 2.0 Windows</fullName>
+                <default>false</default>
+                <label>CDP Server 2.0 Windows</label>
+            </value>
+            <value>
+                <fullName>CDP Standard Edition Linux</fullName>
+                <default>false</default>
+                <label>CDP Standard Edition Linux</label>
+            </value>
+            <value>
+                <fullName>CDP Standard Edition Windows</fullName>
+                <default>false</default>
+                <label>CDP Standard Edition Windows</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Linux</fullName>
+                <default>false</default>
+                <label>CloudCopy Linux</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Mac</fullName>
+                <default>false</default>
+                <label>CloudCopy Mac</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Repo Server</fullName>
+                <default>false</default>
+                <label>CloudCopy Repo Server</label>
+            </value>
+            <value>
+                <fullName>CloudCopy Windows</fullName>
+                <default>false</default>
+                <label>CloudCopy Windows</label>
+            </value>
+            <value>
+                <fullName>Command - Desktop</fullName>
+                <default>false</default>
+                <label>Command - Desktop</label>
+            </value>
+            <value>
+                <fullName>Command - Server</fullName>
+                <default>false</default>
+                <label>Command - Server</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>DTx</fullName>
+                <default>false</default>
+                <label>DTx</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>Empower</label>
+            </value>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+            <value>
+                <fullName>HD - Activation</fullName>
+                <default>false</default>
+                <label>HD - Activation</label>
+            </value>
+            <value>
+                <fullName>HD - EHD</fullName>
+                <default>false</default>
+                <label>HD - EHD</label>
+            </value>
+            <value>
+                <fullName>HD - Global</fullName>
+                <default>false</default>
+                <label>HD - Global</label>
+            </value>
+            <value>
+                <fullName>Help Desk</fullName>
+                <default>false</default>
+                <label>HD - US</label>
+            </value>
+            <value>
+                <fullName>Identify</fullName>
+                <default>false</default>
+                <label>Identify</label>
+            </value>
+            <value>
+                <fullName>ITBoost</fullName>
+                <default>false</default>
+                <label>ITBoost</label>
+            </value>
+            <value>
+                <fullName>IT Glue</fullName>
+                <default>false</default>
+                <label>IT Glue</label>
+            </value>
+            <value>
+                <fullName>IT Nation Evolve</fullName>
+                <default>false</default>
+                <label>IT Nation Evolve</label>
+            </value>
+            <value>
+                <fullName>LMI Rescue</fullName>
+                <default>false</default>
+                <label>LMI Rescue</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>MDM</fullName>
+                <default>false</default>
+                <label>MDM</label>
+            </value>
+            <value>
+                <fullName>Migration Advisor</fullName>
+                <default>false</default>
+                <label>Migration Advisor</label>
+            </value>
+            <value>
+                <fullName>Auvik</fullName>
+                <default>false</default>
+                <label>Network Care</label>
+            </value>
+            <value>
+                <fullName>Network Care - Auvik</fullName>
+                <default>false</default>
+                <label>Network Care - Auvik</label>
+            </value>
+            <value>
+                <fullName>Network Detective</fullName>
+                <default>false</default>
+                <label>Network Detective</label>
+            </value>
+            <value>
+                <fullName>NOC Service</fullName>
+                <default>false</default>
+                <label>NOC Service</label>
+            </value>
+            <value>
+                <fullName>Not Product Related</fullName>
+                <default>false</default>
+                <label>Not Product Related</label>
+            </value>
+            <value>
+                <fullName>NULL</fullName>
+                <default>false</default>
+                <label>NULL</label>
+            </value>
+            <value>
+                <fullName>Other-3rd Party Products</fullName>
+                <default>false</default>
+                <label>Other-3rd Party Products</label>
+            </value>
+            <value>
+                <fullName>Continuum U</fullName>
+                <default>false</default>
+                <label>Partner Education</label>
+            </value>
+            <value>
+                <fullName>PatchAnalyzer</fullName>
+                <default>false</default>
+                <label>PatchAnalyzer</label>
+            </value>
+            <value>
+                <fullName>Perch</fullName>
+                <default>false</default>
+                <label>Perch</label>
+            </value>
+            <value>
+                <fullName>PointAudit</fullName>
+                <default>false</default>
+                <label>PointAudit</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>Portal - Accounting</fullName>
+                <default>false</default>
+                <label>Portal - Accounting</label>
+            </value>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Portal - Admin</label>
+            </value>
+            <value>
+                <fullName>Portal_UI</fullName>
+                <default>false</default>
+                <label>Portal - UI</label>
+            </value>
+            <value>
+                <fullName>PowerShell Plus</fullName>
+                <default>false</default>
+                <label>PowerShell Plus</label>
+            </value>
+            <value>
+                <fullName>PSA</fullName>
+                <default>false</default>
+                <label>PSA</label>
+            </value>
+            <value>
+                <fullName>R1 Soft</fullName>
+                <default>false</default>
+                <label>R1 Soft</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>RMM - Agent</fullName>
+                <default>false</default>
+                <label>RMM - Agent</label>
+            </value>
+            <value>
+                <fullName>RMM - Anti-Virus</fullName>
+                <default>false</default>
+                <label>RMM - Anti-Virus</label>
+            </value>
+            <value>
+                <fullName>RMM - Communicator</fullName>
+                <default>false</default>
+                <label>RMM - Communicator</label>
+            </value>
+            <value>
+                <fullName>RMM - LMI</fullName>
+                <default>false</default>
+                <label>RMM - LMI</label>
+            </value>
+            <value>
+                <fullName>RMM - MWB</fullName>
+                <default>false</default>
+                <label>RMM - MWB</label>
+            </value>
+            <value>
+                <fullName>RMM - Patching</fullName>
+                <default>false</default>
+                <label>RMM - Patching</label>
+            </value>
+            <value>
+                <fullName>RMM - Reporting</fullName>
+                <default>false</default>
+                <label>RMM - Reporting</label>
+            </value>
+            <value>
+                <fullName>RMM - Scripting</fullName>
+                <default>false</default>
+                <label>RMM - Scripting</label>
+            </value>
+            <value>
+                <fullName>RMM - Servers</fullName>
+                <default>false</default>
+                <label>RMM - Servers</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Security - D&amp;R - Endpoint</fullName>
+                <default>false</default>
+                <label>Security - D&amp;R - Endpoint</label>
+            </value>
+            <value>
+                <fullName>Security - D&amp;R - Network</fullName>
+                <default>false</default>
+                <label>Security - D&amp;R - Network</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security - Profile and Protect</label>
+            </value>
+            <value>
+                <fullName>Security - Webroot DNS</fullName>
+                <default>false</default>
+                <label>Security - Webroot DNS</label>
+            </value>
+            <value>
+                <fullName>Security - Webroot SAT</fullName>
+                <default>false</default>
+                <label>Security - Webroot SAT</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>Server Backup Advanced Edition Linux</fullName>
+                <default>false</default>
+                <label>Server Backup Advanced Edition Linux</label>
+            </value>
+            <value>
+                <fullName>Server Backup Advanced Edition Windows</fullName>
+                <default>false</default>
+                <label>Server Backup Advanced Edition Windows</label>
+            </value>
+            <value>
+                <fullName>Server Backup Data Center Console</fullName>
+                <default>false</default>
+                <label>Server Backup Data Center Console</label>
+            </value>
+            <value>
+                <fullName>Server Backup Enterprise Edition Linux</fullName>
+                <default>false</default>
+                <label>Server Backup Enterprise Edition Linux</label>
+            </value>
+            <value>
+                <fullName>Server Backup Enterprise Edition Windows</fullName>
+                <default>false</default>
+                <label>Server Backup Enterprise Edition Windows</label>
+            </value>
+            <value>
+                <fullName>Server Backup Standard Edition Linux</fullName>
+                <default>false</default>
+                <label>Server Backup Standard Edition Linux</label>
+            </value>
+            <value>
+                <fullName>Server Backup Standard Edition Windows</fullName>
+                <default>false</default>
+                <label>Server Backup Standard Edition Windows</label>
+            </value>
+            <value>
+                <fullName>SharePoint backup</fullName>
+                <default>false</default>
+                <label>SharePoint backup</label>
+            </value>
+            <value>
+                <fullName>SnapShot</fullName>
+                <default>false</default>
+                <label>SnapShot</label>
+            </value>
+            <value>
+                <fullName>SQL admin toolset</fullName>
+                <default>false</default>
+                <label>SQL admin toolset</label>
+            </value>
+            <value>
+                <fullName>SQL backup status reporter</fullName>
+                <default>false</default>
+                <label>SQL backup status reporter</label>
+            </value>
+            <value>
+                <fullName>SQL Business Intelligence Manager</fullName>
+                <default>false</default>
+                <label>SQL Business Intelligence Manager</label>
+            </value>
+            <value>
+                <fullName>SQL change manager</fullName>
+                <default>false</default>
+                <label>SQL change manager</label>
+            </value>
+            <value>
+                <fullName>SQLcheck</fullName>
+                <default>false</default>
+                <label>SQLcheck</label>
+            </value>
+            <value>
+                <fullName>SQL comparison toolset</fullName>
+                <default>false</default>
+                <label>SQL comparison toolset</label>
+            </value>
+            <value>
+                <fullName>SQL compliance manager</fullName>
+                <default>false</default>
+                <label>SQL compliance manager</label>
+            </value>
+            <value>
+                <fullName>SQLconfig</fullName>
+                <default>false</default>
+                <label>SQLconfig</label>
+            </value>
+            <value>
+                <fullName>SQLdefrag</fullName>
+                <default>false</default>
+                <label>SQLdefrag</label>
+            </value>
+            <value>
+                <fullName>SQL Diagnostic Manager</fullName>
+                <default>false</default>
+                <label>SQL Diagnostic Manager</label>
+            </value>
+            <value>
+                <fullName>SQLdoctor</fullName>
+                <default>false</default>
+                <label>SQLdoctor</label>
+            </value>
+            <value>
+                <fullName>SQL Elements</fullName>
+                <default>false</default>
+                <label>SQL Elements</label>
+            </value>
+            <value>
+                <fullName>SQL fragmentation analyzer</fullName>
+                <default>false</default>
+                <label>SQL fragmentation analyzer</label>
+            </value>
+            <value>
+                <fullName>SQL Integrity Check</fullName>
+                <default>false</default>
+                <label>SQL Integrity Check</label>
+            </value>
+            <value>
+                <fullName>SQL job manager</fullName>
+                <default>false</default>
+                <label>SQL job manager</label>
+            </value>
+            <value>
+                <fullName>SQL mobile manager</fullName>
+                <default>false</default>
+                <label>SQL mobile manager</label>
+            </value>
+            <value>
+                <fullName>SQLpermissions</fullName>
+                <default>false</default>
+                <label>SQLpermissions</label>
+            </value>
+            <value>
+                <fullName>SQL permissions extractor</fullName>
+                <default>false</default>
+                <label>SQL permissions extractor</label>
+            </value>
+            <value>
+                <fullName>SQLsafe</fullName>
+                <default>false</default>
+                <label>SQLsafe</label>
+            </value>
+            <value>
+                <fullName>SQLsafefree</fullName>
+                <default>false</default>
+                <label>SQLsafefree</label>
+            </value>
+            <value>
+                <fullName>SQLsafe lite</fullName>
+                <default>false</default>
+                <label>SQLsafe lite</label>
+            </value>
+            <value>
+                <fullName>SQLscaler</fullName>
+                <default>false</default>
+                <label>SQLscaler</label>
+            </value>
+            <value>
+                <fullName>SQLschedule</fullName>
+                <default>false</default>
+                <label>SQLschedule</label>
+            </value>
+            <value>
+                <fullName>SQLsecure</fullName>
+                <default>false</default>
+                <label>SQLsecure</label>
+            </value>
+            <value>
+                <fullName>SQLsuite</fullName>
+                <default>false</default>
+                <label>SQLsuite</label>
+            </value>
+            <value>
+                <fullName>SQLtool</fullName>
+                <default>false</default>
+                <label>SQLtool</label>
+            </value>
+            <value>
+                <fullName>SQL Toolbox</fullName>
+                <default>false</default>
+                <label>SQL Toolbox</label>
+            </value>
+            <value>
+                <fullName>SQL Traffic Accelerator</fullName>
+                <default>false</default>
+                <label>SQL Traffic Accelerator</label>
+            </value>
+            <value>
+                <fullName>SQL Virtual Database</fullName>
+                <default>false</default>
+                <label>SQL Virtual Database</label>
+            </value>
+            <value>
+                <fullName>SQL XEvent Profiler</fullName>
+                <default>false</default>
+                <label>SQL XEvent Profiler</label>
+            </value>
+            <value>
+                <fullName>StratoZen</fullName>
+                <default>false</default>
+                <label>StratoZen</label>
+            </value>
+            <value>
+                <fullName>Sync247</fullName>
+                <default>false</default>
+                <label>Sync247</label>
+            </value>
+            <value>
+                <fullName>System Detective</fullName>
+                <default>false</default>
+                <label>System Detective</label>
+            </value>
+            <value>
+                <fullName>Vault</fullName>
+                <default>false</default>
+                <label>Vault</label>
+            </value>
+            <value>
+                <fullName>Webroot</fullName>
+                <default>false</default>
+                <label>Webroot</label>
+            </value>
+            <value>
+                <fullName>Webroot AV</fullName>
+                <default>false</default>
+                <label>Webroot AV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

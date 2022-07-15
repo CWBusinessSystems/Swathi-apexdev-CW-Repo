@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_DoNotEdit_ReadOnly</fullName>
+    <active>true</active>
+    <description>When Opportunity Stage is Close Won/Lost Opportunity should not be editable</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),   
+AND( 
+NOT(
+        OR(
+            $Profile.Name = &apos;System Administrator&apos;,
+            $Profile.Name = &apos;CWS_Global_Sales_Ops&apos;,
+            $Profile.Name = &apos;CWS_Master_Data_Admin&apos;,
+            $Profile.Name = &apos;CWS_Contract_Admin&apos;,
+	    $Profile.Name = &apos;CWS_Order_Management&apos;,
+	    $Profile.Name = &apos;CWS_Sales_Manager&apos;,
+            $Profile.Name = &apos;CWS_Sales_Rep&apos;,
+            $Profile.Name = &apos;CWS_Digital_Sales_Rep&apos;
+        )),
+NOT(ISNEW()),
+OR(
+$RecordType.DeveloperName =&quot;CWS_New_Business_ReadOnly&quot;, 
+$RecordType.DeveloperName =&quot;CWS_Renewal_ReadOnly&quot;,
+$RecordType.DeveloperName =&quot;CWS_Amendment_ReadOnly&quot;,
+$RecordType.DeveloperName =&quot;CWS_Commission_Only_ReadOnly&quot;), 
+OR( 
+ISCHANGED(Name),  
+ISPICKVAL(PRIORVALUE(ForecastCategoryName),&quot;Closed&quot;),
+AND(ISCHANGED(ForecastCategoryName),NOT(OR(ISPICKVAL(StageName,&quot;Closed Won&quot;),ISPICKVAL(StageName,&quot;Closed Lost&quot;))),NOT(OR(ISPICKVAL(ForecastCategoryName,&quot;Closed&quot;),ISPICKVAL(ForecastCategoryName,&quot;Omitted&quot;)))),
+ISCHANGED( CloseDate), 
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;),
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;),
+ISCHANGED(CurrencyIsoCode)
+))
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be edited once it is in a Closed Stage.</errorMessage>
+</ValidationRule>

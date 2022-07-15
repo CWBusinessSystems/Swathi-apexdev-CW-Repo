@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Restrict_Movement_To_PrePipeline</fullName>
+    <active>false</active>
+    <description>Do not allow users to move any stage to Pre-pipeline except Admins, Contract Admins, GSO and Master Data Team. Deactivated by AdVic for Stage Changes in March 2022 release</description>
+    <errorConditionFormula>AND
+(
+ NOT($Profile.Name = &apos;System Administrator&apos;),
+ NOT($Profile.Name = &apos;CWS_Contract_Admin&apos;),
+ NOT($Profile.Name = &apos;CWS_Global_Sales_Ops&apos;),
+ NOT($Profile.Name = &apos;CWS_Master_Data_Admin&apos;),
+ NOT($Profile.Name = &apos;CWS_Order_Management&apos;),
+ ISCHANGED(StageName),
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Prospecting&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Analysis&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Demo&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Proposal&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Finalize Quote&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Rejected&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Closed Won&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Closed Lost&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,
+IF(AND(ISPICKVAL(PRIORVALUE( StageName ),&apos;Closed Won - Legacy&apos;),ISPICKVAL(StageName,&apos;Pre-Pipeline&apos;)),TRUE,FALSE)))))))) )
+
+
+)</errorConditionFormula>
+    <errorMessage>Unavailable to move into Pre-pipeline once in active pipeline stage. Review this Opportunity with your Manager for proper status updating.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sales_Rep_email__c</fullName>
+    <description>Email address of Sales Rep</description>
+    <externalId>false</externalId>
+    <formula>SBQQ__Quote__r.Owner:User.Email</formula>
+    <inlineHelpText>Email address of Sales Rep</inlineHelpText>
+    <label>Sales Rep email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

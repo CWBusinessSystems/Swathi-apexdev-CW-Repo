@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>alycecom__Most_Recent_Gift_Invitation_Gift_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Alyce Most Recent Gift Invitation Gift Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Alyce Most Recent Gift Invitation Gift Name</inlineHelpText>
+    <label>Most Recent Gift Invitation Gift Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,2146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_Pipeline_Products</fullName>
+    <active>true</active>
+    <description>Used in the pre-pipeline estimator</description>
+    <label>Pre-Pipeline Products</label>
+    <picklistValues>
+        <picklist>CWS_Additional_Restrictions__c</picklist>
+        <values>
+            <fullName>Conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrade or Conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrades and Conversions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW agreement or Conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Agreement and Conversion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Billing_Term__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tri-Annual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Bundle_Type__c</picklist>
+        <values>
+            <fullName>Base Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bundle Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standalone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_CW_CT__c</picklist>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Category__c</picklist>
+        <values>
+            <fullName>Assist - Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - HD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Management Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Explore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Secure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Share</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Security Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smileback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_ChargeType__c</picklist>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Charge_Model__c</picklist>
+        <values>
+            <fullName>Discount-Fixed Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discount-Percentage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flat Fee Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overage Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Unit Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiered Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiered with Overage Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volume Pricing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Create_Revenue_Plan_On__c</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue Arrangement Creation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Currencies_Billing_Only__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Currencies__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_EF_Attribute__c</picklist>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Item_Revenue_Category__c</picklist>
+        <values>
+            <fullName>Consulting-SaaS-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Assist-Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Assist-Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Evolve-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Evolve-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Implementation-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Implementation-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Recurring-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting-Services-Recurring-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS-Perpetual Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance-Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Prem Term Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Prem Term Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Invent-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Invent-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perpetual-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perpetual-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS-Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-License-R1Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-License-Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-OnPrem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Based On Premises %28Subscription%29-Third Party-Core Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshows-Attendance Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshows-Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Legacy_Category__c</picklist>
+        <values>
+            <fullName>Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Management Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Security Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smileback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_License_Type__c</picklist>
+        <values>
+            <fullName>Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS - Automate Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OnPrem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OnPrem Term-based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_MP_Tier_Qty_Type__c</picklist>
+        <values>
+            <fullName>Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_NetSuite_Product_Sync_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Synced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Product_Exclusions__c</picklist>
+        <values>
+            <fullName>Assist Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist Help Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ConnectWise RMM Advanced %28NOC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ConnectWise RMM Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R1 Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sentinelone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Leadership</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Product_Family__c</picklist>
+        <values>
+            <fullName>BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unified Monitoring %26 Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Product_Line__c</picklist>
+        <values>
+            <fullName>BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR %3A BDR - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR %3A Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDR %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Business Automation - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Business Management Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Service Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Smileback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Automation %3A Unite %28fka CloudConsole%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A EDR %E2%80%93 ConnectWise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Endpoint Policy Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Incident Response Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Legacy Security Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A MDR %E2%80%93 Bitdefender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A MDR %E2%80%93 SentinelOne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Managed SIEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Network Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Risk Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A SIEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A SaaS Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Security Bundles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cybersecurity %3A Stratozen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A Events - Historical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A Events - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A IT Nation - Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A IT Nation - Evolve %28HTG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A IT Nation - Explore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A IT Nation - Secure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A IT Nation - Share</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A Service Leadership - Peer Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Other - Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Solution Partners - Historical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Assist - Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Assist - HD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Assist - NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Assist - Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Service Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Services - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM %3A UMM - Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Provisioning_Eligibility__c</picklist>
+        <values>
+            <fullName>Immediate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Renewal_Type__c</picklist>
+        <values>
+            <fullName>Opt-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Revenue_Recognition_Rule__c</picklist>
+        <values>
+            <fullName>Billing - Manual recognition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW Direct Rev Rec Rule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW Exact Days Term Based %28%26 Forecast Rule%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW Term Based Rev Rec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recognize daily over time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recognize upon invoicing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Route_to_Market_Billing_Only__c</picklist>
+        <values>
+            <fullName>Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Route_to_Market__c</picklist>
+        <values>
+            <fullName>Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_SKU_Type__c</picklist>
+        <values>
+            <fullName>Adhoc Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation %28Onsite%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membership Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R1Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %28Onsite%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services - HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services - HTG %28Onsite%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services - Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services - Recurring %28Onsite%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training%2FEducation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Source__c</picklist>
+        <values>
+            <fullName>CMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R1Soft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Status_Type__c</picklist>
+        <values>
+            <fullName>ACTIVE MARKETPLACE ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACTIVE%5CBILLING ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BILLING ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BILLING ONLY - NO NEW SALES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End of Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INACTIVE%5CFINANCE SKU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive SKU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEGACY CONVERTED SKU</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Status__c</picklist>
+        <values>
+            <fullName>ACTIVE MARKETPLACE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active MarketPlace Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active%5CBilling Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Active%5CMarket Place Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End of Life</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Sub_Category__c</picklist>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Type__c</picklist>
+        <values>
+            <fullName>Events %3A Attendance Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %3A Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware %3A Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS %3A Hybrid SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid SaaS %3A Hybrid SaaS - Automate Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance %3A Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OnPrem Term-Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %3A Other - Invent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perpetual %3A Perpetual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SaaS %3A SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services %3A Services - HTG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services - Recurring %3A Services - Recurring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_UOM__c</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DWM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PerUser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PnP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>True Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Whitespace_Group__c</picklist>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auvik %28Cmd for Network Package%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify for Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify for Endpoint%2FFoundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify for Network Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify for Network Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify for Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help Desk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMI Rescue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Min Commit Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R1Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover for Continuity%2FBackup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover for SaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partners %283rd Party Products%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unclassified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webroot</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CWS_Zuora_Product_Sync_Status__c</picklist>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Synced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CW_Product_Type__c</picklist>
+        <values>
+            <fullName>Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>Assist - Dedicated Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - HD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist - Tech Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrightGauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Command</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Evolve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Explore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Nation Share</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITBoost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetAmendmentBehavior__c</picklist>
+        <values>
+            <fullName>Allow Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetConversion__c</picklist>
+        <values>
+            <fullName>One per quote line</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>One per unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingFrequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiannual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingType__c</picklist>
+        <values>
+            <fullName>Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BlockPricingField__c</picklist>
+        <values>
+            <fullName>Quantity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ChargeType__c</picklist>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationEvent__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationFieldSet__c</picklist>
+        <values>
+            <fullName>OptionConfiguration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationType__c</picklist>
+        <values>
+            <fullName>Allowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disabled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CustomerCommunityAvailability__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only when already owned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DefaultPricingTable__c</picklist>
+        <values>
+            <fullName>Segmented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DynamicPricingConstraint__c</picklist>
+        <values>
+            <fullName>List price is maximum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List price is minimum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__GenerateContractedPrice__c</picklist>
+        <values>
+            <fullName>Discount Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Generate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionLayout__c</picklist>
+        <values>
+            <fullName>Sections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tabs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wizard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionSelectionMethod__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PricingMethod__c</picklist>
+        <values>
+            <fullName>Block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionBase__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionCategory__c</picklist>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionPricing__c</picklist>
+        <values>
+            <fullName>Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionType__c</picklist>
+        <values>
+            <fullName>Evergreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Renewable%2FEvergreen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TermDiscountLevel__c</picklist>
+        <values>
+            <fullName>Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

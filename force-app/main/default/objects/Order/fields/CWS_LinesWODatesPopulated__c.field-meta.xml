@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LinesWODatesPopulated__c</fullName>
+    <description>Number of Order lines without start date</description>
+    <externalId>false</externalId>
+    <label>Line without Date Populated</label>
+    <summaryFilterItems>
+        <field>OrderItem.ServiceDate</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

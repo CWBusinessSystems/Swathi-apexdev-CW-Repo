@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Target_Acct_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Target Acct Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>APAC Acquisition</fullName>
+                <default>false</default>
+                <label>APAC Acquisition</label>
+            </value>
+            <value>
+                <fullName>APAC Expansion Security</fullName>
+                <default>false</default>
+                <label>APAC Expansion Security</label>
+            </value>
+            <value>
+                <fullName>APAC Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>APAC Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>BDR APAC Acquisition</fullName>
+                <default>false</default>
+                <label>BDR APAC Acquisition</label>
+            </value>
+            <value>
+                <fullName>BDR APAC Expansion Security</fullName>
+                <default>false</default>
+                <label>BDR APAC Expansion Security</label>
+            </value>
+            <value>
+                <fullName>BDR APAC Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>BDR APAC Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>BDR EMEA Acquisition</fullName>
+                <default>false</default>
+                <label>BDR EMEA Acquisition</label>
+            </value>
+            <value>
+                <fullName>BDR EMEA Expansion Security</fullName>
+                <default>false</default>
+                <label>BDR EMEA Expansion Security</label>
+            </value>
+            <value>
+                <fullName>BDR EMEA Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>BDR EMEA Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>BDR NA Acquisition Core</fullName>
+                <default>false</default>
+                <label>BDR NA Acquisition Core</label>
+            </value>
+            <value>
+                <fullName>BDR NA Acquisition IIT</fullName>
+                <default>false</default>
+                <label>BDR NA Acquisition IIT</label>
+            </value>
+            <value>
+                <fullName>BDR NA Acquisition Strategic</fullName>
+                <default>false</default>
+                <label>BDR NA Acquisition Strategic</label>
+            </value>
+            <value>
+                <fullName>BDR NA Expansion Security</fullName>
+                <default>false</default>
+                <label>BDR NA Expansion Security</label>
+            </value>
+            <value>
+                <fullName>BDR NA Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>BDR NA Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>EMEA Acquisition Core</fullName>
+                <default>false</default>
+                <label>EMEA Acquisition Core</label>
+            </value>
+            <value>
+                <fullName>EMEA Acquisition IIT</fullName>
+                <default>false</default>
+                <label>EMEA Acquisition IIT</label>
+            </value>
+            <value>
+                <fullName>EMEA Acquisition Strategic</fullName>
+                <default>false</default>
+                <label>EMEA Acquisition Strategic</label>
+            </value>
+            <value>
+                <fullName>EMEA Expansion Security</fullName>
+                <default>false</default>
+                <label>EMEA Expansion Security</label>
+            </value>
+            <value>
+                <fullName>EMEA Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>EMEA Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>NA Acquisition Core</fullName>
+                <default>false</default>
+                <label>NA Acquisition Core</label>
+            </value>
+            <value>
+                <fullName>NA Acquisition IIT</fullName>
+                <default>false</default>
+                <label>NA Acquisition IIT</label>
+            </value>
+            <value>
+                <fullName>NA Acquisition ISAC</fullName>
+                <default>false</default>
+                <label>NA Acquisition ISAC</label>
+            </value>
+            <value>
+                <fullName>NA Acquisition OT</fullName>
+                <default>false</default>
+                <label>NA Acquisition OT</label>
+            </value>
+            <value>
+                <fullName>NA Acquisition Strategic</fullName>
+                <default>false</default>
+                <label>NA Acquisition Strategic</label>
+            </value>
+            <value>
+                <fullName>NA Expansion IIT</fullName>
+                <default>false</default>
+                <label>NA Expansion IIT</label>
+            </value>
+            <value>
+                <fullName>NA Expansion Security</fullName>
+                <default>false</default>
+                <label>NA Expansion Security</label>
+            </value>
+            <value>
+                <fullName>NA Expansion UMM &amp; BMS</fullName>
+                <default>false</default>
+                <label>NA Expansion UMM &amp; BMS</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Target</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

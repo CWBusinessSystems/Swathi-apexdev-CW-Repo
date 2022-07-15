@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <description>
+        Developed by Ad Victoriam Solutions to allow calculation of new Minimum Commit values for an Opportunity.
+        Pulls data from Snapline and Previous Billing Periods via their Billing Items,
+        and the Quote Lines on the Primary CPQ Quote.
+    </description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Opportunity</object>
+            </objects>
+        </targetConfig>
+            <targetConfig targets="lightning__FlowScreen">
+                <property name="recordId" type="String"/>
+                <property name="newMinCommitOutputString" type="String"/>
+                <property name="newIncrementalACVOutputString" type="String"/>
+            </targetConfig>
+    </targetConfigs>
+    <masterLabel>CWS Min Commit Increase Calculator</masterLabel>
+</LightningComponentBundle>

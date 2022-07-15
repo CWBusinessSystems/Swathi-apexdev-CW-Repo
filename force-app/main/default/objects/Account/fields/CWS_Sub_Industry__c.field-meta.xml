@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sub_Industry__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Dependent based upon the value selected in the Industry field.</inlineHelpText>
+    <label>Sub-Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Sub_Industry</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Home User</controllingFieldValue>
+            <controllingFieldValue>Hosting</controllingFieldValue>
+            <controllingFieldValue>MSP</controllingFieldValue>
+            <controllingFieldValue>CSP</controllingFieldValue>
+            <controllingFieldValue>VAR</controllingFieldValue>
+            <controllingFieldValue>MSP/VAR Hybrid</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Managed Security</controllingFieldValue>
+            <controllingFieldValue>Telecom/Collaboration</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <controllingFieldValue>Low Voltage</controllingFieldValue>
+            <controllingFieldValue>Office Technology</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Agriculture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Financial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Healthcare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Management Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Non Profit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Oil &amp; Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Professional Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Software Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Staffing &amp; Recruiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Internal IT</controllingFieldValue>
+            <valueName>Wireless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Low Voltage</controllingFieldValue>
+            <valueName>Audio Visual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Low Voltage</controllingFieldValue>
+            <valueName>Physical Security</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

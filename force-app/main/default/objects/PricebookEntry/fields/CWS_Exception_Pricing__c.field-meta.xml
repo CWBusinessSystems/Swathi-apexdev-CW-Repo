@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Exception_Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will determine whether the pricebookentry is eligible for automatic price calculations based on batch whenever exchange rates are changed.</description>
+    <externalId>false</externalId>
+    <label>Exception Pricing</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

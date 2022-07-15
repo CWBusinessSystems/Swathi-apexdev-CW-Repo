@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invitee_Created_Today</fullName>
+    <columns>NAME</columns>
+    <columns>EventCreatedAt__c</columns>
+    <columns>EventStartTime__c</columns>
+    <columns>EventEndTime__c</columns>
+    <columns>EventPrimaryPublisherEmail__c</columns>
+    <columns>EventPrimaryPublisherName__c</columns>
+    <columns>EventTypeName__c</columns>
+    <columns>InviteeEmail__c</columns>
+    <columns>InviteeFirstName__c</columns>
+    <columns>InviteeLastName__c</columns>
+    <columns>ObjectId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>invitee.created</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Invitee Created Today</label>
+</ListView>

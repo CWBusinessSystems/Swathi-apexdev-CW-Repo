@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_EmailFlag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(HasOptedOutOfEmail , 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;green flag&quot;) &amp; &quot; &quot; &amp; $Label.CWS_Contact_DoNotEmail_Warning, 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;green flag&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates whether or not this Contact has requested to be opted out of email notifications. Red indicates that the Contact has opted out of email notifications while green indicates that the Contact has not opted out of email notifications.</inlineHelpText>
+    <label>Email Flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_To_Account_D_R__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Refers to the Bill To Account when there is a Distributor or Reseller Involved else will remain blank</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refers to the Bill To Account when there is a Distributor or Reseller Involved else will remain blank</inlineHelpText>
+    <label>Bill To Account (D/R)</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Payment_Schedule_Driver__c</fullName>
+    <description>Promo can only be applied on specified payment schedule driver if populated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Promo can only be applied on specified payment schedule driver if populated</inlineHelpText>
+    <label>Payment Schedule Driver</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Payment_Schedule_Driver</valueSetName>
+    </valueSet>
+</CustomField>

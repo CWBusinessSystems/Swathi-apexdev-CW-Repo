@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Price_Increase_Percent__c</fullName>
+    <description>Difference between renewal price and last year&apos;s total price on contract</description>
+    <externalId>false</externalId>
+    <label>Price Increase (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

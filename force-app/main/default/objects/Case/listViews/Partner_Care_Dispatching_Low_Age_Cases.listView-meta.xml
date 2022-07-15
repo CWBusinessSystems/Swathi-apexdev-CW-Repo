@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Care_Dispatching_Low_Age_Cases</fullName>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Region__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Thread_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.EMAIL</columns>
+    <columns>Age__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Follow_Up_Date_Age__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Partner_Care</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed Internal,Closed,New,Closed as Duplicate</value>
+    </filters>
+    <filters>
+        <field>Age__c</field>
+        <operation>lessOrEqual</operation>
+        <value>14</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Akshay</value>
+    </filters>
+    <label>Partner Care- Dispatching Low Age Cases</label>
+    <sharedTo>
+        <group>CWS_Partner_Care_Managers</group>
+    </sharedTo>
+</ListView>

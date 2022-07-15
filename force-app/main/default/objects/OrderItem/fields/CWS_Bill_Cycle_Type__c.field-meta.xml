@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Bill_Cycle_Type__c</fullName>
+    <description>Specifies how to determine the billing day for the charge.</description>
+    <externalId>false</externalId>
+    <formula>If(AND(NOT(ISBLANK(Order.SBQQ__Quote__r.CWS_Pre_payment_Amount__c)), 
+       NOT(ISBLANK( Order.CWS_Pre_Payment_Ammount__c )))  ,&apos;ChargeTriggerDay&apos; , 
+       IF(
+		OR(
+		And (	
+			ISPICKVAL(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_ChargeType__c, &apos;Recurring&apos;),
+			OR(ISPICKVAL(CWS_Billing_Term__c, &apos;Annual&apos;),ISPICKVAL(CWS_Billing_Term__c, &apos;Bi-Annual&apos;),ISPICKVAL(CWS_Billing_Term__c, &apos;Tri-Annual&apos;))
+			),
+		AND (
+		SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Implementation_Spread_Eligibility__c,
+		OR(ISPICKVAL(CWS_Payment_Schedule_Driver__c, &apos;&apos;) , 
+			NOT(ISPICKVAL( CWS_Payment_Schedule_Driver__c , &apos;Spread&apos;)))
+			),
+        AND (
+			SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Implementation_Spread_Eligibility__c,
+            CWS_Uneven_Spread__c,
+            ISPICKVAL( CWS_Payment_Schedule_Driver__c , &apos;Spread&apos;))
+		),&apos;ChargeTriggerDay&apos; ,IF(ISPICKVAL(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_ChargeType__c, &apos;One-Time&apos;), null,&apos;DefaultFromCustomer&apos;)))</formula>
+    <label>Bill Cycle Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

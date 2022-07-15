@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_Salesforce_Account_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <inlineHelpText>References the Account ID used for the Account data from the legacy Salesforce system. If there was an equivalent Account record in the old Salesforce system the previous Account ID is captured in this field.</inlineHelpText>
+    <label>Legacy Salesforce Account ID (18)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

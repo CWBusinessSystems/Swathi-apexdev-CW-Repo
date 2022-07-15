@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Uneven_Spread__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if the line has uneven spread or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if the line has uneven spread or not</inlineHelpText>
+    <label>Uneven Spread</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

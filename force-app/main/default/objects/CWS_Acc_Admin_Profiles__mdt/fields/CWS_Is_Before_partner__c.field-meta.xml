@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Is_Before_partner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to identify profiles which need edit access on restricted account fields before it becomes partner and order form generated on quote.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>is before partner</label>
+    <type>Checkbox</type>
+</CustomField>

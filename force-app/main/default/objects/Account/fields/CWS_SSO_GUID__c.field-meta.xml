@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_SSO_GUID__c</fullName>
+    <description>Field for storing comma-delimited SSO Partner IDs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supports Single Sign-On integration with Manage</inlineHelpText>
+    <label>SSO Tenant (Partner) ID</label>
+    <length>2600</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

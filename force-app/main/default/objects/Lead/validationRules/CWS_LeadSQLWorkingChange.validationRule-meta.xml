@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LeadSQLWorkingChange</fullName>
+    <active>true</active>
+    <description>Validate that only specific profile may move Lead status to SQL Working</description>
+    <errorConditionFormula>AND(
+				NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+    NOT(
+								OR(
+												$Profile.Name=&apos;CWS_Sales_Rep&apos;,
+            $Profile.Name=&apos;CWS_Sales_Manager&apos;,
+												$Profile.Name=&apos;System Administrator&apos;,
+												$Profile.Name=&apos;CWS_Global_Sales_Ops&apos;,
+												$Profile.Name=&apos;CWS_Marketo_Admin&apos;
+        )
+				),
+    ISCHANGED(Status),
+    ISPICKVAL(Status ,&apos;SQL Working&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You do not have access to move the Lead to this status. Please move the Status to SQL to hand-off to the SE/PSE to move the Lead forward.</errorMessage>
+</ValidationRule>

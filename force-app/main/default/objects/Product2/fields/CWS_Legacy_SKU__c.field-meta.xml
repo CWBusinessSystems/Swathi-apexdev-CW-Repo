@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_SKU__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For Continuum</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the Legacy SKU of the product</inlineHelpText>
+    <label>Legacy SKU</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

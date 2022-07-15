@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Lead_Sub_Source_Most_recent__c</fullName>
+    <description>Use to capture the Sub Source of the Lead</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the Lead&apos;s secondary source.</inlineHelpText>
+    <label>Lead Sub Source – Most recent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Activate</fullName>
+                <default>false</default>
+                <label>Activate</label>
+            </value>
+            <value>
+                <fullName>Adroll</fullName>
+                <default>false</default>
+                <label>Adroll</label>
+            </value>
+            <value>
+                <fullName>Advic Test</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advic Test</label>
+            </value>
+            <value>
+                <fullName>ARN</fullName>
+                <default>false</default>
+                <label>ARN</label>
+            </value>
+            <value>
+                <fullName>AUTO-Q2-21-CRM-Facebook-LND-TF-NA-Standardization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AUTO-Q2-21-CRM-Facebook-LND-TF-NA-Standardization</label>
+            </value>
+            <value>
+                <fullName>Bing</fullName>
+                <default>false</default>
+                <label>Bing</label>
+            </value>
+            <value>
+                <fullName>BlueChip Infotech</fullName>
+                <default>false</default>
+                <label>BlueChip Infotech</label>
+            </value>
+            <value>
+                <fullName>Blue Solutions</fullName>
+                <default>false</default>
+                <label>Blue Solutions</label>
+            </value>
+            <value>
+                <fullName>Brightgauge Site</fullName>
+                <default>false</default>
+                <label>Brightgauge Site</label>
+            </value>
+            <value>
+                <fullName>BrightTalk</fullName>
+                <default>false</default>
+                <label>BrightTalk</label>
+            </value>
+            <value>
+                <fullName>BusinessCom</fullName>
+                <default>false</default>
+                <label>BusinessCom</label>
+            </value>
+            <value>
+                <fullName>Call Blitz</fullName>
+                <default>false</default>
+                <label>Call Blitz</label>
+            </value>
+            <value>
+                <fullName>Cannata</fullName>
+                <default>false</default>
+                <label>Cannata</label>
+            </value>
+            <value>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+                <label>Capterra</label>
+            </value>
+            <value>
+                <fullName>CBSInteractive</fullName>
+                <default>false</default>
+                <label>CBSInteractive</label>
+            </value>
+            <value>
+                <fullName>ChannelE2E</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ChannelE2E</label>
+            </value>
+            <value>
+                <fullName>Channel E2E</fullName>
+                <default>false</default>
+                <label>Channel E2E</label>
+            </value>
+            <value>
+                <fullName>Channel Futures</fullName>
+                <default>false</default>
+                <label>Channel Futures</label>
+            </value>
+            <value>
+                <fullName>Channel Pro</fullName>
+                <default>false</default>
+                <label>Channel Pro</label>
+            </value>
+            <value>
+                <fullName>Channel Pro UK</fullName>
+                <default>false</default>
+                <label>Channel Pro UK</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Site</fullName>
+                <default>false</default>
+                <label>ConnectWise Site</label>
+            </value>
+            <value>
+                <fullName>Conversica</fullName>
+                <default>false</default>
+                <label>Conversica</label>
+            </value>
+            <value>
+                <fullName>CRN Channel Co</fullName>
+                <default>false</default>
+                <label>CRN Channel Co</label>
+            </value>
+            <value>
+                <fullName>CRN Next Media</fullName>
+                <default>false</default>
+                <label>CRN Next Media</label>
+            </value>
+            <value>
+                <fullName>CRN UK Incisive Media</fullName>
+                <default>false</default>
+                <label>CRN UK Incisive Media</label>
+            </value>
+            <value>
+                <fullName>CS1392-TL-Q4-2020-VQL-Activate-LND-MF-EMEA-BANT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CS1392-TL-Q4-2020-VQL-Activate-LND-MF-EMEA-BANT</label>
+            </value>
+            <value>
+                <fullName>D&amp;H</fullName>
+                <default>false</default>
+                <label>D&amp;H</label>
+            </value>
+            <value>
+                <fullName>Dekkers</fullName>
+                <default>false</default>
+                <label>Dekkers</label>
+            </value>
+            <value>
+                <fullName>Demandbase</fullName>
+                <default>false</default>
+                <label>Demandbase</label>
+            </value>
+            <value>
+                <fullName>Demand Gen</fullName>
+                <default>false</default>
+                <label>Demand Gen</label>
+            </value>
+            <value>
+                <fullName>Doubleclick</fullName>
+                <default>false</default>
+                <label>Doubleclick</label>
+            </value>
+            <value>
+                <fullName>Drift</fullName>
+                <default>false</default>
+                <label>Drift</label>
+            </value>
+            <value>
+                <fullName>e92</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>e92</label>
+            </value>
+            <value>
+                <fullName>e92Plus</fullName>
+                <default>false</default>
+                <label>e92Plus</label>
+            </value>
+            <value>
+                <fullName>Ebertlang</fullName>
+                <default>false</default>
+                <label>Ebertlang</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Exeed</fullName>
+                <default>false</default>
+                <label>Exeed</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>FinancesOnline</fullName>
+                <default>false</default>
+                <label>FinancesOnline</label>
+            </value>
+            <value>
+                <fullName>G2Crowd</fullName>
+                <default>false</default>
+                <label>G2Crowd</label>
+            </value>
+            <value>
+                <fullName>Generic</fullName>
+                <default>false</default>
+                <label>Generic</label>
+            </value>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>Hosted Guest</fullName>
+                <default>false</default>
+                <label>Hosted Guest</label>
+            </value>
+            <value>
+                <fullName>IDG Connect</fullName>
+                <default>false</default>
+                <label>IDG Connect</label>
+            </value>
+            <value>
+                <fullName>Influitive</fullName>
+                <default>false</default>
+                <label>Influitive</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Innosoft</fullName>
+                <default>false</default>
+                <label>Innosoft</label>
+            </value>
+            <value>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+                <label>Instagram</label>
+            </value>
+            <value>
+                <fullName>ITBoost Site</fullName>
+                <default>false</default>
+                <label>ITBoost Site</label>
+            </value>
+            <value>
+                <fullName>IT Central Station</fullName>
+                <default>false</default>
+                <label>IT Central Station</label>
+            </value>
+            <value>
+                <fullName>IT Europa</fullName>
+                <default>false</default>
+                <label>IT Europa</label>
+            </value>
+            <value>
+                <fullName>ITN Connect</fullName>
+                <default>false</default>
+                <label>ITN Connect</label>
+            </value>
+            <value>
+                <fullName>ITN Explore</fullName>
+                <default>false</default>
+                <label>ITN Explore</label>
+            </value>
+            <value>
+                <fullName>ITN Secure</fullName>
+                <default>false</default>
+                <label>ITN Secure</label>
+            </value>
+            <value>
+                <fullName>ITN Share</fullName>
+                <default>false</default>
+                <label>ITN Share</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Madison Logic</fullName>
+                <default>false</default>
+                <label>Madison Logic</label>
+            </value>
+            <value>
+                <fullName>Marketopia</fullName>
+                <default>false</default>
+                <label>Marketopia</label>
+            </value>
+            <value>
+                <fullName>Minitel</fullName>
+                <default>false</default>
+                <label>Minitel</label>
+            </value>
+            <value>
+                <fullName>MNG-Q2-21-CRM-LinkedIn-LND-MF-NA-Webinar-Business-Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG-Q2-21-CRM-LinkedIn-LND-MF-NA-Webinar-Business-Management</label>
+            </value>
+            <value>
+                <fullName>MSSP Alert</fullName>
+                <default>false</default>
+                <label>MSSP Alert</label>
+            </value>
+            <value>
+                <fullName>NewStatesman</fullName>
+                <default>false</default>
+                <label>NewStatesman</label>
+            </value>
+            <value>
+                <fullName>Nurture</fullName>
+                <default>false</default>
+                <label>Nurture</label>
+            </value>
+            <value>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner Referral</label>
+            </value>
+            <value>
+                <fullName>Portland</fullName>
+                <default>false</default>
+                <label>Portland</label>
+            </value>
+            <value>
+                <fullName>PostBeyond</fullName>
+                <default>false</default>
+                <label>PostBeyond</label>
+            </value>
+            <value>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+                <label>Press Release</label>
+            </value>
+            <value>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Info</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>PureB2B</fullName>
+                <default>false</default>
+                <label>PureB2B</label>
+            </value>
+            <value>
+                <fullName>R1Soft Site</fullName>
+                <default>false</default>
+                <label>R1Soft Site</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Roadshows</fullName>
+                <default>false</default>
+                <label>Roadshows</label>
+            </value>
+            <value>
+                <fullName>Serchen</fullName>
+                <default>false</default>
+                <label>Serchen</label>
+            </value>
+            <value>
+                <fullName>Smartbrief</fullName>
+                <default>false</default>
+                <label>Smartbrief</label>
+            </value>
+            <value>
+                <fullName>SourceForge</fullName>
+                <default>false</default>
+                <label>SourceForge</label>
+            </value>
+            <value>
+                <fullName>Spiceworks</fullName>
+                <default>false</default>
+                <label>Spiceworks</label>
+            </value>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Target Accounts</fullName>
+                <default>false</default>
+                <label>Target Accounts</label>
+            </value>
+            <value>
+                <fullName>TechData</fullName>
+                <default>false</default>
+                <label>TechData</label>
+            </value>
+            <value>
+                <fullName>Tech News Pro</fullName>
+                <default>false</default>
+                <label>Tech News Pro</label>
+            </value>
+            <value>
+                <fullName>Technology Advice</fullName>
+                <default>false</default>
+                <label>Technology Advice</label>
+            </value>
+            <value>
+                <fullName>TechTarget</fullName>
+                <default>false</default>
+                <label>TechTarget</label>
+            </value>
+            <value>
+                <fullName>TechWire Asia</fullName>
+                <default>false</default>
+                <label>TechWire Asia</label>
+            </value>
+            <value>
+                <fullName>Terminus</fullName>
+                <default>false</default>
+                <label>Terminus</label>
+            </value>
+            <value>
+                <fullName>Tradeshow</fullName>
+                <default>false</default>
+                <label>Tradeshow</label>
+            </value>
+            <value>
+                <fullName>TrustPilot</fullName>
+                <default>false</default>
+                <label>TrustPilot</label>
+            </value>
+            <value>
+                <fullName>TrustRadius</fullName>
+                <default>false</default>
+                <label>TrustRadius</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Web Direct</fullName>
+                <default>false</default>
+                <label>Web Direct</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Web Referral</fullName>
+                <default>false</default>
+                <label>Web Referral</label>
+            </value>
+            <value>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+                <label>Yahoo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Products__c</fullName>
+    <description>Multi-select field to pick the required products for this BR</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Multi-select field to pick the required products for this BR</inlineHelpText>
+    <label>Products</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+            <value>
+                <fullName>Command</fullName>
+                <default>false</default>
+                <label>Command</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>Identify</fullName>
+                <default>false</default>
+                <label>Identify</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>ITBoost</fullName>
+                <default>false</default>
+                <label>ITBoost</label>
+            </value>
+            <value>
+                <fullName>IT Nation Evolve</fullName>
+                <default>false</default>
+                <label>IT Nation Evolve</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>LMI Rescue</fullName>
+                <default>false</default>
+                <label>LMI Rescue</label>
+            </value>
+            <value>
+                <fullName>MDM</fullName>
+                <default>false</default>
+                <label>MDM</label>
+            </value>
+            <value>
+                <fullName>Webroot</fullName>
+                <default>false</default>
+                <label>Webroot</label>
+            </value>
+            <value>
+                <fullName>Assist Tech Advantage</fullName>
+                <default>false</default>
+                <label>Assist Tech Advantage</label>
+            </value>
+            <value>
+                <fullName>Assist Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Assist Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>Assist Help Desk</fullName>
+                <default>false</default>
+                <label>Assist Help Desk</label>
+            </value>
+            <value>
+                <fullName>Perch</fullName>
+                <default>false</default>
+                <label>Perch</label>
+            </value>
+            <value>
+                <fullName>StratoZen</fullName>
+                <default>false</default>
+                <label>StratoZen</label>
+            </value>
+            <value>
+                <fullName>Other-3rd party products</fullName>
+                <default>false</default>
+                <label>Other-3rd party products</label>
+            </value>
+            <value>
+                <fullName>R1 Soft</fullName>
+                <default>false</default>
+                <label>R1 Soft</label>
+            </value>
+            <value>
+                <fullName>Assist</fullName>
+                <default>false</default>
+                <label>Assist</label>
+            </value>
+            <value>
+                <fullName>Third Party</fullName>
+                <default>false</default>
+                <label>Third Party</label>
+            </value>
+            <value>
+                <fullName>Not Product Related</fullName>
+                <default>false</default>
+                <label>Not Product Related</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>Network Assessment</fullName>
+                <default>false</default>
+                <label>Network Assessment</label>
+            </value>
+            <value>
+                <fullName>Network Management</fullName>
+                <default>false</default>
+                <label>Network Management</label>
+            </value>
+            <value>
+                <fullName>Server Backup Manager (R1Soft)</fullName>
+                <default>false</default>
+                <label>Server Backup Manager (R1Soft)</label>
+            </value>
+            <value>
+                <fullName>Tech Advantage</fullName>
+                <default>false</default>
+                <label>Tech Advantage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

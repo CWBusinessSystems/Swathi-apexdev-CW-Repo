@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Current_tools_used__c</fullName>
+    <description>Use to capture the details of the Current Tools used</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which technology tools the Lead is currently using during sales Discovery.</inlineHelpText>
+    <label>Current tools used</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>18</visibleLines>
+</CustomField>

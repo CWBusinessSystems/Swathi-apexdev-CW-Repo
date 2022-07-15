@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Manual_Stage_Update_Restriction</fullName>
+    <active>true</active>
+    <description>Validate that all profiles (except Global Sales Ops, Master Data Admin, System Admin) may not move Oppty to Proposal, Finalize Quote, Closed Won, and Closed Won - Legacy manually for New Business, Renewal, Renewal with Change, or Amendment Opptys.</description>
+    <errorConditionFormula>/*Modified by                        Requested by                               Line Number*/
+/*Lalit Vashist                      Vanessa Hernandez                          32-37      */
+/*Modified by AdVic for 1.1, requirement change to require quote in proposal stage instead of Demo stage. Mods to comment out line 16-23 */
+/*Varsha Boga: Added the API Only Profile*/
+AND(
+    NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+    NOT(
+        OR(
+            $Profile.Name = &apos;System Administrator&apos;,
+            $Profile.Name = &apos;CWS_Global_Sales_Ops&apos;,
+            $Profile.Name = &apos;CWS_Master_Data_Admin&apos;,
+            $Profile.Name = &apos;CWS_Contract_Admin&apos;,
+	    $Profile.Name = &apos;CWS_Order_Management&apos;,
+            $Profile.Name = &apos;API Only&apos;
+        )
+    ),
+    OR(
+        /* REMOVED PER 1.1 REQUIREMENT AND( 
+            ISCHANGED(StageName),
+            ISPICKVAL(StageName,&apos;Proposal&apos;),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c,&apos;In Review&apos;)),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c,&apos;Requires Revision&apos;)),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c,&apos;Approved&apos;)),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Quote_Type__c,&apos;Renewal with Change&apos;))
+        ),*/
+        AND( 
+            ISCHANGED(StageName),
+            ISPICKVAL(StageName,&apos;Finalize Quote&apos;),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c,&apos;Order Form Generated&apos;)),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c,&apos;Awaiting Signature&apos;)),
+            NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Quote_Type__c,&apos;Renewal with Change&apos;))
+        ),
+        AND( 
+            ISCHANGED(StageName),
+            OR(
+                ISPICKVAL(StageName,&apos;Closed Won&apos;),
+                ISPICKVAL(StageName,&apos;Closed Won - Legacy&apos;)
+              ),
+            RecordTypeId &lt;&gt; &apos;0126g000000iR3h&apos;,  /*Commission Only*/
+            RecordTypeId &lt;&gt; &apos;0126g000000iR3i&apos;   /*Commission Only ReadOnly*/       
+           ),
+        AND(
+            ISNEW(),
+            OR(
+                ISPICKVAL(StageName,&apos;Proposal&apos;),
+                ISPICKVAL(StageName,&apos;Finalize Quote&apos;),
+                ISPICKVAL(StageName,&apos;Closed Won&apos;)
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>You can only move to this stage with Primary Quote stage movement. Please proceed with Quote stages or Please contact Contract Admin for assistance in updating this Opportunity</errorMessage>
+</ValidationRule>

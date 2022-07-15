@@ -1,0 +1,327 @@
+<apex:page showHeader="false"
+        sidebar="false"
+        cache="false"
+        contentType="text/xml"
+        controller="CWS_LegacyDocument_Controller"
+        action="{!fetchData}">
+
+    <block>
+        <block>
+            <apex:variable value="" var="unused" rendered="{!continuumProductsAvailable == true}">
+                <apex:variable value="" var="notUsed" rendered="{!isAmendmentQuote == true}">
+                    <block margin-bottom="10px" visibility="hidden" font-size="10px">
+                        <apex:outputText >
+                            Accordingly, MSP hereby licenses the following additional Continuum Offering(s) from ConnectWise (hereinafter the Additional Offering).
+                        </apex:outputText>
+                    </block>
+                </apex:variable>
+                <apex:variable value="" var="notUsed" rendered="{!isAmendmentQuote == false}">
+                    <block margin-bottom="10px" visibility="hidden" font-size="10px">
+                        <apex:outputText rendered="{!isAmendmentQuote == false}">
+                            Accordingly, Client hereby licenses the following ConnectWise Offering(s) from ConnectWise:
+                        </apex:outputText>
+                    </block>
+                </apex:variable>
+                <block>
+                    <table border-width="0.5px" border-style="solid">
+                        <table-column column-width="60%"/>
+                        <table-column column-width="40%"/>
+                        <table-header>
+                            <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                                <table-cell border="1px solid black" padding="5">
+                                    <block>
+                                        <apex:outputText >Product</apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" padding="5">
+                                    <block>
+                                        <apex:outputText >Price per Agent per Month</apex:outputText>
+                                    </block>
+                                </table-cell>
+                            </table-row>
+                        </table-header>
+                        <table-body>
+                            <apex:repeat var="ql" value="{!continuumWrap}">
+                                <table-row>                   
+                            <table-cell border="1px solid black" text-align="left" padding="5">
+                                <block font-weight="bold" ><apex:outputText value="{!HTMLENCODE(ql.continummProducts)}"/></block> 
+                                <apex:outputPanel layout="none" rendered="{!ql.displayLongDescription}">
+                                    <block>
+                                        <apex:outputText value="{!HTMLENCODE(ql.longDescription)}"/>
+                                    </block>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ql.displayUnits}">
+                                    <block font-weight="bold">
+                                        <apex:outputText > Quantity: {!ql.quantity}</apex:outputText>
+                                    </block>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ql.freeUnits != 0}">
+                                    <block font-weight="bold">
+                                        <apex:outputText >Free Units: {!ql.freeUnits}</apex:outputText>
+                                    </block>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(ql.sowLink))}">
+                                    <block color="blue" >
+                                        <basic-link external-destination="{!(ql.sowLink)}">{!sowLinkStaticText}</basic-link>
+                                    </block>
+                                </apex:outputPanel>
+                            </table-cell>
+                            <table-cell border="1px solid black" text-align="center" padding="5" >
+                                <block>
+                                    <apex:outputText value="{0, number, {!ql.currencySymbol}###,##0.00}">
+                                        <apex:param value="{!ql.listPriceperMonth}"/>
+                                    </apex:outputText>
+                                </block>
+                            </table-cell>
+                        </table-row>
+                            </apex:repeat>
+                        </table-body>
+                    </table>
+                </block>
+            </apex:variable>
+        </block>
+    </block>
+
+    <block>
+        <block>
+            <apex:variable value="" var="notUsed" rendered="{!minimumCommitDataAvailable == true}">
+                <block>
+                    <apex:variable value="" var="stillNotUsed" rendered="{!isAmendmentQuote == true}">
+                        <block font-weight="bold" margin-top="30px" visibility="hidden" font-size="10px">
+                            <apex:outputText >2. Fees and Payment Terms</apex:outputText>
+                        </block>
+                        <block margin-bottom="10px" visibility="hidden" font-size="10px">
+                            <apex:outputText >Fees and payment terms for the Additional Offering are as follows:</apex:outputText>
+                        </block>
+                    </apex:variable>
+                </block>
+                <apex:variable value="" var="alsoStillNotUsed" rendered="{!isAmendmentQuote == false}">
+                    <block margin-bottom="10px" margin-top="20px" visibility="hidden" font-size="10px">
+                        <apex:outputText >Fees for the ConnectWise Offerings during the initial term are as follows:</apex:outputText>
+                    </block>
+                </apex:variable>
+                <block>
+                <table border-width="0.5px" border-style="solid">
+                    <table-column column-width="33%"/>
+                    <table-column column-width="33%"/>
+                    <table-column column-width="33%"/>
+                    <table-header>
+                        <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                            <table-cell border="1px solid black" padding="5">
+                                <block>
+                                    <apex:outputText >Period Start Date</apex:outputText>
+                                </block>
+                            </table-cell>
+                            <table-cell border="1px solid black" padding="5">
+                                <block>
+                                    <apex:outputText >Month-Year</apex:outputText>
+                                </block>
+                            </table-cell>
+                            <table-cell border="1px solid black" padding="5">
+                                <block>
+                                    <apex:outputText >Monthly Min Commit</apex:outputText>
+                                </block>
+                            </table-cell>
+                        </table-row>
+                    </table-header>
+                    <table-body>
+                        <apex:repeat var="ql" value="{!commitWrap}">
+                            <table-row>
+                                <table-cell border="1px solid black" text-align="left" padding="5">
+                                    <block font-weight="bold">
+                                        <apex:outputText value="{0, date, MM/dd/yyyy}">
+                                            <apex:param value="{!ql.startDate}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText >{!ql.monthYear}</apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="right" padding="5">
+                                    <block>
+                                        <apex:outputText value="{0, number, {!ql.currencySymbol}###,##0.00}">
+                                            <apex:param value="{!ql.minCommitValue}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                            </table-row>
+                        </apex:repeat>
+                    </table-body>
+                </table>
+                </block>
+                <apex:variable value="" var="notUsedAgain" rendered="{!isAmendmentQuote == true}">
+                    <block margin-bottom="10px" margin-top="20px" visibility="hidden" font-size="10px">
+                        <apex:outputText >
+                            Nothing herein shall affect MSP's obligation to pay the fees set forth in the Purchase Order. All payment obligations under the Purchase Order shall remain in full force and effect.
+                        </apex:outputText>
+                    </block>
+                </apex:variable>
+                <apex:variable value="" var="notUsedAgain" rendered="{!isAmendmentQuote == false}">
+                    <block margin-bottom="10px" margin-top="20px" visibility="hidden" font-size="10px">
+                        <apex:outputText >
+                            Total Minimum Monthly Spend represents the minimum amount the MSP will be invoiced during the corresponding period. MSP will be billed for any usage above that amount at the product pricing herein.
+                        </apex:outputText>
+                    </block>
+                </apex:variable>
+            </apex:variable>
+        </block>
+    </block>
+  
+    <block>
+        <block>
+            <apex:variable value="" var="unused" rendered="{! termWrapperHasData == true}">
+                <block margin-bottom="10px" font-size="10px">
+                    <apex:outputText >
+                        Termination For Convenience:
+                        This Agreement may be terminated by Client for any reason, or no reason,
+                        by giving ConnectWise written notice within ninety (90) days of the Effective Date.
+                        Time is of the essence with respect to Client’s termination notice.
+                        Client shall pay ConnectWise for all services rendered up to the date of termination.
+                        Client acknowledges and agrees that no refunds or other fees or payments will be provided to
+                        Client.
+                    </apex:outputText>
+                </block>
+                <!-- table starts here -->
+                <block>
+                    <table border-width="0.5px" border-style="solid">
+                        <table-column column-width="50%"/>
+                        <table-column column-width="25%"/>
+                        <table-column column-width="25%"/>
+                        <table-header>
+                            <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                                <table-cell border="1px solid black" padding="5">
+                                    <block>
+                                        <apex:outputText >Product</apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" padding="5">
+                                    <block>
+                                        <apex:outputText >Convenience Term</apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" padding="5">
+                                    <block>
+                                        <apex:outputText >Convenience Expiration Date</apex:outputText>
+                                    </block>
+                                </table-cell>
+                            </table-row>
+                        </table-header>
+                        <!-- iterate through termWrapper -->
+                        <table-body>
+                            <apex:repeat var="ql" value="{!termWrap}">
+                                <table-row>
+                                    <table-cell border="1px solid black" text-align="left" padding="5">
+                                        <block font-weight="bold">
+                                            <apex:outputText >{!ql.productName}</apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5">
+                                        <block>
+                                            <apex:outputText >{!ql.convMonths}</apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5">
+                                        <block>
+                                            <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                                <apex:param value="{!ql.convExp}"/>
+                                            </apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:repeat>
+                        </table-body>
+                    </table>
+                </block>
+            </apex:variable>
+        </block>
+    </block>
+
+    <block>
+        <block>
+            <apex:outputText rendered="{!downgradeWrapperHasData = true}">
+                <block font-weight="bold" font-size="9px" space-before="1em">
+                    <apex:outputText value="{!$Label.CWS_Downgrade_Cancellation_Swap_Clause}"/>
+                </block>
+                <block font-size="9px">
+                    <apex:outputText value="{!$Label.CWS_Downgrade_Cancellation_Clause1}">
+                        <apex:param value="Client's"/>
+                    </apex:outputText>
+                </block>
+                
+                <table table-layout="auto" width="100%" margin-top="20pt" margin-bottom="10px" border="0.5px solid #000000" border-before-width.conditionality="retain" border-after-width.conditionality="retain">
+                    <table-column column-width="40%" text-align="center"/>
+                    <table-column column-width="12%" text-align="left"/>
+                    <table-column column-width="12%" text-align="left"/>
+                    <table-column column-width="12%" text-align="left"/>
+                    <table-column column-width="12%" text-align="left"/>
+                    <table-column column-width="12%" text-align="left"/>
+                    <table-header>
+                        <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                            <table-cell border="1px solid black" padding="5"><block>Product</block></table-cell>
+                            <table-cell border="1px solid black" padding="5"><block>License Type</block></table-cell>
+                            <table-cell border="1px solid black" padding="5"><block>Previous Authorized Use Limitation</block></table-cell>
+                            <table-cell border="1px solid black" padding="5"><block>New Authorized Use Limitation</block></table-cell>
+                            <table-cell border="1px solid black" padding="5"><block>Price per Agent per Month</block></table-cell>
+                            <table-cell border="1px solid black" padding="5"><block>Downgrade Effective Date</block></table-cell>
+                        </table-row>
+                    </table-header>
+                    <table-body>
+                        <apex:repeat value="{!downgradeWrap}" var="ql">
+                            <table-row>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText value="{!ql.name}">
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText value="{!ql.licenseType}">
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText value="{0, number, ###}">
+                                            <apex:param value="{!ql.priorQuantity}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText value="{0, number, ###}">
+                                            <apex:param value="{!ql.quantity}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5" >
+                                    <block>
+                                        <apex:outputText value="{0, number, {!ql.currencySymbol}###,##0.00}">
+                                            <apex:param value="{!ql.unitPrice}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                                <table-cell border="1px solid black" text-align="center" padding="5">
+                                    <block>
+                                        <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                            <apex:param value="{!ql.startDate}"/>
+                                        </apex:outputText>
+                                    </block>
+                                </table-cell>
+                            </table-row>
+                        </apex:repeat>
+                    </table-body>
+                </table>
+            </apex:outputText>
+
+            <block font-size="9px">
+                <apex:outputText rendered="{!downgradeWrapperHasData = true}" value="{!$Label.CWS_Downgrade_Cancellation_Clause2}">
+                    <apex:param value="Client's"/>
+                </apex:outputText>
+            </block>
+        </block>
+    </block>
+
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Documentation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Please attach documentation to this request or acknowledge that you are sending via email to Sales Operations. Documentation can be: letter of solicitation, sponsorship request on letterhead, or event flyer.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please attach documentation to this request or acknowledge that you are sending via email to Sales Operations. Documentation can be: letter of solicitation, sponsorship request on letterhead, or event flyer.</inlineHelpText>
+    <label>Required Documentation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

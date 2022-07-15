@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ManageOpportunityRecID__c</fullName>
+    <description>The integration logic will populate this with Manage Opportunity Rec reference Id.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The integration logic will populate this with Manage Opportunity Rec reference Id.</inlineHelpText>
+    <label>Manage Opportunity RecID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

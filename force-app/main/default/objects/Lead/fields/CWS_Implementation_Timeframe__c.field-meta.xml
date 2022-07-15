@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Implementation_Timeframe__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether the Lead has a timeframe in mind of when they would like to have a new solution in place if they are making a change.</inlineHelpText>
+    <label>Implementation Timeframe?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

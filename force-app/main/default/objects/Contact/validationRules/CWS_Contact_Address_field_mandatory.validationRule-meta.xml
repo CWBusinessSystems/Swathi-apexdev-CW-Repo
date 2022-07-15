@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_Address_field_mandatory</fullName>
+    <active>false</active>
+    <description>Update from 7/8/21 - deactivated as a part of the Lead Flow deployment. May need to be modified.</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+OR(
+MailingCountry = &quot;&quot;,
+MailingStreet = &quot;&quot;,
+MailingCity = &quot;&quot;,
+MailingPostalCode = &quot;&quot;,
+AND(OR(MailingCountry = &quot;United States&quot;,
+MailingCountry = &quot;Canada&quot;,
+MailingCountry = &quot;Australia&quot;),
+MailingState = &quot;&quot;
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Please enter all address fields.</errorMessage>
+</ValidationRule>

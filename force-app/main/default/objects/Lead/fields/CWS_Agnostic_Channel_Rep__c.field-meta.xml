@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Agnostic_Channel_Rep__c</fullName>
+    <description>This field is used to send an email to email address of non Salesforce user</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the email for the person you want to receive an email notification that this Lead was converted into an Opportunity</inlineHelpText>
+    <label>Agnostic Channel Rep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

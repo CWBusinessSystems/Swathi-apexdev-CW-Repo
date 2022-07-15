@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Calendly_Link__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is your calendly link and can be found on your my calendly page in Calendly</inlineHelpText>
+    <label>Calendly Link</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Url</type>
+</CustomField>

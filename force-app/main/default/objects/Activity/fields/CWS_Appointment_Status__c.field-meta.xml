@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Appointment_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the status of the Appointment for the Task.</inlineHelpText>
+    <label>Appointment Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Rescheduled</fullName>
+                <default>false</default>
+                <label>Rescheduled</label>
+            </value>
+            <value>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <label>No Show</label>
+            </value>
+            <value>
+                <fullName>Held</fullName>
+                <default>false</default>
+                <label>Held</label>
+            </value>
+            <value>
+                <fullName>Held - Disqualified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Held - Disqualified</label>
+            </value>
+            <value>
+                <fullName>Held - Pending Status Update</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Held - Pending Status Update</label>
+            </value>
+            <value>
+                <fullName>Held - Recycled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Held - Recycled</label>
+            </value>
+            <value>
+                <fullName>Held - Sales Accepted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Held - Sales Accepted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

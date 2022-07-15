@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_OneDistyResellerActive</fullName>
+    <active>true</active>
+    <description>• Validate that when there is an Active Quote that is Accepted then there is a validation in place that only 1 Distributor/Reseller record can be active for a relationship between 2 accounts.</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT($Setup.CWS_Single_Distributor_Exclusion__c.CWS_Single_Distributor_Exclusion__c),
+NOT(ISBLANK(CWS_Account__r.CWS_Established_Disti_Reseller__c)),
+CWS_Account__r.CWS_Established_Disti_Reseller__c != CWS_Distributor_ResellerAcc__c,
+ CWS_Active__c 
+)</errorConditionFormula>
+    <errorMessage>There is already one Active Distributor/Reseller for this Partner. Please Contact Admins if any changes required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Manage_New_Contact__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Boolean field to temporarily resolve duplicate contact issue by passing value to Boomi to filter out API requests to create a new Contact when there is already an API request pending.</description>
+    <externalId>false</externalId>
+    <label>Manage New Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

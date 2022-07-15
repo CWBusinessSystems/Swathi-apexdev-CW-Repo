@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Licensing_Cases_on_Subject</fullName>
+    <active>true</active>
+    <errorConditionFormula>!CONTAINS(Subject, &quot;Licensing/Provisioning Case: &quot;)
+&amp;&amp;  RecordType.DeveloperName = &quot;Licensing_Provisioning&quot;</errorConditionFormula>
+    <errorMessage>Cases with Subject not containing &quot;Licensing/Provisioning Case:&quot; are not allowed to be created. Please contact your System Administrator for further assistance!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>alycecom__Initial_Gift_Invitation_Create_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Alyce Initial Gift Invitation Create Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Alyce Initial Gift Invitation Create Date</inlineHelpText>
+    <label>Initial Gift Invitation Create Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

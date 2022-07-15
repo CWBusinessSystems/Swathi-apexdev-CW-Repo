@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_SE_Contacts_Is_Partner_True</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.CWS_Is_Partner__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CWS_Contact_Status__c</field>
+        <operation>equals</operation>
+        <value>SQL</value>
+    </filters>
+    <filters>
+        <field>Account.CWS_Region__c</field>
+        <operation>equals</operation>
+        <value>APAC,EMEA/ROW</value>
+    </filters>
+    <label>BC SE Contacts Is Partner = True</label>
+</ListView>

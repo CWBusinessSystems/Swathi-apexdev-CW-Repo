@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Include_In_Minimum_Commit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To indicate the product is a Usage product and is applicable for minimum commit calculation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the product is eligible for legacy minimum commit</inlineHelpText>
+    <label>Include In Minimum Commit</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

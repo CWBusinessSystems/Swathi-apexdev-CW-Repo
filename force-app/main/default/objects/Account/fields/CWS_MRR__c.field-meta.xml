@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_MRR__c</fullName>
+    <description>Contracted Monthly Recurring Revenue based on active Contracts for which this Account is the Sold To Account. This represents contracted MRR and does not include overages. Contracted MRR will be updated weekly over the weekend.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contracted Monthly Recurring Revenue based on active Contracts for which this Account is the Sold To Account. This represents contracted MRR and does not include overages. Contracted MRR will be updated weekly over the weekend.</inlineHelpText>
+    <label>Contracted MRR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

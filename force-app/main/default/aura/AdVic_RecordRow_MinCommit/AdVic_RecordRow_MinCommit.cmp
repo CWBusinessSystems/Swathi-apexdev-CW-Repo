@@ -1,0 +1,139 @@
+<aura:component >
+    <aura:attribute name="rowRec" type="Object" default="{}"/>
+    
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="relObjType" type="String" /> <!--what obj does the list show-->
+    <aura:attribute name="parentLookupField" type="String" />
+    <aura:attribute name="fields" type="String[]" />
+    <aura:attribute name="moreFields" type="String[]"/>
+    <aura:attribute name="showLabel" type="String"/>
+    <aura:attribute name="hideLabel" type="String"/>
+    <aura:attribute name="listTitle" type="String" />
+    <aura:attribute name="showMore" type="Boolean" default="false"/>
+    <aura:attribute name="liveEditActive" type="Boolean" default="false"/>
+    
+    <aura:attribute name="allowEdits" type="Boolean" />
+    <aura:attribute name="showDelete" type="Boolean"/>
+    
+    <aura:attribute name="showModal" type="Boolean" default="false"/>
+    <aura:attribute name="showConfirm" type="Boolean"/>
+    
+    <aura:attribute name="rowStatus" type="String" default=""/>
+    <aura:attribute name="loadStatus" type="String" default="loading"/>
+    
+    <aura:attribute name="rowNum" type="Integer"/>
+    <aura:attribute name="debounce" type="Integer"/>
+
+    <aura:attribute name="timerHandle" type="Integer"/>
+    <aura:attribute name="saveTest" type="Boolean" default="false"/>
+    <aura:attribute name="disableRow" type="Boolean" default="false"/>
+    
+    <aura:if isTrue="{!v.loadStatus != 'loaded'}">
+        <lightning:spinner/>
+    </aura:if>
+    
+    
+    
+    <aura:if isTrue="{!v.showModal &amp;&amp; v.rowRec.Id != undefined}">
+        <c:AdVic_EditModal_MinCommit recId="{!v.rowRec.Id}" apiName="{!v.relObjType}" viewMode="view" showModal="{!v.showModal}"/>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showConfirm}">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Confirm Delete</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <br/>
+                    <center>
+                        Please confirm to delete or cancel to go back.
+                    </center>
+                    <br/>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button onclick="{!c.toggleConfirm}" class="slds-button slds-button_neutral">Cancel</button>
+                    <button onclick="{!c.deleteRecord}" class="slds-button slds-button_destructive">Delete</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+    <div class="rowWrapper">
+        
+        <lightning:recordEditForm aura:id="thisRow"
+                                  objectApiName="{!v.relObjType}"
+                                  recordId="{!v.rowRec.Id}"
+                                  onsuccess="{!c.recSaved}"
+                                  onload="{!c.clearSpinner}"
+                                  >
+            <lightning:messages />
+            <div class="{!'noMore'+v.showLabel +' slds-grid disableRow_'+v.disableRow}">
+                <aura:iteration items="{!v.fields}" var="f" indexVar="i">
+                    <div id="{!f}" aura-id="{!f}" class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1)}">
+                        <aura:if isTrue="{!v.allowEdits}">
+                            <lightning:inputField class="{!'first_' + (v.rowNum == 0)}" onchange="{!c.onSearchKeyChange}" aura:id="field" fieldName="{!f}" variant="label-hidden"/>
+                       		<aura:set attribute="else">
+                                <lightning:outputField class="{!'first_' + (v.rowNum == 0)}" aura:id="field" fieldName="{!f}" variant="label-hidden"/>
+                            </aura:set>
+                        </aura:if>
+                    </div>
+                </aura:iteration>
+                <!--<span class="{!'iconSection lastCol first_' + (v.rowNum == 0) + ' slideUp'+(v.showLabel=='')}">-->
+                <span class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1) + ' actionCell ' + 'actionsRow0_' + (v.rowNum == 0)}">
+
+                
+                    <a href="{!'/'+v.rowRec.Id}" class="rightBtn"><lightning:buttonIcon value="goTo" title="Navigate to this record's page" iconName="utility:internal_share"/></a> 
+                       
+                    <aura:if isTrue="{!v.showDelete}">
+                        <force:recordData aura:id="recordHandler"
+                                          recordId="{!v.rowRec.Id}"
+                                          fields="Id"
+                                          recordUpdated="{!c.handleRecordUpdated}" />
+                    	<lightning:buttonIcon onclick="{!c.toggleConfirm}" class="deleteButton rightBtn" iconName="utility:delete" title="Delete this record."/>
+                    </aura:if>
+                    	
+                    <lightning:buttonIcon onclick="{!c.showModal}" class="rightBtn" value="peek" iconName="utility:multi_picklist" title="Open this record in a popup on this page"/>
+                	<aura:if isTrue="{!v.allowEdits}">
+                        <lightning:buttonIcon class="{!v.rowStatus + ' saveBtn rightBtn'}" iconName="utility:save" title="Save your changes" aura:id="saveThis" onclick="{!c.flagSubmit}" variant="bareX" type="submit" name="save" />
+                    </aura:if>
+                </span>
+                
+                
+            </div>
+            <aura:if isTrue="{!v.showLabel != undefined}">
+                <aura:if isTrue="{!v.showMore}">
+                    <div class="expand" onclick="{!c.toggleMoreFields}">
+                        <lightning:icon iconName="utility:up" size="xx-small" alternativeText="Collapse Section" title="Collapse" />
+                        {!v.hideLabel}
+                    </div>
+                    <aura:set attribute="else">
+                        <div class="expand" onclick="{!c.toggleMoreFields}">
+                            <lightning:icon iconName="utility:down" size="xx-small" alternativeText="Expand Section" title="Expand" />
+                            {!v.showLabel}
+                        </div>
+                    </aura:set>
+                    <div class="{!'moreSection flex-field slds-col slds-size_'+(v.fields.length)+'-of-'+ (v.fields.length)}">
+                        <aura:iteration items="{!v.moreFields}" var="mf">
+                            <aura:if isTrue="{!v.allowEdits}">
+                                <lightning:inputField onchange="{!c.onSearchKeyChange}" aura:id="field" fieldName="{!mf}" variant="label-inline"/>
+                                <aura:set attribute="else">
+                                    <lightning:outputField aura:id="field" fieldName="{!mf}" variant="label-inline"/>
+                                </aura:set>
+                            </aura:if>
+                        </aura:iteration>
+                    </div><br/>
+                </aura:if>
+            </aura:if>
+            
+            
+            
+        </lightning:recordEditForm>
+    </div>
+    
+    
+    
+    
+    
+</aura:component>

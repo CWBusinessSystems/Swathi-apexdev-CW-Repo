@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BDR_Contact_List</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Account.CWS_Is_Partner__c</columns>
+    <columns>Account.CWS_Products_Owned__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CWS_Persona__c</columns>
+    <columns>mkto_si__Priority__c</columns>
+    <columns>mkto_si__Last_Interesting_Moment_Date__c</columns>
+    <columns>CWS_Most_Recent_Score_Date__c</columns>
+    <columns>CWS_Lead_Score__c</columns>
+    <columns>CWS_Recycled_Reason__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Account.CWS_Partner_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Name__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.URL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>AVA__AVAAI_hot_lead__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BDR Contact List</label>
+</ListView>

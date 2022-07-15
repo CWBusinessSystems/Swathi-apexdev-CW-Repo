@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Users_From_Editing_Record</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(CWS_IsAproved__c  = true  &amp;&amp;  $Profile.Name &lt;&gt; &apos;CWS_Contract_Admin&apos; &amp;&amp;  $Profile.Name &lt;&gt; &apos;CWS_Order_Management&apos; &amp;&amp;   $User.Email  &lt;&gt; $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_1_Email__c &amp;&amp; $User.Email  &lt;&gt;  $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_2_Email__c  &amp;&amp; $User.Email  &lt;&gt;  $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_3_Email__c ,AND(ISCHANGED(CWS_IsAproved__c),PRIORVALUE(CWS_IsAproved__c) = true) &amp;&amp;  $Profile.Name &lt;&gt; &apos;CWS_Contract_Admin&apos; &amp;&amp;  $Profile.Name &lt;&gt; &apos;CWS_Order_Management&apos; &amp;&amp;   $User.Email  &lt;&gt;  $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_1_Email__c  &amp;&amp; $User.Email  &lt;&gt;  $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_2_Email__c  &amp;&amp; $User.Email  &lt;&gt;  $CustomMetadata.CWS_User_email__mdt.Partner_Care.User_3_Email__c )</errorConditionFormula>
+    <errorMessage>This Billing Request has been approved/posted and you don&apos;t have permission to edit the record further.</errorMessage>
+</ValidationRule>

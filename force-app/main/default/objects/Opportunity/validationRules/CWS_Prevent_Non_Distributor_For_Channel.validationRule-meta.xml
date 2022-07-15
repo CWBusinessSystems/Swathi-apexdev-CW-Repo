@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prevent_Non_Distributor_For_Channel</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISPICKVAL(CWS_Route_to_Market__c , &apos;Channel&apos;),
+OR(NOT(CWS_Bill_To_Account__r.CWS_Is_Distributor__c),ISBLANK(CWS_Bill_To_Account__c) )
+)</errorConditionFormula>
+    <errorMessage>You have selected Route to Market as Channel and the Bill To Account is not a Distributor or Not Populated. Please update Route to Market or Bill To Account (Distributor) to proceed.</errorMessage>
+</ValidationRule>

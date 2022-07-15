@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Distributor_Identifier__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Utilized as an indicator for email notifications that need to be sent to the Distributor users related to this Account.</inlineHelpText>
+    <label>Distributor Identifier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Preferred_Distributor</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,28 @@
+<apex:component controller="CWS_ManageDealConversionController" access="global">
+    <apex:attribute name="qid" type="String" description="Quote ID" assignTo="{!quotesId}" access="global"/>
+    <html>  
+    <body>
+        <p>A new Manage Conversion is ready to be processed under - <apex:outputText value="{!wrap.strCompanyName}"/></p><br/>
+
+        <b>Direction:</b> <apex:outputText value="{!wrap.strDirection}"/><br/><br/>
+        <b>Company Id:</b> <apex:outputText value="{!wrap.strCompanyId}"/><br/><br/>
+        <b>Company Contact:</b> <apex:outputText value="{!wrap.strCompanyContact}"/><br/><br/>
+        <apex:outputPanel layout="none" rendered="{!wrap.strPromoDesc !=''}">
+        <b>Campaign Influence :</b> <apex:outputText value="{!wrap.strPromoDesc}"/><br/><br/>
+        </apex:outputPanel>
+        <b>License:</b> {!wrap.cancelledCount} To {!wrap.addOnCount}<br/><br/>
+      
+        <table border = "2" cellspacing = "5">
+            <tr>
+                <td><b>Add-On Products</b></td>                          
+            </tr>
+            <apex:repeat value="{!wrap.productNames}" var="prodName">
+            <tr>
+                <td>{!prodName}</td>                        
+            </tr>
+            </apex:repeat>       
+        </table><br/><br/>
+        <b>Total Fee:</b> {!wrap.totalFee}<br/>        
+  </body>
+ </html>
+</apex:component>

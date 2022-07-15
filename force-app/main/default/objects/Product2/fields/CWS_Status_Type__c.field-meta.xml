@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Status_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Status Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inactive SKU</fullName>
+                <default>false</default>
+                <label>Inactive SKU</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>ACTIVE MARKETPLACE ONLY</fullName>
+                <default>false</default>
+                <label>ACTIVE MARKETPLACE ONLY</label>
+            </value>
+            <value>
+                <fullName>BILLING ONLY - NO NEW SALES</fullName>
+                <default>false</default>
+                <label>BILLING ONLY - NO NEW SALES</label>
+            </value>
+            <value>
+                <fullName>LEGACY CONVERTED SKU</fullName>
+                <default>false</default>
+                <label>LEGACY CONVERTED SKU</label>
+            </value>
+            <value>
+                <fullName>INACTIVE\FINANCE SKU</fullName>
+                <default>false</default>
+                <label>INACTIVE\FINANCE SKU</label>
+            </value>
+            <value>
+                <fullName>BILLING ONLY</fullName>
+                <default>false</default>
+                <label>BILLING ONLY</label>
+            </value>
+            <value>
+                <fullName>ACTIVE\BILLING ONLY</fullName>
+                <default>false</default>
+                <label>ACTIVE\BILLING ONLY</label>
+            </value>
+            <value>
+                <fullName>End of Life</fullName>
+                <default>false</default>
+                <label>End of Life</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

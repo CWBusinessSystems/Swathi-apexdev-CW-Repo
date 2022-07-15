@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Has_Master_Contract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True = if sold to account has active Master Contract</description>
+    <externalId>false</externalId>
+    <inlineHelpText>True = if sold to account has active Master Contract</inlineHelpText>
+    <label>Has Master Contract</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

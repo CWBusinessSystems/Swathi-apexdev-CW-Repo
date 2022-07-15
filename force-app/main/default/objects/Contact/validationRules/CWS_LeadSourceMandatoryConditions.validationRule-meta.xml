@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LeadSourceMandatoryConditions</fullName>
+    <active>false</active>
+    <description>Lead Source is only required if the Contact Status is MQL, SAL, SQL or SQL Working.</description>
+    <errorConditionFormula>AND( NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c) ,
+(ISPICKVAL(CWS_Contact_Status__c, &quot;MQL&quot;)||
+ISPICKVAL(CWS_Contact_Status__c, &quot;SAL&quot;)||
+ISPICKVAL(CWS_Contact_Status__c, &quot;SQL&quot;)||
+ISPICKVAL(CWS_Contact_Status__c, &quot;SQL Working&quot;)) &amp;&amp;
+ISPICKVAL(LeadSource, &apos;&apos;))</errorConditionFormula>
+    <errorMessage>Please enter a Lead Source for this Contact.</errorMessage>
+</ValidationRule>

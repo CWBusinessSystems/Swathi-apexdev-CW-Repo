@@ -1,0 +1,20 @@
+<aura:component implements="lightning:availableForFlowScreens" controller="CWS_BatchApexProgressIndicatorController">
+    <aura:attribute name="refreshInterval" type="Integer" default="1000"/>
+    <aura:attribute name="progress" type="Integer" default="0"/>
+    <aura:attribute name="batchStatus" type="String" default="Starting"/>
+    <aura:attribute name="inputJobId" type="String"/>
+    <aura:attribute name="isComplete" type="Boolean" default="false"/>
+    <aura:attribute name="apexJob" type="AsyncApexJob"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.apexJob != null}">
+        <aura:if isTrue="{!v.apexJob.JobItemsProcessed != v.apexJob.TotalJobItems}">
+            {!v.apexJob.JobItemsProcessed} of {!v.apexJob.TotalJobItems}
+        </aura:if>
+        <aura:if isTrue="{!v.apexJob.Status == 'Completed'}">
+            {!v.apexJob.NumberOfErrors} errors.
+        </aura:if>
+        <aura:if isTrue="{!v.apexJob.Status != 'Completed'}">
+            <lightning:progressBar value="{!v.progress}" size="large" variant="circular"/>
+        </aura:if>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ReviewReason__c</fullName>
+    <description>The reason behind the order being Under Review status</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The reason behind the Order being Under Review status</inlineHelpText>
+    <label>Review Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing PO</fullName>
+                <default>false</default>
+                <label>Missing PO</label>
+            </value>
+            <value>
+                <fullName>Recommit</fullName>
+                <default>false</default>
+                <label>Recommit</label>
+            </value>
+            <value>
+                <fullName>Currency Conversion</fullName>
+                <default>false</default>
+                <label>Currency Conversion</label>
+            </value>
+            <value>
+                <fullName>Merger &amp; Acquisition</fullName>
+                <default>false</default>
+                <label>Merger &amp; Acquisition</label>
+            </value>
+            <value>
+                <fullName>Agreement Conversion</fullName>
+                <default>false</default>
+                <label>Agreement Conversion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,84 @@
+<aura:component >
+    <aura:attribute name="rowRec" type="Object" default="{}"/>
+    
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="relObjType" type="String" /> <!--what obj does the list show-->
+    <aura:attribute name="parentLookupField" type="String" />
+    <aura:attribute name="fields" type="String[]" />
+    <aura:attribute name="moreFields" type="String[]"/>
+    <aura:attribute name="showLabel" type="String"/>
+    <aura:attribute name="hideLabel" type="String"/>
+    <aura:attribute name="listTitle" type="String" />
+    <aura:attribute name="showMore" type="Boolean" default="false"/>
+
+    <aura:attribute name="showModal" type="Boolean" default="false"/>
+    
+    <aura:attribute name="rowStatus" type="String" default=""/>
+    <aura:attribute name="loadStatus" type="String" default="loading"/>
+    
+    <aura:attribute name="rowNum" type="Integer"/>
+
+    <aura:attribute name="timerHandle" type="Integer"/>
+    <aura:attribute name="saveTest" type="Boolean" default="false"/>
+    
+    
+    
+    
+
+    
+    
+    
+    
+    <div class="rowWrapper">
+        
+        <lightning:recordViewForm aura:id="thisRow"
+                                  objectApiName="{!v.relObjType}"
+                                  recordId="{!v.rowRec.Id}"
+                                  >
+            <lightning:messages />
+            <div class="{!'noMore'+v.showLabel +' slds-grid'}">
+                <aura:iteration items="{!v.fields}" var="f" indexVar="i">
+                    <div class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1)}">
+                        <lightning:outputField class="{!'first_' + (v.rowNum == 0)}" aura:id="field" fieldName="{!f}" variant="label-hidden"/>
+                    </div>
+                </aura:iteration>
+                <!--<span class="{!'iconSection lastCol first_' + (v.rowNum == 0) + ' slideUp'+(v.showLabel=='')}">-->
+                <span class="{!'flex-field slds-col slds-size_1-of-'+ (v.fields.length+1) + ' actionCell ' + 'actionsRow0_' + (v.rowNum == 0)}">
+
+                
+                    <a href="{!'/'+v.rowRec.Id}" class="rightBtn"><lightning:buttonIcon value="goTo" title="Navigate to this record's page" iconName="utility:internal_share"/></a> 
+
+                </span>
+                
+                
+            </div>
+            <aura:if isTrue="{!v.showLabel != undefined}">
+                <aura:if isTrue="{!v.showMore}">
+                    <div class="expand" onclick="{!c.toggleMoreFields}">
+                        <lightning:icon iconName="utility:up" size="xx-small" alternativeText="Collapse Section" title="Collapse" />
+                        {!v.hideLabel}
+                    </div>
+                    <aura:set attribute="else">
+                        <div class="expand" onclick="{!c.toggleMoreFields}">
+                            <lightning:icon iconName="utility:down" size="xx-small" alternativeText="Expand Section" title="Expand" />
+                            {!v.showLabel}
+                        </div>
+                    </aura:set>
+                    <div class="{!'moreSection flex-field slds-col slds-size_'+(v.fields.length)+'-of-'+ (v.fields.length)}">
+                        <aura:iteration items="{!v.moreFields}" var="mf">
+                            <lightning:outputField aura:id="field" fieldName="{!mf}" variant="label-inline"/>
+                        </aura:iteration>
+                    </div><br/>
+                </aura:if>
+            </aura:if>
+            
+            
+            
+        </lightning:recordViewForm>
+    </div>
+    
+    
+    
+    
+    
+</aura:component>

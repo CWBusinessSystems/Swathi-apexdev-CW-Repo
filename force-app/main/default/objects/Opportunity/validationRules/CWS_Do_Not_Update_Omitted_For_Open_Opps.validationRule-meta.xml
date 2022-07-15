@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Do_Not_Update_Omitted_For_Open_Opps</fullName>
+    <active>true</active>
+    <description>This validation rule is restricting the Sales user from updating the &quot;Forecast Category&quot; to Omitted for Open Opportunities.</description>
+    <errorConditionFormula>AND(
+OR(
+$Profile.Name  = &quot;CWS_Help_Desk&quot;,
+$Profile.Name = &quot;CWS_Sales_Engineer&quot;,
+$Profile.Name = &quot;CWS_Sales_Rep&quot;,
+$Profile.Name = &quot;CWS_Sales_Manager&quot;,
+$Profile.Name = &quot;CWS_Tele_Sales&quot;
+  ),
+NOT(CONTAINS($UserRole.Name, &apos;Business Development&apos;)),
+NOT(ISPICKVAL(StageName, &quot;Closed Lost&quot;)),
+NOT(ISPICKVAL(StageName, &quot;Meeting&quot;)),
+NOT(ISPICKVAL(StageName, &quot;Nurture&quot;)),
+NOT(ISPICKVAL(StageName, &quot;Recycled&quot;)),
+ISPICKVAL(ForecastCategoryName,&quot;Omitted&quot;)
+)</errorConditionFormula>
+    <errorMessage>Forecast Category-Omitted is used only when stage is Nurture, Recycled, Meeting, or Closed Lost.  Update stage to one of these stages or select another Forecast Category.</errorMessage>
+</ValidationRule>

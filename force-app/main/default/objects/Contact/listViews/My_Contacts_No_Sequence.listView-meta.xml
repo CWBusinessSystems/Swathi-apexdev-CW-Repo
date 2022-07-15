@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Contacts_No_Sequence</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CWS_Contact_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Outreach_Finished_Sequences__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Outreach_Actively_Being_Sequenced__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Outreach_Finished_Sequences__c</field>
+        <operation>notContain</operation>
+        <value>Portal Users</value>
+    </filters>
+    <label>My Contacts No Sequence</label>
+</ListView>

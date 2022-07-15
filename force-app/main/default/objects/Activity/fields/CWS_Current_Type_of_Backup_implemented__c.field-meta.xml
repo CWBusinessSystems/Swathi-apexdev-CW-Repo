@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Current_Type_of_Backup_implemented__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which Backup software which the prospect has currently implemented.</inlineHelpText>
+    <label>Current Type of Backup implemented</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Axient</fullName>
+                <default>false</default>
+                <label>Axient</label>
+            </value>
+            <value>
+                <fullName>Barracuda</fullName>
+                <default>false</default>
+                <label>Barracuda</label>
+            </value>
+            <value>
+                <fullName>Carbonite</fullName>
+                <default>false</default>
+                <label>Carbonite</label>
+            </value>
+            <value>
+                <fullName>CharTec</fullName>
+                <default>false</default>
+                <label>CharTec</label>
+            </value>
+            <value>
+                <fullName>CloudBerry</fullName>
+                <default>false</default>
+                <label>CloudBerry</label>
+            </value>
+            <value>
+                <fullName>CommVault</fullName>
+                <default>false</default>
+                <label>CommVault</label>
+            </value>
+            <value>
+                <fullName>Datto</fullName>
+                <default>false</default>
+                <label>Datto</label>
+            </value>
+            <value>
+                <fullName>Dell AppAssure</fullName>
+                <default>false</default>
+                <label>Dell AppAssure</label>
+            </value>
+            <value>
+                <fullName>eFolder</fullName>
+                <default>false</default>
+                <label>eFolder</label>
+            </value>
+            <value>
+                <fullName>Intronis</fullName>
+                <default>false</default>
+                <label>Intronis</label>
+            </value>
+            <value>
+                <fullName>Iron Mountain</fullName>
+                <default>false</default>
+                <label>Iron Mountain</label>
+            </value>
+            <value>
+                <fullName>Mozy</fullName>
+                <default>false</default>
+                <label>Mozy</label>
+            </value>
+            <value>
+                <fullName>NetApp</fullName>
+                <default>false</default>
+                <label>NetApp</label>
+            </value>
+            <value>
+                <fullName>Quest Rapid Recovery</fullName>
+                <default>false</default>
+                <label>Quest Rapid Recovery</label>
+            </value>
+            <value>
+                <fullName>Storagecraft</fullName>
+                <default>false</default>
+                <label>Storagecraft</label>
+            </value>
+            <value>
+                <fullName>Weeam</fullName>
+                <default>false</default>
+                <label>Weeam</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

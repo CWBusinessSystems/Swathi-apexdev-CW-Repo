@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Incremental_ACV_USD__c</fullName>
+    <description>This field should no longer be used. This field is giving the results based on the logic- If Amount is filled out and Primary Quote is blank, put that value in &quot;Incremental ACV (USD)&quot;. Override the value of Amount in the &quot;Incremental ACV (USD)&quot; field with sum of &quot;CMS – Incremental ACV&quot; and &quot;CW – Incremental ACV&quot; if populated and then Divide Incremental ACV (USD) by FX value.</description>
+    <externalId>false</externalId>
+    <formula>/*CASE(CurrencyIsoCode , 
+&quot;USD&quot;, (IF(AND(CWS_Min_Commit_QR__c &gt;= 0 ,ISBLANK(CWS_CW_Incremental_ACV__c)),CWS_Min_Commit_QR__c,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,ISBLANK(CWS_Min_Commit_QR__c)),CWS_CW_Incremental_ACV__c ,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,CWS_Min_Commit_QR__c &gt;= 0),
+CWS_CW_Incremental_ACV__c + CWS_Min_Commit_QR__c,
+IF(ISBLANK(SBQQ__PrimaryQuote__c), Amount, SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c )))))/1.0 , 
+&quot;AUD&quot;, (IF(AND(CWS_Min_Commit_QR__c &gt;= 0 ,ISBLANK(CWS_CW_Incremental_ACV__c)),CWS_Min_Commit_QR__c,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,ISBLANK(CWS_Min_Commit_QR__c)),CWS_CW_Incremental_ACV__c ,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,CWS_Min_Commit_QR__c &gt;= 0),
+CWS_CW_Incremental_ACV__c + CWS_Min_Commit_QR__c,
+IF(ISBLANK(SBQQ__PrimaryQuote__c), Amount, SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c )))))/1.30487 , 
+&quot;CAD&quot;,(IF(AND(CWS_Min_Commit_QR__c &gt;= 0 ,ISBLANK(CWS_CW_Incremental_ACV__c)),CWS_Min_Commit_QR__c,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,ISBLANK(CWS_Min_Commit_QR__c)),CWS_CW_Incremental_ACV__c ,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,CWS_Min_Commit_QR__c &gt;= 0),
+CWS_CW_Incremental_ACV__c + CWS_Min_Commit_QR__c,
+IF(ISBLANK(SBQQ__PrimaryQuote__c), Amount, SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c )))))/1.27812 , 
+&quot;EUR&quot;,(IF(AND(CWS_Min_Commit_QR__c &gt;= 0 ,ISBLANK(CWS_CW_Incremental_ACV__c)),CWS_Min_Commit_QR__c,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,ISBLANK(CWS_Min_Commit_QR__c)),CWS_CW_Incremental_ACV__c ,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,CWS_Min_Commit_QR__c &gt;= 0),
+CWS_CW_Incremental_ACV__c + CWS_Min_Commit_QR__c,
+IF(ISBLANK(SBQQ__PrimaryQuote__c), Amount, SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c )))))/0.81407 , 
+&quot;GBP&quot;,(IF(AND(CWS_Min_Commit_QR__c &gt;= 0 ,ISBLANK(CWS_CW_Incremental_ACV__c)),CWS_Min_Commit_QR__c,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,ISBLANK(CWS_Min_Commit_QR__c)),CWS_CW_Incremental_ACV__c ,
+IF(AND(CWS_CW_Incremental_ACV__c &gt;= 0,CWS_Min_Commit_QR__c &gt;= 0),
+CWS_CW_Incremental_ACV__c + CWS_Min_Commit_QR__c,
+IF(ISBLANK(SBQQ__PrimaryQuote__c), Amount, SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c )))))/0.73642 ,
+0)*/0</formula>
+    <inlineHelpText>This field should no longer be used - it used to calculate Opportunity value by referencing the Amount Field, then Quote Data, and lastly either CMS or CW Incremental ACV Fields. This field DOES NOT sync to other systems. All values are converted to USD using static FX Rates.
+
+FX Values:
+
+AUD: 1.30487
+CAD: 1.27812
+EUR: 0.81407
+GBP: 0.73642
+USD: 1.0</inlineHelpText>
+    <label>RETIRED Incremental ACV (USD)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

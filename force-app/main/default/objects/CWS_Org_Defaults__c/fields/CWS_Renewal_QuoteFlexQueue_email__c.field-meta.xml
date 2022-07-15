@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Renewal_QuoteFlexQueue_email__c</fullName>
+    <description>It stores the email id to which the Flex Queue Batch Process email should be sent.</description>
+    <externalId>false</externalId>
+    <label>Renewal Quote Flex Queue Process email</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Exception_pricing_Edit_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>If(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&quot;PriceBookEntry&quot;)&amp;&amp; ($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c==true),false,AND(NOT(CWS_Exception_Pricing__c), ISCHANGED(UnitPrice),NOT(ISPICKVAL(CurrencyIsoCode,&apos;USD&apos;)),NOT( $Setup.CWS_PBE_Validation_Deactivation__c.CWS_Deactivate__c)))</errorConditionFormula>
+    <errorMessage>List Price cannot be changed manually when the Exception pricing is false</errorMessage>
+</ValidationRule>

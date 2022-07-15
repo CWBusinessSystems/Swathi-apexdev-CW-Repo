@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Campaign_Code_Number__c</fullName>
+    <description>Used in automation to create a campaign code if campaign code is left blank on create</description>
+    <displayFormat>{0000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Campaign Code Number</label>
+    <type>AutoNumber</type>
+</CustomField>

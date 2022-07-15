@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_DiscountTierTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Discount tier Trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Discount tier Trigger</inlineHelpText>
+    <label>DiscountTierTrigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

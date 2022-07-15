@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_legacy_CMS_products_can_be_added</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+IF(AND(Opportunity.CWS_Has_Master_Contract__c  = True, 
+ Opportunity.CWS_Master__c != True ,  Text(Product2.CWS_Source__c) = &apos;CMS&apos;,
+Text(Product2.CWS_SKU_Type__c) &lt;&gt; &apos;Dedicated Tech&apos;)
+, True, False) 
+)</errorConditionFormula>
+    <errorMessage>No legacy CMS products can be added in this Opportunity since there is an active Master contract for this account. Please amend the existing master contract to add your changes</errorMessage>
+</ValidationRule>

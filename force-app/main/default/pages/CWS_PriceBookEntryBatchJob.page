@@ -1,0 +1,60 @@
+<!--
+* Class Name  : CWS_PriceBookEntryBatchJob
+* Description : Visualforcepage to pop up modal dialog box
+* Created By  : Nirmal Kumar 
+* Created On  : 4/14/2020
+
+ * Modification Log:  
+ * --------------------------------------------------------------------------------------------------------------------------------------
+ * Developer                Date                   Modification ID      Description 
+ * ---------------------------------------------------------------------------------------------------------------------------------------
+ * Nirmal Kumar             4/14/2020                BED-3492          Initial/First Version      
+-->
+
+<apex:page standardcontroller="CWS_Trigger_Batch_Job__c" extensions="CWS_ListPriceCalculationController" recordSetVar="Jobs" lightningStylesheets="true">
+     
+    <apex:form >
+     <apex:outputpanel layout="block" rendered="true" styleclass="popupBackground">   
+     
+        </apex:outputpanel>
+        
+        <apex:outputpanel id="TestPopup" layout="block" rendered="true" styleclass="customPopup">
+               <p><b>{!$Label.CWS_Trigger_Batch_job_message}</b></p>
+            <div style="position: relative; height:100%; width:90%">
+            <div style="float:left; position: relative;width:25%;" >
+              <apex:commandbutton action="{!closeBatch}" rerender="TestPopup" value="Cancel" style="margin-left:10%;"/>  
+                </div> 
+                <div style="float:center; position: relative;width:50%;"/>
+            	<div style="float:right; position: relative;width:25%;" >
+                <apex:commandbutton action="{!invokeBatch}" rerender="TestPopup" value="Proceed" style="margin-left:50%;"/>               
+                </div>            
+            </div>
+                         
+            </apex:outputpanel>
+    </apex:form>
+    <style type="text/css">
+        .customPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;        
+            width: 500px;
+            margin-left: -200px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.50;
+            filter: alpha(opacity = 50);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+    </style>
+</apex:page>

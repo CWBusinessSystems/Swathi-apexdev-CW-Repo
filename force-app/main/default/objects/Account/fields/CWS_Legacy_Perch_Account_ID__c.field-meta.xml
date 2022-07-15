@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Legacy_Perch_Account_ID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Legacy Perch Salesforce system-assigned Account ID.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Legacy Perch Salesforce system-assigned Account ID.</inlineHelpText>
+    <label>Legacy Perch Account ID</label>
+    <length>75</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

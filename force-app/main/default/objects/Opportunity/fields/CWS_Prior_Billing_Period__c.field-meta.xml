@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Prior_Billing_Period__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Looks up to the billing period 1 month before the opportunity created date, used for min commit calculator</inlineHelpText>
+    <label>Prior Billing Period</label>
+    <referenceTo>CWS_BillingPeriod__c</referenceTo>
+    <relationshipLabel>Prior Billing Period Opportunities</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Recovery_Point_Objective__c</fullName>
+    <description>Number of Days they need to be able to go back</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the Number of Days the prospect needs to be able to go back for recovery.</inlineHelpText>
+    <label>Recovery Point Objective</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

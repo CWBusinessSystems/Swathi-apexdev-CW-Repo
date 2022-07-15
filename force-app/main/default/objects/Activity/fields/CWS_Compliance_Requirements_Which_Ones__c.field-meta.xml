@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Compliance_Requirements_Which_Ones__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which compliance requirements from the prospect are necessary and must be considered.</inlineHelpText>
+    <label>Compliance Requirements (Which Ones)</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PCI</fullName>
+                <default>false</default>
+                <label>PCI</label>
+            </value>
+            <value>
+                <fullName>HIPAA</fullName>
+                <default>false</default>
+                <label>HIPAA</label>
+            </value>
+            <value>
+                <fullName>DIFARS</fullName>
+                <default>false</default>
+                <label>DIFARS</label>
+            </value>
+            <value>
+                <fullName>ITAR</fullName>
+                <default>false</default>
+                <label>ITAR</label>
+            </value>
+            <value>
+                <fullName>FINRA</fullName>
+                <default>false</default>
+                <label>FINRA</label>
+            </value>
+            <value>
+                <fullName>Cyber Essentials</fullName>
+                <default>false</default>
+                <label>Cyber Essentials</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

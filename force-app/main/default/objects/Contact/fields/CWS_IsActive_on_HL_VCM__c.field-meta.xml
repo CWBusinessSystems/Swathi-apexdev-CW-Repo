@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_IsActive_on_HL_VCM__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this setting is enabled for your integration then for a record to be added to Higher Logic is if this flag is checked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this setting is enabled for your integration then for a record to be added to Higher Logic is if this flag is checked.</inlineHelpText>
+    <label>IsActive on HL VCM</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

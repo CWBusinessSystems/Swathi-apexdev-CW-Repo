@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_AccountRestrictedStatus_For_SalesRep</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name = &apos;CWS_Sales_Rep&apos;, 
+ISCHANGED(CWS_Account_Restriction_Status__c),
+OR(
+Text(PRIORVALUE(CWS_Account_Restriction_Status__c)) = &apos;Shut Off&apos;,
+Text(PRIORVALUE(CWS_Account_Restriction_Status__c)) = &apos;Delinquent&apos;,
+Text(PRIORVALUE(CWS_Account_Restriction_Status__c)) = &apos;Credit Hold&apos;,
+Text(PRIORVALUE(CWS_Account_Restriction_Status__c)) = &apos;Payment Workout&apos;,
+Text(PRIORVALUE(CWS_Account_Restriction_Status__c)) = &apos;Collection&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>This Account is in a restricted status and your profile does not allow you to change the status.</errorMessage>
+</ValidationRule>

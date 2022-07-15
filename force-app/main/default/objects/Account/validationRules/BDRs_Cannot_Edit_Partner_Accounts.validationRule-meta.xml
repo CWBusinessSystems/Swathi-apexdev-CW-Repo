@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BDRs_Cannot_Edit_Partner_Accounts</fullName>
+    <active>false</active>
+    <description>BDRs are supposed to enter limited details on Accounts as long as the Account Review Status is In Review or Prospect. They are not allowed to Update details on Partner Accounts.</description>
+    <errorConditionFormula>AND(
+CWS_Is_Partner__c = TRUE,
+$Profile.Name = &quot;CWS_Tele_Sales&quot;
+)</errorConditionFormula>
+    <errorMessage>BDRs are not allowed to Update Partner Accounts. Please contact the Account Owner or your System Administrator for help!</errorMessage>
+</ValidationRule>

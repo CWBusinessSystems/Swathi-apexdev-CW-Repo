@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Need_Provisioning_Check__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Does this Opportunity need an additional provisioning check? This applicable for In-App transactions and first time Marketplace transactions.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether this Opportunity needs an additional provisioning check; applicable for In-App transactions and first time Marketplace transactions.</inlineHelpText>
+    <label>Need Provisioning Check?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

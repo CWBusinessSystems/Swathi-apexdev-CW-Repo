@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Email_Req_On_Bill_To_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+OR(  ISPICKVAL(CWS_Bill_To_Account__r.CWS_Invoice_Delivery_Preference__c , &apos;Email&apos;),
+ISPICKVAL(CWS_Bill_To_Account__r.CWS_Invoice_Delivery_Preference__c , &apos;Email and Print&apos;)
+),
+NOT(ISBLANK( CWS_Bill_To_Contact__c )),
+ISBLANK( CWS_Bill_To_Contact__r.Email )
+)</errorConditionFormula>
+    <errorMessage>Email Address is required on Bill-To Contact</errorMessage>
+</ValidationRule>

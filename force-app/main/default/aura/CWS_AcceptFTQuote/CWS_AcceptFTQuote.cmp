@@ -1,0 +1,79 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId" controller="CWS_CommonUtility">
+    <aura:handler name ="init" value = "{!this}" action ="{!c.initHandler}"/>
+    <aura:attribute name="CanAccept" type="Boolean" />
+    <aura:attribute name="showErrors" type="Boolean" />
+    <aura:attribute name="Accepted" type="Boolean" />
+    <aura:attribute name="AcceptedMessage" type="String" />
+	<aura:attribute name="errorMessage" type="String" />
+    <aura:attribute name="listError" type="String[]" />
+    <aura:attribute name="listError1" type="String[]" />
+    <aura:attribute name="MandatoryErrors" type="Boolean" />
+    <aura:attribute name="warningMsg" type="String" />
+    <aura:attribute name="hasErrorMsg" type="Boolean" />
+	<aura:attribute name="alertMessage" type="Boolean" access="global" />
+
+    <aura:attribute name="lstAlertMessage" type="List" default="[]" access="global" />
+    
+    <!--Aert Message Div -->
+        <aura:if isTrue="{!v.alertMessage}">
+                <aura:iteration items="{! v.lstAlertMessage }" var="alertMessage1">
+                <ui:message title="Warning" severity="warning" closable="false">
+                    {!alertMessage1}
+                </ui:message>
+            </aura:iteration>
+            <br/>
+            <center>
+                <lightning:button label="Back to Quote" title="Back to Quote" onclick="{!c.closeModel }" />
+                <lightning:button variant="brand" label="Continue" title="Continue" onclick="{!c.continuebutton}" />
+            </center>
+            </aura:if>
+    <!--Alert Message Div -->
+    
+    <!--Accepted Message Div -->
+     <aura:if isTrue="{!v.Accepted}">
+      <!-- Show the message to ui --> 
+         <div class="slds-notify__content">
+         <p class="slds-align_absolute-center">{!v.AcceptedMessage}</p>
+         </div>
+     </aura:if>
+    <!--  Access Error Message Div --> 
+     <aura:if isTrue="{!v.showErrors}">
+        <!-- Show the message to ui -->
+        <div class="slds-notify slds-notify_toast slds-theme_error">
+            {!v.errorMessage}
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+             <aura:iteration items="{!v.listError1}" var="errors">
+                 <ul>
+            	     <li>{!errors}</li>
+        		</ul>
+            </aura:iteration>
+
+            </div>
+        </div>
+    </aura:if>
+     <!--  Mandatory Error Message Div --> 
+     <aura:if isTrue="{!v.MandatoryErrors}">
+        <!-- Show the message to ui -->
+        <div class="slds-notify slds-notify_toast slds-theme_error">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+        	<!--<ui:outputText value="{!$Label.c.CWS_MandaoryErrorMessage}" /> -->
+             <aura:iteration items="{!v.listError}" var="errors">
+                 <ul>
+            	     <li><lightning:icon iconName="utility:error" alternativeText="Error!" variant="inverse" title="error variant xx-small"
+            size="xx-small" />{!errors}</li>
+        		</ul>
+            </aura:iteration>
+
+            </div>
+        </div>
+    </aura:if>
+     <!--Access warning Message Div -->
+     <aura:if isTrue="{!v.hasErrorMsg}">
+        <!-- Show the message to ui --> 
+           <ui:message title="Warning" severity="warning" closable="true">
+               <p>{!v.warningMsg}</p>
+	      </ui:message>	
+     </aura:if>
+</aura:component>

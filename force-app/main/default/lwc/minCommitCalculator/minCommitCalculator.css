@@ -1,0 +1,25 @@
+/*
+Ad Victoriam Solutions - CW11-P1-SFDX-ven
+Purpose: style table header for related LWC
+Dependencies: cws_MinCommitCalculator.css
+Changelog:
+    27 Aug 2021 by chase.brammer for CW11-7
+        - removed styling because it does not function currently
+        - Created initial file.
+*/
+
+.slds-form-element {
+    width: 100%;
+}
+
+.calculatorControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.calculatorControls div {
+    padding-left: 1%;
+    padding-right: 1%;
+}

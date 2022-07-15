@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Tracker_Created_this_Week</fullName>
+    <columns>NAME</columns>
+    <columns>CWS_Account__c</columns>
+    <columns>CWS_Opportunity__c</columns>
+    <columns>CWS_Contact__c</columns>
+    <columns>CWS_MQL_Assigned_User__c</columns>
+    <columns>CWS_SQL_Pre_Pipeline_Date_Time__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CWS_ProductInterest__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <label>Prospect Tracker Created this Week</label>
+</ListView>

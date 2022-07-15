@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Snapline_Reset_Date__c</fullName>
+    <description>Indicates the date until when the quota retirement is fixed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the date until when the quota retirement is fixed</inlineHelpText>
+    <label>Snapline Reset Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

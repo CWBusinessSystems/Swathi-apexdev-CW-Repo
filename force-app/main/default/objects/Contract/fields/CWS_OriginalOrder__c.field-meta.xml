@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_OriginalOrder__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Original Order this contract was created from</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Original Order this contract was created from</inlineHelpText>
+    <label>Original Order</label>
+    <referenceTo>Order</referenceTo>
+    <relationshipLabel>Contracts (Original Order)</relationshipLabel>
+    <relationshipName>CWS_Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_One_Time_Products_Added</fullName>
+    <active>true</active>
+    <description>Cannot create a renewal opportunity/quote from contract when all the products are One time in the Contract Or No Renewable Products.</description>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;Contract&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND(
+OR(ISCHANGED(SBQQ__RenewalForecast__c),
+ISCHANGED(SBQQ__RenewalQuoted__c)),
+CWS_Renewable_Products__c = 0
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot Renew a Contract which is having No Renewable Products</errorMessage>
+</ValidationRule>

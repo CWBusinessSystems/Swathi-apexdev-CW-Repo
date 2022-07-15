@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Area_of_interest_for_SE_to_hit_on__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures topics the prospect is interested in which the SE should highlight during the Demo.</inlineHelpText>
+    <label>Area of interest for SE to hit on</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Products_Owned__c</fullName>
+    <externalId>false</externalId>
+    <label>Products Owned</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd Party Patching</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3rd Party Patching</label>
+            </value>
+            <value>
+                <fullName>Acronis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acronis</label>
+            </value>
+            <value>
+                <fullName>Assist</fullName>
+                <default>false</default>
+                <label>Assist</label>
+            </value>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>Auvik</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auvik</label>
+            </value>
+            <value>
+                <fullName>Avalara</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Avalara</label>
+            </value>
+            <value>
+                <fullName>BDR Solution Partners</fullName>
+                <default>false</default>
+                <label>BDR Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Bitdefender</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bitdefender</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>Business Mgmt Solution Partners</fullName>
+                <default>false</default>
+                <label>Business Mgmt Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Campaign Director</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Campaign Director</label>
+            </value>
+            <value>
+                <fullName>CCleaner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CCleaner</label>
+            </value>
+            <value>
+                <fullName>Centrestack</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Centrestack</label>
+            </value>
+            <value>
+                <fullName>ChatAssist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ChatAssist</label>
+            </value>
+            <value>
+                <fullName>Cloud Data Access (Manage)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cloud Data Access (Manage)</label>
+            </value>
+            <value>
+                <fullName>Comand</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Comand</label>
+            </value>
+            <value>
+                <fullName>Command</fullName>
+                <default>false</default>
+                <label>Command</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>Control Remote Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Control Remote Support</label>
+            </value>
+            <value>
+                <fullName>Control Stand alone product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Control Stand alone product</label>
+            </value>
+            <value>
+                <fullName>CW RMM</fullName>
+                <default>false</default>
+                <label>CW RMM</label>
+            </value>
+            <value>
+                <fullName>Cylance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cylance</label>
+            </value>
+            <value>
+                <fullName>Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>ESET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ESET</label>
+            </value>
+            <value>
+                <fullName>ESET Encryption (DESLock)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ESET Encryption (DESLock)</label>
+            </value>
+            <value>
+                <fullName>Foresite</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Foresite</label>
+            </value>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+            <value>
+                <fullName>Greencloud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Greencloud</label>
+            </value>
+            <value>
+                <fullName>Help Desk</fullName>
+                <default>false</default>
+                <label>Help Desk</label>
+            </value>
+            <value>
+                <fullName>HitmanPro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HitmanPro</label>
+            </value>
+            <value>
+                <fullName>IBM&apos;s Maas360 (formerly MobileFirst)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IBM&apos;s Maas360 (formerly MobileFirst)</label>
+            </value>
+            <value>
+                <fullName>Identify</fullName>
+                <default>false</default>
+                <label>Identify</label>
+            </value>
+            <value>
+                <fullName>Infrascale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Infrascale</label>
+            </value>
+            <value>
+                <fullName>ITBoost</fullName>
+                <default>false</default>
+                <label>ITBoost</label>
+            </value>
+            <value>
+                <fullName>IT by Design</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IT by Design</label>
+            </value>
+            <value>
+                <fullName>Malwarebytes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Malwarebytes</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>Mobius GL Integrations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mobius GL Integrations</label>
+            </value>
+            <value>
+                <fullName>Other Solution Partners</fullName>
+                <default>false</default>
+                <label>Other Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Perch</fullName>
+                <default>false</default>
+                <label>Perch</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>Reflexion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reflexion</label>
+            </value>
+            <value>
+                <fullName>RMM Solution Partners</fullName>
+                <default>false</default>
+                <label>RMM Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Security Solution Partners</fullName>
+                <default>false</default>
+                <label>Security Solution Partners</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>Service Leadership</fullName>
+                <default>false</default>
+                <label>Service Leadership</label>
+            </value>
+            <value>
+                <fullName>Services Solution Partners</fullName>
+                <default>false</default>
+                <label>Services Solution Partners</label>
+            </value>
+            <value>
+                <fullName>StorageCraft/Cloud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>StorageCraft/Cloud</label>
+            </value>
+            <value>
+                <fullName>StorageGuardian</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>StorageGuardian</label>
+            </value>
+            <value>
+                <fullName>Stratozen</fullName>
+                <default>false</default>
+                <label>Stratozen</label>
+            </value>
+            <value>
+                <fullName>The Email Laundry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>The Email Laundry</label>
+            </value>
+            <value>
+                <fullName>Unite</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unite</label>
+            </value>
+            <value>
+                <fullName>Veeam</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Veeam</label>
+            </value>
+            <value>
+                <fullName>Vipre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vipre</label>
+            </value>
+            <value>
+                <fullName>Webroot (includes SAT)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Webroot (includes SAT)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,36 @@
+<!--
+ **
+ * NAME			: CWS_ContactEmailWarning
+ * DESCRIPTION	: Warning message to restrict email use for communication
+ *    
+ * @AUTHOR		: Sudhir Moturu
+ * @DATE		: 04-MAY-2020
+ *
+ * MODIFICATION LOG:  
+ * ______________________________________________________________________________________________________________________________________
+ * DEVELOPER		DATE			MODIFICATION ID		DESCRIPTION 
+ * ______________________________________________________________________________________________________________________________________
+ * Sudhir Moturu	04-MAY-2020		1000				Initial version    
+ **
+-->
+<aura:component  implements="flexipage:availableForAllPageTypes,force:hasRecordId" >
+    <aura:attribute name="contRecord" type="Object" access="global"/>
+    <aura:attribute name="contFields" type="Object" access="global"/>
+    <aura:attribute name="recordError" type="String" access="global"/>
+
+    <force:recordData aura:id="contactRecord"
+      recordId="{!v.recordId}"
+      targetRecord="{!v.contRecord}"
+      targetFields="{!v.contFields}"
+      targetError="{!v.recordError}"
+      fields="Id,HasOptedOutOfEmail"/>
+
+    <aura:if isTrue="{!v.contFields.HasOptedOutOfEmail}">
+        <lightning:card> 
+            <aura:set attribute="title">
+                <lightning:icon iconName="utility:warning" size="small"/>
+                Do not use for email communication
+            </aura:set>
+        </lightning:card>
+    </aura:if>
+</aura:component>

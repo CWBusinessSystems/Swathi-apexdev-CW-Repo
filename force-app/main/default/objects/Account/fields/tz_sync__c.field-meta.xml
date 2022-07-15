@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tz_sync__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Temporary field used to trigger the update of the Time Zone app.</description>
+    <externalId>false</externalId>
+    <label>tz sync</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

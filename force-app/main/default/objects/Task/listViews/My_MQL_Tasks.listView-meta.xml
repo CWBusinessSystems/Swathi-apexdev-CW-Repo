@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_MQL_Tasks</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHO_NAME</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>DUE_DATE</columns>
+    <columns>PRIORITY</columns>
+    <columns>STATUS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>TYPE</field>
+        <operation>equals</operation>
+        <value>MQL Follow-up</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Do First</value>
+    </filters>
+    <label>My MQL Tasks</label>
+    <sharedTo>
+        <group>AM</group>
+        <roleAndSubordinatesInternal>CWS_Account_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

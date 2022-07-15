@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Product_SKU__c</fullName>
+    <description>If populated, only this product on the cart will get promo applied, and will only be sent for Contract Admin/Approver approvals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If populated, only this product on the cart will get promo applied, and will only be sent for Contract Admin/Approver approvals</inlineHelpText>
+    <label>Product SKU</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

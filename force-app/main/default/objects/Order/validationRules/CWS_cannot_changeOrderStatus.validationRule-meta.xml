@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_cannot_changeOrderStatus</fullName>
+    <active>true</active>
+    <description>Only Integration User can change the Order status to Processed.</description>
+    <errorConditionFormula>IF(AND((CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;Order&apos;)),($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,
+				AND( NOT($Permission.CWS_Order_Status_Edit_Access),  ISCHANGED(Status) ,ISPICKVAL(Status, &apos;Activated&apos;)))</errorConditionFormula>
+    <errorMessage>You are not allowed to change the status to Processed. Please change status to &quot;Ready for Submission&quot; instead</errorMessage>
+</ValidationRule>

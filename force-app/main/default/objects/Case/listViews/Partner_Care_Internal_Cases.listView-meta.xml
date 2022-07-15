@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Care_Internal_Cases</fullName>
+    <columns>CASES.EMAIL</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Case_Type__c</columns>
+    <columns>Category__c</columns>
+    <columns>Stakeholder__c</columns>
+    <columns>Age__c</columns>
+    <columns>Reason_to_Keep_Open__c</columns>
+    <columns>Inquiry_Problem_Request__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Follow_Up_Date_Age__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Partner_Care</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed Internal,Closed,New,Closed as Duplicate</value>
+    </filters>
+    <filters>
+        <field>Case_Type__c</field>
+        <operation>equals</operation>
+        <value>Internal Collaboration</value>
+    </filters>
+    <label>Partner Care Internal Cases</label>
+    <sharedTo>
+        <role>CWS_Manager_Partner_Care</role>
+        <role>CWS_Partner_Care</role>
+    </sharedTo>
+</ListView>

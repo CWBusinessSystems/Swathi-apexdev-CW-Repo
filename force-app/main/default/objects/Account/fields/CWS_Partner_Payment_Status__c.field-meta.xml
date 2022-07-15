@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Partner_Payment_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Payment Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+                <label>Delinquent</label>
+            </value>
+            <value>
+                <fullName>Payment Workout</fullName>
+                <default>false</default>
+                <label>Payment Workout</label>
+            </value>
+            <value>
+                <fullName>Credit Hold</fullName>
+                <default>false</default>
+                <label>Credit Hold</label>
+            </value>
+            <value>
+                <fullName>Shut Off</fullName>
+                <default>false</default>
+                <label>Shut Off</label>
+            </value>
+            <value>
+                <fullName>Collection</fullName>
+                <default>false</default>
+                <label>Collection</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Blacklisted</fullName>
+                <default>false</default>
+                <label>Blacklisted</label>
+            </value>
+            <value>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+                <label>Out of Business</label>
+            </value>
+            <value>
+                <fullName>Inactive Aqcuired</fullName>
+                <default>false</default>
+                <label>Inactive Aqcuired</label>
+            </value>
+            <value>
+                <fullName>Inactive Gone</fullName>
+                <default>false</default>
+                <label>Inactive Gone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

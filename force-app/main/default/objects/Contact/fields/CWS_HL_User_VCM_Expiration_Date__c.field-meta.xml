@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_HL_User_VCM_Expiration_Date__c</fullName>
+    <description>Date that will ensure a user no longer has access to the Higher Logic Community</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date that will ensure a user no longer has access to the Higher Logic Community</inlineHelpText>
+    <label>HL User VCM Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

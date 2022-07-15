@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Perch_Only</fullName>
+    <columns>CWS_Products_Owned__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CWS_Is_Partner__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>CWS_IT_Support_Portal_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CWS_Products_Owned__c</field>
+        <operation>equals</operation>
+        <value>Perch</value>
+    </filters>
+    <label>Perch Only</label>
+</ListView>

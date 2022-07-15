@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Termination_Sub_reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates sub-reason for termination if Partner Account is terminated, based on termination reason.</inlineHelpText>
+    <label>Termination Sub-reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CWS_Termination_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AM Not Engaged</fullName>
+                <default>false</default>
+                <label>AM Not Engaged</label>
+            </value>
+            <value>
+                <fullName>Billing Expectations</fullName>
+                <default>false</default>
+                <label>Billing Expectations</label>
+            </value>
+            <value>
+                <fullName>Feels Misled</fullName>
+                <default>false</default>
+                <label>Feels Misled</label>
+            </value>
+            <value>
+                <fullName>Imp Misrepresented</fullName>
+                <default>false</default>
+                <label>Imp Misrepresented</label>
+            </value>
+            <value>
+                <fullName>Missing Feature</fullName>
+                <default>false</default>
+                <label>Missing Feature</label>
+            </value>
+            <value>
+                <fullName>Imp Not Helpful</fullName>
+                <default>false</default>
+                <label>Imp Not Helpful</label>
+            </value>
+            <value>
+                <fullName>Imp Scheduling</fullName>
+                <default>false</default>
+                <label>Imp Scheduling</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Not Enough Imp Hours</fullName>
+                <default>false</default>
+                <label>Not Enough Imp Hours</label>
+            </value>
+            <value>
+                <fullName>Time to Implement</fullName>
+                <default>false</default>
+                <label>Time to Implement</label>
+            </value>
+            <value>
+                <fullName>Unhappy with Imp Consultant</fullName>
+                <default>false</default>
+                <label>Unhappy with Imp Consultant</label>
+            </value>
+            <value>
+                <fullName>University Training</fullName>
+                <default>false</default>
+                <label>University Training</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>No Continued Education</fullName>
+                <default>false</default>
+                <label>No Continued Education</label>
+            </value>
+            <value>
+                <fullName>Project Issues</fullName>
+                <default>false</default>
+                <label>Project Issues</label>
+            </value>
+            <value>
+                <fullName>Unhappy With Consultant</fullName>
+                <default>false</default>
+                <label>Unhappy With Consultant</label>
+            </value>
+            <value>
+                <fullName>Expectations</fullName>
+                <default>false</default>
+                <label>Expectations</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Long Response/Resolution Times</fullName>
+                <default>false</default>
+                <label>Long Response/Resolution Times</label>
+            </value>
+            <value>
+                <fullName>Not Helpful</fullName>
+                <default>false</default>
+                <label>Not Helpful</label>
+            </value>
+            <value>
+                <fullName>Procedures</fullName>
+                <default>false</default>
+                <label>Procedures</label>
+            </value>
+            <value>
+                <fullName>Support Offering Pricing</fullName>
+                <default>false</default>
+                <label>Support Offering Pricing</label>
+            </value>
+            <value>
+                <fullName>Agreements/Invoicing/Acct Integrations</fullName>
+                <default>false</default>
+                <label>Agreements/Invoicing/Acct Integrations</label>
+            </value>
+            <value>
+                <fullName>Company &amp; Contacts</fullName>
+                <default>false</default>
+                <label>Company &amp; Contacts</label>
+            </value>
+            <value>
+                <fullName>Configurations</fullName>
+                <default>false</default>
+                <label>Configurations</label>
+            </value>
+            <value>
+                <fullName>Defects</fullName>
+                <default>false</default>
+                <label>Defects</label>
+            </value>
+            <value>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+                <label>Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+                <label>Procurement</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Reliability Issues</fullName>
+                <default>false</default>
+                <label>Reliability Issues</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Sales &amp; Opportunities</fullName>
+                <default>false</default>
+                <label>Sales &amp; Opportunities</label>
+            </value>
+            <value>
+                <fullName>Security Risk/Compliance Concern</fullName>
+                <default>false</default>
+                <label>Security Risk/Compliance Concern</label>
+            </value>
+            <value>
+                <fullName>Service (Tickets/Time/Service Board)</fullName>
+                <default>false</default>
+                <label>Service (Tickets/Time/Service Board)</label>
+            </value>
+            <value>
+                <fullName>Setup Tables</fullName>
+                <default>false</default>
+                <label>Setup Tables</label>
+            </value>
+            <value>
+                <fullName>Speed Issues</fullName>
+                <default>false</default>
+                <label>Speed Issues</label>
+            </value>
+            <value>
+                <fullName>Time and Expense</fullName>
+                <default>false</default>
+                <label>Time and Expense</label>
+            </value>
+            <value>
+                <fullName>Too Robust</fullName>
+                <default>false</default>
+                <label>Too Robust</label>
+            </value>
+            <value>
+                <fullName>Usability Issues</fullName>
+                <default>false</default>
+                <label>Usability Issues</label>
+            </value>
+            <value>
+                <fullName>Company Downsizing</fullName>
+                <default>false</default>
+                <label>Company Downsizing</label>
+            </value>
+            <value>
+                <fullName>Delinquent Account</fullName>
+                <default>false</default>
+                <label>Delinquent Account</label>
+            </value>
+            <value>
+                <fullName>Drastic Change in Business</fullName>
+                <default>false</default>
+                <label>Drastic Change in Business</label>
+            </value>
+            <value>
+                <fullName>Merger and Acquisition External</fullName>
+                <default>false</default>
+                <label>Merger and Acquisition External</label>
+            </value>
+            <value>
+                <fullName>Merger and Acquisition Internal</fullName>
+                <default>false</default>
+                <label>Merger and Acquisition Internal</label>
+            </value>
+            <value>
+                <fullName>Not a Fit</fullName>
+                <default>false</default>
+                <label>Not a Fit</label>
+            </value>
+            <value>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+                <label>Out of Business</label>
+            </value>
+            <value>
+                <fullName>Renewal Increase</fullName>
+                <default>false</default>
+                <label>Renewal Increase</label>
+            </value>
+            <value>
+                <fullName>Too Expensive</fullName>
+                <default>false</default>
+                <label>Too Expensive</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>AM Not Engaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Billing Expectations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Feels Misled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Imp Misrepresented</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Missing Feature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Imp Not Helpful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Imp Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Not Enough Imp Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Time to Implement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Unhappy with Imp Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>University Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>No Continued Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>Project Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>Unhappy With Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Expectations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Follow Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Long Response/Resolution Times</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Not Helpful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Procedures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>Support Offering Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Agreements/Invoicing/Acct Integrations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Company &amp; Contacts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Configurations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Defects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Marketing Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Procurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Reliability Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Reporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Sales &amp; Opportunities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Security Risk/Compliance Concern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Service (Tickets/Time/Service Board)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Setup Tables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Speed Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Time and Expense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Too Robust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Concerns</controllingFieldValue>
+            <valueName>Usability Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Company Downsizing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Delinquent Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Drastic Change in Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Merger and Acquisition External</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Merger and Acquisition Internal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Not a Fit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Out of Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Renewal Increase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Too Expensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Reasons</controllingFieldValue>
+            <valueName>Unresponsive</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

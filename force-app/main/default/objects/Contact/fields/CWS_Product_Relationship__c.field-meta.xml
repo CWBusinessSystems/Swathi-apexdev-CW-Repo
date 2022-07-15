@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Product_Relationship__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Relationship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AUTO / CTRL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AUTO / CTRL Admin</label>
+            </value>
+            <value>
+                <fullName>AUTO / SELL / CTRL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AUTO / SELL / CTRL Admin</label>
+            </value>
+            <value>
+                <fullName>AUTO / SELL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AUTO / SELL Admin</label>
+            </value>
+            <value>
+                <fullName>AUTO Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AUTO Admin</label>
+            </value>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>Command</fullName>
+                <default>false</default>
+                <label>Command</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>CT Product Primary Technical Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CT Product Primary Technical Contact</label>
+            </value>
+            <value>
+                <fullName>Dedicated Tech</fullName>
+                <default>false</default>
+                <label>Dedicated Tech</label>
+            </value>
+            <value>
+                <fullName>End User Client</fullName>
+                <default>false</default>
+                <label>End User Client</label>
+            </value>
+            <value>
+                <fullName>Evolve</fullName>
+                <default>false</default>
+                <label>Evolve</label>
+            </value>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+            <value>
+                <fullName>Help Desk</fullName>
+                <default>false</default>
+                <label>Help Desk</label>
+            </value>
+            <value>
+                <fullName>ITBOOST</fullName>
+                <default>false</default>
+                <label>ITBOOST</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>MNG / AUTO / SELL / CTRL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG / AUTO / SELL / CTRL Admin</label>
+            </value>
+            <value>
+                <fullName>MNG / AUTO / SELL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG / AUTO / SELL Admin</label>
+            </value>
+            <value>
+                <fullName>MNG / CTRL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG / CTRL Admin</label>
+            </value>
+            <value>
+                <fullName>MNG / SELL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG / SELL Admin</label>
+            </value>
+            <value>
+                <fullName>MNG Admin / AUTO Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG Admin / AUTO Admin</label>
+            </value>
+            <value>
+                <fullName>MNG Admin 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG Admin 1</label>
+            </value>
+            <value>
+                <fullName>MNG Admin 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MNG Admin 2</label>
+            </value>
+            <value>
+                <fullName>Perch</fullName>
+                <default>false</default>
+                <label>Perch</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>RMM</fullName>
+                <default>false</default>
+                <label>RMM</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>SELL Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SELL Admin</label>
+            </value>
+            <value>
+                <fullName>Sell Primary Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sell Primary Contact</label>
+            </value>
+            <value>
+                <fullName>SmileBack</fullName>
+                <default>false</default>
+                <label>SmileBack</label>
+            </value>
+            <value>
+                <fullName>Stratozen</fullName>
+                <default>false</default>
+                <label>Stratozen</label>
+            </value>
+            <value>
+                <fullName>Tech Advantage</fullName>
+                <default>false</default>
+                <label>Tech Advantage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

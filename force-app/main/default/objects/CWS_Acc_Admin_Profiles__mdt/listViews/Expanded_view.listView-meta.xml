@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expanded_view</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>CWS_Is_After_Partner__c</columns>
+    <columns>CWS_Is_Before_partner__c</columns>
+    <columns>Profile__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Expanded view</label>
+    <language>en_US</language>
+</ListView>

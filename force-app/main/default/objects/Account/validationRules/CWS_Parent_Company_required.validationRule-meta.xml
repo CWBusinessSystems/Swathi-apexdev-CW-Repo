@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Parent_Company_required</fullName>
+    <active>true</active>
+    <description>If paid by parent is true, then Parent company should not be blank</description>
+    <errorConditionFormula>AND(IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;Account&apos;),$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),FALSE ,TRUE ),
+AND(CWS_Paid_by_Parent__c ,  ISBLANK( ParentId ))
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Please include a Parent Company to indicate &apos;Paid by Parent</errorMessage>
+</ValidationRule>

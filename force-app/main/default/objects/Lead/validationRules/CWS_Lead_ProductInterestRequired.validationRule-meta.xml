@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Lead_ProductInterestRequired</fullName>
+    <active>true</active>
+    <description>Product interest to be captures for moving lead to SQL</description>
+    <errorConditionFormula>AND(
+ NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ ISCHANGED(Status),
+ ISPICKVAL(Status ,&apos;SQL&apos;),
+ NOT(ISPICKVAL(LeadSource , &apos;Onboarding&apos;)),
+ ISBLANK(CWS_Product_Intrest__c)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Product_Intrest__c</errorDisplayField>
+    <errorMessage>Please select Product Interest to continue.</errorMessage>
+</ValidationRule>

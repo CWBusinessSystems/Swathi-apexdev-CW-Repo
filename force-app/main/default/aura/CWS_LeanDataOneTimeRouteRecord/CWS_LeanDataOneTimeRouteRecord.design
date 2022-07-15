@@ -1,0 +1,5 @@
+<design:component>
+    <design:attribute name="recordId" label="Record Id of record being routed"/>
+    <design:attribute name="jobId" label="Apex job ID being routed by LeanData"/>
+      
+</design:component>

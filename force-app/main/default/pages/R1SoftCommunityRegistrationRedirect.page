@@ -1,0 +1,12 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+
+<script>
+
+window.location.replace("http://www.r1soft.com/support-registration");
+
+</script>
+
+<p>You should now be redirected to the R1Soft Customer Support Portal registration page. If you have not been redirected please <a href="http://www.r1soft.com/support-registration">click here</a>.</p>
+
+</apex:page>

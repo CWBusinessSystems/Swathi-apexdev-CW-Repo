@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_RenewalJobStatusCheck__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checked=Active, Uncheckec=Inactive. Switch to Turn ON/OFF the retry code for CWS_RenewalBatch.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checked=Active, Uncheckec=Inactive. Switch to Turn ON/OFF the retry code for CWS_RenewalBatch.</inlineHelpText>
+    <label>RenewalJobStatusCheck</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

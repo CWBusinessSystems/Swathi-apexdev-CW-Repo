@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Total_Endpoints__c</fullName>
+    <externalId>false</externalId>
+    <formula>nullvalue(CWS_No_of_Servers_Managed__c,0) + nullvalue( CWS_No_of_Workstations__c ,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total of # of Workstations plus # of Servers Managed</inlineHelpText>
+    <label>Total Endpoints</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

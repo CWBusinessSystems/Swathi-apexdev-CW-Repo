@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Item</fullName>
+    <fields>CWS_Product__c</fields>
+    <fields>CWS_WhiteSpaceGroup__c</fields>
+    <fields>CWS_Source__c</fields>
+    <fields>CWS_MRR__c</fields>
+    <fields>CWS_SKU__c</fields>
+    <label>Billing Item</label>
+</CompactLayout>

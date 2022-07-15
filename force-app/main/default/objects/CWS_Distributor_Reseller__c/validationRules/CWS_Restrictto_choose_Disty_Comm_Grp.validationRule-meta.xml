@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Restrictto_choose_Disty_Comm_Grp</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(
+$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(ISPICKVAL(CWS_Distributor_for_Community_Group__c,&apos;&apos;)),
+TEXT(CWS_Distributor_for_Community_Group__c)  &lt;&gt; TEXT(CWS_Distributor_ResellerAcc__r.CWS_Disti_Logic__c) 
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Distributor_for_Community_Group__c</errorDisplayField>
+    <errorMessage>You can only select Distributor for Community Group if you belong to that distributor</errorMessage>
+</ValidationRule>

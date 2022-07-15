@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Recontract_New_Business_Close_First</fullName>
+    <active>true</active>
+    <description>Ensure that the New Business Opportunity of a Re-contract transaction is Closed Won before the Cancel Opportunity</description>
+    <errorConditionFormula>NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)&amp;&amp;
+ISPICKVAL(StageName, &apos;Closed Won&apos;) &amp;&amp;
+NOT(ISBLANK( SBQQ__PrimaryQuote__r.CWS_Recontract_New_Opportunity__c )) &amp;&amp;
+SBQQ__PrimaryQuote__r.CWS_Recontract_New_Quote__r.CWS_Master__c  = true &amp;&amp;
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.CWS_Recontract_New_Opportunity__r.StageName, &apos;Closed Won&apos;))</errorConditionFormula>
+    <errorMessage>The New Business Master Re-contract Opportunity must be Closed Won before moving this cancel opportunity to Closed Won.</errorMessage>
+</ValidationRule>

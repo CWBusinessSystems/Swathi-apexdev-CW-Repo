@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Reason__c</fullName>
+    <description>High-level reason for the credit.</description>
+    <externalId>false</externalId>
+    <label>Primary Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HD Service Issue</fullName>
+                <default>false</default>
+                <label>HD Service Issue</label>
+            </value>
+            <value>
+                <fullName>NOC Service Issue</fullName>
+                <default>false</default>
+                <label>NOC Service Issue</label>
+            </value>
+            <value>
+                <fullName>Partner Provisioning Error</fullName>
+                <default>false</default>
+                <label>Partner Provisioning Error</label>
+            </value>
+            <value>
+                <fullName>Pricing Agreement Discount</fullName>
+                <default>false</default>
+                <label>Pricing Agreement Discount</label>
+            </value>
+            <value>
+                <fullName>Product Issue</fullName>
+                <default>false</default>
+                <label>Product Issue</label>
+            </value>
+            <value>
+                <fullName>Promotion Discount</fullName>
+                <default>false</default>
+                <label>Promotion Discount</label>
+            </value>
+            <value>
+                <fullName>Vault Cancellation</fullName>
+                <default>false</default>
+                <label>Vault Cancellation</label>
+            </value>
+            <value>
+                <fullName>Bank Fees</fullName>
+                <default>false</default>
+                <label>Bank Fees</label>
+            </value>
+            <value>
+                <fullName>Sales Tax</fullName>
+                <default>false</default>
+                <label>Sales Tax</label>
+            </value>
+            <value>
+                <fullName>Write-Off</fullName>
+                <default>false</default>
+                <label>Write-Off</label>
+            </value>
+            <value>
+                <fullName>Onboarding issue</fullName>
+                <default>false</default>
+                <label>Onboarding issue</label>
+            </value>
+            <value>
+                <fullName>Waive Fee</fullName>
+                <default>false</default>
+                <label>Waive Fee</label>
+            </value>
+            <value>
+                <fullName>Support Service Issue</fullName>
+                <default>false</default>
+                <label>Support Service Issue</label>
+            </value>
+            <value>
+                <fullName>Invoice Error</fullName>
+                <default>false</default>
+                <label>Invoice Error</label>
+            </value>
+            <value>
+                <fullName>Pricing Error</fullName>
+                <default>false</default>
+                <label>Pricing Error</label>
+            </value>
+            <value>
+                <fullName>Contract Surcharge</fullName>
+                <default>false</default>
+                <label>Contract Surcharge</label>
+            </value>
+            <value>
+                <fullName>Processing Delay - Contract Re-Write</fullName>
+                <default>false</default>
+                <label>Processing Delay - Contract Re-Write</label>
+            </value>
+            <value>
+                <fullName>Processing Delay - Downgrade</fullName>
+                <default>false</default>
+                <label>Processing Delay - Downgrade</label>
+            </value>
+            <value>
+                <fullName>Processing Delay - Contract Cancellation</fullName>
+                <default>false</default>
+                <label>Processing Delay - Contract Cancellation</label>
+            </value>
+            <value>
+                <fullName>Contract Disputes - Sales</fullName>
+                <default>false</default>
+                <label>Contract Disputes - Sales</label>
+            </value>
+            <value>
+                <fullName>Courtesy Credit - Escalation</fullName>
+                <default>false</default>
+                <label>Courtesy Credit - Escalation</label>
+            </value>
+            <value>
+                <fullName>Courtesy Credit - Sales Discretionary</fullName>
+                <default>false</default>
+                <label>Courtesy Credit - Sales Discretionary</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Courtesy Credit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Courtesy Credit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Accounting_Software__c</fullName>
+    <description>Demo Task Type Field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures which competitor Accounting Software the prospect currently uses.</inlineHelpText>
+    <label>Accounting Software</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quickbooks on Prem</fullName>
+                <default>false</default>
+                <label>Quickbooks on Prem</label>
+            </value>
+            <value>
+                <fullName>QBO</fullName>
+                <default>false</default>
+                <label>QBO</label>
+            </value>
+            <value>
+                <fullName>Sage Intact</fullName>
+                <default>false</default>
+                <label>Sage Intact</label>
+            </value>
+            <value>
+                <fullName>Sage 50</fullName>
+                <default>false</default>
+                <label>Sage 50</label>
+            </value>
+            <value>
+                <fullName>Sage Canada</fullName>
+                <default>false</default>
+                <label>Sage Canada</label>
+            </value>
+            <value>
+                <fullName>Sage 300</fullName>
+                <default>false</default>
+                <label>Sage 300</label>
+            </value>
+            <value>
+                <fullName>Dynamics 365</fullName>
+                <default>false</default>
+                <label>Dynamics 365</label>
+            </value>
+            <value>
+                <fullName>EAutomate</fullName>
+                <default>false</default>
+                <label>EAutomate</label>
+            </value>
+            <value>
+                <fullName>Great Plains</fullName>
+                <default>false</default>
+                <label>Great Plains</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

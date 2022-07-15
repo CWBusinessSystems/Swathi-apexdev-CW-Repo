@@ -1,0 +1,7 @@
+<aura:component implements="force:lightningQuickAction,lightning:availableForFlowScreens" extends="c:CWS_BaseSuperComponent" access="global">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="trialRecordId" type="String" />
+    <p class="slds-p-bottom_xx-large">Record successfully created.</p>
+    <p class="slds-p-bottom_xx-large">Click <a href="javascript:void(0)" onclick="{!c.invokeRec}">here</a> to view the new record.</p>
+    <p>Click the "Finish" button to be redirected to the original page.</p>
+</aura:component>

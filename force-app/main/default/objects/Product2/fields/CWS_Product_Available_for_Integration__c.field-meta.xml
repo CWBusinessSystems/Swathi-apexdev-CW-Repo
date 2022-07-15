@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Product_Available_for_Integration__c</fullName>
+    <description>Product Available for Integration</description>
+    <externalId>false</externalId>
+    <formula>AND(
+IsActive,
+NOT(ISBLANK(CWS_ProductCode__c)), 
+NOT(ISBLANK(TEXT(CWS_ChargeType__c))),
+NOT(ISBLANK(TEXT(CWS_Sub_Category__c))),
+NOT(ISBLANK(TEXT(CWS_License_Type__c)))		
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Product Available for Integration</inlineHelpText>
+    <label>Product Available for Integration</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

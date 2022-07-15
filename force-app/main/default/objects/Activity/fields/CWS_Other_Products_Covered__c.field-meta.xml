@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Other_Products_Covered__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures any other products that may have also been covered from the Demo.</inlineHelpText>
+    <label>Other Products Covered</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assist</fullName>
+                <default>false</default>
+                <label>Assist</label>
+            </value>
+            <value>
+                <fullName>Automate</fullName>
+                <default>false</default>
+                <label>Automate</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>Command</fullName>
+                <default>false</default>
+                <label>Command</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>Enable</fullName>
+                <default>false</default>
+                <label>Enable</label>
+            </value>
+            <value>
+                <fullName>ITBoost</fullName>
+                <default>false</default>
+                <label>ITBoost</label>
+            </value>
+            <value>
+                <fullName>Manage</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>Platform</fullName>
+                <default>false</default>
+                <label>Platform</label>
+            </value>
+            <value>
+                <fullName>Recover</fullName>
+                <default>false</default>
+                <label>Recover</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Identify Assessment</fullName>
+                <default>false</default>
+                <label>ConnectWise Identify Assessment</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Risk Assessment</fullName>
+                <default>false</default>
+                <label>ConnectWise Risk Assessment</label>
+            </value>
+            <value>
+                <fullName>ConnectWise MDR with Bitdefender</fullName>
+                <default>false</default>
+                <label>ConnectWise MDR with Bitdefender</label>
+            </value>
+            <value>
+                <fullName>ConnectWise MDR with SentinelOne Complete</fullName>
+                <default>false</default>
+                <label>ConnectWise MDR with SentinelOne Complete</label>
+            </value>
+            <value>
+                <fullName>ConnectWise SaaS Security</fullName>
+                <default>false</default>
+                <label>ConnectWise SaaS Security</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Co-Managed SIEM</fullName>
+                <default>false</default>
+                <label>ConnectWise Co-Managed SIEM</label>
+            </value>
+            <value>
+                <fullName>ConnectWise Endpoint Policy Management</fullName>
+                <default>false</default>
+                <label>ConnectWise Endpoint Policy Management</label>
+            </value>
+            <value>
+                <fullName>MSP+ Foundation Pack</fullName>
+                <default>false</default>
+                <label>MSP+ Foundation Pack</label>
+            </value>
+            <value>
+                <fullName>3rd Party- Acronis</fullName>
+                <default>false</default>
+                <label>3rd Party- Acronis</label>
+            </value>
+            <value>
+                <fullName>3rd Party- Veeam</fullName>
+                <default>false</default>
+                <label>3rd Party- Veeam</label>
+            </value>
+            <value>
+                <fullName>3rd Party- StorageCraft</fullName>
+                <default>false</default>
+                <label>3rd Party- StorageCraft</label>
+            </value>
+            <value>
+                <fullName>3rd Party- Backup</fullName>
+                <default>false</default>
+                <label>3rd Party- Backup</label>
+            </value>
+            <value>
+                <fullName>3rd Party- Security</fullName>
+                <default>false</default>
+                <label>3rd Party- Security</label>
+            </value>
+            <value>
+                <fullName>Fortify</fullName>
+                <default>false</default>
+                <label>Fortify</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

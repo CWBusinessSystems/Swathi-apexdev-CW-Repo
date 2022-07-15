@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Status_And_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>CWS_Trial_Status__c + if( !ispickval( CWS_Purchase_Type__c ,&apos;&apos;),&apos; - &apos;+Text( CWS_Purchase_Type__c ),&apos;&apos;) + if( !isblank(CWS_License_Type__c),&apos; - &apos; + CWS_License_Type__c,&apos;&apos;)</formula>
+    <label>Status and Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

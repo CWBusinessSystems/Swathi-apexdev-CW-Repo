@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Billing_Schedule__c</fullName>
+    <description>Promo can only be applied on specified billing schedule if populated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Promo can only be applied on specified billing schedule if populated</inlineHelpText>
+    <label>Billing Schedule</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual</fullName>
+                <default>false</default>
+                <label>Annual</label>
+            </value>
+            <value>
+                <fullName>Bi-Annual</fullName>
+                <default>false</default>
+                <label>Bi-Annual</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>One-Time</fullName>
+                <default>false</default>
+                <label>One-Time</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Semi-Annual</fullName>
+                <default>false</default>
+                <label>Semi-Annual</label>
+            </value>
+            <value>
+                <fullName>Tri-Annual</fullName>
+                <default>false</default>
+                <label>Tri-Annual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

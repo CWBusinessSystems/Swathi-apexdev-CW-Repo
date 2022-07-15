@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ryan_Perch_View</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>CWS_Route_to_Market__c</columns>
+    <columns>CWS_Description__c</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>PRODUCT2.PRODUCT_CLASS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.FAMILY</field>
+        <operation>contains</operation>
+        <value>Perch</value>
+    </filters>
+    <filters>
+        <field>CWS_Route_to_Market__c</field>
+        <operation>includes</operation>
+        <value>IIT</value>
+    </filters>
+    <label>Ryan Perch View</label>
+</ListView>

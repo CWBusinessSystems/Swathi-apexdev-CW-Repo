@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Max_SKU__c</fullName>
+    <description>Maximum selling requirement is needed for this particular SKU to use this promo</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Maximum selling requirement is needed for this particular SKU to use this promo</inlineHelpText>
+    <label>Max SKU</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,108 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="CWS_AmendContractController">
+    <aura:handler name ="init" value = "{!this}" action ="{!c.initHandler}"/> 
+    <aura:attribute name="CanAmend" type="String" default='' />
+    <aura:attribute name="showErrors" type="Boolean" />
+    <aura:attribute name="errorMessage" type="String" />
+    <aura:attribute name="listControllingValues" type="list" default="[]" description="to store controller field values"/>
+    <aura:attribute name="listDependingValues" type="list" default="['--- None ---']" description="to store dependent field values"/>
+    <aura:attribute name="dependentFieldMap" type="map" description="map to store dependent values with controlling value"/>
+    <aura:attribute name="bDisabledDependentFld" type="boolean" default="true"/> 
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="objDetail" type="contract" default="{'sobjectType' : 'contract'}"/>
+    <aura:attribute name="controllingFieldAPI" type="string" default="CWS_TransactionReason__c" description="store field API name of Controller field"/>
+    <aura:attribute name="dependingFieldAPI" type="string" default="CWS_ConversionType__c" description="store field API name of dependent field"/>
+    <aura:attribute name="condition" type="Boolean" default="true"/>
+    <aura:attribute name="Type" type="Boolean" default="true"/>
+    <aura:attribute name="showaltError" type="Boolean" />
+    
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+</aura:html>  
+    
+    <!--Controller Field-->
+    <div class="slds-col modal-header slds-modal__header">
+        <h2 class="title slds-text-heading--medium">Amend Contract</h2>
+    </div>
+    
+        <!--###### Error Message Div ######--> 
+        <aura:if isTrue="{!v.showErrors}">
+            
+            <!-- Show the message to ui -->
+            
+            <div class="slds-align_absolute-center slds-notify slds-notify_toast slds-theme_error">
+                
+                <span class="slds-assistive-text">error</span>
+                
+                <div class="slds-notify__content">
+                    <p class="slds-align_absolute-center"><lightning:icon iconName="utility:error" variant="inverse" alternativeText="Error!" title="Error"/>{!v.errorMessage}</p>
+                </div>
+                
+            </div>
+            <aura:set attribute="else">
+                <div class="slds-col modal-body scrollable slds-p-around--medium" style="height: 200px; max-height: 500px; overflow-y: auto !important">
+                    <div>
+                        <aura:if isTrue="{!v.showaltError}"> 
+                            <div class="slds-align_absolute-center slds-notify slds-notify_toast slds-theme_error" >
+                                <span class="slds-assistive-text">error</span>
+                                <div class="slds-notify__content">
+                                    <p class="slds-align_absolute-center"><lightning:icon iconName="utility:error" variant="inverse" alternativeText="Error!" title="Error"/>{!v.errorMessage}</p>
+                                </div>
+                            </div>
+                        </aura:if>    
+                        <lightning:layoutItem size="12" padding="around-small">    
+                            <lightning:select aura:id="transaction" name="controllerFld"
+                                              label="Transaction Reason"
+                                              onchange="{!c.onControllerFieldChange}">
+                                <aura:iteration items="{!v.listControllingValues}" var="val">
+                                    <option value="{!val}">{!val}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                        
+                        <!--Dependent Field-->
+                        <lightning:layoutItem size="12" padding="around-small">
+                            <lightning:select aura:id="conversion" name="dependentFld"
+                                              label="Conversion Type"
+                                              disabled="{!v.bDisabledDependentFld}">
+                                <aura:iteration items="{!v.listDependingValues}" var="val">
+                                    <option value="{!val}">{!val}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12" padding="around-small">
+                            <lightning:select aura:id="subType" name="subType" label="Quote Sub-Type"
+                                              disabled="{!v.condition}">
+                                <option value="None">---None---</option>
+                                <option value="Credit">Credit</option>
+                                <option value="Rebill">Rebill</option>
+                            </lightning:select>
+                        </lightning:layoutItem>    
+                        <lightning:layoutItem size="12" padding="around-small">
+                            <lightning:select aura:id="recontractType" name="recontractType" label="Re-Contract Type"
+                                              disabled="{!v.Type}">
+                                <option value="None">---None---</option>
+                                <option value="New Business Re-Contract">New Business Re-Contract</option>
+                                <option value="Existing Re-Contract Opportunity">Existing Re-Contract Opportunity</option>
+                            </lightning:select>
+                        </lightning:layoutItem>        
+                        
+                    </div>
+                </div>
+                <div class="slds-col modal-footer slds-modal__footer">        
+                    <lightning:button variant="neutral" label="Cancel" onclick="{! c.onCancel }" />      
+                    <lightning:button variant="brand" label="Amend" onclick="{! c.handleClick }" />
+                </div>
+            </aura:set>
+        </aura:if> 
+    
+</aura:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Activate_Status</fullName>
+    <active>false</active>
+    <errorConditionFormula>If(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&quot;Product2&quot;)&amp;&amp; ($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c==true),false,AND(CONTAINS(TEXT(CWS_Status__c),&apos;Billing Only&apos;), ISCHANGED(IsActive), NOT(IsActive)))</errorConditionFormula>
+    <errorMessage>You can&apos;t  mark the product to inactive if Billing only is True is CWS_status__c</errorMessage>
+</ValidationRule>

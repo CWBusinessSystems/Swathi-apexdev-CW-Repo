@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Account_State_mandatory</fullName>
+    <active>false</active>
+    <description>if the Country is United States, Canada, or Australia, then state is mandatory</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+ISBLANK(BillingState),
+OR(
+BillingCountry = &quot;Australia&quot;,
+BillingCountry = &quot;Canada&quot;,
+BillingCountry = &quot;United States&quot;
+)
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid State to proceed.</errorMessage>
+</ValidationRule>

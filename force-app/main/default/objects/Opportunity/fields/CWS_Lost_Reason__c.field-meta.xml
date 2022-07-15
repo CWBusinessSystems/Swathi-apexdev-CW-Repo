@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the reason for losing this Opportunity.</inlineHelpText>
+    <label>Lost Reason(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unresponsive / No Decision</fullName>
+                <default>false</default>
+                <label>Unresponsive / No Decision</label>
+            </value>
+            <value>
+                <fullName>Pricing / No Budget Competition</fullName>
+                <default>false</default>
+                <label>Pricing / No Budget Competition</label>
+            </value>
+            <value>
+                <fullName>Competition Price</fullName>
+                <default>false</default>
+                <label>Competition Price</label>
+            </value>
+            <value>
+                <fullName>Technology didn&apos;t meet needs</fullName>
+                <default>false</default>
+                <label>Technology didn&apos;t meet needs</label>
+            </value>
+            <value>
+                <fullName>Went Direct</fullName>
+                <default>false</default>
+                <label>Went Direct</label>
+            </value>
+            <value>
+                <fullName>Account Restricted</fullName>
+                <default>false</default>
+                <label>Account Restricted</label>
+            </value>
+            <value>
+                <fullName>Legacy CMS Record</fullName>
+                <default>false</default>
+                <label>Legacy CMS Record</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Renewal with Change</fullName>
+                <default>false</default>
+                <label>Renewal with Change</label>
+            </value>
+            <value>
+                <fullName>Amend Contract</fullName>
+                <default>false</default>
+                <label>Amend Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

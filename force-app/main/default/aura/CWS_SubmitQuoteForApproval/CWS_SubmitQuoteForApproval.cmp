@@ -1,0 +1,65 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+    controller="CWS_SubmitQuoteForApproval">
+
+    <!-- Component Global Attributes -->
+    <aura:attribute name="quoteRecord" type="Object" access="global" />
+    <aura:attribute name="simpleQuoteRecord" type="Object" access="global" />
+    <aura:attribute name="recordError" type="String" access="global" />
+    <aura:attribute name="errorMessage" type="String" access="global" />
+    <aura:attribute name="isOpen" type="boolean" default="false" access="global" />
+    <aura:attribute name="displayError" type="boolean" default="true" access="global" />
+    <aura:attribute name="alertMessage" type="String" default="true" access="global" />
+
+    <aura:attribute name="lstAlertMessage" type="List" default="[]" access="global" />
+
+    <!-- Aura Component Attributes -->
+    <aura:attribute name="errorToastComponent" type="Aura.Component[]" access="global" />
+
+    <!-- Aura Dependencies -->
+    <aura:dependency resource="markup://c:CWS_ErrorToastComponent" type="COMPONENT" />
+
+    <!-- Load Quote Record using Lightning Data Service (Beta) -->
+    <force:recordData aura:id="recordLoader" recordId="{!v.recordId}" layoutType="FULL" mode="VIEW"
+        targetRecord="{!v.quoteRecord}" targetFields="{!v.simpleQuoteRecord}" targetError="{!v.recordError}" fields="SBQQ__Primary__c,CWS_Renewal_Type__c,CWS_Legal_Entity__c,SBQQ__LineItemCount__c,
+              SBQQ__PaymentTerms__c,CWS_Ship_To_Account__c,CWS_Ship_To_Contact__c,CWS_Bill_To_Account__c,CWS_Reseller_Account__c,CWS_Addendum_Number__c,CWS_Master__c,
+              CWS_Bill_To_Contact__c,SBQQ__Account__c,SBQQ__PrimaryContact__c,CWS_Quote_ACV__c,CWS_Promotion__r.CWS_ACV__c,SBQQ__Opportunity2__c,SBQQ__Opportunity2__r.CWS_Source_By__c,
+              CWS_Transaction_Reason__c,CWS_Route_to_Market__c,CWS_2_Tier_Authorized_Reseller__c, CWS_Quote_Type__c,SBQQ__PrimaryContact__r.CWS_Primary_Contact__c,SBQQ__PrimaryContact__r.CWS_Primary_Billing_Contact__c"
+        recordUpdated="{!c.handleRecordUpdated}" />
+
+    <!-- Error Toast Component -->
+    <div class="slds-m-around_xx-large">
+        <aura:if isTrue="{!v.displayError}">
+            {!v.errorToastComponent}
+            <div class="spinnerHolder">
+                <lightning:spinner aura:id="spinner" variant="brand" size="medium" class="spinner" />
+            </div>
+        </aura:if>
+        <aura:if isTrue="{!v.isOpen}">
+            <!--   
+        <center>
+                <h3 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>Confirm Submitting For
+                        Approval</b></h3>
+            </center>
+
+            --> 
+            <ui:message title="Warning" severity="warning" closable="false">
+                Once quote is approved you will not be able to make any more changes without cloning it.
+                Please ensure the opportunity and quote data is populated accurately and no further updates are
+                needed before submitting for approval.
+            </ui:message>
+
+            <aura:iteration items="{! v.lstAlertMessage }" var="alertMessage1">
+                <ui:message title="Warning" severity="warning" closable="false">
+                    {!alertMessage1}
+                </ui:message>
+            </aura:iteration>
+            <br/>
+            <center>
+                <lightning:button label="Back to Quote" title="Back to Quote" onclick="{!c.closeModel }" />
+                <lightning:button variant="brand" label="Submit For Approval" title="Submit For Approval"
+                    onclick="{!c.submit}" />
+            </center>
+        </aura:if>
+
+    </div>
+</aura:component>

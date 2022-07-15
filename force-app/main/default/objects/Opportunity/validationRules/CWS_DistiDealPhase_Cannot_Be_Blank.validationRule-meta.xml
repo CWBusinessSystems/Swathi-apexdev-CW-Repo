@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_DistiDealPhase_Cannot_Be_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(ISNEW()),
+NOT(ISBLANK( CWS_Bill_To_Account__c )),
+CWS_Bill_To_Account__r.CWS_Distributor_Logic_Exclusion__c = true,
+ISPICKVAL(CWS_Route_to_Market__c, &apos;Channel&apos;),
+ISBLANK(TEXT( CWS_Disti_Deal_Phase__c))
+)</errorConditionFormula>
+    <errorMessage>Please select the applicable Disti Deal Phase to proceed with quote creation.</errorMessage>
+</ValidationRule>

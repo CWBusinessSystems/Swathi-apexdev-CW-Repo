@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Renewable_RenewalQuote_Validation</fullName>
+    <active>true</active>
+    <description>Cannot create a renewal quote from contract when the Renewal Type on Contract is &apos;Non-Renewable&apos;</description>
+    <errorConditionFormula>IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c, &quot;Contract&quot;) ,$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c), FALSE,
+AND(
+ISCHANGED(SBQQ__RenewalQuoted__c),
+SBQQ__RenewalQuoted__c=true,
+ISPICKVAL(CWS_Renewal_Type__c,&apos;Non-Renewable&apos;)
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot create a renewal quote since this contract is selected as non-renewable</errorMessage>
+</ValidationRule>

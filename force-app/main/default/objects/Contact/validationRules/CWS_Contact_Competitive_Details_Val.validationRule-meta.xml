@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Contact_Competitive_Details_Val</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c) , ISBLANK( CWS_Competitive_Details__c ) , ISPICKVAL(CWS_Recycled_Reason__c, &quot;Went With Competitor&quot;))</errorConditionFormula>
+    <errorDisplayField>CWS_Competitive_Details__c</errorDisplayField>
+    <errorMessage>Please select Competitive Details to continue.</errorMessage>
+</ValidationRule>

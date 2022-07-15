@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_AvgNoOfDaysMissingforImmediatePrvsng</fullName>
+    <active>true</active>
+    <description>Avg number of days should be mentioned for products with immediate provisioning</description>
+    <errorConditionFormula>If(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&quot;Product2&quot;)&amp;&amp; ($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c==true),false,AND(
+ ISBLANK( CWS_Avg_Number_of_Days__c),
+ ISPICKVAL( CWS_Provisioning_Eligibility__c, &apos;Immediate&apos;) 
+))</errorConditionFormula>
+    <errorDisplayField>CWS_Avg_Number_of_Days__c</errorDisplayField>
+    <errorMessage>Please enter a value for Avg Number of Days when the Provisioning Eligibility is Immediate</errorMessage>
+</ValidationRule>

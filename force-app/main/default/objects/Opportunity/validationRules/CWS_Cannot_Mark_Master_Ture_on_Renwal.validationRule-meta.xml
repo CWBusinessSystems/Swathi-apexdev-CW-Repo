@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Cannot_Mark_Master_Ture_on_Renwal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ISPICKVAL(Type,&apos;Renewal&apos;),
+ISCHANGED(CWS_Master__c),
+CWS_Master__c = true
+)</errorConditionFormula>
+    <errorDisplayField>CWS_Master__c</errorDisplayField>
+    <errorMessage>An opportunity cannot be marked as master if it is originally a non master opportunity</errorMessage>
+</ValidationRule>

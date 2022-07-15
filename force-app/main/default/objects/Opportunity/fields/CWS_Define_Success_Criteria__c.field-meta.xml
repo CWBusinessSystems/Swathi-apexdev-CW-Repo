@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Define_Success_Criteria__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the most important factors that play into the evaluation and ultimately guide the prospect to decision.</inlineHelpText>
+    <label>Define success criteria</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

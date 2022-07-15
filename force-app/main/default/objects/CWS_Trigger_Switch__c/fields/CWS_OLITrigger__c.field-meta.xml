@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_OLITrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Switch for OpportunityLineItem Trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checked = Active
+Unchecked = Inactive</inlineHelpText>
+    <label>OpportunityLineItem Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

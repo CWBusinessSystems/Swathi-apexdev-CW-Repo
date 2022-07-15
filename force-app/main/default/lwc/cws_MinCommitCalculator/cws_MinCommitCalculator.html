@@ -1,0 +1,280 @@
+<!--
+Ad Victoriam Solutions - CW11-P1-SFDX-rwdev
+Purpose: provide an interface to calculate CWS Min Commit Increases
+Dependencies:cws_MinCommitCalculatorController, cws_MinCommitCalculatorControllerTest
+Changelog:
+    16 Sep 2021 by chase.brammer for CW11-67
+        - added additional column to roll up Primary Quote Line MRRs
+    17 Aug 2021 by chase.brammer for CW11-07
+        - Created initial file.
+-->
+
+<!-- Min Commit Calculator -->
+
+<template>
+    <div class="slds-card slds-card_boundary">
+        <div style="background: #fafaf9">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:calculated_insights"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            <span style="font-size: larger">{COMPONENT_TITLE}</span>
+                        </h2>
+                    </div>
+
+                    <!-- CALCULATOR CONTROLS -->
+                    <lightning-layout horizontal-align="end" vertical-align="center">
+                        <!-- CONDITIONAL DISPLAY OF PERCENT INCREASE OF PRIOR BILLING PERIOD -->
+                        <template if:true={isPercentInputVisible}>
+                            <lightning-layout-item>
+                                <lightning-input
+                                        id="percentInput"
+                                        type="number"
+                                        name="percentInput"
+                                        value={percentOfPriorBillingPeriodForIncrease}
+                                        onchange={updateNewMinCommitPercent}
+                                        onkeypress={handleKeyPressInNewMinCommitPercent}
+                                        placeholder="##.####"
+                                        formatter="percent"
+                                        step="0.0001"
+                                        label="Min Commit %">
+                                </lightning-input>
+                            </lightning-layout-item>
+                            <lightning-layout-item class="slds-m-top_medium" padding="horizontal-small">
+                                <lightning-button-icon
+                                                id="percentButton"
+                                                name="percentButton"
+                                                icon-name="utility:percent"
+                                                alternative-text="Default Min Commits by Percent"
+                                                variant="brand"
+                                                title="Default Min Commits by Percent"
+                                                onclick={handlePercentButtonClick}>
+                                </lightning-button-icon>
+                            </lightning-layout-item>
+                        </template>
+
+                        <!-- TERM INPUT IS DISABLED FOR NOW -->
+<!--                        <lightning-layout-item>-->
+<!--                            &lt;!&ndash; TERM INPUT &ndash;&gt;-->
+<!--                            <lightning-input-->
+<!--                                        type="number"-->
+<!--                                        name="termInput"-->
+<!--                                        value={term}-->
+<!--                                        onchange={updateTermValue}-->
+<!--                                        onkeypress={handleKeyPressInTermInput}-->
+<!--                                        placeholder="##"-->
+<!--                                        label="Term (Months)">-->
+<!--                            </lightning-input>-->
+<!--                        </lightning-layout-item>-->
+<!--                        <lightning-layout-item class="slds-m-top_medium" padding="horizontal-small">-->
+<!--                            &lt;!&ndash; TERM INPUT SUBMIT BUTTON &ndash;&gt;-->
+<!--                            <lightning-button-icon-->
+<!--                                        icon-name="utility:monthlyview"-->
+<!--                                        alternative-text="Default Min Commits by Percent"-->
+<!--                                        variant="brand"-->
+<!--                                        title="Calculate ACVs"-->
+<!--                                        onclick={calculateACVs}>-->
+<!--                            </lightning-button-icon>-->
+<!--                        </lightning-layout-item>-->
+                        <!-- END TERM INPUT DISABLED -->
+
+                        <!-- SELECT CALCULATE METHOD -->
+                        <lightning-layout-item>
+                                <lightning-combobox name="increaseCalculationMethodCombobox"
+                                                label="Calculation Method"
+                                                options={increaseCalculationMethodOptions}
+                                                value={increaseCalculationMethod}
+                                                onchange={handleIncreaseCalculationMethodChange}
+                                                variant="standard">
+                                </lightning-combobox>
+                            </lightning-layout-item>
+                        <lightning-layout-item class="slds-m-top_medium" padding="horizontal-small">
+                            <!-- RESET BUTTON -->
+                            <lightning-button-icon
+                                    id="resetButton"
+                                    name="resetButton"
+                                    icon-name="utility:refresh"
+                                    alternative-text="Reset"
+                                    variant="brand"
+                                    title="Reset"
+                                    onclick={handleClickResetButton}>
+                            </lightning-button-icon>
+                        </lightning-layout-item>
+                    </lightning-layout>
+
+                </header>
+            </div>
+            <!-- END HEADER / BEGIN BODY -->
+            <div class="slds-card__body">
+                <div style="width: 100%">
+                    <!-- CORRECT STATIC MAX HEIGHT FOR TABLE IS 469px @ 15 data rows -->
+                    <div style="overflow-y: auto; max-height: 500px">
+                        <lightning-datatable
+                                show-row-number-column="true"
+                                key-field="whiteSpaceGroup"
+                                data={rowData}
+                                columns={columns}
+                                is-loading={isLoading}
+                                onsave={calculateNewMinCommitIncrease}
+                                draft-values={draftRowData}
+                                oncellchange={updateRowDataWithDraftRowData}
+                                hide-checkbox-column="true"
+                                resize-column-disabled="true"
+                                suppress-bottom-bar="true"
+                                default-sort-direction={DEFAULT_SORT_DIRECTION}
+                                sorted-direction={sortDirection}
+                                sorted-by={sortField}
+                                onsort={handleSort}
+                                enable-infinite-loading="true"
+                                load-more-offset="20">
+                        </lightning-datatable>
+                    </div>
+                    <div class="">
+                        <table role="grid" class="slds-table slds-table_bordered slds-table_fixed-layout">
+                            <tbody>
+                            <tr class="slds-hint-parent" tabindex="-1">
+                                <td class="slds-cell-fixed" style="width: 4.75%">
+                                    <span class="slds-grid slds-grid_align-center">+</span>
+                                </td>
+                                <td role="gridcell" tabindex="-1" style="width: 18.86%">
+                                     <span class="slds-grid slds-grid_align-spread">
+                      <span class="slds-truncate" style="font-weight: bold">
+                        TOTALS
+                      </span>
+                    </span>
+                                </td>
+                                <td role="gridcell" tabindex="-1" style="width: 18.86%">
+                    <span class="slds-grid slds-grid_align-end">
+                      <span class="slds-truncate" style="font-weight: bold">
+                        <lightning-formatted-number
+                                value={rowTotals.snaplineTotal}
+                                format-style="currency"
+                                currency-code={currencyCode}
+                                currency-display-as="symbol">
+                        </lightning-formatted-number>
+                      </span>
+                    </span>
+                                </td>
+                                <td role="gridcell" tabindex="-1" style="width: 18.86%">
+                    <span class="slds-grid slds-grid_align-end">
+                      <span class="slds-truncate" style="font-weight: bold">
+                        <lightning-formatted-number
+                                value={rowTotals.priorBillingPeriodTotal}
+                                format-style="currency"
+                                currency-code={currencyCode}
+                                currency-display-as="symbol">
+                        </lightning-formatted-number>
+                      </span>
+                    </span>
+                                </td>
+                                <td role="gridcell" tabindex="-1" style="width: 18.86%">
+                    <span class="slds-grid slds-grid_align-end">
+                      <span class="slds-truncate" style="font-weight: bold">
+                        <lightning-formatted-number
+                                value={rowTotals.quoteMRRsTotal}
+                                format-style="currency"
+                                currency-code={currencyCode}
+                                currency-display-as="symbol">
+                        </lightning-formatted-number>
+                      </span>
+                    </span>
+                                </td>
+                                <td role="gridcell" tabindex="-1" style="width: 18.86%">
+                    <span class="slds-grid slds-grid_align-end">
+                      <span class="slds-truncate" style="
+                          font-weight: bold;
+                          color: black;
+                          padding-right: 28px;
+                        " data-id="minCommitText">
+                        <lightning-formatted-number
+                                value={rowTotals.newMinCommitIncreaseTotal}
+                                format-style="currency"
+                                currency-code={currencyCode}
+                                currency-display-as="symbol">
+                        </lightning-formatted-number>
+                      </span>
+                    </span>
+                                </td>
+                                <td style="width: 1.8%"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- summary data -->
+            <div style="justify-content: center">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-3">
+                        <div class="slds-m-around_x-small">
+                            <!-- EMPTY COLUMN -->
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <div class="slds-m-around_x-small">
+                            <!-- EMPTY COLUMN -->
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <div class="slds-m-around_x-small">
+                            <span style="font-weight: bold">INCREMENTAL ACV: </span>
+                            <lightning-formatted-number
+                                    value={incrementalACV}
+                                    format-style="currency"
+                                    currency-code={currencyCode}
+                                    currency-display-as="symbol">
+                            </lightning-formatted-number>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESET WARNING MODALS -->
+        <template if:true={isOverwriteModal}>
+            <div class="slds-modal slds-fade-in-open slds-backdrop">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <lightning-button-icon name="closeButton" icon-name="utility:close" alternative-text="Close" size="large"
+                                               variant="bare-inverse" onclick={handleCloseModalClick}
+                                               class="slds-modal__close">
+                        </lightning-button-icon>
+                        <h2><b>{RESET_WARNING_TITLE}</b></h2>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <p>{RESET_WARNING_TEXT}</p>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <lightning-layout horizontal-align="center" vertical-align="center">
+                            <lightning-layout-item padding="horizontal-small">
+                                <lightning-button name="cancelButton" icon-name="utility:close" label="Cancel" variant="brand"
+                                                  onclick={handleCloseModalClick}></lightning-button>
+                            </lightning-layout-item>
+                            <template if:true={isNewMinCommitIncreaseMethodChangeButton}>
+                                <lightning-layout-item padding="horizontal-small">
+                                    <lightning-button icon-name="utility:check" label="Recalculate" variant="destructive"
+                                                      onclick={calculateNewMinCommitIncrease}></lightning-button>
+                                </lightning-layout-item>
+                            </template>
+                            <template if:true={isResetButton}>
+                                <lightning-layout-item padding="horizontal-small">
+                                    <lightning-button icon-name="utility:check" label="Reset" variant="destructive"
+                                                      onclick={handleReset}></lightning-button>
+                                </lightning-layout-item>
+                            </template>
+                            <template if:true={isPercentButton}>
+                                <lightning-layout-item padding="horizontal-small">
+                                    <lightning-button icon-name="utility:check" label="Change Percentage" variant="destructive"
+                                                      onclick={calculateNewMinCommitIncrease}></lightning-button>
+                                </lightning-layout-item>
+                            </template>
+                        </lightning-layout>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

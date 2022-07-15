@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_GBs_of_Live_Data_being_Protected__c</fullName>
+    <description>Gigabytes of Live Data they need to Backup (Not how much space is consumed in current backup system)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures the Gigabytes of Live Data the prospect needs to Backup (Not how much space is consumed in current backup system)</inlineHelpText>
+    <label>GBs of Live Data being Protected</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Number_of_billing_cycles__c</fullName>
+    <description>User should populate the number of billing cycles before return to list price as suggested here. Otherwise, it will be rejected by the approver.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User should populate the number of billing cycles before return to list price as suggested here. Otherwise, it will be rejected by the approver.</inlineHelpText>
+    <label>Number of billing cycles</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,410 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="html" controller="CWS_QuoteTemplateLineItemsCtrl" action="{!fetchData}"> 
+   
+    <block-container>
+        <block></block>
+        <apex:variable value="" var="donotuse" rendered="{! oneTimeProductsAvailable && wrap.linesMap['One-Time'] != null}">
+            <block font-weight="bold" margin-bottom="10px" visibility="hidden">One-time Billing:</block>
+                <table border-width="0.5px" border-style="solid" >
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0,'30%','34%')}"/>
+                    <table-column column-width="10%"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0,'10%','12%')}"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0,'10%','12%')}"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0,'11%','7%')}"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0 && wrap.isCustTotPriceSet,'6%',IF(wrap.linesMap['One-Time'].totDisc != 0,'10%',IF(wrap.isCustTotPriceSet,'10%','25%')))}"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0 ,'10%', IF(wrap.isCustTotPriceSet,'14%','0%'))}"/>
+                    <table-column column-width="{!IF(wrap.linesMap['One-Time'].totDisc != 0 && (wrap.isCustTotPriceSet),'11%','0%')}"/>
+                    <table-header>
+                        <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                                <table-cell border="1px solid black" padding="5" ><block>Description</block></table-cell>
+                                <table-cell border="1px solid black" padding="5" ><block>Spread/Ramp/Defer</block></table-cell>
+                                <table-cell border="1px solid black" padding="5" ><block>List</block></table-cell>
+                                <table-cell border="1px solid black" padding="5" ><block>Price</block></table-cell>
+                                <apex:outputPanel layout="none" rendered="{!wrap.linesMap['One-Time'].totDisc!=0}"><table-cell border="1px solid black" padding="5" ><block>Discount</block></table-cell></apex:outputPanel>
+                                <table-cell border="1px solid black" padding="5"  ><block>Qty</block></table-cell>
+                                <table-cell border="1px solid black" padding="5" ><block>Ext. Price</block></table-cell>
+                                <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}"><table-cell border="1px solid black" padding="5" ><block>Customer Total Price</block></table-cell></apex:outputPanel>
+                        </table-row>
+                    </table-header>
+                    <table-body>
+                        <apex:repeat var="ql" value="{!wrap.linesMap['One-Time'].lines}">
+                            <table-row>                   
+                                        <table-cell border="1px solid black" text-align="left" padding="5">
+                                            <block font-weight="bold" ><apex:outputText value="{!HTMLENCODE(ql.productName)}"/></block>
+                                            <block><apex:outputText value="{!HTMLENCODE(ql.productCode)}"/></block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block><apex:outputText value="{!ql.paymentPeriod}"/>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5">
+                                            <block><apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                <apex:param value="{!ql.lstPrice}"/></apex:outputText></block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block>
+                                                    <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                        <apex:param value="{!ql.price}"/>
+                                                    </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                        <apex:outputPanel layout="none" rendered="{!wrap.linesMap['One-Time'].totDisc!=0}">
+                                            <table-cell border="1px solid black" text-align="center" padding="5">
+                                                <block color="red"><apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                                    <apex:param value="{!ql.discAmnt}"/></apex:outputText></block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block><apex:outputText value="{0, number, ###}">
+                                                <apex:param value="{!ql.qty}"/></apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                         <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block>
+                                                <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                <apex:param value="{!ql.extPrice}"/>
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>                                                                       
+                                        <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}">
+                                            <table-cell border="1px solid black" text-align="center" padding="5" >
+                                                <block>
+                                                    <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                    <apex:param value="{!ql.custNetPrice}"/>
+                                                    </apex:outputText>
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                            </table-row>
+                            
+                                <table-row>
+                                    <table-cell border="1px solid black" number-columns-spanned="8" padding="5">
+                                        <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(ql.productDescription))}">
+                                            <block>
+                                                <apex:outputText >{!HTMLENCODE(ql.productDescription)}</apex:outputText>
+                                            </block>
+                                        </apex:outputPanel>
+                                        
+                                        <block>
+                                            &nbsp;
+                                        </block> 
+                                        
+                                        <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(ql.sowLink))}">
+                                            <block color="blue" >
+                                                <basic-link external-destination="{!(ql.sowLink)}" >{!sowLinkStaticText}</basic-link> 
+                                            </block>
+                                        </apex:outputPanel>
+                                    </table-cell>
+                                </table-row>
+                            
+                        </apex:repeat>
+                    </table-body>
+                </table>
+            
+                <block margin-top="20px" text-align="right">
+                    <apex:outputPanel layout="none" rendered="{!wrap.linesMap['One-Time'].totDisc!=0}">
+                        <block color="red">
+                            One-time Discount Value : <apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                <apex:param value="{!wrap.linesMap['One-Time'].totDisc}"/></apex:outputText>
+                        </block>
+                    </apex:outputPanel>
+                    <block keep-with-previous="always" space-after="1em"> 
+                        One-time Fees Sub-Total : <apex:outputText value="{0, number,{!wrap.currencySymbol}###,##0.00}">
+                            <apex:param value="{!wrap.linesMap['One-Time'].totFee}"/></apex:outputText>
+                    </block>
+                    <apex:outputPanel layout="none" rendered="{!wrap.linesMap['One-Time'].totDisc!=0}">
+                        <block keep-with-previous="always" color="red">* Discounts valid for this purchase only</block>
+                    </apex:outputPanel>
+                </block>
+        </apex:variable>
+    </block-container>
+    <block-container>
+        <block></block>
+        <apex:variable value="" var="donotuse" rendered="{!wrap.hasRecurrLines}">
+            <block font-weight="bold" margin-bottom="10px" margin-top="30px">Recurring Billing:</block>
+            <table border-width="0.5px" border-style="solid" >
+                <table-column column-width="{!IF(wrap.hasRecurrDisc,'30%','34%')}"/> <!-- Description -->
+                <table-column column-width="10%"/> <!--Spread Ramp -->
+                <table-column column-width="{!IF(wrap.hasRecurrDisc,'10%','12%')}"/> <!-- List Price -->
+                <table-column column-width="{!IF(wrap.hasRecurrDisc,'10%','12%')}"/> <!-- Net Price -->
+                <table-column column-width="{!IF(wrap.hasRecurrDisc,'11%','7%')}"/><!--disc-->
+                <table-column column-width="{!IF((wrap.hasRecurrDisc) && wrap.isCustTotPriceSet ,'6%',IF(wrap.hasRecurrDisc,'10%',IF(wrap.isCustTotPriceSet,'10%','25%')))}"/><!--qty-->
+                <table-column column-width="{!IF(wrap.hasRecurrDisc,'10%',IF(wrap.isCustTotPriceSet,'14%','0%'))}"/><!--ext price-->
+                <table-column column-width="{!IF((wrap.hasRecurrDisc) && wrap.isCustTotPriceSet,'11%','0%')}"/><!--total price-->
+                <table-header>
+                    <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                        <table-cell border="1px solid black" padding="5" width="180pt"><block>Description</block></table-cell>
+                        <table-cell border="1px solid black" padding="5" ><block>Spread/Ramp/Defer</block></table-cell>
+                        <table-cell border="1px solid black" padding="5" ><block>List</block></table-cell>
+                        <table-cell border="1px solid black" padding="5" ><block>Price</block></table-cell>
+                        <apex:outputPanel layout="none" rendered="{!wrap.hasRecurrDisc}"><table-cell border="1px solid black" padding="5" ><block>Discount</block></table-cell></apex:outputPanel>
+                        <table-cell border="1px solid black" padding="5" ><block>Qty</block></table-cell>
+                        <table-cell border="1px solid black" padding="5" ><block>Ext. Price</block></table-cell>
+                        <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}"><table-cell border="1px solid black" padding="5" ><block>Customer Total Price</block></table-cell></apex:outputPanel>
+                    </table-row>
+                </table-header>
+                <table-body>
+
+                <apex:repeat var="bType" value="{!wrap.bTypes}">
+                    <apex:variable value="" var="temp" rendered="{!bType != 'One-Time'}" >
+                            <apex:variable var="countNonMinComm" value="{!0}"/>
+                            <apex:repeat var="qline" value="{!wrap.linesMap[bType].lines}">
+                                <apex:variable var="countNonMinComm" value="{!countNonMinComm+1}" rendered="{!not(qline.minCommit)}"/>
+                            </apex:repeat>
+                            <apex:variable value="" var="temp1MinComm" rendered="{!countNonMinComm!=0}">
+                                <table-row>
+                                    <table-cell border="1px solid black" number-columns-spanned="8" padding="5">
+                                        <block font-weight="bold"><apex:outputText value="{!HTMLENCODE(bType)} Billing"></apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:variable>
+                            <apex:repeat var="qline" value="{!wrap.linesMap[bType].lines}">
+                                <apex:variable value="" var="temp2MinComm" rendered="{!not(qline.minCommit)}">
+                                <table-row>
+                                    <table-cell border="1px solid black" text-align="left" padding="5" width="175pt">
+                                        <block font-weight="bold" ><apex:outputText value="{!HTMLENCODE(qline.productName)}"/></block>
+                                        <block><apex:outputText value="{!HTMLENCODE(qline.productCode)}"/></block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5" >
+                                        <block><apex:outputText value="{!qline.paymentPeriod}"/>
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5">
+                                        <block><apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                            <apex:param value="{!qline.lstPrice}"/></apex:outputText></block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5" >
+                                        <block>
+                                            <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                    <apex:param value="{!qline.price}"/>
+                                                </apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!wrap.hasRecurrDisc}">
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block color="red"><apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                                <apex:param value="{!qline.discAmnt}"/></apex:outputText></block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border="1px solid black" text-align="center" padding="5" width="15pt">
+                                        <block><apex:outputText value="{0, number, ###}">
+                                            <apex:param value="{!qline.qty}"/></apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border="1px solid black" text-align="center" padding="5" >
+                                        <block>
+                                                <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                <apex:param value="{!qline.extPrice}"/>
+                                                </apex:outputText>                                            
+                                        </block>
+                                    </table-cell>                                                                       
+                                        <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}">
+                                            <table-cell border="1px solid black" text-align="center" padding="5" >
+                                                <block>
+                                                    <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                    <apex:param value="{!qline.custNetPrice}"/>
+                                                    </apex:outputText>
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                </table-row>
+                                
+                                    <table-row>
+                                        <table-cell border="1px solid black" number-columns-spanned="8" padding="5">
+                                            <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(qline.productDescription))}">
+                                                <block>
+                                                    <apex:outputText >{!HTMLENCODE(qline.productDescription)}</apex:outputText>
+                                                </block>
+                                            </apex:outputPanel>
+                                            <block>
+                                                &nbsp;
+                                        	</block>
+                                            <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(qline.sowLink))}">
+                                                <block color="blue">
+                                                    <basic-link external-destination="{!(qline.sowLink)}" >{!sowLinkStaticText}</basic-link> 
+                                                </block> 
+                                        	</apex:outputPanel>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:variable>
+                            </apex:repeat>  
+                    </apex:variable>
+                </apex:repeat> 
+            </table-body>
+            </table>
+            <block margin-top="20px" text-align="right">
+                <apex:repeat var="bType" value="{!wrap.bTypes}">
+                    <apex:variable value="" var="temp" rendered="{!bType != 'One-Time'}" >
+                        <apex:outputPanel layout="none" rendered="{!wrap.linesMap[bType].totDisc!=0}">                                         
+                            <block color="red">
+                                {!bType} Discount Value : <apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                    <apex:param value="{!wrap.linesMap[bType].totDisc}"/></apex:outputText>
+                            </block>
+                        </apex:outputPanel>
+                        <block keep-with-previous="always" space-after="1em"> 
+                            {!bType} Fees Sub-Total : <apex:outputText value="{0, number,{!wrap.currencySymbol}###,##0.00}">
+                                <apex:param value="{!wrap.linesMap[bType].totFee}"/></apex:outputText>
+                        </block>
+                    
+                    </apex:variable> 
+            </apex:repeat> 
+            <apex:outputPanel layout="none" rendered="{!wrap.hasRecurrDisc}">
+                <block keep-with-previous="always" color="red">* Discounts valid for this purchase only</block>
+            </apex:outputPanel>
+            </block>
+            </apex:variable>            
+    </block-container>
+    <block-container>
+        <block></block>
+        <apex:variable value="" var="donotuse" rendered="{!wrap.hasMinCommLines}">
+            <block font-weight="bold" margin-bottom="10px" margin-top="30px">Minimum Commit Products:</block>
+            <apex:outputText rendered="{!wrap.isDistiOF = false}">
+                <block font-weight="bold" margin-bottom="5px" margin-top="10px">Fees:</block>
+                <block margin-bottom="5px" margin-top="10px">   
+                    <apex:outputText value="{!$Label.CWS_Min_commit_Term}">
+                        <apex:param value="Client's"/>
+                    </apex:outputText>
+                    <block margin-bottom="5px" margin-top="10px">   
+                        <apex:outputText value="{!$Label.CWS_Min_Commit_Term1}"/>
+                    </block>
+                    <block margin-bottom="5px" margin-top="10px">   
+                        <apex:outputText value="{!$Label.CWS_Min_Commit_Term2}"/>
+                    </block>
+                </block>
+            </apex:outputText>
+            <table border-width="0.5px" border-style="solid" >
+                <table-column column-width="{!IF(wrap.hasMinCommDisc,'27%','31%')}"/> <!-- Description -->
+                <table-column column-width="8%"/> <!--Ramp-->
+                <table-column column-width="13%"/> <!--Ramp Qty-->
+                <table-column column-width="{!IF(wrap.hasMinCommDisc,'9%','12%')}"/> <!-- List Price -->
+                <table-column column-width="{!IF(wrap.hasMinCommDisc,'9%','12%')}"/> <!-- Net Price -->
+                <table-column column-width="{!IF(wrap.hasMinCommDisc,'10%','8%')}"/><!--disc-->
+                <table-column column-width="{!IF((wrap.hasMinCommDisc) && wrap.isCustTotPriceSet ,'6%',IF(wrap.hasMinCommDisc,'10%',IF(wrap.isCustTotPriceSet,'8%','16%')))}"/><!--qty-->
+                <table-column column-width="{!IF(wrap.hasMinCommDisc,'10%', IF(wrap.isCustTotPriceSet,'8%','0%'))}"/><!--ext price-->
+                <table-column column-width="{!IF((wrap.hasMinCommDisc) && wrap.isCustTotPriceSet,'8%','0%')}"/><!--total price-->
+                <table-header>
+                    <table-row height="20pt" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#0068b1">
+                            <table-cell border="1px solid black" padding="5" width="180pt"><block>Description</block></table-cell>
+                            <table-cell border="1px solid black" padding="5" ><block>Ramp</block></table-cell>
+                            <table-cell border="1px solid black" padding="5" ><block>Ramp Qty</block></table-cell>
+                            <table-cell border="1px solid black" padding="5" ><block>List</block></table-cell>
+                            <table-cell border="1px solid black" padding="5" ><block>Price</block></table-cell>
+                            <apex:outputPanel layout="none" rendered="{!wrap.hasMinCommDisc}"><table-cell border="1px solid black" padding="5" ><block>Discount</block></table-cell></apex:outputPanel>
+                            <table-cell border="1px solid black" padding="5" ><block>Min Commit Qty</block></table-cell>
+                            <table-cell border="1px solid black" padding="5" ><block>Ext. Min Commit Price</block></table-cell>
+                            <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}"><table-cell border="1px solid black" padding="5" ><block>Customer Total Min Commit Price</block></table-cell></apex:outputPanel>
+                    </table-row>
+                </table-header>
+                <table-body>
+                <apex:repeat var="bType" value="{!wrap.bTypes}">
+                    <apex:variable value="" var="temp" rendered="{!bType != 'One-Time'}" >
+                            <apex:variable var="countMinComm" value="{!0}"/>
+                            <apex:repeat var="qline" value="{!wrap.linesMap[bType].lines}">
+                                <apex:variable var="countMinComm" value="{!countMinComm+1}" rendered="{!qline.minCommit}"/>
+                            </apex:repeat>
+                            <apex:variable value="" var="tempMinCommH" rendered="{!countMinComm!=0}">
+                                <table-row>
+                                    <table-cell border="1px solid black" number-columns-spanned="8" padding="5">
+                                        <block font-weight="bold"><apex:outputText value="{!HTMLENCODE(bType)} Billing"></apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:variable>
+                            <apex:repeat var="qline" value="{!wrap.linesMap[bType].lines}">
+                                <apex:variable value="" var="tempMinComm" rendered="{!qline.minCommit}">
+                                    <table-row>
+                                        <table-cell border="1px solid black" text-align="left" padding="5" width="175pt">
+                                            <block font-weight="bold" ><apex:outputText value="{!HTMLENCODE(qline.productName)}"/></block>
+                                            <block><apex:outputText value="{!HTMLENCODE(qline.productCode)}"/></block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block><apex:outputText value="{!qline.paymentPeriod}"/>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block><apex:outputText value="{!qline.usageRampQty}"/>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5">
+                                            <block><apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                <apex:param value="{!qline.lstPrice}"/></apex:outputText></block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block>
+                                                <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                        <apex:param value="{!qline.price}"/>
+                                                    </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                        <apex:outputPanel layout="none" rendered="{!wrap.hasMinCommDisc}">
+                                            <table-cell border="1px solid black" text-align="center" padding="5" >
+                                                <block color="red"><apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                                    <apex:param value="{!qline.discAmnt}"/></apex:outputText></block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" width="15pt">
+                                            <block><apex:outputText value="{0, number, ###}">
+                                                <apex:param value="{!qline.qty}"/></apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border="1px solid black" text-align="center" padding="5" >
+                                            <block>
+                                                    <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                    <apex:param value="{!qline.extPrice}"/>
+                                                    </apex:outputText>                                            
+                                            </block>
+                                        </table-cell>                                                                       
+                                            <apex:outputPanel layout="none" rendered="{!wrap.isCustTotPriceSet}">
+                                                <table-cell border="1px solid black" text-align="center" padding="5" >
+                                                    <block>
+                                                        <apex:outputText value="{0, number, {!wrap.currencySymbol}###,##0.00}">
+                                                        <apex:param value="{!qline.custNetPrice}"/>
+                                                        </apex:outputText>
+                                                    </block>
+                                                </table-cell>
+                                            </apex:outputPanel>
+                                    </table-row>
+                                    <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(qline.sowLink))}">
+                                        <table-row>
+                                            <table-cell border="1px solid black" number-columns-spanned="8" padding="5">
+                                                <block>
+                                                    <apex:outputText >{!HTMLENCODE(qline.productDescription)}</apex:outputText>
+                                                </block>
+                                                <block>
+                                                    &nbsp;
+                                        		</block>
+                                                <block color="blue">
+                                                    <basic-link external-destination="{!(qline.sowLink)}" >{!sowLinkStaticText}</basic-link> 
+                                                </block> 
+                                            </table-cell>
+                                        </table-row>
+                                    </apex:outputPanel>
+                                </apex:variable>
+                            </apex:repeat>  
+                    </apex:variable>
+                </apex:repeat> 
+            </table-body>
+            </table>
+            <block margin-top="20px" text-align="right">
+                <apex:repeat var="bType" value="{!wrap.bTypes}">
+                    <apex:variable value="" var="temp" rendered="{!bType != 'One-Time'}" >
+                        <apex:outputPanel layout="none" rendered="{!wrap.linesMap[bType].totDiscMinComm!=0}">                                         
+                            <block color="red">
+                                {!bType} Discount Value : <apex:outputText value="({0, number,{!wrap.currencySymbol}###,##0.00})">
+                                    <apex:param value="{!wrap.linesMap[bType].totDiscMinComm}"/></apex:outputText>
+                            </block>
+                        </apex:outputPanel>
+                        <block keep-with-previous="always" space-after="1em"> 
+                            {!bType} Fees Sub-Total : <apex:outputText value="{0, number,{!wrap.currencySymbol}###,##0.00}">
+                                <apex:param value="{!wrap.linesMap[bType].totFeeMinComm}"/></apex:outputText>
+                        </block>
+                    
+                    </apex:variable> 
+            </apex:repeat> 
+            <apex:outputPanel layout="none" rendered="{!wrap.hasMinCommDisc}">
+                            <block keep-with-previous="always" color="red">* Discounts valid for this purchase only</block>
+                        </apex:outputPanel>
+            </block>
+            </apex:variable>            
+    </block-container>
+    </apex:page>

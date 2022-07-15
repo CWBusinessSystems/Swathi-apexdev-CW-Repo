@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CWTotalBilling__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of billing items where the products are CW</inlineHelpText>
+    <label>CW Total Billing</label>
+    <summarizedField>CWS_BillingItem__c.CWS_MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>CWS_BillingItem__c.CWS_Source__c</field>
+        <operation>equals</operation>
+        <value>CW</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CWS_BillingItem__c.CWS_BillingPeriod__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

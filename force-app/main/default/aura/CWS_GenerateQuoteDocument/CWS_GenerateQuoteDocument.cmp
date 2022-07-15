@@ -1,0 +1,54 @@
+<aura:component
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  controller="CWS_GenerateQuoteDocumentController" access="global">
+
+  <aura:handler name="init" value="{!this}" action="{!c.initHandler}" />
+  <aura:attribute name="errorMessage" type="List" default="[]" access="global" />
+  <aura:attribute name="hasError" type="boolean" default="false" />
+  <aura:attribute name="alertMessage" type="String" default="false" access="global" />
+  <aura:attribute name="isOpen" type="boolean" default="false" access="global" />
+  <aura:attribute name="lstAlertMessage" type="List" default="[]" access="global" />
+  <!-- Aura Component Attributes -->
+  <aura:attribute name="errorToastComponent" type="Aura.Component[]" access="global" />
+    
+  <!-- Aura Dependencies -->
+  <aura:dependency resource="markup://c:CWS_ErrorToastComponent" type="COMPONENT" />
+    <div class="slds-m-around_xx-large">  
+	    <aura:if isTrue="{!v.hasError}">
+			<div class="slds-is-relative">
+				<div aura:id="spinnerId" class="slds-spinner_container">
+				   <div class="slds-spinner--brand  slds-spinner slds-spinner--small" role="alert">
+					 <span class="slds-assistive-text">Loading</span>
+					 <div class="slds-spinner__dot-a"></div>
+					 <div class="slds-spinner__dot-b"></div>
+				   </div>
+				</div>
+			</div>
+        </aura:if>
+		<aura:if isTrue="{!v.isOpen}">
+			<aura:iteration items="{!v.lstAlertMessage }" var="alertMessage1">
+				<ui:message title="Warning" severity="warning" closable="false">
+					{!alertMessage1}
+				</ui:message>
+			</aura:iteration>
+			<br/>
+				<center>
+					<lightning:button variant="brand" label="Submit" title="Submit"
+						onclick="{!c.submit}" />
+				</center>
+		</aura:if>
+		<aura:if isTrue="{!v.hasError}">
+            <div class="slds-notify_container slds-is-relative">
+        		<div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
+          			<div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small"><strong>Error</strong></h2>   
+            <aura:iteration items="{!v.errorMessage}" var="ErrMessage1">   
+               <br/><li>{!ErrMessage1}</li><br/>
+            </aura:iteration>
+                    </div>
+                </div>
+            </div>
+                
+		</aura:if>
+    </div>
+</aura:component>

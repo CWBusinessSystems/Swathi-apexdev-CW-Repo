@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Category__c</fullName>
+    <description>Product categories that are applicable for the use of this promo</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Product categories that are applicable for the use of this promo</inlineHelpText>
+    <label>Category</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Category</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

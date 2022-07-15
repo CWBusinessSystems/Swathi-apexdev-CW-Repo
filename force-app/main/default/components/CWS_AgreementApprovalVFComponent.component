@@ -1,0 +1,68 @@
+<!--
+ * Component Name   : CWS_AgreementApprovalVFComponent
+ * Description  : This visualforce component contains UI elements required for apttus approval notification email.
+ * Created By   : Indra Ganesan
+ * Created On   : 05-08-2020
+
+ * Modification Log:  
+ * --------------------------------------------------------------------------------------------------------------------------------------
+ * Developer                Date                   Modification ID      Description 
+ * ---------------------------------------------------------------------------------------------------------------------------------------
+ * Indra Ganesan          05-08-2020                                  Initial version
+ *
+-->
+
+<apex:component controller="CWS_AgreementApprovalVFCompCrtlr" access="global">
+    <apex:attribute name="ApprovalRequestSO" 
+                    description="This is the Approval Request SObject." 
+                    type="Apttus_Approval__Approval_Request__c" 
+                    assignTo="{!Context.requestSO}" />
+    
+    <apex:attribute name="ApprovalRecipientSO" 
+                    description="This is the Approval Recipient SObject." 
+                    type="User" 
+                    assignTo="{!Context.recipientSO}" />
+                    
+    <!-- Required tag for apttus reply email service -->
+    <div style="background-color:white;color:white;"><apex:outputText value="{!$Label.apttus_approval__approvalrequestid & ': '}" /><apex:outputField value="{!Context.requestSO.Id}" /></div>
+    
+  <!--  <apex:outputPanel rendered="{!Context.AreActionsSupported}" >               
+        <apex:outputText value="{!$Label.apttus_approval__approvalactionlinkinstructionforemailresponse1}" 
+                         escape="false" 
+                         rendered="{!Context.IsEmailApprovalResponseEnabled}" />
+        <apex:outputText value="{!$Label.apttus_approval__approvalactionlinkinstruction}" 
+                         rendered="{!NOT(Context.IsEmailApprovalResponseEnabled)}" />-->
+                        
+        <!-- Required tag for apttus reply email service               
+        <div style="background-color:white;color:white;"><apex:outputText value="{!$Label.apttus_approval__approvaluserid & ': '}" /><apex:outputField value="{!Context.recipientSO.Id}" /></div>
+       
+        <apex:outputPanel rendered="{!Context.IsEmailApprovalResponseEnabled}"  >     
+            <apex:outputText value="{!$Label.apttus_approval__approvalactionlinkinstructionforemailresponse2}" 
+                             escape="false" />
+            <br/>
+            <br/>
+            <apex:outputText value="{!$Label.apttus_approval__approvalactionlinkinstructionforemailresponse3}" 
+                             escape="false" />
+            <br/>
+            <br/>
+        </apex:outputPanel> 
+    </apex:outputPanel> -->
+        
+    <!-- Start of Agreement detail section -->
+          
+                <b>Account Name:</b><apex:outputField value="{!AgreementSO.Apttus__Account__r.Name}" /> <br/>       
+        
+                <b>Agreement Name:</b><apex:outputField value="{!AgreementSO.Name}" /> <br/>
+            
+                <b>Owner Full Name:</b><apex:outputField value="{!AgreementSO.Owner.Name}" /> <br/>
+               
+                <b>Agreement Number:</b><apex:outputField value="{!AgreementSO.Apttus__FF_Agreement_Number__c}" /> <br/>
+              
+                <b>Agreement Start Date:</b><apex:outputField value="{!AgreementSO.Apttus__Contract_Start_Date__c}" /> <br/>
+            
+                <b>Approval needed for Clause:</b><apex:outputField value="{!AgreementSO.CWS_Clause_type__c}" /> <br/>
+              
+                <b><apex:outputText value="{!IF(ISBLANK(AgreementSO.Apttus__Total_Contract_Value__c),"","Total Agreement Value: ")}"/></b> <apex:outputText value="{!AgreementSO.Apttus__Total_Contract_Value__c}"/><br/>           
+        
+   
+</apex:component>

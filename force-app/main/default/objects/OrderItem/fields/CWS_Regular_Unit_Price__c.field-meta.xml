@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Regular_Unit_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Order.CWS_Route_to_Market__c , 
+      &apos;IIT&apos;,  SBQQ__QuoteLine__r.CWS_MM_ListPrice__c , 
+       &apos;Channel&apos;, SBQQ__QuoteLine__r.CWS_Disti_Regular_Price__c,
+         SBQQ__QuoteLine__r.CWS_RegularPrice__c )</formula>
+    <label>Regular Unit Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

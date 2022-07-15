@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chad_Share_View</fullName>
+    <booleanFilter>1 AND 4 AND (2 OR 3)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CWS_Incremental_ACV_Stamped__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CWS_Competitor_Takeaway_Automate_Command__c</columns>
+    <columns>CWS_Competitor_Takeaway_Manage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Closed Lost</value>
+    </filters>
+    <filters>
+        <field>CWS_Competitor_Takeaway_Manage__c</field>
+        <operation>equals</operation>
+        <value>Autotask</value>
+    </filters>
+    <filters>
+        <field>CWS_Competitor_Takeaway_Automate_Command__c</field>
+        <operation>equals</operation>
+        <value>Datto RMM</value>
+    </filters>
+    <filters>
+        <field>CWS_Region__c</field>
+        <operation>equals</operation>
+        <value>NA</value>
+    </filters>
+    <label>Chad Share View</label>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Days_in_Trial__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ AND(NOT(ISBLANK(CWS_Trial_Start_Date__c )),NOT(ISBLANK(CWS_Trial_Actual_Completion_Date__c))),
+ CWS_Trial_Actual_Completion_Date__c-CWS_Trial_Start_Date__c,
+ IF(NOT(ISBLANK(CWS_Trial_Start_Date__c )),TODAY()-CWS_Trial_Start_Date__c,NULL)
+)</formula>
+    <inlineHelpText>Captures number of days in trial since the status moved to In Progress until trial is completed.</inlineHelpText>
+    <label>Days in Trial</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

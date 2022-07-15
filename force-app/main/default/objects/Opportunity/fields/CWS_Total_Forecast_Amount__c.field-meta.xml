@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Total_Forecast_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  
+CWS_Master__c == true , 
+ IF(OR(CWS_Min_Commit_QR__c = 0.00 , ISBLANK(CWS_Min_Commit_QR__c)), SBQQ__PrimaryQuote__r.CWS_Quote_ACV__c , CWS_Min_Commit_QR__c )  , 
+(CWS_Min_Commit_QR__c +  CWS_Non_Min_Commit_Forecast_QR__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Equals sum of ACV - Projected Renewal Value for Non Min Commit Opportunity Products + Min Commit QR. For Master (legacy Min Commit) Opportunities, equals Quote Header ACV if Min Commit QR is null, else equals Min Commit QR.</inlineHelpText>
+    <label>Total Forecast Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

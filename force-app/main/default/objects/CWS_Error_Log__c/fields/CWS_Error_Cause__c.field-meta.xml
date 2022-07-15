@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Error_Cause__c</fullName>
+    <description>Cause extracted from the exception</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cause extracted from the exception</inlineHelpText>
+    <label>Error Cause</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

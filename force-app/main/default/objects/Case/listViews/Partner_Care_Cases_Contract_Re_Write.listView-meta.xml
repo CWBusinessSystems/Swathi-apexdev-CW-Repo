@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Care_Cases_Contract_Re_Write</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Age__c</columns>
+    <columns>Region__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Thread_ID__c</columns>
+    <columns>Reason_to_Keep_Open__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Product_CWS__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>NAME</columns>
+    <columns>Event__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Partner_Care</value>
+    </filters>
+    <filters>
+        <field>Category__c</field>
+        <operation>equals</operation>
+        <value>Contract Rewrite</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed Internal,Closed,Closed as Duplicate</value>
+    </filters>
+    <label>Partner Care Cases- Contract Re-Write</label>
+    <sharedTo>
+        <group>CWS_Partner_Care_Managers</group>
+    </sharedTo>
+</ListView>

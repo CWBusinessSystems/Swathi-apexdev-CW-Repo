@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Decision_Process__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1. What specific steps does CW/Partner execute to evaluate, select, &amp; implement? 2. Booking process/systems, signing steps, approvals known?
+3. Go live dates discussed and set?</inlineHelpText>
+    <label>Decision Process</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

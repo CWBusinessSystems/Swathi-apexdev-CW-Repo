@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Exception_Costprice__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be checked if the default value of the costprice was blank or zero</description>
+    <externalId>false</externalId>
+    <label>Exception Costprice</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

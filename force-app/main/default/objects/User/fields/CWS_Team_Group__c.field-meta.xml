@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Team_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Team Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>BE</fullName>
+                <default>false</default>
+                <label>BE</label>
+            </value>
+            <value>
+                <fullName>BrightGauge</fullName>
+                <default>false</default>
+                <label>BrightGauge</label>
+            </value>
+            <value>
+                <fullName>Channel</fullName>
+                <default>false</default>
+                <label>Channel</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>IIT</fullName>
+                <default>false</default>
+                <label>IIT</label>
+            </value>
+            <value>
+                <fullName>ISAC</fullName>
+                <default>false</default>
+                <label>ISAC</label>
+            </value>
+            <value>
+                <fullName>ITBoost</fullName>
+                <default>false</default>
+                <label>ITBoost</label>
+            </value>
+            <value>
+                <fullName>MSP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MSP</label>
+            </value>
+            <value>
+                <fullName>MSP Core</fullName>
+                <default>false</default>
+                <label>MSP Core</label>
+            </value>
+            <value>
+                <fullName>MSP Large</fullName>
+                <default>false</default>
+                <label>MSP Large</label>
+            </value>
+            <value>
+                <fullName>OT</fullName>
+                <default>false</default>
+                <label>OT</label>
+            </value>
+            <value>
+                <fullName>Security Core</fullName>
+                <default>false</default>
+                <label>Security Core</label>
+            </value>
+            <value>
+                <fullName>Security Large</fullName>
+                <default>false</default>
+                <label>Security Large</label>
+            </value>
+            <value>
+                <fullName>UMM/BMS Core</fullName>
+                <default>false</default>
+                <label>UMM/BMS Core</label>
+            </value>
+            <value>
+                <fullName>UMM/BMS Large</fullName>
+                <default>false</default>
+                <label>UMM/BMS Large</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

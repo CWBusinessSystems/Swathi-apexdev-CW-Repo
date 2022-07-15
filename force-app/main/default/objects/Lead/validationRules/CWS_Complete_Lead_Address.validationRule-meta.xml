@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Complete_Lead_Address</fullName>
+    <active>true</active>
+    <description>All address fields are required while Lead creation</description>
+    <errorConditionFormula>AND(IF(AND(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;Lead&apos;),$Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),FALSE ,TRUE ),
+IsConverted ,
+$Profile.Name  &lt;&gt;  &quot;System Administrator&quot;,
+OR( 
+Country = &quot;&quot;, 
+Street = &quot;&quot;,
+City  = &quot;&quot;,
+PostalCode = &quot;&quot;,  
+AND(OR(Country = &quot;United States&quot;,  
+       Country = &quot;Canada&quot;,
+       Country = &quot;Australia&quot;), 
+       State  = &quot;&quot;
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Please enter all address fields before converting the Lead</errorMessage>
+</ValidationRule>

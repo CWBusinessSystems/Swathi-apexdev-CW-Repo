@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sort_Order__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(RIGHT(TRIM(CWS_Month_Year__c), LEN(TRIM(CWS_Month_Year__c))-FIND(&apos;-&apos;, TRIM(CWS_Month_Year__c))) + TEXT(CASE(LOWER(LEFT(TRIM(CWS_Month_Year__c),FIND(&apos;-&apos;, TRIM(CWS_Month_Year__c))-1)),
+&quot;jan&quot;,11,&quot;feb&quot;,12,&quot;mar&quot;,13,&quot;apr&quot;,14,&quot;may&quot;,15,&quot;jun&quot;,16,&quot;jul&quot;,17,&quot;aug&quot;,18,&quot;sep&quot;,19,&quot;oct&quot;,20,&quot;nov&quot;,21,&quot;dec&quot;,22,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sort Order</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sell_Min_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be checked to trigger approval if the product is reduced than the default quantity mentioned.</description>
+    <externalId>false</externalId>
+    <label>Sell Min Product</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

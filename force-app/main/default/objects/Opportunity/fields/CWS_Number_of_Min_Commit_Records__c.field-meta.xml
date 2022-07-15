@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Number_of_Min_Commit_Records__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculates the number of min commits on an opportunity for validations and lightning page filters</inlineHelpText>
+    <label>Number of Min Commit Records</label>
+    <summaryForeignKey>CWS_Minimum_Commit__c.CWS_Opportunity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

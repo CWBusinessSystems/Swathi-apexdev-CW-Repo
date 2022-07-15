@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Cannot_Recycle_Without_Reasons</fullName>
+    <active>true</active>
+    <description>Cannot move Opportunity to Recycle stage without Reason for Recycling and Recycling Reason fields filled in.</description>
+    <errorConditionFormula>ISPICKVAL( StageName , &apos;Recycled&apos;)&amp;&amp;ISBLANK(CWS_ReasonforRecycling__c)&amp;&amp;
+ISBLANK(TEXT(CWS_Recycled_Reason_New__c))</errorConditionFormula>
+    <errorMessage>Recycled Reason and Reason for Recycling fields must be filled out in order to move to Recycled.</errorMessage>
+</ValidationRule>

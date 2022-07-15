@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relates_To__c</fullName>
+    <externalId>false</externalId>
+    <label>Relates To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent (Linux)</fullName>
+                <default>false</default>
+                <label>Agent (Linux)</label>
+            </value>
+            <value>
+                <fullName>Agent (Windows)</fullName>
+                <default>false</default>
+                <label>Agent (Windows)</label>
+            </value>
+            <value>
+                <fullName>API</fullName>
+                <default>false</default>
+                <label>API</label>
+            </value>
+            <value>
+                <fullName>Archiving</fullName>
+                <default>false</default>
+                <label>Archiving</label>
+            </value>
+            <value>
+                <fullName>Bare-Metal Restore</fullName>
+                <default>false</default>
+                <label>Bare-Metal Restore</label>
+            </value>
+            <value>
+                <fullName>Control Panels</fullName>
+                <default>false</default>
+                <label>Control Panels</label>
+            </value>
+            <value>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+                <label>Configuration</label>
+            </value>
+            <value>
+                <fullName>Database Add-on</fullName>
+                <default>false</default>
+                <label>Database Add-on</label>
+            </value>
+            <value>
+                <fullName>Database Restore</fullName>
+                <default>false</default>
+                <label>Database Restore</label>
+            </value>
+            <value>
+                <fullName>DataCenter Console (DCC)</fullName>
+                <default>false</default>
+                <label>DataCenter Console (DCC)</label>
+            </value>
+            <value>
+                <fullName>Disk Safe / Volumes</fullName>
+                <default>false</default>
+                <label>Disk Safe / Volumes</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+                <label>Feature Request</label>
+            </value>
+            <value>
+                <fullName>File Restore</fullName>
+                <default>false</default>
+                <label>File Restore</label>
+            </value>
+            <value>
+                <fullName>Install / Upgrade</fullName>
+                <default>false</default>
+                <label>Install / Upgrade</label>
+            </value>
+            <value>
+                <fullName>License</fullName>
+                <default>false</default>
+                <label>License</label>
+            </value>
+            <value>
+                <fullName>Linux Kernel Module</fullName>
+                <default>false</default>
+                <label>Linux Kernel Module</label>
+            </value>
+            <value>
+                <fullName>Merge/Vacuum</fullName>
+                <default>false</default>
+                <label>Merge/Vacuum</label>
+            </value>
+            <value>
+                <fullName>MS Exchange</fullName>
+                <default>false</default>
+                <label>MS Exchange</label>
+            </value>
+            <value>
+                <fullName>MSSQL</fullName>
+                <default>false</default>
+                <label>MSSQL</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Policy</fullName>
+                <default>false</default>
+                <label>Policy</label>
+            </value>
+            <value>
+                <fullName>Remote Replication</fullName>
+                <default>false</default>
+                <label>Remote Replication</label>
+            </value>
+            <value>
+                <fullName>Replication (Failing)</fullName>
+                <default>false</default>
+                <label>Replication (Failing)</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>SBM</fullName>
+                <default>false</default>
+                <label>SBM</label>
+            </value>
+            <value>
+                <fullName>UI</fullName>
+                <default>false</default>
+                <label>UI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

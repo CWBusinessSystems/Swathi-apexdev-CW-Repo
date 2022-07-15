@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Exclude_from_Net_Total__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used to identify the quotelines/options which needs to be excluded from the Pricing Calculation by making the NetPrice/Nettotal as 0. But the Customer Price value will reflect in the Order form.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to identify the quotelines/options which needs to be excluded from the Pricing Calculation by making the NetPrice/Nettotal as 0. But the Customer Price value will reflect in the Order form.</inlineHelpText>
+    <label>Exclude from Net Total</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

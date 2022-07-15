@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Transaction_Reason__c</fullName>
+    <description>This field determines the transaction reason of the quote which is realted to this contract.</description>
+    <externalId>false</externalId>
+    <label>Transaction Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CWS_Transaction_Reason</valueSetName>
+    </valueSet>
+</CustomField>

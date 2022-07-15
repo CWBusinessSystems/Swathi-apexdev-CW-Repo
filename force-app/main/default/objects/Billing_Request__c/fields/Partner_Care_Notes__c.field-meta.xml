@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Care_Notes__c</fullName>
+    <description>Details on research, why a credit was approved, denied, or negotiated and/or how the negotiated amt was determined.</description>
+    <externalId>false</externalId>
+    <label>Billing Request Notes</label>
+    <length>32768</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

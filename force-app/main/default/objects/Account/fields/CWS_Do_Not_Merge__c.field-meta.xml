@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Do_Not_Merge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is added to make sure account is not merged with the possible duplicate</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is added to make sure account is not merged with the possible duplicate</inlineHelpText>
+    <label>Do Not Merge</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

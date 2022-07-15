@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_UOM_edit_once_snt_to_Dwnstrm</fullName>
+    <active>true</active>
+    <description>Product Admin, can edit UOM at the time of new product creation (through UI or through data loader) but after the product has been sent downstream by Boomi process, he will not be allowed to change the UOM.</description>
+    <errorConditionFormula>AND(OR(CONTAINS(TEXT(CWS_Zuora_Product_Sync_Status__c), &quot;Synced&quot;) ,CONTAINS(TEXT(CWS_NetSuite_Product_Sync_Status__c), &quot;Synced&quot;)), ISCHANGED(CWS_UOM__c))</errorConditionFormula>
+    <errorMessage>UOM cannot be modified as it has already been sent downstream to Zuora and NetSuite</errorMessage>
+</ValidationRule>

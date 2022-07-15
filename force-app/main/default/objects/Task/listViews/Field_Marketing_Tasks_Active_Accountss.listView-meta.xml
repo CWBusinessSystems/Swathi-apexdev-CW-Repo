@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Marketing_Tasks_Active_Accountss</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHO_NAME</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>DUE_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>PRIORITY</columns>
+    <columns>STATUS</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>STATUS</field>
+        <operation>notEqual</operation>
+        <value>System Closed</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Task.CWS_Field_Marketing_Campaign</value>
+    </filters>
+    <label>Field Marketing Tasks - Active Accounts</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>CWS_CRO</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

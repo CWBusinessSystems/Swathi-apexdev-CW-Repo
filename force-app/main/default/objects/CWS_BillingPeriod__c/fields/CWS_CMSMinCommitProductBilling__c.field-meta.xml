@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_CMSMinCommitProductBilling__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Roll up summary of billing item MRR</inlineHelpText>
+    <label>CMS Min Commit Product Billing</label>
+    <summarizedField>CWS_BillingItem__c.CWS_MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>CWS_BillingItem__c.CWS_IncludeinMinCommit__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CWS_BillingItem__c.CWS_BillingPeriod__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

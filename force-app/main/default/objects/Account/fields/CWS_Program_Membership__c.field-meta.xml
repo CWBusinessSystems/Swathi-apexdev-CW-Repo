@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Program_Membership__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Membership</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>7FigureMSP</fullName>
+                <default>false</default>
+                <label>7FigureMSP</label>
+            </value>
+            <value>
+                <fullName>All Covered</fullName>
+                <default>false</default>
+                <label>All Covered</label>
+            </value>
+            <value>
+                <fullName>American Coop</fullName>
+                <default>false</default>
+                <label>American Coop</label>
+            </value>
+            <value>
+                <fullName>ASCII</fullName>
+                <default>false</default>
+                <label>ASCII</label>
+            </value>
+            <value>
+                <fullName>BMS</fullName>
+                <default>false</default>
+                <label>BMS</label>
+            </value>
+            <value>
+                <fullName>BPCA</fullName>
+                <default>false</default>
+                <label>BPCA</label>
+            </value>
+            <value>
+                <fullName>BTA</fullName>
+                <default>false</default>
+                <label>BTA</label>
+            </value>
+            <value>
+                <fullName>CDA</fullName>
+                <default>false</default>
+                <label>CDA</label>
+            </value>
+            <value>
+                <fullName>CMIT</fullName>
+                <default>false</default>
+                <label>CMIT</label>
+            </value>
+            <value>
+                <fullName>Computer Troubleshooters</fullName>
+                <default>false</default>
+                <label>Computer Troubleshooters</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>D&amp;H</fullName>
+                <default>false</default>
+                <label>D&amp;H</label>
+            </value>
+            <value>
+                <fullName>Dental integrators</fullName>
+                <default>false</default>
+                <label>Dental integrators</label>
+            </value>
+            <value>
+                <fullName>Expertech</fullName>
+                <default>false</default>
+                <label>Expertech</label>
+            </value>
+            <value>
+                <fullName>GAP</fullName>
+                <default>false</default>
+                <label>GAP</label>
+            </value>
+            <value>
+                <fullName>IBPI</fullName>
+                <default>false</default>
+                <label>IBPI</label>
+            </value>
+            <value>
+                <fullName>ICDA</fullName>
+                <default>false</default>
+                <label>ICDA</label>
+            </value>
+            <value>
+                <fullName>IDeACOM</fullName>
+                <default>false</default>
+                <label>IDeACOM</label>
+            </value>
+            <value>
+                <fullName>Ingram SMB Alliance</fullName>
+                <default>false</default>
+                <label>Ingram SMB Alliance</label>
+            </value>
+            <value>
+                <fullName>Ingram TrustX Alliance</fullName>
+                <default>false</default>
+                <label>Ingram TrustX Alliance</label>
+            </value>
+            <value>
+                <fullName>ISAC - Automotive</fullName>
+                <default>false</default>
+                <label>ISAC - Automotive</label>
+            </value>
+            <value>
+                <fullName>ISAC - Aviation</fullName>
+                <default>false</default>
+                <label>ISAC - Aviation</label>
+            </value>
+            <value>
+                <fullName>ISAC - Electricity</fullName>
+                <default>false</default>
+                <label>ISAC - Electricity</label>
+            </value>
+            <value>
+                <fullName>ISAC - Financial Services</fullName>
+                <default>false</default>
+                <label>ISAC - Financial Services</label>
+            </value>
+            <value>
+                <fullName>ISAC - Health</fullName>
+                <default>false</default>
+                <label>ISAC - Health</label>
+            </value>
+            <value>
+                <fullName>ISAC - Maritime &amp; Port Security</fullName>
+                <default>false</default>
+                <label>ISAC - Maritime &amp; Port Security</label>
+            </value>
+            <value>
+                <fullName>ISAC - Maritime Transportation Systems</fullName>
+                <default>false</default>
+                <label>ISAC - Maritime Transportation Systems</label>
+            </value>
+            <value>
+                <fullName>ISAC - Mining &amp; Metals</fullName>
+                <default>false</default>
+                <label>ISAC - Mining &amp; Metals</label>
+            </value>
+            <value>
+                <fullName>ISAC - National Credit Union</fullName>
+                <default>false</default>
+                <label>ISAC - National Credit Union</label>
+            </value>
+            <value>
+                <fullName>ISAC - National Defense</fullName>
+                <default>false</default>
+                <label>ISAC - National Defense</label>
+            </value>
+            <value>
+                <fullName>ISAC - Real Estate</fullName>
+                <default>false</default>
+                <label>ISAC - Real Estate</label>
+            </value>
+            <value>
+                <fullName>ISAC - Retail &amp; Hospitality</fullName>
+                <default>false</default>
+                <label>ISAC - Retail &amp; Hospitality</label>
+            </value>
+            <value>
+                <fullName>ISACs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ISACs</label>
+            </value>
+            <value>
+                <fullName>ISAC - Space</fullName>
+                <default>false</default>
+                <label>ISAC - Space</label>
+            </value>
+            <value>
+                <fullName>ISAC - Water</fullName>
+                <default>false</default>
+                <label>ISAC - Water</label>
+            </value>
+            <value>
+                <fullName>ISAO - Faith Based</fullName>
+                <default>false</default>
+                <label>ISAO - Faith Based</label>
+            </value>
+            <value>
+                <fullName>ISAOs</fullName>
+                <default>false</default>
+                <label>ISAOs</label>
+            </value>
+            <value>
+                <fullName>IT Nation Evolve</fullName>
+                <default>false</default>
+                <label>IT Nation Evolve</label>
+            </value>
+            <value>
+                <fullName>MicroAge Canada</fullName>
+                <default>false</default>
+                <label>MicroAge Canada</label>
+            </value>
+            <value>
+                <fullName>Millenium Micro</fullName>
+                <default>false</default>
+                <label>Millenium Micro</label>
+            </value>
+            <value>
+                <fullName>MTA</fullName>
+                <default>false</default>
+                <label>MTA</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Partner Program</fullName>
+                <default>false</default>
+                <label>Partner Program</label>
+            </value>
+            <value>
+                <fullName>Pro Dealer Group (PDG)</fullName>
+                <default>false</default>
+                <label>Pro Dealer Group (PDG)</label>
+            </value>
+            <value>
+                <fullName>Robin Robins</fullName>
+                <default>false</default>
+                <label>Robin Robins</label>
+            </value>
+            <value>
+                <fullName>Select Dealer Group (SDG)</fullName>
+                <default>false</default>
+                <label>Select Dealer Group (SDG)</label>
+            </value>
+            <value>
+                <fullName>Synnex VARNEX</fullName>
+                <default>false</default>
+                <label>Synnex VARNEX</label>
+            </value>
+            <value>
+                <fullName>TAG National</fullName>
+                <default>false</default>
+                <label>TAG National</label>
+            </value>
+            <value>
+                <fullName>Taylor Business Group</fullName>
+                <default>false</default>
+                <label>Taylor Business Group</label>
+            </value>
+            <value>
+                <fullName>Tech Data TechSelect</fullName>
+                <default>false</default>
+                <label>Tech Data TechSelect</label>
+            </value>
+            <value>
+                <fullName>True Profit Groups</fullName>
+                <default>false</default>
+                <label>True Profit Groups</label>
+            </value>
+            <value>
+                <fullName>TruMethods</fullName>
+                <default>false</default>
+                <label>TruMethods</label>
+            </value>
+            <value>
+                <fullName>UMM</fullName>
+                <default>false</default>
+                <label>UMM</label>
+            </value>
+            <value>
+                <fullName>YourIThelpdesk</fullName>
+                <default>false</default>
+                <label>YourIThelpdesk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

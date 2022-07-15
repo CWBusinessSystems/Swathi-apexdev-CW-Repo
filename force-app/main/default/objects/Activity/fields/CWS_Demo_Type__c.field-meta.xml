@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Demo_Type__c</fullName>
+    <description>Used to Contain Demo Type for specific record type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the type of Demo being deployed.</inlineHelpText>
+    <label>Demo Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1:1 Demo</fullName>
+                <default>true</default>
+                <label>1:1 Demo</label>
+            </value>
+            <value>
+                <fullName>1:Many Demo</fullName>
+                <default>false</default>
+                <label>1:Many Demo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Events_Product</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>CWS_Category__c</columns>
+    <columns>CWS_Sub_Category__c</columns>
+    <columns>CWS_License_Type__c</columns>
+    <columns>CWS_ChargeType__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CWS_Sub_Category__c</field>
+        <operation>equals</operation>
+        <value>Events</value>
+    </filters>
+    <label>Events Product</label>
+</ListView>

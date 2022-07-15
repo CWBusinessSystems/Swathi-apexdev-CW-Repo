@@ -1,0 +1,5 @@
+<apex:page controller="CWS_AuthController">
+    <apex:form >
+        <apex:commandbutton value="Authorize" action="{!getConsent}" id="authbuttonid"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<!-- VF Component for the Template -->
+<apex:component controller="CWS_ApprovalEmailComponentController" access="global" >
+<apex:attribute name="oppty" description="Received varaible of data type string"  assignTo="{!opptyId}" type="String"/>
+        <apex:repeat value="{!lstString}" var="p">
+                <apex:outputText value="{!p}"/><br/>
+        </apex:repeat>
+</apex:component>

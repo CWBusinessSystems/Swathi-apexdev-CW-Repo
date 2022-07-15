@@ -1,0 +1,20 @@
+<apex:page standardController="Apttus__APTS_Agreement__c">
+    <apex:pageMessage summary="{!$Label.CWS_Agreement_Document_Name_Error}" 
+                      severity="info" 
+                      strength="2"
+                      rendered="{!IF(AND(
+                                Apttus__APTS_Agreement__c.Apttus__Status_Category__c = $Label.CWS_Agreement_In_Signatures_Status ,
+                                OR(
+                                Apttus__APTS_Agreement__c.Apttus__Status__c = $Label.CWS_Other_Party_Signatures_Status,
+                                Apttus__APTS_Agreement__c.Apttus__Status__c = $Label.CWS_Fully_Signed_Status
+                                ), 
+                                OR(
+                                Apttus__APTS_Agreement__c.CWS_No_of_Signed_Docs__c = null,
+                                Apttus__APTS_Agreement__c.CWS_No_of_Signed_Docs__c = 0
+                                ), 
+                                Apttus__APTS_Agreement__c.CWS_Envelope_Status__c = null
+                                ),
+                                TRUE,FALSE
+                                )
+                                }"/>
+</apex:page>

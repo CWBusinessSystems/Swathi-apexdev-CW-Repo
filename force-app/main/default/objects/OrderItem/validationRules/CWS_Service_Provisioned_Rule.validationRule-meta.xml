@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Service_Provisioned_Rule</fullName>
+    <active>false</active>
+    <description>The provisioning date should be populated in order to mark the Order Item as Service Provisioned</description>
+    <errorConditionFormula>IF(AND(NOT(CONTAINS($Setup.CWS_Bypass_Settings__c.CWS_Bypass_Objects__c,&apos;OrderItem&apos;)),NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c)),FALSE,AND(
+ CWS_ServicesProvisioned__c ,
+ ISBLANK( CWS_ProvisioningDate__c),
+ NOT(ISPICKVAL( CWS_Provisioning_Eligibility__c,&apos;NA&apos;))
+)
+)</errorConditionFormula>
+    <errorDisplayField>CWS_ServicesProvisioned__c</errorDisplayField>
+    <errorMessage>Please enter provisioning date to mark line(s) as Services Provisioned</errorMessage>
+</ValidationRule>

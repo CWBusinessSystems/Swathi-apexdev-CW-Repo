@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Quote_Sub_Type__c</fullName>
+    <description>This field is mandatory for selection if the transaction reason is credit/rebill</description>
+    <externalId>false</externalId>
+    <label>Quote SubType</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Rebill</fullName>
+                <default>false</default>
+                <label>Rebill</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

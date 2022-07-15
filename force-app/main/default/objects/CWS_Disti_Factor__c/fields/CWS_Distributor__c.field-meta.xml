@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Distributor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Distributor Account. Quote&apos;s Distributor account will be used to compare against this field value for applying Disti Factor.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to Distributor Account. Quote&apos;s Distributor account will be used to compare against this field value for applying Disti Factor.</inlineHelpText>
+    <label>Distributor</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Disti Factors</relationshipLabel>
+    <relationshipName>Disti_Factors</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

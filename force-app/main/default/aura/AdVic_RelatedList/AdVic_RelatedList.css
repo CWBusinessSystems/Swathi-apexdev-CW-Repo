@@ -1,0 +1,121 @@
+.THIS .moreSection .slds-form-element_horizontal.slds-form-element {
+    display: flow-root;
+}
+.THIS .moreSection .slds-form-element_horizontal.slds-form-element:hover {
+    background: #f3f2f2;
+}
+
+/*.THIS div#Product_Description__c {
+    width: 30%;
+}*/
+
+.THIS .moreSection .slds-form-element__control {
+    padding-top: var(--lwc-spacingXxSmall,0.25rem);
+}
+/*End new 7/8/2020 fixes for 'show more' section layouts*/
+        
+        
+.THIS button.slds-button.colHead {
+    color: #3e3e3c;
+    font-weight: 800;
+            font-size: 14px;
+}
+.THIS button.slds-button.colHead:focus {
+    box-shadow: unset;
+}
+
+
+
+
+.THIS .mockCardHead {
+    background-color: #f3f2f2;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.THIS.card, .THIS .card {
+    border: 1px solid #dddbda !important;
+    border-radius: var(--lwc-borderRadiusMedium,0.25rem);
+}
+
+.THIS .slds-card__footer {
+    background-color: #f3f2f2;
+}
+
+.THIS center.viewAll {
+    padding: 11px 0px 0px 0px;
+    color: var(--lwc-brandTextLink,rgb(0, 109, 204));
+    font-weight: 400;
+}
+        
+.THIS center.viewAllSpan {
+    padding: 11px 0px 0px 0px;
+    color: var(--lwc-brandTextLink,rgb(0, 109, 204));
+    font-weight: 400;
+}
+.THIS .viewAll:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.THIS .inlineHead {
+    display: inline-flex;
+}
+                        
+.THIS button.slds-button.slds-button_neutral.headerNewBtn {
+    font-size: 13px;
+    font-weight: 500;
+    margin: -4px 0px 0px 15px;
+}                        
+
+.THIS .logoSpot {
+    padding-right: 25px;
+}
+
+.THIS .btmBtn {
+    margin-right: 10px;
+}
+
+.THIS hr {
+    display: block;
+    margin: 0;
+    border-top: 1px solid var(--lwc-colorBorder,rgb(221, 219, 218));
+    height: 1px;
+    /*clear: both;*/
+    /*margin-right: -90px;*/
+}
+        
+.THIS .newSection {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6f6f6f;
+    padding: 14px 0px 9px 0px;
+}        
+
+.THIS .cardBody{
+    padding: 0 15px;
+}
+.THIS .cardBody.table {
+    /*margin-right: 84px;*/
+}
+
+.THIS span.ico img {
+    background-color: #777;
+    height: 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.THIS.card, .THIS .card {
+    font-weight: 200;
+}
+
+.THIS.slds-card__header, .THIS .slds-card__header{
+	padding: 0; 
+    margin: 0;
+}
+.THIS .slds-card__body{
+	margin-top: 0;    
+}

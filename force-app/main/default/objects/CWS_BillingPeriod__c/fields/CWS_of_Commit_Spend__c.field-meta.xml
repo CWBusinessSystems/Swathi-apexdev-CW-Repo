@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_of_Commit_Spend__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CWS_CMSCommitAmount__c =0, 0, CWS_CMSMinCommitProductBilling__c / CWS_CMSCommitAmount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>% of Commit Spend</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Last_QR_Calculated__c</fullName>
+    <description>Indicates the latest date of quota retirement calculation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the latest date of quota retirement calculation</inlineHelpText>
+    <label>Last QR Calculated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

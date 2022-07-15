@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Button Click calls this VS Page On R1 Case Page Layout - Lightning Only. VS Page Calls the Case Close Field Set</description>
+    <label>R1 Close Case</label>
+</ApexPage>

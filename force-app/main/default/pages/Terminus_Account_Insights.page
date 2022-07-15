@@ -1,0 +1,4 @@
+<apex:page docType="html-5.0" standardController="Account">    
+       <apex:iframe src="https://app.brightfunnel.com/sfdcJourney?sfdcId={!$Organization.Id}&accountId={!account.Id}&sessionId={!$Api.Session_ID}&userId={!$User.Id}&email={!$User.Email}"
+                    id="account_journey" height="1400px" width="100%" frameborder="false" scrolling="false"/>
+</apex:page>

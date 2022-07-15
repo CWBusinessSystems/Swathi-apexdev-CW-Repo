@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_ProductCode__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Unique Field created for the Product Code.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Captures the unique identifier for the product</inlineHelpText>
+    <label>Product Code</label>
+    <length>200</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

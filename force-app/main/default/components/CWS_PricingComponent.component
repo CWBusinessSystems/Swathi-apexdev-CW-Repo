@@ -1,0 +1,15 @@
+<apex:component controller="CWS_ApprovalEmailComponentController" access="global" >
+<apex:attribute name="quote" description="Received varaible of data type string"  assignTo="{!quoteId}" type="String"/>
+          <apex:repeat value="{!listWrap}" var="p">
+                <b><apex:outputText value="{!p.category }"/> Margin: </b><apex:outputText value="{!p.Currency1}"/><apex:outputText value=" {!p.Margin }"/><br/>
+                <b><apex:outputText value="{!p.category }"/> Discount:</b><apex:outputText value="{!p.Discount} %"/><br/><br/>
+        </apex:repeat>
+<b>Continuum Service Only Product Discount $:</b> <apex:outputText value="{!currencyCode} "/><apex:outputText value="{!serviceRegularDiscountAmount}"/> <br/>
+<b>Continuum Service Only Product Discount %: </b> <apex:outputText value=" {!serviceRegularDiscountPercentage} %"/><br/>
+
+<b>Continuum Core Product Discount $:</b> <apex:outputText value="{!currencyCode} "/><apex:outputText value="{!nonServiceRegularDiscountAmount}"/> <br/>
+<b>Continuum Core Product Discount %: </b> <apex:outputText value=" {!nonServiceRegularDiscountPercentage} %"/> <br/>
+
+
+
+</apex:component>

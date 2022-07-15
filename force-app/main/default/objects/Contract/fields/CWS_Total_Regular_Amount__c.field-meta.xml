@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Total_Regular_Amount__c</fullName>
+    <description>Roll up of regular amounts of Subscription products.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total amount of non-optional line times before additional discounts are applied.</inlineHelpText>
+    <label>Total Regular Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Updating_Competitor_Takeaway</fullName>
+    <active>true</active>
+    <description>When sales reps or tele sales moves a new business opportunity to Proposal, one of the competitor fields should be filled in. Removed prospecting stage.</description>
+    <errorConditionFormula>AND(
+OR(
+$Profile.Name =&quot;CWS_Sales_Rep&quot;,
+$Profile.Name =&quot;CWS_Tele_Sales&quot;
+),
+RecordTypeId =&quot;0126g000000iR3j&quot;,
+
+ISPICKVAL(StageName,&quot;Proposal&quot;),
+
+ISPICKVAL(CWS_Competitor_Takeaway_BDR__c ,&quot;&quot;),
+ISPICKVAL(CWS_Competitor_Takeaway_Control__c, &quot;&quot;) ,
+ISPICKVAL(CWS_Competitor_Takeaway_Help_Desk__c , &quot;&quot;),
+ISPICKVAL(CWS_Competitor_Takeaway_Manage__c , &quot;&quot;),
+ISPICKVAL(CWS_Competitor_Takeaway_RMM__c , &quot;&quot;),
+ISPICKVAL(CWS_Competitor_Takeaway_Security__c , &quot;&quot;),
+ISPICKVAL(CWS_Competitor_Takeaway_Sell__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please enter at least 1 competitor from Competitor Takeaway section on Opportunity</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_L_P_Case__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to be checked through a Trigger on Order Line. If the Services Provisioned Checkbox on the Order Line is unchecked for at least one of the Order Lines, this field will be checked to call upon the Process Builder to create Licensing/ Provisioning Case.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field to be checked through a Trigger on Order Line. If the Services Provisioned Checkbox on the Order Line is unchecked for at least one of the Order Lines, this field will be checked to call on the Process Builder to create Licensing/ Provisioning Case</inlineHelpText>
+    <label>Create L/P Case</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

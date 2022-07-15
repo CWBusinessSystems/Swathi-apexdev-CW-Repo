@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sort_Order_Product__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(ISBLANK(SBQQ__RequiredBy__c),(OrderItemNumber), SBQQ__RequiredBy__r.OrderItemNumber)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sort Order Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

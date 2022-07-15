@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Split_Conversion__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Number field, will be used in automation to assign a currency value that has been converted to USD for the split amount</inlineHelpText>
+    <label>Split Conversion</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

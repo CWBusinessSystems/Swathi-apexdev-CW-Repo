@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Restrict_update_if_Quote_Accepted</fullName>
+    <active>true</active>
+    <description>Restrict editing to Oppty Currency, Company Name, Bill To (Account), Ship To Account for CWS_Sales_Rep, CWS_Sales_Manager, CWS_Tele_Sales, CWS_Global_Sales_Ops when Oppty Stage = Closed Won and Quote Stage = Accepted.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c, &quot;Accepted&quot;),
+
+OR(
+ISPICKVAL(StageName , &quot;Closed Won&quot;),
+ISPICKVAL(StageName , &quot;Closed Won - Legacy&quot;)),
+
+OR(
+$Profile.Name = &quot;CWS_Sales_Rep&quot;,
+$Profile.Name = &quot;CWS_Sales_Manager&quot;,
+$Profile.Name = &quot;CWS_Tele_Sales&quot;,
+$Profile.Name = &quot;CWS_Global_Sales_Ops&quot;),
+
+OR(
+ISCHANGED(CurrencyIsoCode),
+ISCHANGED(CWS_Ship_To_Account__c),
+ISCHANGED(CWS_Bill_To_Account__c),
+ISCHANGED(CWS_Company_Name__c)))</errorConditionFormula>
+    <errorMessage>Unable to change Oppty Currency, Company Name, Bill To (Account), Ship To Account  fields after Quote Stage equals Accepted.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Reseller_Account_s_Unique_identifier__c</fullName>
+    <description>Reseller account&apos;s unique idenfier</description>
+    <externalId>false</externalId>
+    <formula>CWS_Reseller_Account__r.CWS_Account_Unique_Identifier__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reseller Account&apos;s Unique identifier</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

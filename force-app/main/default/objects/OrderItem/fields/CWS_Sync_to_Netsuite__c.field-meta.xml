@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Sync_to_Netsuite__c</fullName>
+    <description>Formula to check which lines are to be synced with Netsuite</description>
+    <externalId>false</externalId>
+    <formula>if(!ISPICKVAL(SBQQ__ChargeType__c, &apos;Usage&apos;) , True, 
+					if(!ISBLANK(Order.CWS_LegacyKey__c), 
+                         if(CWS_Month_to_Month__c, false, 
+														AND(ISPICKVAL(SBQQ__ChargeType__c, &apos;Usage&apos;),   
+							                                 OR(CONTAINS(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Service_SOW_Link__c,&apos;Task-Based&apos;),
+							                                    ISPICKVAL(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Category__c,&apos;Assist - Tech Advantage&apos;),
+							                                    OR(CWS_Min_Commit__c, !Order.CWS_Master__c )
+                                                                )
+                                                            )
+														), 
+						 if(CWS_Month_to_Month__c,OR(ISPICKVAL(SBQQ__ContractAction__c,&apos;New&apos;),ISPICKVAL(SBQQ__ContractAction__c,&apos;Quantity Increase&apos;) ),
+																	AND(ISPICKVAL(SBQQ__ChargeType__c, &apos;Usage&apos;),   
+																		OR(CONTAINS(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Service_SOW_Link__c,&apos;Task-Based&apos;),
+																		   ISPICKVAL(SBQQ__QuoteLine__r.SBQQ__Product__r.CWS_Category__c,&apos;Assist - Tech Advantage&apos;),
+																		   OR(CWS_Min_Commit__c, !Order.CWS_Master__c )
+																		   )
+																		)                                                      
+                            ) 
+					   )
+  )</formula>
+    <label>Sync to Netsuite</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

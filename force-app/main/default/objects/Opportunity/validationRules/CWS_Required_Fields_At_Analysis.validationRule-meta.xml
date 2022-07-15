@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Required_Fields_At_Analysis</fullName>
+    <active>false</active>
+    <description>This is to validate that user provides answers for  required questions before moving demo or proposal. deactivated by advic for march 2022 release due to stage changes.</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+NOT(CWS_Fast_Track__c),
+OR(
+ISPICKVAL(Type, &apos;New Business&apos;),
+ISPICKVAL(Type, &apos;Amendment&apos;),
+ISPICKVAL(Type, &apos;Renewal with Change&apos;)
+),
+Amount &gt; VALUE( $Label.CWS_Opportunity_Amount ),
+ISBLANK( SBQQ__PrimaryQuote__c ),
+
+OR(
+AND(
+OR(AND(
+NOT(ISNEW()),
+ISCHANGED(StageName),
+OR(
+ISPICKVAL(StageName , &apos;Demo&apos;),
+ISPICKVAL(StageName , &apos;Proposal&apos;)
+),
+OR(
+ISPICKVAL(PRIORVALUE (StageName),&apos;Analysis&apos;),
+ISPICKVAL(PRIORVALUE (StageName),&apos;Prospecting&apos;)
+)),
+AND(ISNEW(), ISPICKVAL( StageName , &apos;Demo&apos; ))
+),
+OR(
+ISBLANK(CWS_Define_The_Prospects_Challenges__c),
+ISBLANK(CWS_Which_CW_Products_Solve_Issues__c),
+ISBLANK(TEXT(CWS_Budget_in_place__c)),
+ISBLANK(CWS_Negative_Impact_To_The_Business__c),
+ISBLANK(CWS_Detail_the_Challenges__c),
+AND(
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Sell__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_RMM__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Help_Desk__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Manage__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Control__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_BDR__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Security__c)),
+ISBLANK(TEXT(CWS_Competitor_Takeaway_Automate_Command__c))
+)
+))
+
+)
+)</errorConditionFormula>
+    <errorMessage>Please complete the Sales Analysis Survey Section questions and at least one Competitor Takeaway to proceed.</errorMessage>
+</ValidationRule>

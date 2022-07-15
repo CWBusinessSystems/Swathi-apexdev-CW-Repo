@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_LeadSQLToRejected</fullName>
+    <active>true</active>
+    <description>From SQL status cannot be moved to recycled</description>
+    <errorConditionFormula>AND(
+ NOT($Setup.CWS_Bypass_Settings__c.CWS_Validation_Rules_Disabled__c),
+ NOT($Profile.Name=&apos;System Administrator&apos;),
+ NOT($Profile.Name=&apos;CWS_Global_Sales_Ops&apos;),
+ NOT($Profile.Name=&apos;CWS_Master_Data_Admin&apos;),
+ NOT($Profile.Name=&apos;CWS_Marketo_Admin&apos;),
+ ISCHANGED(Status),
+	OR(
+  ISPICKVAL( PRIORVALUE(Status) ,&apos;SQL Working&apos;),
+  ISPICKVAL( PRIORVALUE(Status) ,&apos;SQL&apos;)
+	),
+ ISPICKVAL(Status ,&apos;Rejected&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You cannot reject this Lead. Please recycle or convert the Lead to proceed.</errorMessage>
+</ValidationRule>

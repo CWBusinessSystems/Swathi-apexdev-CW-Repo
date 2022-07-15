@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWS_Incremental_ACV_Stamped__c</fullName>
+    <description>The field is pulling the value from Opportunity object field &quot;Incremental ACV (USD)&quot; using workflow-&quot;CWS_Update_Incremental_ACV_USD_to_Incremental_ACV_Stamped&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the official Opportunity Value. It copies the calculated value from Incremental ACV USD and syncs to other systems. If referencing Clari, PBI, or other systems, they will match this field. The Opportunity must be Saved successfully (no validation errors) for the field to properly copy the Incremental ACV USD field value.</inlineHelpText>
+    <label>Incremental ACV (Stamped)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
