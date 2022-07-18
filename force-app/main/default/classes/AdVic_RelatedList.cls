@@ -1,5 +1,5 @@
 /**
- * @description Controller for AdVic_RelatedList Aura Component.
+ * @description Controller for AdVic_RelatedList Aura Components.
 */
 public with sharing class AdVic_RelatedList {
     /**
